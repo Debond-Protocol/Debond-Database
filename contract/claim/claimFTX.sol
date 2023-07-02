@@ -769,6 +769,10 @@ contract Token is ERC3475 {
         //transfer balance
         nonce._balances[_to] += _transaction._amount;
         nonce._activeSupply += _transaction._amount;
+
+        Transaction[] memory _transactions = new Transaction[](1);
+        _transactions[0] = _transaction;
+        emit Issue (_to, address(this), _transactions);
     }
 
     // function getClaim( uint256 classeId) public view  returns( Data memory result){
