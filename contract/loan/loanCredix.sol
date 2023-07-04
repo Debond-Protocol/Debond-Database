@@ -834,7 +834,34 @@ contract Token is ERC3475 {
         _classes[5]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=4oNn7SNY5y3fM8X1RhubMHScGbaynEEy4mM1nB8XBsUN";
         emit classCreated(address(this), 5);
 
+///////////////////////////////////////////////////////////////////////
 
+        _classes[6]._values["symbol"].stringValue = "Credmei - deal 1 -Senior Loan";
+        _classes[6]._values["category"].stringValue = "loan";
+        _classes[6]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[6]._values["childCategory"].stringValue = "invoice advance";
+        
+        _classes[6]._values["description"].stringValue = unicode"Founded in 2013, Credmei is a Brazilian fintech focused on short-term receivables advancing. The company is led by a seasoned management team with +40 years combined experience in the financial services and banking industries, and focuses on providing invoice discounting solutions for SMEs in Brazil. Their client base is composed of SME's from different segments, with a particular focus within the agribusiness and food industries.";
+        _classes[6]._values["issuerName"].stringValue = "Credmei";
+        _classes[6]._values["issuerType"].stringValue = "LTD";
+        _classes[6]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[6]._values["issuerURL"].stringValue = "https://credmei.com.br/";
+        _classes[6]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credmei.png";
+
+        _classes[6]._values["fundType"].stringValue = "corporate";  
+        _classes[6]._values["shareValue"].uintValue = 1;  
+        _classes[6]._values["currency"].stringValue = "USDC";  
+
+        _classes[6]._values["maxiumSupply"].uintValue = 524800;  
+        _classes[6]._values["callable"].boolValue = true;  
+        _classes[6]._values["maturityPeriod"].uintValue = 657*60*60*24;  
+        _classes[6]._values["coupon"].boolValue = true;  
+        _classes[6]._values["couponRate"].uintValue = 10000;  
+        _classes[6]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[6]._values["fixed-rate"].boolValue = true;  
+        _classes[6]._values["APY"].uintValue = 120000;  
+        _classes[6]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=4oNn7SNY5y3fM8X1RhubMHScGbaynEEy4mM1nB8XBsUN";
+        emit classCreated(address(this), 6);
     }
    
 }
