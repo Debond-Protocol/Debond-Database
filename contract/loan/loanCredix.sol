@@ -862,6 +862,93 @@ contract Token is ERC3475 {
         _classes[6]._values["APY"].uintValue = 120000;  
         _classes[6]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=4oNn7SNY5y3fM8X1RhubMHScGbaynEEy4mM1nB8XBsUN";
         emit classCreated(address(this), 6);
+
+///////////////////////////////////////////////////////////////////////
+
+        _classes[7]._values["symbol"].stringValue = "Tivos - deal 2 -Junior Loan";
+        _classes[7]._values["category"].stringValue = "loan";
+        _classes[7]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[7]._values["childCategory"].stringValue = "industrial machinery leasing";
+        
+        _classes[7]._values["description"].stringValue = unicode"Tivos is one of the leading credit fintechs specialized in asset-leasing solutions for industrial machinery essential to the proper operation of SMEs in Mexico. They offer tailored solutions and competitive rates through a fully-digital user experience that allow a comprehensive and accurate risk analysis. Tivos also seeks to optimize their clients' operations in every way by providing them with necessary working tools for efficient resource allocation, increasing sales, profitability and cash flows.";
+        _classes[7]._values["issuerName"].stringValue = "Tivos";
+        _classes[7]._values["issuerType"].stringValue = "LTD";
+        _classes[7]._values["issuerJurisdiction"].stringValue = "MX";
+        _classes[7]._values["issuerURL"].stringValue = "https://www.tivos.mx/";
+        _classes[7]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Tivos.png";
+
+        _classes[7]._values["fundType"].stringValue = "corporate";  
+        _classes[7]._values["shareValue"].uintValue = 1;  
+        _classes[7]._values["currency"].stringValue = "USDC";  
+
+        _classes[7]._values["maxiumSupply"].uintValue = 335724;  
+        _classes[7]._values["callable"].boolValue = true;  
+        _classes[7]._values["maturityPeriod"].uintValue = 840*60*60*24;  
+        _classes[7]._values["coupon"].boolValue = true;  
+        _classes[7]._values["couponRate"].uintValue = 12333;  
+        _classes[7]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[7]._values["fixed-rate"].boolValue = true;  
+        _classes[7]._values["APY"].uintValue = 148000;  
+        _classes[7]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=R56vsKfy7da5Hrkqg3Wd4e89FKbFuKrJRKqVwRXSfya";
+        emit classCreated(address(this), 7);
+
+///////////////////////////////////////////////////////////////////////
+
+        _classes[8]._values["symbol"].stringValue = "Tivos - deal 2 -Senior Loan";
+        _classes[8]._values["category"].stringValue = "loan";
+        _classes[8]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[8]._values["childCategory"].stringValue = "industrial machinery leasing";
+        
+        _classes[8]._values["description"].stringValue = unicode"Tivos is one of the leading credit fintechs specialized in asset-leasing solutions for industrial machinery essential to the proper operation of SMEs in Mexico. They offer tailored solutions and competitive rates through a fully-digital user experience that allow a comprehensive and accurate risk analysis. Tivos also seeks to optimize their clients' operations in every way by providing them with necessary working tools for efficient resource allocation, increasing sales, profitability and cash flows.";
+        _classes[8]._values["issuerName"].stringValue = "Tivos";
+        _classes[8]._values["issuerType"].stringValue = "LTD";
+        _classes[8]._values["issuerJurisdiction"].stringValue = "MX";
+        _classes[8]._values["issuerURL"].stringValue = "https://www.tivos.mx/";
+        _classes[8]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Tivos.png";
+
+        _classes[8]._values["fundType"].stringValue = "corporate";  
+        _classes[8]._values["shareValue"].uintValue = 1;  
+        _classes[8]._values["currency"].stringValue = "USDC";  
+
+        _classes[8]._values["maxiumSupply"].uintValue = 1034750;  
+        _classes[8]._values["callable"].boolValue = true;  
+        _classes[8]._values["maturityPeriod"].uintValue = 840*60*60*24;  
+        _classes[8]._values["coupon"].boolValue = true;  
+        _classes[8]._values["couponRate"].uintValue = 9166;  
+        _classes[8]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[8]._values["fixed-rate"].boolValue = true;  
+        _classes[8]._values["APY"].uintValue = 110000;  
+        _classes[8]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=R56vsKfy7da5Hrkqg3Wd4e89FKbFuKrJRKqVwRXSfya";
+        emit classCreated(address(this), 8);
+
+///////////////////////////////////////////////////////////////////////
+
+        _classes[9]._values["symbol"].stringValue = "Clave - deal 1B -Mezzanine Loan";
+        _classes[9]._values["category"].stringValue = "loan";
+        _classes[9]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[9]._values["childCategory"].stringValue = "trade receivables";
+        
+        _classes[9]._values["description"].stringValue = unicode"Clave is a platform bringing credit and other financial solutions to people in Latin America. Through a JV with Liquitech - a DIAN authorized trade receivables origination platform -, they are capitalizing on Colombia's electronic invoice growth with an end-to-end digital platform.";
+        _classes[9]._values["issuerName"].stringValue = "Clave";
+        _classes[9]._values["issuerType"].stringValue = "LTD";
+        _classes[9]._values["issuerJurisdiction"].stringValue = "CO";
+        _classes[9]._values["issuerURL"].stringValue = "https://www.clave.com/";
+        _classes[9]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Clave.png";
+
+        _classes[9]._values["fundType"].stringValue = "corporate";  
+        _classes[9]._values["shareValue"].uintValue = 1;  
+        _classes[9]._values["currency"].stringValue = "USDC";  
+
+        _classes[9]._values["maxiumSupply"].uintValue = 750000;  
+        _classes[9]._values["callable"].boolValue = true;  
+        _classes[9]._values["maturityPeriod"].uintValue = 221*60*60*24;  
+        _classes[9]._values["coupon"].boolValue = true;  
+        _classes[9]._values["couponRate"].uintValue = 9583;  
+        _classes[9]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[9]._values["fixed-rate"].boolValue = true;  
+        _classes[9]._values["APY"].uintValue = 115000;  
+        _classes[9]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=BistWXZbsN24NmmThGYTLviKpRF4oNYNw5po6UkqNoyW";
+        emit classCreated(address(this), 9);
     }
    
 }
