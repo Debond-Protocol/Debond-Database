@@ -809,8 +809,8 @@ contract Token is ERC3475 {
 
         _classes[5]._values["symbol"].stringValue = "Credmei - deal 1 -Junior Loan";
         _classes[5]._values["category"].stringValue = "loan";
-        _classes[5]._values["subcategory"].stringValue = "non-asset-backed loan";
-        _classes[5]._values["childCategory"].stringValue = "invoice advances";
+        _classes[5]._values["subcategory"].stringValue = "unsecured loan";
+        _classes[5]._values["childCategory"].stringValue = "invoice advance";
         
         _classes[5]._values["description"].stringValue = unicode"Founded in 2013, Credmei is a Brazilian fintech focused on short-term receivables advancing. The company is led by a seasoned management team with +40 years combined experience in the financial services and banking industries, and focuses on providing invoice discounting solutions for SMEs in Brazil. Their client base is composed of SME's from different segments, with a particular focus within the agribusiness and food industries.";
         _classes[5]._values["issuerName"].stringValue = "Credmei";
