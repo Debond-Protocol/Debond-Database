@@ -949,6 +949,441 @@ contract Token is ERC3475 {
         _classes[9]._values["APY"].uintValue = 115000;  
         _classes[9]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=BistWXZbsN24NmmThGYTLviKpRF4oNYNw5po6UkqNoyW";
         emit classCreated(address(this), 9);
+
+///////////////////////////////////////////////////////////////////////
+
+        _classes[10]._values["symbol"].stringValue = "Clave - deal 1B -Senior Loan";
+        _classes[10]._values["category"].stringValue = "loan";
+        _classes[10]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[10]._values["childCategory"].stringValue = "trade receivables";
+        
+        _classes[10]._values["description"].stringValue = unicode"Clave is a platform bringing credit and other financial solutions to people in Latin America. Through a JV with Liquitech - a DIAN authorized trade receivables origination platform -, they are capitalizing on Colombia's electronic invoice growth with an end-to-end digital platform.";
+        _classes[10]._values["issuerName"].stringValue = "Clave";
+        _classes[10]._values["issuerType"].stringValue = "LTD";
+        _classes[10]._values["issuerJurisdiction"].stringValue = "CO";
+        _classes[10]._values["issuerURL"].stringValue = "https://www.clave.com/";
+        _classes[10]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Clave.png";
+
+        _classes[10]._values["fundType"].stringValue = "corporate";  
+        _classes[10]._values["shareValue"].uintValue = 1;  
+        _classes[10]._values["currency"].stringValue = "USDC";  
+
+        _classes[10]._values["maxiumSupply"].uintValue = 501652;  
+        _classes[10]._values["callable"].boolValue = true;  
+        _classes[10]._values["maturityPeriod"].uintValue = 221*60*60*24;  
+        _classes[10]._values["coupon"].boolValue = true;  
+        _classes[10]._values["couponRate"].uintValue = 9583;  
+        _classes[10]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[10]._values["fixed-rate"].boolValue = true;  
+        _classes[10]._values["APY"].uintValue = 115000;  
+        _classes[10]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=BistWXZbsN24NmmThGYTLviKpRF4oNYNw5po6UkqNoyW";
+        emit classCreated(address(this), 10);
+
+////////////////////////////////////////////////////////////////////
+
+        _classes[11]._values["symbol"].stringValue = "Clave - deal 1A -Unitranche Loan";
+        _classes[11]._values["category"].stringValue = "loan";
+        _classes[11]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[11]._values["childCategory"].stringValue = "trade receivables";
+        
+        _classes[11]._values["description"].stringValue = unicode"Clave is a platform bringing credit and other financial solutions to people in Latin America. Through a JV with Liquitech - a DIAN authorized trade receivables origination platform -, they are capitalizing on Colombia's electronic invoice growth with an end-to-end digital platform.";
+        _classes[11]._values["issuerName"].stringValue = "Clave";
+        _classes[11]._values["issuerType"].stringValue = "LTD";
+        _classes[11]._values["issuerJurisdiction"].stringValue = "CO";
+        _classes[11]._values["issuerURL"].stringValue = "https://www.clave.com/";
+        _classes[11]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Clave.png";
+
+        _classes[11]._values["fundType"].stringValue = "corporate";  
+        _classes[11]._values["shareValue"].uintValue = 1;  
+        _classes[11]._values["currency"].stringValue = "USDC";  
+
+        _classes[11]._values["maxiumSupply"].uintValue = 749716;  
+        _classes[11]._values["callable"].boolValue = true;  
+        _classes[11]._values["maturityPeriod"].uintValue = 188*60*60*24;  
+        _classes[11]._values["coupon"].boolValue = true;  
+        _classes[11]._values["couponRate"].uintValue = 9583;  
+        _classes[11]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[11]._values["fixed-rate"].boolValue = true;  
+        _classes[11]._values["APY"].uintValue = 115000;  
+        _classes[11]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=2tpDYF5C2TgaS3qeAmWVaM9rgRfE43wgcaZPrKRQB8dc";
+        emit classCreated(address(this), 11);
+
+////////////////////////////////////////////////////////////////////
+
+        _classes[12]._values["symbol"].stringValue = "Tivos - deal 1 -Super Senior Loan";
+        _classes[12]._values["category"].stringValue = "loan";
+        _classes[12]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[12]._values["childCategory"].stringValue = "industrial machinery leasing";
+        
+        _classes[12]._values["description"].stringValue = unicode"Tivos is one of the leading credit fintechs specialized in asset-leasing solutions for industrial machinery essential to the proper operation of SMEs in Mexico. They offer tailored solutions and competitive rates through a fully-digital user experience that allow a comprehensive and accurate risk analysis. Tivos also seeks to optimize their clients' operations in every way by providing them with necessary working tools for efficient resource allocation, increasing sales, profitability and cash flows.";
+        _classes[12]._values["issuerName"].stringValue = "Tivos";
+        _classes[12]._values["issuerType"].stringValue = "LTD";
+        _classes[12]._values["issuerJurisdiction"].stringValue = "MX";
+        _classes[12]._values["issuerURL"].stringValue = "https://www.tivos.mx/";
+        _classes[12]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Tivos.png";
+
+        _classes[12]._values["fundType"].stringValue = "corporate";  
+        _classes[12]._values["shareValue"].uintValue = 1;  
+        _classes[12]._values["currency"].stringValue = "USDC";  
+
+        _classes[12]._values["maxiumSupply"].uintValue = 1000000;  
+        _classes[12]._values["callable"].boolValue = true;  
+        _classes[12]._values["maturityPeriod"].uintValue = 833*60*60*24;  
+        _classes[12]._values["coupon"].boolValue = true;  
+        _classes[12]._values["couponRate"].uintValue = 10000;  
+        _classes[12]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[12]._values["fixed-rate"].boolValue = true;  
+        _classes[12]._values["APY"].uintValue = 120000;  
+        _classes[12]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=DNqQT9oSAwCPY7U1n5AtAjkWkHGNxtzZjgVxk7kXFt9y";
+        emit classCreated(address(this), 12);
+
+///////////////////////////////////////////////////////////////
+
+        _classes[13]._values["symbol"].stringValue = "Tivos - deal 1 -Junior Loan";
+        _classes[13]._values["category"].stringValue = "loan";
+        _classes[13]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[13]._values["childCategory"].stringValue = "industrial machinery leasing";
+        
+        _classes[13]._values["description"].stringValue = unicode"Tivos is one of the leading credit fintechs specialized in asset-leasing solutions for industrial machinery essential to the proper operation of SMEs in Mexico. They offer tailored solutions and competitive rates through a fully-digital user experience that allow a comprehensive and accurate risk analysis. Tivos also seeks to optimize their clients' operations in every way by providing them with necessary working tools for efficient resource allocation, increasing sales, profitability and cash flows.";
+        _classes[13]._values["issuerName"].stringValue = "Tivos";
+        _classes[13]._values["issuerType"].stringValue = "LTD";
+        _classes[13]._values["issuerJurisdiction"].stringValue = "MX";
+        _classes[13]._values["issuerURL"].stringValue = "https://www.tivos.mx/";
+        _classes[13]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Tivos.png";
+
+        _classes[13]._values["fundType"].stringValue = "corporate";  
+        _classes[13]._values["shareValue"].uintValue = 1;  
+        _classes[13]._values["currency"].stringValue = "USDC";  
+
+        _classes[13]._values["maxiumSupply"].uintValue = 792405;  
+        _classes[13]._values["callable"].boolValue = true;  
+        _classes[13]._values["maturityPeriod"].uintValue = 833*60*60*24;  
+        _classes[13]._values["coupon"].boolValue = true;  
+        _classes[13]._values["couponRate"].uintValue = 11583;  
+        _classes[13]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[13]._values["fixed-rate"].boolValue = true;  
+        _classes[13]._values["APY"].uintValue = 139000;  
+        _classes[13]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=DNqQT9oSAwCPY7U1n5AtAjkWkHGNxtzZjgVxk7kXFt9y";
+        emit classCreated(address(this), 13);
+
+///////////////////////////////////////////////////////////////
+
+        _classes[14]._values["symbol"].stringValue = "Asaak - deal 1 -Senior Loan";
+        _classes[14]._values["category"].stringValue = "loan";
+        _classes[14]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[14]._values["childCategory"].stringValue = "ssset-backed motorcycle loan";
+        
+        _classes[14]._values["description"].stringValue = unicode"Asaak is a fintech providing asset-financing in Uganda. Founded in 2016, they have built a data-driven, end-to-end, loan origination platform that enables them to cater to SMEs and entrepreneurs traditionally underserved by mainstream financial institutions. Asaak finances motorcycles (known locally as “boda bodas”) via a lease-to-own model for fast-growing and lucrative business activities such as ride-sharing and delivery that require productive assets. Asaak’s diligent underwriting and robust risk model contributes to low NPLs despite significant growth in 2022. The deal is secured by Asaak’s loan receivables and cash.";
+        _classes[14]._values["issuerName"].stringValue = "Asaak";
+        _classes[14]._values["issuerType"].stringValue = "LTD";
+        _classes[14]._values["issuerJurisdiction"].stringValue = "UG";
+        _classes[14]._values["issuerURL"].stringValue = "https://www.asaak.com/";
+        _classes[14]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/asaak.png";
+
+        _classes[14]._values["fundType"].stringValue = "corporate";  
+        _classes[14]._values["shareValue"].uintValue = 1;  
+        _classes[14]._values["currency"].stringValue = "USDC";  
+
+        _classes[14]._values["maxiumSupply"].uintValue = 1000000;  
+        _classes[14]._values["callable"].boolValue = true;  
+        _classes[14]._values["maturityPeriod"].uintValue = 585*60*60*24;  
+        _classes[14]._values["coupon"].boolValue = true;  
+        _classes[14]._values["couponRate"].uintValue = 10416;  
+        _classes[14]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[14]._values["fixed-rate"].boolValue = true;  
+        _classes[14]._values["APY"].uintValue = 125000;  
+        _classes[14]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=DQtXYWVs4ttAq8uguMpTnpcEa2h1qaV48XdxjunciTzm";
+        emit classCreated(address(this), 14);
+
+///////////////////////////////////////////////////////////////
+
+        _classes[15]._values["symbol"].stringValue = "Asaak - deal 1 -Junior Loan";
+        _classes[15]._values["category"].stringValue = "loan";
+        _classes[15]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[15]._values["childCategory"].stringValue = "ssset-backed motorcycle loan";
+        
+        _classes[15]._values["description"].stringValue = unicode"Asaak is a fintech providing asset-financing in Uganda. Founded in 2016, they have built a data-driven, end-to-end, loan origination platform that enables them to cater to SMEs and entrepreneurs traditionally underserved by mainstream financial institutions. Asaak finances motorcycles (known locally as “boda bodas”) via a lease-to-own model for fast-growing and lucrative business activities such as ride-sharing and delivery that require productive assets. Asaak’s diligent underwriting and robust risk model contributes to low NPLs despite significant growth in 2022. The deal is secured by Asaak’s loan receivables and cash.";
+        _classes[15]._values["issuerName"].stringValue = "Asaak";
+        _classes[15]._values["issuerType"].stringValue = "LTD";
+        _classes[15]._values["issuerJurisdiction"].stringValue = "UG";
+        _classes[15]._values["issuerURL"].stringValue = "https://www.asaak.com/";
+        _classes[15]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/asaak.png";
+
+        _classes[15]._values["fundType"].stringValue = "corporate";  
+        _classes[15]._values["shareValue"].uintValue = 1;  
+        _classes[15]._values["currency"].stringValue = "USDC";  
+
+        _classes[15]._values["maxiumSupply"].uintValue = 500000;  
+        _classes[15]._values["callable"].boolValue = true;  
+        _classes[15]._values["maturityPeriod"].uintValue = 585*60*60*24;  
+        _classes[15]._values["coupon"].boolValue = true;  
+        _classes[15]._values["couponRate"].uintValue = 12916;  
+        _classes[15]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[15]._values["fixed-rate"].boolValue = true;  
+        _classes[15]._values["APY"].uintValue = 155000;  
+        _classes[15]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=DQtXYWVs4ttAq8uguMpTnpcEa2h1qaV48XdxjunciTzm";
+        emit classCreated(address(this), 15);
+
+///////////////////////////////////////////////////////////////
+
+        _classes[16]._values["symbol"].stringValue = "Lafín - deal 1 -Senior Loan";
+        _classes[16]._values["category"].stringValue = "loan";
+        _classes[16]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[16]._values["childCategory"].stringValue = "direct consumer loan";
+        
+        _classes[16]._values["description"].stringValue = unicode"Lafín is a microfinance company focused on providing direct consumer loans to the lower socioeconomic sectors of Mexico. They have 3 main products: individual loans, group loans and motorcycle loans (leasing). Since 2008, they've been dedicated to providing tailored credit and an exceptional customer experience to help people achieve their business goals. Initially focused on expanding through physical branches, in the last few years Lafín underwent a digital transformation and became omnichannel by creating a fully-digital user experience for requesting loans.";
+        _classes[16]._values["issuerName"].stringValue = "Lafín";
+        _classes[16]._values["issuerType"].stringValue = "LTD";
+        _classes[16]._values["issuerJurisdiction"].stringValue = "MX";
+        _classes[16]._values["issuerURL"].stringValue = "https://www.lafin.mx/";
+        _classes[16]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Lafin.png";
+
+        _classes[16]._values["fundType"].stringValue = "corporate";  
+        _classes[16]._values["shareValue"].uintValue = 1;  
+        _classes[16]._values["currency"].stringValue = "USDC";  
+
+        _classes[16]._values["maxiumSupply"].uintValue = 487500;  
+        _classes[16]._values["callable"].boolValue = true;  
+        _classes[16]._values["maturityPeriod"].uintValue = 465*60*60*24;  
+        _classes[16]._values["coupon"].boolValue = true;  
+        _classes[16]._values["couponRate"].uintValue = 10000;  
+        _classes[16]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[16]._values["fixed-rate"].boolValue = true;  
+        _classes[16]._values["APY"].uintValue = 120000;  
+        _classes[16]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=D6LbjpkisC8QcnBEpFgRiRN7QLT3CWx8FAWdM3dbQu5H";
+        emit classCreated(address(this), 16);
+
+////////////////////////////////////////////////////////
+
+        _classes[17]._values["symbol"].stringValue = "Lafín - deal 1 -Junior Loan";
+        _classes[17]._values["category"].stringValue = "loan";
+        _classes[17]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[17]._values["childCategory"].stringValue = "direct consumer loan";
+        
+        _classes[17]._values["description"].stringValue = unicode"Lafín is a microfinance company focused on providing direct consumer loans to the lower socioeconomic sectors of Mexico. They have 3 main products: individual loans, group loans and motorcycle loans (leasing). Since 2008, they've been dedicated to providing tailored credit and an exceptional customer experience to help people achieve their business goals. Initially focused on expanding through physical branches, in the last few years Lafín underwent a digital transformation and became omnichannel by creating a fully-digital user experience for requesting loans.";
+        _classes[17]._values["issuerName"].stringValue = "Lafín";
+        _classes[17]._values["issuerType"].stringValue = "LTD";
+        _classes[17]._values["issuerJurisdiction"].stringValue = "MX";
+        _classes[17]._values["issuerURL"].stringValue = "https://www.lafin.mx/";
+        _classes[17]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Lafin.png";
+
+        _classes[17]._values["fundType"].stringValue = "corporate";  
+        _classes[17]._values["shareValue"].uintValue = 1;  
+        _classes[17]._values["currency"].stringValue = "USDC";  
+
+        _classes[17]._values["maxiumSupply"].uintValue = 271994;  
+        _classes[17]._values["callable"].boolValue = true;  
+        _classes[17]._values["maturityPeriod"].uintValue = 465*60*60*24;  
+        _classes[17]._values["coupon"].boolValue = true;  
+        _classes[17]._values["couponRate"].uintValue = 12916;  
+        _classes[17]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[17]._values["fixed-rate"].boolValue = true;  
+        _classes[17]._values["APY"].uintValue = 155000;  
+        _classes[17]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=D6LbjpkisC8QcnBEpFgRiRN7QLT3CWx8FAWdM3dbQu5H";
+        emit classCreated(address(this), 17);
+
+////////////////////////////////////////////////////////
+
+        _classes[18]._values["symbol"].stringValue = "Adiante - deal 2 -Unitranche Loan";
+        _classes[18]._values["category"].stringValue = "loan";
+        _classes[18]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[18]._values["childCategory"].stringValue = "invoice advance";
+        
+        _classes[18]._values["description"].stringValue = unicode"Adiante is a Brazilian fintech specialized in discounting SME’s receivables by leveraging a proprietary AI-based underwriting algorithm. Founded by ex-Citibank Gustavo Blasco and part of GCB Group, a seasoned investments/capital markets holding, the company has been rapidly growing their loan origination (US$ 25m in 2021) at the same time as maintaining healthy NPL metrics. To support their growth, Adiante raised a US$ 1m with Credix in an off-balance Debenture structure.";
+        _classes[18]._values["issuerName"].stringValue = "Adiante";
+        _classes[18]._values["issuerType"].stringValue = "LTD";
+        _classes[18]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[18]._values["issuerURL"].stringValue = "https://adiantesa.com/";
+        _classes[18]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/adiante-branca.png";
+
+        _classes[18]._values["fundType"].stringValue = "corporate";  
+        _classes[18]._values["shareValue"].uintValue = 1;  
+        _classes[18]._values["currency"].stringValue = "USDC";  
+
+        _classes[18]._values["maxiumSupply"].uintValue = 1000000;  
+        _classes[18]._values["callable"].boolValue = true;  
+        _classes[18]._values["maturityPeriod"].uintValue = 512*60*60*24;  
+        _classes[18]._values["coupon"].boolValue = true;  
+        _classes[18]._values["couponRate"].uintValue = 11250;  
+        _classes[18]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[18]._values["fixed-rate"].boolValue = true;  
+        _classes[18]._values["APY"].uintValue = 135000;  
+        _classes[18]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=CDa4HeY2GPJiSexhJbs1NENFBXrq5fXhcFjnURGxQmRH";
+        emit classCreated(address(this), 18);
+
+////////////////////////////////////////////////////////
+
+        _classes[19]._values["symbol"].stringValue = "Tecredi - deal 5 -Senior Loan";
+        _classes[19]._values["category"].stringValue = "loan";
+        _classes[19]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[19]._values["childCategory"].stringValue = "asset-backed car loan";
+        
+        _classes[19]._values["description"].stringValue = unicode"Tecredi is a fintech providing auto-finance to used car buyers in Brazil. Bootstrapped by a seasoned management team with more than 11 years of experience with car-financing in the region, they built a strong network of partnerships with resellers and insurance companies, which, coupled with the all-asset pledge on the vehicles through a conservative LTV, contribute to their very healthy NPLs. Credix and Tecredi raised a US$ 3m deal in an off-balance Debenture structure to support their loan origination growth.";
+        _classes[19]._values["issuerName"].stringValue = "Tecredi";
+        _classes[19]._values["issuerType"].stringValue = "LTD";
+        _classes[19]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[19]._values["issuerURL"].stringValue = "https://www.tecredi.com.br/";
+        _classes[19]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Tecredi.png";
+
+        _classes[19]._values["fundType"].stringValue = "corporate";  
+        _classes[19]._values["shareValue"].uintValue = 1;  
+        _classes[19]._values["currency"].stringValue = "USDC";  
+
+        _classes[19]._values["maxiumSupply"].uintValue = 2400000;  
+        _classes[19]._values["callable"].boolValue = true;  
+        _classes[19]._values["maturityPeriod"].uintValue = 834*60*60*24;  
+        _classes[19]._values["coupon"].boolValue = true;  
+        _classes[19]._values["couponRate"].uintValue = 9166;  
+        _classes[19]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[19]._values["fixed-rate"].boolValue = true;  
+        _classes[19]._values["APY"].uintValue = 110000;  
+        _classes[19]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=BJSVoJa8oroKmay8iZAREktBjhBekEcqs7L6y6Xa7eeo";
+        emit classCreated(address(this), 19);
+
+////////////////////////////////////////////////////////
+
+        _classes[20]._values["symbol"].stringValue = "Tecredi - deal 5 -Junior Loan";
+        _classes[20]._values["category"].stringValue = "loan";
+        _classes[20]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[20]._values["childCategory"].stringValue = "asset-backed car loan";
+        
+        _classes[20]._values["description"].stringValue = unicode"Tecredi is a fintech providing auto-finance to used car buyers in Brazil. Bootstrapped by a seasoned management team with more than 11 years of experience with car-financing in the region, they built a strong network of partnerships with resellers and insurance companies, which, coupled with the all-asset pledge on the vehicles through a conservative LTV, contribute to their very healthy NPLs. Credix and Tecredi raised a US$ 3m deal in an off-balance Debenture structure to support their loan origination growth.";
+        _classes[20]._values["issuerName"].stringValue = "Tecredi";
+        _classes[20]._values["issuerType"].stringValue = "LTD";
+        _classes[20]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[20]._values["issuerURL"].stringValue = "https://www.tecredi.com.br/";
+        _classes[20]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Tecredi.png";
+
+        _classes[20]._values["fundType"].stringValue = "corporate";  
+        _classes[20]._values["shareValue"].uintValue = 1;  
+        _classes[20]._values["currency"].stringValue = "USDC";  
+
+        _classes[20]._values["maxiumSupply"].uintValue = 600000;  
+        _classes[20]._values["callable"].boolValue = true;  
+        _classes[20]._values["maturityPeriod"].uintValue = 834*60*60*24;  
+        _classes[20]._values["coupon"].boolValue = true;  
+        _classes[20]._values["couponRate"].uintValue = 12083;  
+        _classes[20]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[20]._values["fixed-rate"].boolValue = true;  
+        _classes[20]._values["APY"].uintValue = 145000;  
+        _classes[20]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=BJSVoJa8oroKmay8iZAREktBjhBekEcqs7L6y6Xa7eeo";
+        emit classCreated(address(this), 20);
+
+////////////////////////////////////////////////////////
+
+        _classes[21]._values["symbol"].stringValue = "Tecredi - deal 4C -Unitranche Loan";
+        _classes[21]._values["category"].stringValue = "loan";
+        _classes[21]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[21]._values["childCategory"].stringValue = "asset-backed car loan";
+        
+        _classes[21]._values["description"].stringValue = unicode"Tecredi is a fintech providing auto-finance to used car buyers in Brazil. Bootstrapped by a seasoned management team with more than 11 years of experience with car-financing in the region, they built a strong network of partnerships with resellers and insurance companies, which, coupled with the all-asset pledge on the vehicles through a conservative LTV, contribute to their very healthy NPLs. Credix and Tecredi raised a US$ 3m deal in an off-balance Debenture structure to support their loan origination growth.";
+        _classes[21]._values["issuerName"].stringValue = "Tecredi";
+        _classes[21]._values["issuerType"].stringValue = "LTD";
+        _classes[21]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[21]._values["issuerURL"].stringValue = "https://www.tecredi.com.br/";
+        _classes[21]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Tecredi.png";
+
+        _classes[21]._values["fundType"].stringValue = "corporate";  
+        _classes[21]._values["shareValue"].uintValue = 1;  
+        _classes[21]._values["currency"].stringValue = "USDC";  
+
+        _classes[21]._values["maxiumSupply"].uintValue = 895000;  
+        _classes[21]._values["callable"].boolValue = true;  
+        _classes[21]._values["maturityPeriod"].uintValue = 731*60*60*24;  
+        _classes[21]._values["coupon"].boolValue = true;  
+        _classes[21]._values["couponRate"].uintValue = 10500;  
+        _classes[21]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[21]._values["fixed-rate"].boolValue = true;  
+        _classes[21]._values["APY"].uintValue = 126000;  
+        _classes[21]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=dv95jonwMSgRA5hWvzr5vNH1AGHL2d8UC5mMPb5sfcg";
+        emit classCreated(address(this), 21);
+
+////////////////////////////////////////////////////////
+
+        _classes[22]._values["symbol"].stringValue = "Tecredi - deal 4B -Unitranche Loan";
+        _classes[22]._values["category"].stringValue = "loan";
+        _classes[22]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[22]._values["childCategory"].stringValue = "asset-backed car loan";
+        
+        _classes[22]._values["description"].stringValue = unicode"Tecredi is a fintech providing auto-finance to used car buyers in Brazil. Bootstrapped by a seasoned management team with more than 11 years of experience with car-financing in the region, they built a strong network of partnerships with resellers and insurance companies, which, coupled with the all-asset pledge on the vehicles through a conservative LTV, contribute to their very healthy NPLs. Credix and Tecredi raised a US$ 3m deal in an off-balance Debenture structure to support their loan origination growth.";
+        _classes[22]._values["issuerName"].stringValue = "Tecredi";
+        _classes[22]._values["issuerType"].stringValue = "LTD";
+        _classes[22]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[22]._values["issuerURL"].stringValue = "https://www.tecredi.com.br/";
+        _classes[22]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Tecredi.png";
+
+        _classes[22]._values["fundType"].stringValue = "corporate";  
+        _classes[22]._values["shareValue"].uintValue = 1;  
+        _classes[22]._values["currency"].stringValue = "USDC";  
+
+        _classes[22]._values["maxiumSupply"].uintValue = 1000000;  
+        _classes[22]._values["callable"].boolValue = true;  
+        _classes[22]._values["maturityPeriod"].uintValue = 719*60*60*24;  
+        _classes[22]._values["coupon"].boolValue = true;  
+        _classes[22]._values["couponRate"].uintValue = 10500;  
+        _classes[22]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[22]._values["fixed-rate"].boolValue = true;  
+        _classes[22]._values["APY"].uintValue = 126000;  
+        _classes[22]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=3jhQLsqq8eY8r1yQPDVnonUBh598LN1AZcxAJYChxNhJ";
+        emit classCreated(address(this), 22);
+
+////////////////////////////////////////////////////////
+
+        _classes[23]._values["symbol"].stringValue = "Tecredi - deal 4A -Unitranche Loan";
+        _classes[23]._values["category"].stringValue = "loan";
+        _classes[23]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[23]._values["childCategory"].stringValue = "asset-backed car loan";
+        
+        _classes[23]._values["description"].stringValue = unicode"Tecredi is a fintech providing auto-finance to used car buyers in Brazil. Bootstrapped by a seasoned management team with more than 11 years of experience with car-financing in the region, they built a strong network of partnerships with resellers and insurance companies, which, coupled with the all-asset pledge on the vehicles through a conservative LTV, contribute to their very healthy NPLs. Credix and Tecredi raised a US$ 3m deal in an off-balance Debenture structure to support their loan origination growth.";
+        _classes[23]._values["issuerName"].stringValue = "Tecredi";
+        _classes[23]._values["issuerType"].stringValue = "LTD";
+        _classes[23]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[23]._values["issuerURL"].stringValue = "https://www.tecredi.com.br/";
+        _classes[23]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Tecredi.png";
+
+        _classes[23]._values["fundType"].stringValue = "corporate";  
+        _classes[23]._values["shareValue"].uintValue = 1;  
+        _classes[23]._values["currency"].stringValue = "USDC";  
+
+        _classes[23]._values["maxiumSupply"].uintValue = 105000;  
+        _classes[23]._values["callable"].boolValue = true;  
+        _classes[23]._values["maturityPeriod"].uintValue = 717*60*60*24;  
+        _classes[23]._values["coupon"].boolValue = true;  
+        _classes[23]._values["couponRate"].uintValue = 10500;  
+        _classes[23]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[23]._values["fixed-rate"].boolValue = true;  
+        _classes[23]._values["APY"].uintValue = 126000;  
+        _classes[23]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=3FMwb7SbSnm3X7aSePyV9gpEYqDSwE7smNMNZoxSM4up";
+        emit classCreated(address(this), 23);
+
+////////////////////////////////////////////////////////
+
+        _classes[24]._values["symbol"].stringValue = "Tecredi - deal 3 -Unitranche Loan";
+        _classes[24]._values["category"].stringValue = "loan";
+        _classes[24]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[24]._values["childCategory"].stringValue = "asset-backed car loan";
+        
+        _classes[24]._values["description"].stringValue = unicode"Tecredi is a fintech providing auto-finance to used car buyers in Brazil. Bootstrapped by a seasoned management team with more than 11 years of experience with car-financing in the region, they built a strong network of partnerships with resellers and insurance companies, which, coupled with the all-asset pledge on the vehicles through a conservative LTV, contribute to their very healthy NPLs. Credix and Tecredi raised a US$ 3m deal in an off-balance Debenture structure to support their loan origination growth.";
+        _classes[24]._values["issuerName"].stringValue = "Tecredi";
+        _classes[24]._values["issuerType"].stringValue = "LTD";
+        _classes[24]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[24]._values["issuerURL"].stringValue = "https://www.tecredi.com.br/";
+        _classes[24]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Tecredi.png";
+
+        _classes[24]._values["fundType"].stringValue = "corporate";  
+        _classes[24]._values["shareValue"].uintValue = 1;  
+        _classes[24]._values["currency"].stringValue = "USDC";  
+
+        _classes[24]._values["maxiumSupply"].uintValue = 750000;  
+        _classes[24]._values["callable"].boolValue = true;  
+        _classes[24]._values["maturityPeriod"].uintValue = 667*60*60*24;  
+        _classes[24]._values["coupon"].boolValue = true;  
+        _classes[24]._values["couponRate"].uintValue = 10500;  
+        _classes[24]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[24]._values["fixed-rate"].boolValue = true;  
+        _classes[24]._values["APY"].uintValue = 126000;  
+        _classes[24]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=EnMa4fdxLkHdTRdaqLbjVPSxLWvq9n68YzK8RYZWFuoP";
+        emit classCreated(address(this), 24);
     }
    
 }
