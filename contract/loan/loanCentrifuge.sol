@@ -1014,7 +1014,7 @@ contract Token is ERC3475 {
         _classes[10]._values["symbol"].stringValue = "Fortunafi-Series 1 -Junior Loan";
         _classes[10]._values["category"].stringValue = "loan";
         _classes[10]._values["subcategory"].stringValue = "asset-backed loan";
-        _classes[10]._values["childCategory"].stringValue = "revenue based financing";
+        _classes[10]._values["childCategory"].stringValue = "whole loan";
         
         _classes[10]._values["description"].stringValue = unicode"Fortunafi Asset Management is a technology enabled revenue based finance provider. Revenue based financing provides capital to small or growing businesses in return for a fixed percentage of ongoing gross revenues. Thus payments increase and decrease based on business revenues, typically measured as monthly revenue. Usually the returns to the investor continue until the initial capital amount, plus a multiple (also known as a cap) is repaid. This Tinlake pool is composed of a portfolio of revenue based financing agreements with an average maturity of twenty four months.";
         _classes[10]._values["issuerName"].stringValue = "Fortunafi";
@@ -1042,7 +1042,7 @@ contract Token is ERC3475 {
 
 ////////////////////////////////////////////////////////
 
-        _classes[11]._values["symbol"].stringValue = "BlockTower-Series 1 -Senior Loan";
+        _classes[11]._values["symbol"].stringValue = "BlockTower-Series 1 -Junior Loan";
         _classes[11]._values["category"].stringValue = "loan";
         _classes[11]._values["subcategory"].stringValue = "asset-backed loan";
         _classes[11]._values["childCategory"].stringValue = "structured credit";
@@ -1070,6 +1070,195 @@ contract Token is ERC3475 {
         _classes[11]._values["APY"].uintValue = 40000;  
         _classes[11]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x4597f91cC06687Bdb74147C80C097A79358Ed29b";
         emit classCreated(address(this), 11);
+
+////////////////////////////////////////////////////////
+
+        _classes[12]._values["symbol"].stringValue = "BlockTower-Series 1 -Senior Loan";
+        _classes[12]._values["category"].stringValue = "loan";
+        _classes[12]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[12]._values["childCategory"].stringValue = "whole loan";
+        
+        _classes[12]._values["description"].stringValue = unicode"BlockTower Credit is the credit franchise of BlockTower Capital, an SEC-registered digital asset and blockchain investment firm founded in 2017. Within BlockTower Credit, we apply the skills of professional underwriting, structuring and investing at the intersection of real-world credit (a massive but anachronistic traditional industry) and crypto. This Tinlake Pool deploys capital into Structured Credit products will have an investment-grade rating and typically maintain a weighted average life (WAL) of less than four years. The Structured Credit products will generally fall into three major buckets: consumer ABS, auto ABS, and CLO.";
+        _classes[12]._values["issuerName"].stringValue = "BlockTower";
+        _classes[12]._values["issuerType"].stringValue = "LTD";
+        _classes[12]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[12]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
+        _classes[12]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
+        _classes[12]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/BT1.pdf"
+        ];
+        _classes[12]._values["fundType"].stringValue = "corporate";  
+        _classes[12]._values["shareValue"].uintValue = 1;  
+        _classes[12]._values["currency"].stringValue = "DAI";  
+
+        _classes[12]._values["maxiumSupply"].uintValue = 20000000;  
+        _classes[12]._values["callable"].boolValue = true;  
+        _classes[12]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[12]._values["coupon"].boolValue = true;  
+        _classes[12]._values["couponRate"].uintValue = 3333;  
+        _classes[12]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[12]._values["fixed-rate"].boolValue = false;  
+        _classes[12]._values["APY"].uintValue = ;  
+        _classes[12]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x4597f91cC06687Bdb74147C80C097A79358Ed29b";
+        emit classCreated(address(this), 12);
+
+////////////////////////////////////////////////////////
+
+        _classes[13]._values["symbol"].stringValue = "BlockTower-Series 2 -Senior Loan";
+        _classes[13]._values["category"].stringValue = "loan";
+        _classes[13]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[13]._values["childCategory"].stringValue = "debt facilitie";
+        
+        _classes[13]._values["description"].stringValue = unicode"BlockTower Credit is the credit franchise of BlockTower Capital, an SEC-registered digital asset and blockchain investment firm founded in 2017. Within BlockTower Credit, we apply the skills of professional underwriting, structuring and investing at the intersection of real-world credit (a massive but anachronistic traditional industry) and crypto. This Tinlake Pool deploys capital into Structured Credit products will have an investment-grade rating and typically maintain a weighted average life (WAL) of less than four years. The Structured Credit products will generally fall into three major buckets: consumer ABS, auto ABS, and CLO.";
+        _classes[13]._values["issuerName"].stringValue = "BlockTower";
+        _classes[13]._values["issuerType"].stringValue = "LTD";
+        _classes[13]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[13]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
+        _classes[13]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
+        _classes[13]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/BT2.pdf"
+        ];
+        _classes[13]._values["fundType"].stringValue = "corporate";  
+        _classes[13]._values["shareValue"].uintValue = 1;  
+        _classes[13]._values["currency"].stringValue = "DAI";  
+
+        _classes[13]._values["maxiumSupply"].uintValue = 0;  
+        _classes[13]._values["callable"].boolValue = true;  
+        _classes[13]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[13]._values["coupon"].boolValue = true;  
+        _classes[13]._values["couponRate"].uintValue = 3333;  
+        _classes[13]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[13]._values["fixed-rate"].boolValue = ture;  
+        _classes[13]._values["APY"].uintValue = 40000;  
+        _classes[13]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xB5c08534d1E73582FBd79e7C45694CAD6A5C5aB2";
+        emit classCreated(address(this), 13);
+
+////////////////////////////////////////////////////////
+
+        _classes[14]._values["symbol"].stringValue = "BlockTower-Series 2 -Junior Loan";
+        _classes[14]._values["category"].stringValue = "loan";
+        _classes[14]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[14]._values["childCategory"].stringValue = "debt facilitie";
+        
+        _classes[14]._values["description"].stringValue = unicode"BlockTower Credit is the credit franchise of BlockTower Capital, an SEC-registered digital asset and blockchain investment firm founded in 2017. Within BlockTower Credit, we apply the skills of professional underwriting, structuring and investing at the intersection of real-world credit (a massive but anachronistic traditional industry) and crypto. This Tinlake Pool deploys capital into Structured Credit products will have an investment-grade rating and typically maintain a weighted average life (WAL) of less than four years. The Structured Credit products will generally fall into three major buckets: consumer ABS, auto ABS, and CLO.";
+        _classes[14]._values["issuerName"].stringValue = "BlockTower";
+        _classes[14]._values["issuerType"].stringValue = "LTD";
+        _classes[14]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[14]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
+        _classes[14]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
+        _classes[14]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/BT2.pdf"
+        ];
+        _classes[14]._values["fundType"].stringValue = "corporate";  
+        _classes[14]._values["shareValue"].uintValue = 1;  
+        _classes[14]._values["currency"].stringValue = "DAI";  
+
+        _classes[14]._values["maxiumSupply"].uintValue = 30000000;  
+        _classes[14]._values["callable"].boolValue = true;  
+        _classes[14]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[14]._values["coupon"].boolValue = true;  
+        _classes[14]._values["couponRate"].uintValue = ;  
+        _classes[14]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[14]._values["fixed-rate"].boolValue = false;  
+        _classes[14]._values["APY"].uintValue = ;  
+        _classes[14]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xB5c08534d1E73582FBd79e7C45694CAD6A5C5aB2";
+        emit classCreated(address(this), 14);
+
+////////////////////////////////////////////////////////
+
+        _classes[15]._values["symbol"].stringValue = "New Silver-Series 2 -Senior Loan";
+        _classes[15]._values["category"].stringValue = "loan";
+        _classes[15]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[15]._values["childCategory"].stringValue = "real estate bridge loan";
+        
+        _classes[15]._values["description"].stringValue = unicode"Founded in 2018, New Silver is a technology enabled non-bank lender primarily focused on providing real estate-backed financing for the United States “fix and flip” sector with a concentration on single-family residential assets. Bridge loans, also referred to as fix and flip loans allow real estate investors to finance both the purchase and the construction, or in some cases, refinance an existing investment property with sufficient equity. This Tinlake pool is financing a portfolio of real estate bridge loans that are extended to real estate developers with a maturity of twelve to twenty four months.";
+        _classes[15]._values["issuerName"].stringValue = "New Silver";
+        _classes[15]._values["issuerType"].stringValue = "LTD";
+        _classes[15]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[15]._values["issuerURL"].stringValue = "https://newsilver.com/";
+        _classes[15]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/New%20Silver.png";
+        _classes[15]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/NS2.pdf"
+        ];
+        _classes[15]._values["fundType"].stringValue = "corporate";  
+        _classes[15]._values["shareValue"].uintValue = 1;  
+        _classes[15]._values["currency"].stringValue = "DAI";  
+
+        _classes[15]._values["maxiumSupply"].uintValue = 7000000;  
+        _classes[15]._values["callable"].boolValue = true;  
+        _classes[15]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[15]._values["coupon"].boolValue = true;  
+        _classes[15]._values["couponRate"].uintValue = 3333;  
+        _classes[15]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[15]._values["fixed-rate"].boolValue = ture;  
+        _classes[15]._values["APY"].uintValue = 40000;  
+        _classes[15]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x53b2d22d07E069a3b132BfeaaD275b10273d381E";
+        emit classCreated(address(this), 15);
+
+////////////////////////////////////////////////////////
+
+        _classes[16]._values["symbol"].stringValue = "New Silver-Series 2 -Junior Loan";
+        _classes[16]._values["category"].stringValue = "loan";
+        _classes[16]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[16]._values["childCategory"].stringValue = "real estate bridge loan";
+        
+        _classes[16]._values["description"].stringValue = unicode"Founded in 2018, New Silver is a technology enabled non-bank lender primarily focused on providing real estate-backed financing for the United States “fix and flip” sector with a concentration on single-family residential assets. Bridge loans, also referred to as fix and flip loans allow real estate investors to finance both the purchase and the construction, or in some cases, refinance an existing investment property with sufficient equity. This Tinlake pool is financing a portfolio of real estate bridge loans that are extended to real estate developers with a maturity of twelve to twenty four months.";
+        _classes[16]._values["issuerName"].stringValue = "New Silver";
+        _classes[16]._values["issuerType"].stringValue = "LTD";
+        _classes[16]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[16]._values["issuerURL"].stringValue = "https://newsilver.com/";
+        _classes[16]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/New%20Silver.png";
+        _classes[16]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/NS2.pdf"
+        ];
+        _classes[16]._values["fundType"].stringValue = "corporate";  
+        _classes[16]._values["shareValue"].uintValue = 1;  
+        _classes[16]._values["currency"].stringValue = "DAI";  
+
+        _classes[16]._values["maxiumSupply"].uintValue = 7000000;  
+        _classes[16]._values["callable"].boolValue = true;  
+        _classes[16]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[16]._values["coupon"].boolValue = true;  
+        _classes[16]._values["couponRate"].uintValue = ;  
+        _classes[16]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[16]._values["fixed-rate"].boolValue = false;  
+        _classes[16]._values["APY"].uintValue = ;  
+        _classes[16]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x53b2d22d07E069a3b132BfeaaD275b10273d381E";
+        emit classCreated(address(this), 16);
+
+////////////////////////////////////////////////////////
+
+        _classes[17]._values["symbol"].stringValue = "New Silver-Series 2 -Junior Loan";
+        _classes[17]._values["category"].stringValue = "loan";
+        _classes[17]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[17]._values["childCategory"].stringValue = "real estate bridge loan";
+        
+        _classes[17]._values["description"].stringValue = unicode"Founded in 2018, New Silver is a technology enabled non-bank lender primarily focused on providing real estate-backed financing for the United States “fix and flip” sector with a concentration on single-family residential assets. Bridge loans, also referred to as fix and flip loans allow real estate investors to finance both the purchase and the construction, or in some cases, refinance an existing investment property with sufficient equity. This Tinlake pool is financing a portfolio of real estate bridge loans that are extended to real estate developers with a maturity of twelve to twenty four months.";
+        _classes[17]._values["issuerName"].stringValue = "New Silver";
+        _classes[17]._values["issuerType"].stringValue = "LTD";
+        _classes[17]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[17]._values["issuerURL"].stringValue = "https://newsilver.com/";
+        _classes[17]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/New%20Silver.png";
+        _classes[17]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/NS2.pdf"
+        ];
+        _classes[17]._values["fundType"].stringValue = "corporate";  
+        _classes[17]._values["shareValue"].uintValue = 1;  
+        _classes[17]._values["currency"].stringValue = "DAI";  
+
+        _classes[17]._values["maxiumSupply"].uintValue = 7000000;  
+        _classes[17]._values["callable"].boolValue = true;  
+        _classes[17]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[17]._values["coupon"].boolValue = true;  
+        _classes[17]._values["couponRate"].uintValue = ;  
+        _classes[17]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[17]._values["fixed-rate"].boolValue = false;  
+        _classes[17]._values["APY"].uintValue = ;  
+        _classes[17]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x53b2d22d07E069a3b132BfeaaD275b10273d381E";
+        emit classCreated(address(this), 17);
+
+
+
 
 
 
