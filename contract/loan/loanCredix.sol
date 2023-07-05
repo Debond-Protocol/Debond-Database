@@ -1126,13 +1126,13 @@ contract Token is ERC3475 {
 
 ///////////////////////////////////////////////////////////////
 
-        _classes[16]._values["symbol"].stringValue = "Lafín - deal 1 -Senior Loan";
+        _classes[16]._values["symbol"].stringValue = "Lafin - deal 1 -Senior Loan";
         _classes[16]._values["category"].stringValue = "loan";
         _classes[16]._values["subcategory"].stringValue = "asset-backed loan";
         _classes[16]._values["childCategory"].stringValue = "direct consumer loan";
         
-        _classes[16]._values["description"].stringValue = unicode"Lafín is a microfinance company focused on providing direct consumer loans to the lower socioeconomic sectors of Mexico. They have 3 main products: individual loans, group loans and motorcycle loans (leasing). Since 2008, they've been dedicated to providing tailored credit and an exceptional customer experience to help people achieve their business goals. Initially focused on expanding through physical branches, in the last few years Lafín underwent a digital transformation and became omnichannel by creating a fully-digital user experience for requesting loans.";
-        _classes[16]._values["issuerName"].stringValue = "Lafín";
+        _classes[16]._values["description"].stringValue = unicode"Lafin is a microfinance company focused on providing direct consumer loans to the lower socioeconomic sectors of Mexico. They have 3 main products: individual loans, group loans and motorcycle loans (leasing). Since 2008, they've been dedicated to providing tailored credit and an exceptional customer experience to help people achieve their business goals. Initially focused on expanding through physical branches, in the last few years Lafín underwent a digital transformation and became omnichannel by creating a fully-digital user experience for requesting loans.";
+        _classes[16]._values["issuerName"].stringValue = "Lafin";
         _classes[16]._values["issuerType"].stringValue = "LTD";
         _classes[16]._values["issuerJurisdiction"].stringValue = "MX";
         _classes[16]._values["issuerURL"].stringValue = "https://www.lafin.mx/";
@@ -1155,13 +1155,13 @@ contract Token is ERC3475 {
 
 ////////////////////////////////////////////////////////
 
-        _classes[17]._values["symbol"].stringValue = "Lafín - deal 1 -Junior Loan";
+        _classes[17]._values["symbol"].stringValue = "Lafin - deal 1 -Junior Loan";
         _classes[17]._values["category"].stringValue = "loan";
         _classes[17]._values["subcategory"].stringValue = "asset-backed loan";
         _classes[17]._values["childCategory"].stringValue = "direct consumer loan";
         
-        _classes[17]._values["description"].stringValue = unicode"Lafín is a microfinance company focused on providing direct consumer loans to the lower socioeconomic sectors of Mexico. They have 3 main products: individual loans, group loans and motorcycle loans (leasing). Since 2008, they've been dedicated to providing tailored credit and an exceptional customer experience to help people achieve their business goals. Initially focused on expanding through physical branches, in the last few years Lafín underwent a digital transformation and became omnichannel by creating a fully-digital user experience for requesting loans.";
-        _classes[17]._values["issuerName"].stringValue = "Lafín";
+        _classes[17]._values["description"].stringValue = unicode"Lafin is a microfinance company focused on providing direct consumer loans to the lower socioeconomic sectors of Mexico. They have 3 main products: individual loans, group loans and motorcycle loans (leasing). Since 2008, they've been dedicated to providing tailored credit and an exceptional customer experience to help people achieve their business goals. Initially focused on expanding through physical branches, in the last few years Lafín underwent a digital transformation and became omnichannel by creating a fully-digital user experience for requesting loans.";
+        _classes[17]._values["issuerName"].stringValue = "Lafin";
         _classes[17]._values["issuerType"].stringValue = "LTD";
         _classes[17]._values["issuerJurisdiction"].stringValue = "MX";
         _classes[17]._values["issuerURL"].stringValue = "https://www.lafin.mx/";
