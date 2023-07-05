@@ -1228,34 +1228,97 @@ contract Token is ERC3475 {
 
 ////////////////////////////////////////////////////////
 
-        _classes[17]._values["symbol"].stringValue = "New Silver-Series 2 -Junior Loan";
+        _classes[17]._values["symbol"].stringValue = "Cauris Global Fintech-Fund 1 -Senior Loan";
         _classes[17]._values["category"].stringValue = "loan";
         _classes[17]._values["subcategory"].stringValue = "asset-backed loan";
-        _classes[17]._values["childCategory"].stringValue = "real estate bridge loan";
+        _classes[17]._values["childCategory"].stringValue = "fintech debt financing";
         
-        _classes[17]._values["description"].stringValue = unicode"Founded in 2018, New Silver is a technology enabled non-bank lender primarily focused on providing real estate-backed financing for the United States “fix and flip” sector with a concentration on single-family residential assets. Bridge loans, also referred to as fix and flip loans allow real estate investors to finance both the purchase and the construction, or in some cases, refinance an existing investment property with sufficient equity. This Tinlake pool is financing a portfolio of real estate bridge loans that are extended to real estate developers with a maturity of twelve to twenty four months.";
-        _classes[17]._values["issuerName"].stringValue = "New Silver";
+        _classes[17]._values["description"].stringValue = unicode"Cauris is a DeFi debt fund with the mission of giving access to capital to 100 million people across the world. The pool seeks to generate uncorrelated and excess risk-adjusted returns to its investors by providing secured loans to fintechs that lend to consumers and small businesses in the Global South and Europe. Cauris was founded in 2021 and has since originated over $5M in loans that impacted over 300,000 borrowers. This Tinlake pool will consist of tranches of secured debentures with maturities ranging from one to three years.";
+        _classes[17]._values["issuerName"].stringValue = "Cauris Global Fintech";
         _classes[17]._values["issuerType"].stringValue = "LTD";
         _classes[17]._values["issuerJurisdiction"].stringValue = "US";
-        _classes[17]._values["issuerURL"].stringValue = "https://newsilver.com/";
-        _classes[17]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/New%20Silver.png";
+        _classes[17]._values["issuerURL"].stringValue = "https://caurisfinance.com/";
+        _classes[17]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Cauris.png";
         _classes[17]._values["issuerDocURL"].stringValue = [
-            "https://storage.googleapis.com/tinlake/docs/summaries/NS2.pdf"
+            "https://storage.googleapis.com/tinlake/docs/summaries/CGFF1.pdf"
         ];
         _classes[17]._values["fundType"].stringValue = "corporate";  
         _classes[17]._values["shareValue"].uintValue = 1;  
         _classes[17]._values["currency"].stringValue = "DAI";  
 
-        _classes[17]._values["maxiumSupply"].uintValue = 7000000;  
+        _classes[17]._values["maxiumSupply"].uintValue = 4500000;  
         _classes[17]._values["callable"].boolValue = true;  
         _classes[17]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[17]._values["coupon"].boolValue = true;  
-        _classes[17]._values["couponRate"].uintValue = ;  
+        _classes[17]._values["couponRate"].uintValue = 7083;  
         _classes[17]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[17]._values["fixed-rate"].boolValue = false;  
-        _classes[17]._values["APY"].uintValue = ;  
+        _classes[17]._values["fixed-rate"].boolValue = ture;  
+        _classes[17]._values["APY"].uintValue = 85000;  
         _classes[17]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x53b2d22d07E069a3b132BfeaaD275b10273d381E";
         emit classCreated(address(this), 17);
+
+////////////////////////////////////////////////////////
+
+        _classes[18]._values["symbol"].stringValue = "Cauris Global Fintech-Fund 1 -Junior Loan";
+        _classes[18]._values["category"].stringValue = "loan";
+        _classes[18]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[18]._values["childCategory"].stringValue = "fintech debt financing";
+        
+        _classes[18]._values["description"].stringValue = unicode"Cauris is a DeFi debt fund with the mission of giving access to capital to 100 million people across the world. The pool seeks to generate uncorrelated and excess risk-adjusted returns to its investors by providing secured loans to fintechs that lend to consumers and small businesses in the Global South and Europe. Cauris was founded in 2021 and has since originated over $5M in loans that impacted over 300,000 borrowers. This Tinlake pool will consist of tranches of secured debentures with maturities ranging from one to three years.";
+        _classes[18]._values["issuerName"].stringValue = "Cauris Global Fintech";
+        _classes[18]._values["issuerType"].stringValue = "LTD";
+        _classes[18]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[18]._values["issuerURL"].stringValue = "https://caurisfinance.com/";
+        _classes[18]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Cauris.png";
+        _classes[18]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/CGFF1.pdf"
+        ];
+        _classes[18]._values["fundType"].stringValue = "corporate";  
+        _classes[18]._values["shareValue"].uintValue = 1;  
+        _classes[18]._values["currency"].stringValue = "DAI";  
+
+        _classes[18]._values["maxiumSupply"].uintValue = 9000000;  
+        _classes[18]._values["callable"].boolValue = true;  
+        _classes[18]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[18]._values["coupon"].boolValue = true;  
+        _classes[18]._values["couponRate"].uintValue = ;  
+        _classes[18]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[18]._values["fixed-rate"].boolValue = false;  
+        _classes[18]._values["APY"].uintValue = ;  
+        _classes[18]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x53b2d22d07E069a3b132BfeaaD275b10273d381E";
+        emit classCreated(address(this), 18);
+
+////////////////////////////////////////////////////////
+
+        _classes[19]._values["symbol"].stringValue = "ALT 1.0 SPV -Senior Loan";
+        _classes[19]._values["category"].stringValue = "loan";
+        _classes[19]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[19]._values["childCategory"].stringValue = "invoice financing and accounts receivable";
+        
+        _classes[19]._values["description"].stringValue = unicode"Alternative is reimagining financial services, beginning with lending, providing companies with simple, customizable financing solutions. We are fully tech-enabled and offer solutions directly to businesses as well as to businesses' end-customers. Our solutions are unique, simplistic and streamline the entire financing process so that companies may access funding on their terms.";
+        _classes[19]._values["issuerName"].stringValue = "Cauris Global Fintech";
+        _classes[19]._values["issuerType"].stringValue = "LTD";
+        _classes[19]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[19]._values["issuerURL"].stringValue = "https://caurisfinance.com/";
+        _classes[19]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Cauris.png";
+        _classes[19]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/CGFF1.pdf"
+        ];
+        _classes[19]._values["fundType"].stringValue = "corporate";  
+        _classes[19]._values["shareValue"].uintValue = 1;  
+        _classes[19]._values["currency"].stringValue = "DAI";  
+
+        _classes[19]._values["maxiumSupply"].uintValue = 9000000;  
+        _classes[19]._values["callable"].boolValue = true;  
+        _classes[19]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[19]._values["coupon"].boolValue = true;  
+        _classes[19]._values["couponRate"].uintValue = ;  
+        _classes[19]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[19]._values["fixed-rate"].boolValue = false;  
+        _classes[19]._values["APY"].uintValue = ;  
+        _classes[19]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x53b2d22d07E069a3b132BfeaaD275b10273d381E";
+        emit classCreated(address(this), 19);
+
 
 
 
