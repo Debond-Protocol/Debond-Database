@@ -1445,7 +1445,7 @@ contract Token is ERC3475 {
 
 ////////////////////////////////////////////////////////
 
-        _classes[27]._values["symbol"].stringValue = "Divibank - deal 1 -Super Senior Loan";
+        _classes[27]._values["symbol"].stringValue = "Divibank - deal 1 -Senior Loan";
         _classes[27]._values["category"].stringValue = "loan";
         _classes[27]._values["subcategory"].stringValue = "asset-backed loan";
         _classes[27]._values["childCategory"].stringValue = "revenue-based financing";
@@ -1461,7 +1461,7 @@ contract Token is ERC3475 {
         _classes[27]._values["shareValue"].uintValue = 1;  
         _classes[27]._values["currency"].stringValue = "USDC";  
 
-        _classes[27]._values["maxiumSupply"].uintValue = 1500000;  
+        _classes[27]._values["maxiumSupply"].uintValue = 1000000;  
         _classes[27]._values["callable"].boolValue = true;  
         _classes[27]._values["maturityPeriod"].uintValue = 257*60*60*24;  
         _classes[27]._values["coupon"].boolValue = true;  
@@ -1471,6 +1471,64 @@ contract Token is ERC3475 {
         _classes[27]._values["APY"].uintValue = 105000;  
         _classes[27]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=89xZFZ4LGo7obbTcSc4prY8sDPG5j9aBbkztZHrfYVJS";
         emit classCreated(address(this), 27);
+
+////////////////////////////////////////////////////////
+
+        _classes[28]._values["symbol"].stringValue = "Divibank - deal 1 -Junior Loan";
+        _classes[28]._values["category"].stringValue = "loan";
+        _classes[28]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[28]._values["childCategory"].stringValue = "revenue-based financing";
+        
+        _classes[28]._values["description"].stringValue = unicode"Divibank is a data-driven financing platform that provides non-dilutive growth capital to digital businesses in Brazil. Founded by two ex-Goldman Sachs bankers, the company raised US$ 3.6m in a seed round with Maya Capital and BTV in early 2022. To continue growing their US$ 4m loan book, Divibank structured a US$ 5.5m debt facility led by NY-based specialized credit fund Almavest, in which the Credix platform participated as senior investor.";
+        _classes[28]._values["issuerName"].stringValue = "Divibank";
+        _classes[28]._values["issuerType"].stringValue = "LTD";
+        _classes[28]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[28]._values["issuerURL"].stringValue = "https://www.divibank.co/";
+        _classes[28]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Divibank.png";
+
+        _classes[28]._values["fundType"].stringValue = "corporate";  
+        _classes[28]._values["shareValue"].uintValue = 1;  
+        _classes[28]._values["currency"].stringValue = "USDC";  
+
+        _classes[28]._values["maxiumSupply"].uintValue = 3000000;  
+        _classes[28]._values["callable"].boolValue = true;  
+        _classes[28]._values["maturityPeriod"].uintValue = 257*60*60*24;  
+        _classes[28]._values["coupon"].boolValue = true;  
+        _classes[28]._values["couponRate"].uintValue = 13750;  
+        _classes[28]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[28]._values["fixed-rate"].boolValue = true;  
+        _classes[28]._values["APY"].uintValue = 165000;  
+        _classes[28]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=89xZFZ4LGo7obbTcSc4prY8sDPG5j9aBbkztZHrfYVJS";
+        emit classCreated(address(this), 28);
+
+////////////////////////////////////////////////////////
+
+        _classes[29]._values["symbol"].stringValue = "A55 - deal 3 -Unitranche Loan";
+        _classes[29]._values["category"].stringValue = "loan";
+        _classes[29]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[29]._values["childCategory"].stringValue = "revenue-based financing";
+        
+        _classes[29]._values["description"].stringValue = unicode"a55 specializes in Revenue Based Financing in Brazil and Mexico, using a proprietary data-science framework for underwriting. The company was founded by a seasoned team with previous experience working in notable TradFi firms, and completed their Series B funding round of US$ 16m in early 2022, led by Movil. Credix and a55 raised a US$ 5m deal in an off-balance Debenture structure to support their loan origination growth in Brazil.";
+        _classes[29]._values["issuerName"].stringValue = "A55";
+        _classes[29]._values["issuerType"].stringValue = "LTD";
+        _classes[29]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[29]._values["issuerURL"].stringValue = "https://www.divibank.co/";
+        _classes[29]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Divibank.png";
+
+        _classes[29]._values["fundType"].stringValue = "corporate";  
+        _classes[29]._values["shareValue"].uintValue = 1;  
+        _classes[29]._values["currency"].stringValue = "USDC";  
+
+        _classes[29]._values["maxiumSupply"].uintValue = 3000000;  
+        _classes[29]._values["callable"].boolValue = true;  
+        _classes[29]._values["maturityPeriod"].uintValue = 257*60*60*24;  
+        _classes[29]._values["coupon"].boolValue = true;  
+        _classes[29]._values["couponRate"].uintValue = 13750;  
+        _classes[29]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[29]._values["fixed-rate"].boolValue = true;  
+        _classes[29]._values["APY"].uintValue = 165000;  
+        _classes[29]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=89xZFZ4LGo7obbTcSc4prY8sDPG5j9aBbkztZHrfYVJS";
+        emit classCreated(address(this), 29);
 
 
     }
