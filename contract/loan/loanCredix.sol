@@ -1384,6 +1384,95 @@ contract Token is ERC3475 {
         _classes[24]._values["APY"].uintValue = 126000;  
         _classes[24]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=EnMa4fdxLkHdTRdaqLbjVPSxLWvq9n68YzK8RYZWFuoP";
         emit classCreated(address(this), 24);
+
+////////////////////////////////////////////////////////
+
+        _classes[25]._values["symbol"].stringValue = "Tecredi - deal 2 -Unitranche Loan";
+        _classes[25]._values["category"].stringValue = "loan";
+        _classes[25]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[25]._values["childCategory"].stringValue = "asset-backed car loan";
+        
+        _classes[25]._values["description"].stringValue = unicode"Tecredi is a fintech providing auto-finance to used car buyers in Brazil. Bootstrapped by a seasoned management team with more than 11 years of experience with car-financing in the region, they built a strong network of partnerships with resellers and insurance companies, which, coupled with the all-asset pledge on the vehicles through a conservative LTV, contribute to their very healthy NPLs. Credix and Tecredi raised a US$ 3m deal in an off-balance Debenture structure to support their loan origination growth.";
+        _classes[25]._values["issuerName"].stringValue = "Tecredi";
+        _classes[25]._values["issuerType"].stringValue = "LTD";
+        _classes[25]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[25]._values["issuerURL"].stringValue = "https://www.tecredi.com.br/";
+        _classes[25]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Tecredi.png";
+
+        _classes[25]._values["fundType"].stringValue = "corporate";  
+        _classes[25]._values["shareValue"].uintValue = 1;  
+        _classes[25]._values["currency"].stringValue = "USDC";  
+
+        _classes[25]._values["maxiumSupply"].uintValue = 750000;  
+        _classes[25]._values["callable"].boolValue = true;  
+        _classes[25]._values["maturityPeriod"].uintValue = 626*60*60*24;  
+        _classes[25]._values["coupon"].boolValue = true;  
+        _classes[25]._values["couponRate"].uintValue = 10500;  
+        _classes[25]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[25]._values["fixed-rate"].boolValue = true;  
+        _classes[25]._values["APY"].uintValue = 126000;  
+        _classes[25]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=GAZv6Nivo8AcAc5bBYsdC8yvgwoJzUtMKNPr8RkgZtVX";
+        emit classCreated(address(this), 25);
+
+////////////////////////////////////////////////////////
+
+        _classes[26]._values["symbol"].stringValue = "Divibank - deal 1 -Super Senior Loan";
+        _classes[26]._values["category"].stringValue = "loan";
+        _classes[26]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[26]._values["childCategory"].stringValue = "revenue-based financing";
+        
+        _classes[26]._values["description"].stringValue = unicode"Divibank is a data-driven financing platform that provides non-dilutive growth capital to digital businesses in Brazil. Founded by two ex-Goldman Sachs bankers, the company raised US$ 3.6m in a seed round with Maya Capital and BTV in early 2022. To continue growing their US$ 4m loan book, Divibank structured a US$ 5.5m debt facility led by NY-based specialized credit fund Almavest, in which the Credix platform participated as senior investor.";
+        _classes[26]._values["issuerName"].stringValue = "Divibank";
+        _classes[26]._values["issuerType"].stringValue = "LTD";
+        _classes[26]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[26]._values["issuerURL"].stringValue = "https://www.divibank.co/";
+        _classes[26]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Divibank.png";
+
+        _classes[26]._values["fundType"].stringValue = "corporate";  
+        _classes[26]._values["shareValue"].uintValue = 1;  
+        _classes[26]._values["currency"].stringValue = "USDC";  
+
+        _classes[26]._values["maxiumSupply"].uintValue = 1500000;  
+        _classes[26]._values["callable"].boolValue = true;  
+        _classes[26]._values["maturityPeriod"].uintValue = 257*60*60*24;  
+        _classes[26]._values["coupon"].boolValue = true;  
+        _classes[26]._values["couponRate"].uintValue = 8750;  
+        _classes[26]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[26]._values["fixed-rate"].boolValue = true;  
+        _classes[26]._values["APY"].uintValue = 105000;  
+        _classes[26]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=89xZFZ4LGo7obbTcSc4prY8sDPG5j9aBbkztZHrfYVJS";
+        emit classCreated(address(this), 26);
+
+////////////////////////////////////////////////////////
+
+        _classes[27]._values["symbol"].stringValue = "Divibank - deal 1 -Super Senior Loan";
+        _classes[27]._values["category"].stringValue = "loan";
+        _classes[27]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[27]._values["childCategory"].stringValue = "revenue-based financing";
+        
+        _classes[27]._values["description"].stringValue = unicode"Divibank is a data-driven financing platform that provides non-dilutive growth capital to digital businesses in Brazil. Founded by two ex-Goldman Sachs bankers, the company raised US$ 3.6m in a seed round with Maya Capital and BTV in early 2022. To continue growing their US$ 4m loan book, Divibank structured a US$ 5.5m debt facility led by NY-based specialized credit fund Almavest, in which the Credix platform participated as senior investor.";
+        _classes[27]._values["issuerName"].stringValue = "Divibank";
+        _classes[27]._values["issuerType"].stringValue = "LTD";
+        _classes[27]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[27]._values["issuerURL"].stringValue = "https://www.divibank.co/";
+        _classes[27]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Divibank.png";
+
+        _classes[27]._values["fundType"].stringValue = "corporate";  
+        _classes[27]._values["shareValue"].uintValue = 1;  
+        _classes[27]._values["currency"].stringValue = "USDC";  
+
+        _classes[27]._values["maxiumSupply"].uintValue = 1500000;  
+        _classes[27]._values["callable"].boolValue = true;  
+        _classes[27]._values["maturityPeriod"].uintValue = 257*60*60*24;  
+        _classes[27]._values["coupon"].boolValue = true;  
+        _classes[27]._values["couponRate"].uintValue = 8750;  
+        _classes[27]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[27]._values["fixed-rate"].boolValue = true;  
+        _classes[27]._values["APY"].uintValue = 105000;  
+        _classes[27]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=89xZFZ4LGo7obbTcSc4prY8sDPG5j9aBbkztZHrfYVJS";
+        emit classCreated(address(this), 27);
+
+
     }
    
 }
