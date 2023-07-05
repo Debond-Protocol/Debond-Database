@@ -696,34 +696,72 @@ contract Token is ERC3475 {
         _classes[0]._values["custodianName"].stringValue = "Centrifuge";
         _classes[0]._values["custodianType"].stringValue = "LTD";
         _classes[0]._values["custodianJurisdiction"].stringValue = "BE";
-        _classes[0]._values["custodianURL"].a
-       
-        _classes[1]._values["symbol"].stringValue = "Atria deal 2 -Super Senior Loan";
+        _classes[0]._values["custodianURL"].stringValue = "https://centrifuge.io";
+        _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/centrifuge.jpg";
+        
+////////////////////////////////////////////////////////
+
+        _classes[1]._values["symbol"].stringValue = "BlockTower-Series 4 -Senior Loan";
         _classes[1]._values["category"].stringValue = "loan";
         _classes[1]._values["subcategory"].stringValue = "asset-backed loan";
-        _classes[1]._values["childCategory"].stringValue = "asset-backed car loan";
+        _classes[1]._values["childCategory"].stringValue = "structured credit";
         
-        _classes[1]._values["description"].stringValue = unicode"Atria is a fintech company established in 2022 that offers specialized services in used-car loan facilitation in Mexico. The firm is steered by a seasoned management team that was previously part of Credito Real’s auto financing division. It operates on a B2B framework, providing support to used-car dealerships. The company has recorded robust performance since October 2022 with its transactions, which are backed by a singular credit fund in the Credix network. Notably, defaults have remained exceptionally low at just 0.3%. The credit fund is currently considering the divestment of the senior tranche in order to focus on risk-adjusted high-yield returns. The yield for the senior tranche is negotiable.";
-        _classes[1]._values["issuerName"].stringValue = "Atria";
+        _classes[1]._values["description"].stringValue = unicode"BlockTower Credit is the credit franchise of BlockTower Capital, an SEC-registered digital asset and blockchain investment firm founded in 2017. Within BlockTower Credit, we apply the skills of professional underwriting, structuring and investing at the intersection of real-world credit (a massive but anachronistic traditional industry) and crypto. This Tinlake Pool deploys capital into Structured Credit products will have an investment-grade rating and typically maintain a weighted average life (WAL) of less than four years. The Structured Credit products will generally fall into three major buckets: consumer ABS, auto ABS, and CLO.";
+        _classes[1]._values["issuerName"].stringValue = "BlockTower";
         _classes[1]._values["issuerType"].stringValue = "LTD";
-        _classes[1]._values["issuerJurisdiction"].stringValue = "MX";
-        _classes[1]._values["issuerURL"].stringValue = "https://atria.la/";
-        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png";
-
+        _classes[1]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[1]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
+        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
+        _classes[1]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/BT4.pdf"
+        ];
         _classes[1]._values["fundType"].stringValue = "corporate";  
         _classes[1]._values["shareValue"].uintValue = 1;  
-        _classes[1]._values["currency"].stringValue = "USDC";  
+        _classes[1]._values["currency"].stringValue = "DAI";  
 
-        _classes[1]._values["maxiumSupply"].uintValue = 1524693;  
+        _classes[1]._values["maxiumSupply"].uintValue = 1200000;  
         _classes[1]._values["callable"].boolValue = true;  
-        _classes[1]._values["maturityPeriod"].uintValue = 103680000;  
+        _classes[1]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[1]._values["coupon"].boolValue = true;  
-        _classes[1]._values["couponRate"].uintValue = 8333;  
-        _classes[1]._values["couponPeriod"].uintValue = 2592000;  
+        _classes[1]._values["couponRate"].uintValue = 11250;  
+        _classes[1]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[1]._values["fixed-rate"].boolValue = true;  
-        _classes[1]._values["APY"].uintValue = 100000;  
-        _classes[1]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=7pTa26B4jHywCtb8kLwZvKEt9Lh1trsD1RWrGi3jMQ9k";
+        _classes[1]._values["APY"].uintValue = 135000;  
+        _classes[1]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x55d86d51Ac3bcAB7ab7d2124931FbA106c8b60c7";
         emit classCreated(address(this), 1);
+
+////////////////////////////////////////////////////////
+
+        _classes[2]._values["symbol"].stringValue = "BlockTower-Series 4 -Senior Loan";
+        _classes[2]._values["category"].stringValue = "loan";
+        _classes[2]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[2]._values["childCategory"].stringValue = "structured credit";
+        
+        _classes[2]._values["description"].stringValue = unicode"BlockTower Credit is the credit franchise of BlockTower Capital, an SEC-registered digital asset and blockchain investment firm founded in 2017. Within BlockTower Credit, we apply the skills of professional underwriting, structuring and investing at the intersection of real-world credit (a massive but anachronistic traditional industry) and crypto. This Tinlake Pool deploys capital into Structured Credit products will have an investment-grade rating and typically maintain a weighted average life (WAL) of less than four years. The Structured Credit products will generally fall into three major buckets: consumer ABS, auto ABS, and CLO.";
+        _classes[2]._values["issuerName"].stringValue = "BlockTower";
+        _classes[2]._values["issuerType"].stringValue = "LTD";
+        _classes[1]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[1]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
+        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
+        _classes[1]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/BT4.pdf"
+        ];
+        _classes[1]._values["fundType"].stringValue = "corporate";  
+        _classes[1]._values["shareValue"].uintValue = 1;  
+        _classes[1]._values["currency"].stringValue = "DAI";  
+
+        _classes[1]._values["maxiumSupply"].uintValue = 1200000;  
+        _classes[1]._values["callable"].boolValue = true;  
+        _classes[1]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[1]._values["coupon"].boolValue = true;  
+        _classes[1]._values["couponRate"].uintValue = 11250;  
+        _classes[1]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[1]._values["fixed-rate"].boolValue = true;  
+        _classes[1]._values["APY"].uintValue = 135000;  
+        _classes[1]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x55d86d51Ac3bcAB7ab7d2124931FbA106c8b60c7";
+        emit classCreated(address(this), 1);
+
+
 
     }
    
