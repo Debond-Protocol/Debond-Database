@@ -1512,23 +1512,82 @@ contract Token is ERC3475 {
         _classes[29]._values["issuerName"].stringValue = "A55";
         _classes[29]._values["issuerType"].stringValue = "LTD";
         _classes[29]._values["issuerJurisdiction"].stringValue = "BR";
-        _classes[29]._values["issuerURL"].stringValue = "https://www.divibank.co/";
-        _classes[29]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Divibank.png";
+        _classes[29]._values["issuerURL"].stringValue = "https://www.a55.tech/";
+        _classes[29]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/EIP-3475/main/test/media/8e36abff206b20109afb8e9f1c2e7572.png";
 
         _classes[29]._values["fundType"].stringValue = "corporate";  
         _classes[29]._values["shareValue"].uintValue = 1;  
         _classes[29]._values["currency"].stringValue = "USDC";  
 
-        _classes[29]._values["maxiumSupply"].uintValue = 3000000;  
+        _classes[29]._values["maxiumSupply"].uintValue = 5000000;  
         _classes[29]._values["callable"].boolValue = true;  
-        _classes[29]._values["maturityPeriod"].uintValue = 257*60*60*24;  
+        _classes[29]._values["maturityPeriod"].uintValue = 693*60*60*24;  
         _classes[29]._values["coupon"].boolValue = true;  
-        _classes[29]._values["couponRate"].uintValue = 13750;  
+        _classes[29]._values["couponRate"].uintValue = 11250;  
         _classes[29]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[29]._values["fixed-rate"].boolValue = true;  
-        _classes[29]._values["APY"].uintValue = 165000;  
-        _classes[29]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=89xZFZ4LGo7obbTcSc4prY8sDPG5j9aBbkztZHrfYVJS";
+        _classes[29]._values["APY"].uintValue = 135000;  
+        _classes[29]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=6p6Hmbja9gy6h1EUvjYcWYCZsTjRGkdmVvJgGwVTWqZY";
         emit classCreated(address(this), 29);
+
+////////////////////////////////////////////////////////
+
+        _classes[30]._values["symbol"].stringValue = "A55 - deal 2 -Unitranche Loan";
+        _classes[30]._values["category"].stringValue = "loan";
+        _classes[30]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[30]._values["childCategory"].stringValue = "revenue-based financing";
+        
+        _classes[30]._values["description"].stringValue = unicode"a55 specializes in Revenue Based Financing in Brazil and Mexico, using a proprietary data-science framework for underwriting. The company was founded by a seasoned team with previous experience working in notable TradFi firms, and completed their Series B funding round of US$ 16m in early 2022, led by Movil. Credix and a55 raised a US$ 5m deal in an off-balance Debenture structure to support their loan origination growth in Brazil.";
+        _classes[30]._values["issuerName"].stringValue = "A55";
+        _classes[30]._values["issuerType"].stringValue = "LTD";
+        _classes[30]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[30]._values["issuerURL"].stringValue = "https://www.a55.tech/";
+        _classes[30]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/EIP-3475/main/test/media/8e36abff206b20109afb8e9f1c2e7572.png";
+
+        _classes[30]._values["fundType"].stringValue = "corporate";  
+        _classes[30]._values["shareValue"].uintValue = 1;  
+        _classes[30]._values["currency"].stringValue = "USDC";  
+
+        _classes[30]._values["maxiumSupply"].uintValue = 3000000;  
+        _classes[30]._values["callable"].boolValue = true;  
+        _classes[30]._values["maturityPeriod"].uintValue = 628*60*60*24;  
+        _classes[30]._values["coupon"].boolValue = true;  
+        _classes[30]._values["couponRate"].uintValue = 11250;  
+        _classes[30]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[30]._values["fixed-rate"].boolValue = true;  
+        _classes[30]._values["APY"].uintValue = 135000;  
+        _classes[30]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=3mVaW3tQV7NSYipz4qMyHva2DFG5Y1Wgd72mkRR9ZYmD";
+        emit classCreated(address(this), 30);
+
+////////////////////////////////////////////////////////
+
+        _classes[31]._values["symbol"].stringValue = "Adiante - deal 1 -Unitranche Loan";
+        _classes[31]._values["category"].stringValue = "loan";
+        _classes[31]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[31]._values["childCategory"].stringValue = "invoice advance";
+        
+        _classes[31]._values["description"].stringValue = unicode"Adiante is a Brazilian fintech specialized in discounting SME’s receivables by leveraging a proprietary AI-based underwriting algorithm. Founded by ex-Citibank Gustavo Blasco and part of GCB Group, a seasoned investments/capital markets holding, the company has been rapidly growing their loan origination (US$ 25m in 2021) at the same time as maintaining healthy NPL metrics. To support their growth, Adiante raised a US$ 3m with Credix in an off-balance Debenture structure.";
+        _classes[31]._values["issuerName"].stringValue = "Adiante";
+        _classes[31]._values["issuerType"].stringValue = "LTD";
+        _classes[31]._values["issuerJurisdiction"].stringValue = "BR";
+        _classes[31]._values["issuerURL"].stringValue = "https://adiantesa.com/";
+        _classes[31]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/adiante-branca.png";
+
+        _classes[31]._values["fundType"].stringValue = "corporate";  
+        _classes[31]._values["shareValue"].uintValue = 1;  
+        _classes[31]._values["currency"].stringValue = "USDC";  
+
+        _classes[31]._values["maxiumSupply"].uintValue = 3000000;  
+        _classes[31]._values["callable"].boolValue = true;  
+        _classes[31]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[31]._values["coupon"].boolValue = true;  
+        _classes[31]._values["couponRate"].uintValue = 11250;  
+        _classes[31]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[31]._values["fixed-rate"].boolValue = true;  
+        _classes[31]._values["APY"].uintValue = 135000;  
+        _classes[31]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=7wTEo6A78a3izB4rUMxjQYrh3Rub6QPkRYqQ9aKfxZ1M";
+        emit classCreated(address(this), 31);
+
 
 
     }
