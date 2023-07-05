@@ -943,7 +943,7 @@ contract Token is ERC3475 {
         _classes[7]._values["couponRate"].uintValue = 4166;  
         _classes[7]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[7]._values["fixed-rate"].boolValue = ture;  
-        _classes[7]._values["APY"].uintValue = 5000;  
+        _classes[7]._values["APY"].uintValue = 50000;  
         _classes[7]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x09e43329552c9D81cF205Fd5f44796fBC40c822e";
         emit classCreated(address(this), 7);
 
@@ -974,40 +974,103 @@ contract Token is ERC3475 {
         _classes[8]._values["couponRate"].uintValue = 4166;  
         _classes[8]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[8]._values["fixed-rate"].boolValue = false;  
-        _classes[8]._values["APY"].uintValue = 5000;  
+        _classes[8]._values["APY"].uintValue = 50000;  
         _classes[8]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x09e43329552c9D81cF205Fd5f44796fBC40c822e";
         emit classCreated(address(this), 8);
 
 //////////////////////////////////////////////////////
 
-        _classes[9]._values["symbol"].stringValue = "REIF Financial Investments Inc. (REIF) -Junior Loan";
+        _classes[9]._values["symbol"].stringValue = "Fortunafi-Series 1 -Senior Loan";
         _classes[9]._values["category"].stringValue = "loan";
         _classes[9]._values["subcategory"].stringValue = "asset-backed loan";
-        _classes[9]._values["childCategory"].stringValue = "commercial real estate";
+        _classes[9]._values["childCategory"].stringValue = "revenue based financing";
         
-        _classes[9]._values["description"].stringValue = unicode"REIF Financial Investments Inc. (REIF) is an asset management company focusing on acquiring commercial real estate assets from established asset originators. REIF was founded in 2021. REIF will loan capital secured by real estate to finance commercial and construction projects. This pool will consist of a portfolio of first and second secured position commercial real estate loans. The initial asset originator is Forge & Foster, a commercial real estate developer based in Ontario, Canada with $250 million CAD in assets under management of commercial real estate. The average maturity of assets is 18 months.";
-        _classes[9]._values["issuerName"].stringValue = "Branch (1754 Factory)";
+        _classes[9]._values["description"].stringValue = unicode"Fortunafi Asset Management is a technology enabled revenue based finance provider. Revenue based financing provides capital to small or growing businesses in return for a fixed percentage of ongoing gross revenues. Thus payments increase and decrease based on business revenues, typically measured as monthly revenue. Usually the returns to the investor continue until the initial capital amount, plus a multiple (also known as a cap) is repaid. This Tinlake pool is composed of a portfolio of revenue based financing agreements with an average maturity of twenty four months.";
+        _classes[9]._values["issuerName"].stringValue = "Fortunafi";
         _classes[9]._values["issuerType"].stringValue = "LTD";
         _classes[9]._values["issuerJurisdiction"].stringValue = "US";
-        _classes[9]._values["issuerURL"].stringValue = "https://www.1754.finance/";
-        _classes[9]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/REIF.png";
+        _classes[9]._values["issuerURL"].stringValue = "https://www.fortunafi.com/";
+        _classes[9]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Fortunafi.png";
         _classes[9]._values["issuerDocURL"].stringValue = [
-            "https://storage.googleapis.com/tinlake/docs/summaries/REIF1.pdf"
+            "https://docsend.com/view/s/gressukfmvcp6uip"
         ];
         _classes[9]._values["fundType"].stringValue = "corporate";  
         _classes[9]._values["shareValue"].uintValue = 1;  
         _classes[9]._values["currency"].stringValue = "DAI";  
 
-        _classes[9]._values["maxiumSupply"].uintValue = 3000000;  
+        _classes[9]._values["maxiumSupply"].uintValue = 0;  
         _classes[9]._values["callable"].boolValue = true;  
         _classes[9]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[9]._values["coupon"].boolValue = true;  
         _classes[9]._values["couponRate"].uintValue = 4166;  
         _classes[9]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[9]._values["fixed-rate"].boolValue = false;  
-        _classes[9]._values["APY"].uintValue = 5000;  
-        _classes[9]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x09e43329552c9D81cF205Fd5f44796fBC40c822e";
+        _classes[9]._values["fixed-rate"].boolValue = ture;  
+        _classes[9]._values["APY"].uintValue = 50000;  
+        _classes[9]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x4B6CA198d257D755A5275648D471FE09931b764A";
         emit classCreated(address(this), 9);
+
+//////////////////////////////////////////////////////
+
+        _classes[10]._values["symbol"].stringValue = "Fortunafi-Series 1 -Junior Loan";
+        _classes[10]._values["category"].stringValue = "loan";
+        _classes[10]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[10]._values["childCategory"].stringValue = "revenue based financing";
+        
+        _classes[10]._values["description"].stringValue = unicode"Fortunafi Asset Management is a technology enabled revenue based finance provider. Revenue based financing provides capital to small or growing businesses in return for a fixed percentage of ongoing gross revenues. Thus payments increase and decrease based on business revenues, typically measured as monthly revenue. Usually the returns to the investor continue until the initial capital amount, plus a multiple (also known as a cap) is repaid. This Tinlake pool is composed of a portfolio of revenue based financing agreements with an average maturity of twenty four months.";
+        _classes[10]._values["issuerName"].stringValue = "Fortunafi";
+        _classes[10]._values["issuerType"].stringValue = "LTD";
+        _classes[10]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[10]._values["issuerURL"].stringValue = "https://www.fortunafi.com/";
+        _classes[10]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Fortunafi.png";
+        _classes[10]._values["issuerDocURL"].stringValue = [
+            "https://docsend.com/view/s/gressukfmvcp6uip"
+        ];
+        _classes[10]._values["fundType"].stringValue = "corporate";  
+        _classes[10]._values["shareValue"].uintValue = 1;  
+        _classes[10]._values["currency"].stringValue = "DAI";  
+
+        _classes[10]._values["maxiumSupply"].uintValue = 3100000;  
+        _classes[10]._values["callable"].boolValue = true;  
+        _classes[10]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[10]._values["coupon"].boolValue = true;  
+        _classes[10]._values["couponRate"].uintValue = 4166;  
+        _classes[10]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[10]._values["fixed-rate"].boolValue = false;  
+        _classes[10]._values["APY"].uintValue = 50000;  
+        _classes[10]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x4B6CA198d257D755A5275648D471FE09931b764A";
+        emit classCreated(address(this), 10);
+
+////////////////////////////////////////////////////////
+
+        _classes[11]._values["symbol"].stringValue = "BlockTower-Series 1 -Senior Loan";
+        _classes[11]._values["category"].stringValue = "loan";
+        _classes[11]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[11]._values["childCategory"].stringValue = "structured credit";
+        
+        _classes[11]._values["description"].stringValue = unicode"BlockTower Credit is the credit franchise of BlockTower Capital, an SEC-registered digital asset and blockchain investment firm founded in 2017. Within BlockTower Credit, we apply the skills of professional underwriting, structuring and investing at the intersection of real-world credit (a massive but anachronistic traditional industry) and crypto. This Tinlake Pool deploys capital into Structured Credit products will have an investment-grade rating and typically maintain a weighted average life (WAL) of less than four years. The Structured Credit products will generally fall into three major buckets: consumer ABS, auto ABS, and CLO.";
+        _classes[11]._values["issuerName"].stringValue = "BlockTower";
+        _classes[11]._values["issuerType"].stringValue = "LTD";
+        _classes[11]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[11]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
+        _classes[11]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
+        _classes[11]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/BT1.pdf"
+        ];
+        _classes[11]._values["fundType"].stringValue = "corporate";  
+        _classes[11]._values["shareValue"].uintValue = 1;  
+        _classes[11]._values["currency"].stringValue = "DAI";  
+
+        _classes[11]._values["maxiumSupply"].uintValue = 0;  
+        _classes[11]._values["callable"].boolValue = true;  
+        _classes[11]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[11]._values["coupon"].boolValue = true;  
+        _classes[11]._values["couponRate"].uintValue = 3333;  
+        _classes[11]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[11]._values["fixed-rate"].boolValue = true;  
+        _classes[11]._values["APY"].uintValue = 40000;  
+        _classes[11]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x4597f91cC06687Bdb74147C80C097A79358Ed29b";
+        emit classCreated(address(this), 11);
+
 
 
     }
