@@ -697,6 +697,30 @@ contract Token is ERC3475 {
         _classes[0]._values["custodianType"].stringValue = "LTD";
         _classes[0]._values["custodianJurisdiction"].stringValue = "BE";
         _classes[0]._values["custodianURL"].a
+       
+        _classes[1]._values["symbol"].stringValue = "Atria deal 2 -Super Senior Loan";
+        _classes[1]._values["category"].stringValue = "loan";
+        _classes[1]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[1]._values["childCategory"].stringValue = "asset-backed car loan";
+        
+        _classes[1]._values["description"].stringValue = unicode"Atria is a fintech company established in 2022 that offers specialized services in used-car loan facilitation in Mexico. The firm is steered by a seasoned management team that was previously part of Credito Real’s auto financing division. It operates on a B2B framework, providing support to used-car dealerships. The company has recorded robust performance since October 2022 with its transactions, which are backed by a singular credit fund in the Credix network. Notably, defaults have remained exceptionally low at just 0.3%. The credit fund is currently considering the divestment of the senior tranche in order to focus on risk-adjusted high-yield returns. The yield for the senior tranche is negotiable.";
+        _classes[1]._values["issuerName"].stringValue = "Atria";
+        _classes[1]._values["issuerType"].stringValue = "LTD";
+        _classes[1]._values["issuerJurisdiction"].stringValue = "MX";
+        _classes[1]._values["issuerURL"].stringValue = "https://atria.la/";
+        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png";
+
+        _classes[1]._values["fundType"].stringValue = "corporate";  
+        _classes[1]._values["shareValue"].uintValue = 1;  
+        _classes[1]._values["currency"].stringValue = "USDC";  
+
+        _classes[1]._values["maxiumSupply"].uintValue = 1524693;  
+        _classes[1]._values["callable"].boolValue = true;  
+        _classes[1]._values["maturityPeriod"].uintValue = 103680000;  
+        _classes[1]._values["coupon"].boolValue = true;  
+        _classes[1]._values["couponRate"].uintValue = 8333;  
+        _classes[1]._values["couponPeriod"].uintValue = 2592000;  
+        _classes[1]._values["fixed-rate"].boolValue = true;  
         _classes[1]._values["APY"].uintValue = 100000;  
         _classes[1]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=7pTa26B4jHywCtb8kLwZvKEt9Lh1trsD1RWrGi3jMQ9k";
         emit classCreated(address(this), 1);
