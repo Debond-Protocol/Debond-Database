@@ -723,16 +723,16 @@ contract Token is ERC3475 {
         _classes[1]._values["callable"].boolValue = true;  
         _classes[1]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[1]._values["coupon"].boolValue = true;  
-        _classes[1]._values["couponRate"].uintValue = 11250;  
+        _classes[1]._values["couponRate"].uintValue = 3333;  
         _classes[1]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[1]._values["fixed-rate"].boolValue = true;  
-        _classes[1]._values["APY"].uintValue = 135000;  
+        _classes[1]._values["APY"].uintValue = 40000;  
         _classes[1]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x55d86d51Ac3bcAB7ab7d2124931FbA106c8b60c7";
         emit classCreated(address(this), 1);
 
 ////////////////////////////////////////////////////////
 
-        _classes[2]._values["symbol"].stringValue = "BlockTower-Series 4 -Senior Loan";
+        _classes[2]._values["symbol"].stringValue = "BlockTower-Series 4 -Junior Loan";
         _classes[2]._values["category"].stringValue = "loan";
         _classes[2]._values["subcategory"].stringValue = "asset-backed loan";
         _classes[2]._values["childCategory"].stringValue = "structured credit";
@@ -740,27 +740,274 @@ contract Token is ERC3475 {
         _classes[2]._values["description"].stringValue = unicode"BlockTower Credit is the credit franchise of BlockTower Capital, an SEC-registered digital asset and blockchain investment firm founded in 2017. Within BlockTower Credit, we apply the skills of professional underwriting, structuring and investing at the intersection of real-world credit (a massive but anachronistic traditional industry) and crypto. This Tinlake Pool deploys capital into Structured Credit products will have an investment-grade rating and typically maintain a weighted average life (WAL) of less than four years. The Structured Credit products will generally fall into three major buckets: consumer ABS, auto ABS, and CLO.";
         _classes[2]._values["issuerName"].stringValue = "BlockTower";
         _classes[2]._values["issuerType"].stringValue = "LTD";
-        _classes[1]._values["issuerJurisdiction"].stringValue = "US";
-        _classes[1]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
-        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
-        _classes[1]._values["issuerDocURL"].stringValue = [
+        _classes[2]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[2]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
+        _classes[2]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
+        _classes[2]._values["issuerDocURL"].stringValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/BT4.pdf"
         ];
-        _classes[1]._values["fundType"].stringValue = "corporate";  
-        _classes[1]._values["shareValue"].uintValue = 1;  
-        _classes[1]._values["currency"].stringValue = "DAI";  
+        _classes[2]._values["fundType"].stringValue = "corporate";  
+        _classes[2]._values["shareValue"].uintValue = 1;  
+        _classes[2]._values["currency"].stringValue = "DAI";  
 
-        _classes[1]._values["maxiumSupply"].uintValue = 1200000;  
-        _classes[1]._values["callable"].boolValue = true;  
-        _classes[1]._values["maturityPeriod"].uintValue = 322*60*60*24;  
-        _classes[1]._values["coupon"].boolValue = true;  
-        _classes[1]._values["couponRate"].uintValue = 11250;  
-        _classes[1]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[1]._values["fixed-rate"].boolValue = true;  
-        _classes[1]._values["APY"].uintValue = 135000;  
-        _classes[1]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x55d86d51Ac3bcAB7ab7d2124931FbA106c8b60c7";
-        emit classCreated(address(this), 1);
+        _classes[2]._values["maxiumSupply"].uintValue = 69700000;  
+        _classes[2]._values["callable"].boolValue = true;  
+        _classes[2]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[2]._values["coupon"].boolValue = true;  
+        _classes[2]._values["couponRate"].uintValue = 11250;  
+        _classes[2]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[2]._values["fixed-rate"].boolValue = false;  
+        _classes[2]._values["APY"].uintValue = ;  
+        _classes[2]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x55d86d51Ac3bcAB7ab7d2124931FbA106c8b60c7";
+        emit classCreated(address(this), 2);
 
+////////////////////////////////////////////////////////
+
+        _classes[3]._values["symbol"].stringValue = "BlockTower-Series 3 -Senior Loan";
+        _classes[3]._values["category"].stringValue = "loan";
+        _classes[3]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[3]._values["childCategory"].stringValue = "structured credit";
+        
+        _classes[3]._values["description"].stringValue = unicode"BlockTower Credit is the credit franchise of BlockTower Capital, an SEC-registered digital asset and blockchain investment firm founded in 2017. Within BlockTower Credit, we apply the skills of professional underwriting, structuring and investing at the intersection of real-world credit (a massive but anachronistic traditional industry) and crypto. This Tinlake Pool deploys capital into Structured Credit products will have an investment-grade rating and typically maintain a weighted average life (WAL) of less than four years. The Structured Credit products will generally fall into three major buckets: consumer ABS, auto ABS, and CLO.";
+        _classes[3]._values["issuerName"].stringValue = "BlockTower";
+        _classes[3]._values["issuerType"].stringValue = "LTD";
+        _classes[3]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[3]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
+        _classes[3]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
+        _classes[3]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/BT3.pdf"
+        ];
+        _classes[3]._values["fundType"].stringValue = "corporate";  
+        _classes[3]._values["shareValue"].uintValue = 1;  
+        _classes[3]._values["currency"].stringValue = "DAI";  
+
+        _classes[3]._values["maxiumSupply"].uintValue = 11200000;  
+        _classes[3]._values["callable"].boolValue = true;  
+        _classes[3]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[3]._values["coupon"].boolValue = true;  
+        _classes[3]._values["couponRate"].uintValue = 3333;  
+        _classes[3]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[3]._values["fixed-rate"].boolValue = ture;  
+        _classes[3]._values["APY"].uintValue = 40000;  
+        _classes[3]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x90040F96aB8f291b6d43A8972806e977631aFFdE";
+        emit classCreated(address(this), 3);
+
+////////////////////////////////////////////////////////
+
+        _classes[4]._values["symbol"].stringValue = "BlockTower-Series 3 -Junior Loan";
+        _classes[4]._values["category"].stringValue = "loan";
+        _classes[4]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[4]._values["childCategory"].stringValue = "structured credit";
+        
+        _classes[4]._values["description"].stringValue = unicode"BlockTower Credit is the credit franchise of BlockTower Capital, an SEC-registered digital asset and blockchain investment firm founded in 2017. Within BlockTower Credit, we apply the skills of professional underwriting, structuring and investing at the intersection of real-world credit (a massive but anachronistic traditional industry) and crypto. This Tinlake Pool deploys capital into Structured Credit products will have an investment-grade rating and typically maintain a weighted average life (WAL) of less than four years. The Structured Credit products will generally fall into three major buckets: consumer ABS, auto ABS, and CLO.";
+        _classes[4]._values["issuerName"].stringValue = "BlockTower";
+        _classes[4]._values["issuerType"].stringValue = "LTD";
+        _classes[4]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[4]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
+        _classes[4]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
+        _classes[4]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/BT3.pdf"
+        ];
+        _classes[4]._values["fundType"].stringValue = "corporate";  
+        _classes[4]._values["shareValue"].uintValue = 1;  
+        _classes[4]._values["currency"].stringValue = "DAI";  
+
+        _classes[4]._values["maxiumSupply"].uintValue = 19000000;  
+        _classes[4]._values["callable"].boolValue = true;  
+        _classes[4]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[4]._values["coupon"].boolValue = true;  
+        _classes[4]._values["couponRate"].uintValue = 11250;  
+        _classes[4]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[4]._values["fixed-rate"].boolValue = false;  
+        _classes[4]._values["APY"].uintValue = 135000;  
+        _classes[4]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x90040F96aB8f291b6d43A8972806e977631aFFdE";
+        emit classCreated(address(this), 4);
+
+////////////////////////////////////////////////////////
+
+        _classes[5]._values["symbol"].stringValue = "Branch-Series 3 (1754 Factory) -Senior Loan";
+        _classes[5]._values["category"].stringValue = "loan";
+        _classes[5]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[5]._values["childCategory"].stringValue = "emerging market consumer loan";
+        
+        _classes[5]._values["description"].stringValue = unicode"Branch is a financial technology company that lends money to consumers using machine learning algorithms to determine credit worthiness via customers' smartphones. Branch was founded in 2015 and has operations in Kenya, Nigeria, Tanzania, Mexico and India, and has since originated over $500M in loans to over 4 millions borrowers. This Tinlake pool will consist of tranches of a secured non convertible debenture with a maturity of 3 years backed by a portfolio of loans made to customers.The current weighted average loan balance is $49 (ranging from $6 to $2,500) with average maturity of 70 days.";
+        _classes[5]._values["issuerName"].stringValue = "Branch (1754 Factory)";
+        _classes[5]._values["issuerType"].stringValue = "LTD";
+        _classes[5]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[5]._values["issuerURL"].stringValue = "https://www.1754.finance/";
+        _classes[5]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Branch.png";
+        _classes[5]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/BR3.pdf"
+        ];
+        _classes[5]._values["fundType"].stringValue = "corporate";  
+        _classes[5]._values["shareValue"].uintValue = 1;  
+        _classes[5]._values["currency"].stringValue = "DAI";  
+
+        _classes[5]._values["maxiumSupply"].uintValue = 4000000;  
+        _classes[5]._values["callable"].boolValue = true;  
+        _classes[5]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[5]._values["coupon"].boolValue = true;  
+        _classes[5]._values["couponRate"].uintValue = 11250;  
+        _classes[5]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[5]._values["fixed-rate"].boolValue = ture;  
+        _classes[5]._values["APY"].uintValue = 135000;  
+        _classes[5]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x560Ac248ce28972083B718778EEb0dbC2DE55740";
+        emit classCreated(address(this), 5);
+
+////////////////////////////////////////////////////////
+
+        _classes[6]._values["symbol"].stringValue = "Branch-Series 3 (1754 Factory) -Junior Loan";
+        _classes[6]._values["category"].stringValue = "loan";
+        _classes[6]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[6]._values["childCategory"].stringValue = "emerging market consumer loan";
+        
+        _classes[6]._values["description"].stringValue = unicode"Branch is a financial technology company that lends money to consumers using machine learning algorithms to determine credit worthiness via customers' smartphones. Branch was founded in 2015 and has operations in Kenya, Nigeria, Tanzania, Mexico and India, and has since originated over $500M in loans to over 4 millions borrowers. This Tinlake pool will consist of tranches of a secured non convertible debenture with a maturity of 3 years backed by a portfolio of loans made to customers.The current weighted average loan balance is $49 (ranging from $6 to $2,500) with average maturity of 70 days.";
+        _classes[6]._values["issuerName"].stringValue = "Branch (1754 Factory)";
+        _classes[6]._values["issuerType"].stringValue = "LTD";
+        _classes[6]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[6]._values["issuerURL"].stringValue = "https://www.1754.finance/";
+        _classes[6]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Branch.png";
+        _classes[6]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/BR3.pdf"
+        ];
+        _classes[6]._values["fundType"].stringValue = "corporate";  
+        _classes[6]._values["shareValue"].uintValue = 1;  
+        _classes[6]._values["currency"].stringValue = "DAI";  
+
+        _classes[6]._values["maxiumSupply"].uintValue = 4000000;  
+        _classes[6]._values["callable"].boolValue = true;  
+        _classes[6]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[6]._values["coupon"].boolValue = true;  
+        _classes[6]._values["couponRate"].uintValue = 11250;  
+        _classes[6]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[6]._values["fixed-rate"].boolValue = false;  
+        _classes[6]._values["APY"].uintValue = 100000;  
+        _classes[6]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x560Ac248ce28972083B718778EEb0dbC2DE55740";
+        emit classCreated(address(this), 6);
+
+////////////////////////////////////////////////////////
+
+        _classes[6]._values["symbol"].stringValue = "Branch-Series 3 (1754 Factory) -Junior Loan";
+        _classes[6]._values["category"].stringValue = "loan";
+        _classes[6]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[6]._values["childCategory"].stringValue = "emerging market consumer loan";
+        
+        _classes[6]._values["description"].stringValue = unicode"Branch is a financial technology company that lends money to consumers using machine learning algorithms to determine credit worthiness via customers' smartphones. Branch was founded in 2015 and has operations in Kenya, Nigeria, Tanzania, Mexico and India, and has since originated over $500M in loans to over 4 millions borrowers. This Tinlake pool will consist of tranches of a secured non convertible debenture with a maturity of 3 years backed by a portfolio of loans made to customers.The current weighted average loan balance is $49 (ranging from $6 to $2,500) with average maturity of 70 days.";
+        _classes[6]._values["issuerName"].stringValue = "Branch (1754 Factory)";
+        _classes[6]._values["issuerType"].stringValue = "LTD";
+        _classes[6]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[6]._values["issuerURL"].stringValue = "https://www.1754.finance/";
+        _classes[6]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Branch.png";
+        _classes[6]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/BR3.pdf"
+        ];
+        _classes[6]._values["fundType"].stringValue = "corporate";  
+        _classes[6]._values["shareValue"].uintValue = 1;  
+        _classes[6]._values["currency"].stringValue = "DAI";  
+
+        _classes[6]._values["maxiumSupply"].uintValue = 4000000;  
+        _classes[6]._values["callable"].boolValue = true;  
+        _classes[6]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[6]._values["coupon"].boolValue = true;  
+        _classes[6]._values["couponRate"].uintValue = 11250;  
+        _classes[6]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[6]._values["fixed-rate"].boolValue = false;  
+        _classes[6]._values["APY"].uintValue = ;  
+        _classes[6]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x560Ac248ce28972083B718778EEb0dbC2DE55740";
+        emit classCreated(address(this), 6);
+
+//////////////////////////////////////////////////////
+
+        _classes[7]._values["symbol"].stringValue = "REIF Financial Investments Inc. (REIF) -Senior Loan";
+        _classes[7]._values["category"].stringValue = "loan";
+        _classes[7]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[7]._values["childCategory"].stringValue = "commercial real estate";
+        
+        _classes[7]._values["description"].stringValue = unicode"REIF Financial Investments Inc. (REIF) is an asset management company focusing on acquiring commercial real estate assets from established asset originators. REIF was founded in 2021. REIF will loan capital secured by real estate to finance commercial and construction projects. This pool will consist of a portfolio of first and second secured position commercial real estate loans. The initial asset originator is Forge & Foster, a commercial real estate developer based in Ontario, Canada with $250 million CAD in assets under management of commercial real estate. The average maturity of assets is 18 months.";
+        _classes[7]._values["issuerName"].stringValue = "Branch (1754 Factory)";
+        _classes[7]._values["issuerType"].stringValue = "LTD";
+        _classes[7]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[7]._values["issuerURL"].stringValue = "https://www.1754.finance/";
+        _classes[7]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/REIF.png";
+        _classes[7]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/REIF1.pdf"
+        ];
+        _classes[7]._values["fundType"].stringValue = "corporate";  
+        _classes[7]._values["shareValue"].uintValue = 1;  
+        _classes[7]._values["currency"].stringValue = "DAI";  
+
+        _classes[7]._values["maxiumSupply"].uintValue = 3000000;  
+        _classes[7]._values["callable"].boolValue = true;  
+        _classes[7]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[7]._values["coupon"].boolValue = true;  
+        _classes[7]._values["couponRate"].uintValue = 4166;  
+        _classes[7]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[7]._values["fixed-rate"].boolValue = ture;  
+        _classes[7]._values["APY"].uintValue = 5000;  
+        _classes[7]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x09e43329552c9D81cF205Fd5f44796fBC40c822e";
+        emit classCreated(address(this), 7);
+
+//////////////////////////////////////////////////////
+
+        _classes[8]._values["symbol"].stringValue = "REIF Financial Investments Inc. (REIF) -Junior Loan";
+        _classes[8]._values["category"].stringValue = "loan";
+        _classes[8]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[8]._values["childCategory"].stringValue = "commercial real estate";
+        
+        _classes[8]._values["description"].stringValue = unicode"REIF Financial Investments Inc. (REIF) is an asset management company focusing on acquiring commercial real estate assets from established asset originators. REIF was founded in 2021. REIF will loan capital secured by real estate to finance commercial and construction projects. This pool will consist of a portfolio of first and second secured position commercial real estate loans. The initial asset originator is Forge & Foster, a commercial real estate developer based in Ontario, Canada with $250 million CAD in assets under management of commercial real estate. The average maturity of assets is 18 months.";
+        _classes[8]._values["issuerName"].stringValue = "Branch (1754 Factory)";
+        _classes[8]._values["issuerType"].stringValue = "LTD";
+        _classes[8]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[8]._values["issuerURL"].stringValue = "https://www.1754.finance/";
+        _classes[8]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/REIF.png";
+        _classes[8]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/REIF1.pdf"
+        ];
+        _classes[8]._values["fundType"].stringValue = "corporate";  
+        _classes[8]._values["shareValue"].uintValue = 1;  
+        _classes[8]._values["currency"].stringValue = "DAI";  
+
+        _classes[8]._values["maxiumSupply"].uintValue = 3000000;  
+        _classes[8]._values["callable"].boolValue = true;  
+        _classes[8]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[8]._values["coupon"].boolValue = true;  
+        _classes[8]._values["couponRate"].uintValue = 4166;  
+        _classes[8]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[8]._values["fixed-rate"].boolValue = false;  
+        _classes[8]._values["APY"].uintValue = 5000;  
+        _classes[8]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x09e43329552c9D81cF205Fd5f44796fBC40c822e";
+        emit classCreated(address(this), 8);
+
+//////////////////////////////////////////////////////
+
+        _classes[9]._values["symbol"].stringValue = "REIF Financial Investments Inc. (REIF) -Junior Loan";
+        _classes[9]._values["category"].stringValue = "loan";
+        _classes[9]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[9]._values["childCategory"].stringValue = "commercial real estate";
+        
+        _classes[9]._values["description"].stringValue = unicode"REIF Financial Investments Inc. (REIF) is an asset management company focusing on acquiring commercial real estate assets from established asset originators. REIF was founded in 2021. REIF will loan capital secured by real estate to finance commercial and construction projects. This pool will consist of a portfolio of first and second secured position commercial real estate loans. The initial asset originator is Forge & Foster, a commercial real estate developer based in Ontario, Canada with $250 million CAD in assets under management of commercial real estate. The average maturity of assets is 18 months.";
+        _classes[9]._values["issuerName"].stringValue = "Branch (1754 Factory)";
+        _classes[9]._values["issuerType"].stringValue = "LTD";
+        _classes[9]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[9]._values["issuerURL"].stringValue = "https://www.1754.finance/";
+        _classes[9]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/REIF.png";
+        _classes[9]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/REIF1.pdf"
+        ];
+        _classes[9]._values["fundType"].stringValue = "corporate";  
+        _classes[9]._values["shareValue"].uintValue = 1;  
+        _classes[9]._values["currency"].stringValue = "DAI";  
+
+        _classes[9]._values["maxiumSupply"].uintValue = 3000000;  
+        _classes[9]._values["callable"].boolValue = true;  
+        _classes[9]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[9]._values["coupon"].boolValue = true;  
+        _classes[9]._values["couponRate"].uintValue = 4166;  
+        _classes[9]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[9]._values["fixed-rate"].boolValue = false;  
+        _classes[9]._values["APY"].uintValue = 5000;  
+        _classes[9]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x09e43329552c9D81cF205Fd5f44796fBC40c822e";
+        emit classCreated(address(this), 9);
 
 
     }
