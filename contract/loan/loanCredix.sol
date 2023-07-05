@@ -1587,9 +1587,6 @@ contract Token is ERC3475 {
         _classes[31]._values["APY"].uintValue = 135000;  
         _classes[31]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=7wTEo6A78a3izB4rUMxjQYrh3Rub6QPkRYqQ9aKfxZ1M";
         emit classCreated(address(this), 31);
-
-
-
     }
    
 }
