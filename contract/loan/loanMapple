@@ -700,16 +700,45 @@ contract Token is ERC3475 {
         _classes[0]._values["custodianURL"].stringValue = "https://www.maple.finance/";
         _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/maple.png";
         
-        _classes[1]._values["symbol"].stringValue = "Atria deal 2 -Super Senior Loan";
+        _classes[1]._values["symbol"].stringValue = "AQRU Receivables - USDC";
         _classes[1]._values["category"].stringValue = "loan";
         _classes[1]._values["subcategory"].stringValue = "asset-backed loan";
-        _classes[1]._values["childCategory"].stringValue = "asset-backed car loan";
+        _classes[1]._values["childCategory"].stringValue = "real-world receivable";
         
-        _classes[1]._values["description"].stringValue = unicode"Atria is a fintech company established in 2022 that offers specialized services in used-car loan facilitation in Mexico. The firm is steered by a seasoned management team that was previously part of Credito Real’s auto financing division. It operates on a B2B framework, providing support to used-car dealerships. The company has recorded robust performance since October 2022 with its transactions, which are backed by a singular credit fund in the Credix network. Notably, defaults have remained exceptionally low at just 0.3%. The credit fund is currently considering the divestment of the senior tranche in order to focus on risk-adjusted high-yield returns. The yield for the senior tranche is negotiable.";
-        _classes[1]._values["issuerName"].stringValue = "Atria";
+        _classes[1]._values["description"].stringValue = unicode"AQRU is a digital asset investment platform that sources and integrates investment and yield opportunities from across the crypto and DeFi ecosystems. The strategy of the AQRU Real-World Receivables pool is to provide liquidity to US businesses by purchasing their receivables. The program focuses on tax credits provided by the US IRS, which are designed to encourage growth in targeted sectors of the economy. The pool accepts deposits above $250,000 USDC from accredited investors after completion of KYC.";
+        _classes[1]._values["issuerName"].stringValue = "AQRU";
         _classes[1]._values["issuerType"].stringValue = "LTD";
-        _classes[1]._values["issuerJurisdiction"].stringValue = "MX";
-        _classes[1]._values["issuerURL"].stringValue = "https://atria.la/";
+        _classes[1]._values["issuerJurisdiction"].stringValue = "UK";
+        _classes[1]._values["issuerURL"].stringValue = "https://aqru.io/";
+        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/AQRU.png";
+        _classes[1]._values["issuerDocURL"].stringValue = [
+            "https://downloads.eth.maple.finance/docs/aqru/2023-01-AQRU-Real-World-Receivables.pdf"
+        ];
+
+        _classes[1]._values["fundType"].stringValue = "corporate";  
+        _classes[1]._values["shareValue"].uintValue = 1;  
+        _classes[1]._values["currency"].stringValue = "USDC";  
+
+        _classes[1]._values["maxiumSupply"].uintValue = 33803719;  
+        _classes[1]._values["callable"].boolValue = true;  
+        _classes[1]._values["maturityPeriod"].uintValue = 45*24*3600;  
+        _classes[1]._values["fixed-rate"].boolValue = true;  
+        _classes[1]._values["APY"].uintValue = 100000;  
+        _classes[1]._values["ManagementFee"].uintValue = 16800;  
+        _classes[1]._values["subscribeLink"].stringValue = "https://app.maple.finance/#/v2/lend/pool/0xe9d33286f0e37f517b1204aa6da085564414996d";
+        emit classCreated(address(this), 1);
+
+//////
+        _classes[2]._values["symbol"].stringValue = "AQRU Receivables - USDC";
+        _classes[2]._values["category"].stringValue = "loan";
+        _classes[2]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[2]._values["childCategory"].stringValue = "real-world receivable";
+        
+        _classes[1]._values["description"].stringValue = unicode"AQRU is a digital asset investment platform that sources and integrates investment and yield opportunities from across the crypto and DeFi ecosystems. The strategy of the AQRU Real-World Receivables pool is to provide liquidity to US businesses by purchasing their receivables. The program focuses on tax credits provided by the US IRS, which are designed to encourage growth in targeted sectors of the economy. The pool accepts deposits above $250,000 USDC from accredited investors after completion of KYC.";
+        _classes[1]._values["issuerName"].stringValue = "AQRU";
+        _classes[1]._values["issuerType"].stringValue = "LTD";
+        _classes[1]._values["issuerJurisdiction"].stringValue = "UK";
+        _classes[1]._values["issuerURL"].stringValue = "https://aqru.io/";
         _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png";
         _classes[1]._values["issuerDocURL"].stringValue = [
             "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png",
