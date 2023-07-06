@@ -694,7 +694,7 @@ contract Token is ERC3475 {
     constructor() {
          
     
-        _classes[0]._values["custodianName"].stringValue = "Maple";
+        _classes[0]._values["custodianName"].stringValue = "Goldfinch";
         _classes[0]._values["custodianType"].stringValue = "LTD";
         _classes[0]._values["custodianJurisdiction"].stringValue = "AU";
         _classes[0]._values["custodianURL"].stringValue = "https://www.maple.finance/";
@@ -728,116 +728,6 @@ contract Token is ERC3475 {
         _classes[1]._values["subscribeLink"].stringValue = "https://app.maple.finance/#/v2/lend/pool/0xe9d33286f0e37f517b1204aa6da085564414996d";
         emit classCreated(address(this), 1);
 
-//////
-        _classes[2]._values["symbol"].stringValue = "M11 Credit - wETH";
-        _classes[2]._values["category"].stringValue = "loan";
-        _classes[2]._values["subcategory"].stringValue = "uncollateralized loan";
-        _classes[2]._values["childCategory"].stringValue = "uncollateralized lending in DeFi";
-        
-        _classes[2]._values["description"].stringValue = unicode"M11 Credit is at the forefront of bringing traditional capital markets on-chain by offering liquidity providers access to risk-adjusted return opportunities and financing established and profitable businesses. An experienced team with backgrounds in leveraged finance, securities trading, and auditing manages the pools to ensure that yields are optimized, and value is created.";
-        _classes[2]._values["issuerName"].stringValue = "M11 Credit";
-        _classes[2]._values["issuerType"].stringValue = "LTD";
-        _classes[2]._values["issuerJurisdiction"].stringValue = "NL";
-        _classes[2]._values["issuerURL"].stringValue = "https://www.m11credit.com/";
-        _classes[2]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/M11%20Credit.png";
-        _classes[2]._values["issuerDocURL"].stringArrayValue = [
-            "https://downloads.eth.maple.finance/docs/m11/strategy/2023-03-M11-WETH.pdf"
-        ];
-
-        _classes[2]._values["fundType"].stringValue = "corporate";  
-        _classes[2]._values["shareValue"].uintValue = 1;  
-        _classes[2]._values["currency"].stringValue = "wETH";  
-
-        _classes[2]._values["maxiumSupply"].uintValue = 75020;  
-        _classes[2]._values["callable"].boolValue = true;  
-        _classes[2]._values["maturityPeriod"].uintValue = 10*24*3600;  
-        _classes[2]._values["fixed-rate"].boolValue = true;  
-        _classes[2]._values["APY"].uintValue = 52900;  
-        _classes[2]._values["ManagementFee"].uintValue = 10000; 
-        _classes[2]._values["subscribeLink"].stringValue = "https://app.maple.finance/#/v2/lend/pool/0xfff9a1caf78b2e5b0a49355a8637ea78b43fb6c3";
-        emit classCreated(address(this), 2);
-
-//////
-        _classes[3]._values["symbol"].stringValue = "M11 Credit - USDC";
-        _classes[3]._values["category"].stringValue = "loan";
-        _classes[3]._values["subcategory"].stringValue = "uncollateralized loan";
-        _classes[3]._values["childCategory"].stringValue = "uncollateralized lending in DeFi";
-        
-        _classes[3]._values["description"].stringValue = unicode"M11 Credit is at the forefront of bringing traditional capital markets on-chain by offering liquidity providers access to risk-adjusted return opportunities and financing established and profitable businesses. An experienced team with backgrounds in leveraged finance, securities trading, and auditing manages the pools to ensure that yields are optimized, and value is created.";
-        _classes[3]._values["issuerName"].stringValue = "M11 Credit";
-        _classes[3]._values["issuerType"].stringValue = "LTD";
-        _classes[3]._values["issuerJurisdiction"].stringValue = "NL";
-        _classes[3]._values["issuerURL"].stringValue = "https://www.m11credit.com/";
-        _classes[3]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/M11%20Credit.png";
-        _classes[3]._values["issuerDocURL"].stringArrayValue = [
-            "https://downloads.eth.maple.finance/docs/m11/strategy/2023-02-M11-USDC.pdf"
-        ];
-
-        _classes[3]._values["fundType"].stringValue = "corporate";  
-        _classes[3]._values["shareValue"].uintValue = 1;  
-        _classes[3]._values["currency"].stringValue = "USDC";  
-
-        _classes[3]._values["maxiumSupply"].uintValue = 612250000;  
-        _classes[3]._values["callable"].boolValue = true;  
-        _classes[3]._values["maturityPeriod"].uintValue = 10*24*3600;  
-        _classes[3]._values["fixed-rate"].boolValue = true;  
-        _classes[3]._values["APY"].uintValue = 44300;  
-        _classes[3]._values["subscribeLink"].stringValue = "https://app.maple.finance/#/v2/lend/pool/0xd3cd37a7299b963bbc69592e5ba933388f70dc88";
-        emit classCreated(address(this), 3);
-
-//////
-        _classes[4]._values["symbol"].stringValue = "M11 Credit - USDC (Permissioned)";
-        _classes[4]._values["category"].stringValue = "loan";
-        _classes[4]._values["subcategory"].stringValue = "uncollateralized loan";
-        _classes[4]._values["childCategory"].stringValue = "uncollateralized lending in DeFi";
-        
-        _classes[4]._values["description"].stringValue = unicode"M11 Credit is at the forefront of bringing traditional capital markets on-chain by offering liquidity providers access to risk-adjusted return opportunities and financing established and profitable businesses. An experienced team with backgrounds in leveraged finance, securities trading, and auditing manages the pools to ensure that yields are optimized, and value is created.";
-        _classes[4]._values["issuerName"].stringValue = "M11 Credit";
-        _classes[4]._values["issuerType"].stringValue = "LTD";
-        _classes[4]._values["issuerJurisdiction"].stringValue = "NL";
-        _classes[4]._values["issuerURL"].stringValue = "https://www.m11credit.com/";
-        _classes[4]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/M11%20Credit.png";
-        _classes[4]._values["issuerDocURL"].stringArrayValue = [
-            "https://downloads.eth.maple.finance/docs/m11/strategy/2023-03-M11-USDC-KYC.pdf"
-        ];
-
-        _classes[4]._values["fundType"].stringValue = "corporate";  
-        _classes[4]._values["shareValue"].uintValue = 1;  
-        _classes[4]._values["currency"].stringValue = "USDC";  
-
-        _classes[4]._values["maxiumSupply"].uintValue = 3500000;  
-        _classes[4]._values["callable"].boolValue = true;  
-        _classes[4]._values["maturityPeriod"].uintValue = 10*24*3600;  
-        _classes[4]._values["fixed-rate"].boolValue = false;  
-        _classes[4]._values["subscribeLink"].stringValue = "https://app.maple.finance/#/v2/lend/pool/0xd2b01f8327eeca47829efc731f1a89c6d07e6b92";
-        emit classCreated(address(this), 4);
-        //////
-        _classes[5]._values["symbol"].stringValue = "Cash Management - USDC";
-        _classes[5]._values["category"].stringValue = "loan";
-        _classes[5]._values["subcategory"].stringValue = "asset-backed loan";
-        _classes[5]._values["childCategory"].stringValue = "asset-backed treasury loan";
-        
-        _classes[5]._values["description"].stringValue = unicode"By engaging in Cash Management, companies can extend runway, hedge against inflation, and manage cash flows. The Pool is designed to meet the conservative risk profile and daily liquidity needs of DAOs, Offshore Companies and Web3 Treasuries. Backed by U.S. Treasury bills and reverse repurchase agreements, the Pool targets a net APY of the current 1-month U.S. Treasury bill rate less fees and expenses of 0.5% annualized. The Cash Management Pool is open to deposits of USDC from non-US Accredited Investors and Entities. From the Lender Dashboard, next day withdrawals can be requested and monthly interest statements can be downloaded at anytime. Full transparency is provided through a real-time view into Treasury bills held with a regulated prime broker. Lenders have full recourse to all assets held in the bankruptcy remote brokerage account.";
-        _classes[5]._values["issuerName"].stringValue = "Room40 Capital";
-        _classes[5]._values["issuerType"].stringValue = "LTD";
-        _classes[5]._values["issuerJurisdiction"].stringValue = "US";
-        _classes[5]._values["issuerURL"].stringValue = "https://www.room40.xyz/";
-        _classes[5]._values["issuerLogo"].stringValue = "https://downloads.eth.maple.finance/docs/cash/2023-05-24-Public-Cash-Management-Deck.pdf";
-        _classes[5]._values["issuerDocURL"].stringArrayValue = [
-            "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Room40.png"
-        ];
-
-        _classes[5]._values["fundType"].stringValue = "corporate";  
-        _classes[5]._values["shareValue"].uintValue = 1;  
-        _classes[5]._values["currency"].stringValue = "USDC";  
-
-        _classes[5]._values["maxiumSupply"].uintValue = 63914954;  
-        _classes[5]._values["callable"].boolValue = true;  
-        _classes[5]._values["maturityPeriod"].uintValue = 2*24*3600;  
-        _classes[5]._values["fixed-rate"].boolValue = true;  
-        _classes[5]._values["APY"].uintValue = 45100;  
-        _classes[5]._values["subscribeLink"].stringValue = "https://app.maple.finance/#/v2/lend/pool/0xfe119e9c24ab79f1bdd5dd884b86ceea2ee75d92";
-        emit classCreated(address(this), 5);
     }
    
 }
