@@ -720,7 +720,7 @@ contract Token is ERC3475 {
         _classes[1]._values["couponRate"].uintValue = 8333;  
         _classes[1]._values["couponPeriod"].uintValue = 2592000;  
         _classes[1]._values["fixed-rate"].boolValue = true;  
-        _classes[1]._values["APY"].uintValue = 100000;  
+        _classes[1]._values["APR"].uintValue = 100000;  
         _classes[1]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=7pTa26B4jHywCtb8kLwZvKEt9Lh1trsD1RWrGi3jMQ9k";
         emit classCreated(address(this), 1);
 
@@ -747,7 +747,7 @@ contract Token is ERC3475 {
         _classes[2]._values["couponRate"].uintValue = 8333;  
         _classes[2]._values["couponPeriod"].uintValue = 2592000;  
         _classes[2]._values["fixed-rate"].boolValue = true;  
-        _classes[2]._values["APY"].uintValue = 312000;  
+        _classes[2]._values["APR"].uintValue = 312000;  
         _classes[2]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=7pTa26B4jHywCtb8kLwZvKEt9Lh1trsD1RWrGi3jMQ9k";
         emit classCreated(address(this), 2);
 
@@ -775,7 +775,7 @@ contract Token is ERC3475 {
         _classes[3]._values["couponRate"].uintValue = 10000;  
         _classes[3]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[3]._values["fixed-rate"].boolValue = true;  
-        _classes[3]._values["APY"].uintValue = 120000;  
+        _classes[3]._values["APR"].uintValue = 120000;  
         _classes[3]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=Awifc6wG8CLLZBrgi5pgcFhAiHvcm4qA8uAHfYufnVcT";
         emit classCreated(address(this), 3);
 
@@ -802,7 +802,7 @@ contract Token is ERC3475 {
         _classes[4]._values["couponRate"].uintValue = 13333;  
         _classes[4]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[4]._values["fixed-rate"].boolValue = true;  
-        _classes[4]._values["APY"].uintValue = 160000;  
+        _classes[4]._values["APR"].uintValue = 160000;  
         _classes[4]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=Awifc6wG8CLLZBrgi5pgcFhAiHvcm4qA8uAHfYufnVcT";
         emit classCreated(address(this), 4);
 ///////////////////////////////////////////////////////////////////////
@@ -830,7 +830,7 @@ contract Token is ERC3475 {
         _classes[5]._values["couponRate"].uintValue = 14166;  
         _classes[5]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[5]._values["fixed-rate"].boolValue = true;  
-        _classes[5]._values["APY"].uintValue = 170000;  
+        _classes[5]._values["APR"].uintValue = 170000;  
         _classes[5]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=4oNn7SNY5y3fM8X1RhubMHScGbaynEEy4mM1nB8XBsUN";
         emit classCreated(address(this), 5);
 
@@ -859,7 +859,7 @@ contract Token is ERC3475 {
         _classes[6]._values["couponRate"].uintValue = 10000;  
         _classes[6]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[6]._values["fixed-rate"].boolValue = true;  
-        _classes[6]._values["APY"].uintValue = 120000;  
+        _classes[6]._values["APR"].uintValue = 120000;  
         _classes[6]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=4oNn7SNY5y3fM8X1RhubMHScGbaynEEy4mM1nB8XBsUN";
         emit classCreated(address(this), 6);
 
@@ -888,7 +888,7 @@ contract Token is ERC3475 {
         _classes[7]._values["couponRate"].uintValue = 12333;  
         _classes[7]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[7]._values["fixed-rate"].boolValue = true;  
-        _classes[7]._values["APY"].uintValue = 148000;  
+        _classes[7]._values["APR"].uintValue = 148000;  
         _classes[7]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=R56vsKfy7da5Hrkqg3Wd4e89FKbFuKrJRKqVwRXSfya";
         emit classCreated(address(this), 7);
 
@@ -917,7 +917,7 @@ contract Token is ERC3475 {
         _classes[8]._values["couponRate"].uintValue = 9166;  
         _classes[8]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[8]._values["fixed-rate"].boolValue = true;  
-        _classes[8]._values["APY"].uintValue = 110000;  
+        _classes[8]._values["APR"].uintValue = 110000;  
         _classes[8]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=R56vsKfy7da5Hrkqg3Wd4e89FKbFuKrJRKqVwRXSfya";
         emit classCreated(address(this), 8);
 
@@ -946,7 +946,7 @@ contract Token is ERC3475 {
         _classes[9]._values["couponRate"].uintValue = 9583;  
         _classes[9]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[9]._values["fixed-rate"].boolValue = true;  
-        _classes[9]._values["APY"].uintValue = 115000;  
+        _classes[9]._values["APR"].uintValue = 115000;  
         _classes[9]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=BistWXZbsN24NmmThGYTLviKpRF4oNYNw5po6UkqNoyW";
         emit classCreated(address(this), 9);
 
@@ -975,7 +975,7 @@ contract Token is ERC3475 {
         _classes[10]._values["couponRate"].uintValue = 9583;  
         _classes[10]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[10]._values["fixed-rate"].boolValue = true;  
-        _classes[10]._values["APY"].uintValue = 115000;  
+        _classes[10]._values["APR"].uintValue = 115000;  
         _classes[10]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=BistWXZbsN24NmmThGYTLviKpRF4oNYNw5po6UkqNoyW";
         emit classCreated(address(this), 10);
 
@@ -1004,7 +1004,7 @@ contract Token is ERC3475 {
         _classes[11]._values["couponRate"].uintValue = 9583;  
         _classes[11]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[11]._values["fixed-rate"].boolValue = true;  
-        _classes[11]._values["APY"].uintValue = 115000;  
+        _classes[11]._values["APR"].uintValue = 115000;  
         _classes[11]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=2tpDYF5C2TgaS3qeAmWVaM9rgRfE43wgcaZPrKRQB8dc";
         emit classCreated(address(this), 11);
 
@@ -1033,7 +1033,7 @@ contract Token is ERC3475 {
         _classes[12]._values["couponRate"].uintValue = 10000;  
         _classes[12]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[12]._values["fixed-rate"].boolValue = true;  
-        _classes[12]._values["APY"].uintValue = 120000;  
+        _classes[12]._values["APR"].uintValue = 120000;  
         _classes[12]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=DNqQT9oSAwCPY7U1n5AtAjkWkHGNxtzZjgVxk7kXFt9y";
         emit classCreated(address(this), 12);
 
@@ -1062,7 +1062,7 @@ contract Token is ERC3475 {
         _classes[13]._values["couponRate"].uintValue = 11583;  
         _classes[13]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[13]._values["fixed-rate"].boolValue = true;  
-        _classes[13]._values["APY"].uintValue = 139000;  
+        _classes[13]._values["APR"].uintValue = 139000;  
         _classes[13]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=DNqQT9oSAwCPY7U1n5AtAjkWkHGNxtzZjgVxk7kXFt9y";
         emit classCreated(address(this), 13);
 
@@ -1091,7 +1091,7 @@ contract Token is ERC3475 {
         _classes[14]._values["couponRate"].uintValue = 10416;  
         _classes[14]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[14]._values["fixed-rate"].boolValue = true;  
-        _classes[14]._values["APY"].uintValue = 125000;  
+        _classes[14]._values["APR"].uintValue = 125000;  
         _classes[14]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=DQtXYWVs4ttAq8uguMpTnpcEa2h1qaV48XdxjunciTzm";
         emit classCreated(address(this), 14);
 
@@ -1120,7 +1120,7 @@ contract Token is ERC3475 {
         _classes[15]._values["couponRate"].uintValue = 12916;  
         _classes[15]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[15]._values["fixed-rate"].boolValue = true;  
-        _classes[15]._values["APY"].uintValue = 155000;  
+        _classes[15]._values["APR"].uintValue = 155000;  
         _classes[15]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=DQtXYWVs4ttAq8uguMpTnpcEa2h1qaV48XdxjunciTzm";
         emit classCreated(address(this), 15);
 
@@ -1149,7 +1149,7 @@ contract Token is ERC3475 {
         _classes[16]._values["couponRate"].uintValue = 10000;  
         _classes[16]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[16]._values["fixed-rate"].boolValue = true;  
-        _classes[16]._values["APY"].uintValue = 120000;  
+        _classes[16]._values["APR"].uintValue = 120000;  
         _classes[16]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=D6LbjpkisC8QcnBEpFgRiRN7QLT3CWx8FAWdM3dbQu5H";
         emit classCreated(address(this), 16);
 
@@ -1178,7 +1178,7 @@ contract Token is ERC3475 {
         _classes[17]._values["couponRate"].uintValue = 12916;  
         _classes[17]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[17]._values["fixed-rate"].boolValue = true;  
-        _classes[17]._values["APY"].uintValue = 155000;  
+        _classes[17]._values["APR"].uintValue = 155000;  
         _classes[17]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=D6LbjpkisC8QcnBEpFgRiRN7QLT3CWx8FAWdM3dbQu5H";
         emit classCreated(address(this), 17);
 
@@ -1207,7 +1207,7 @@ contract Token is ERC3475 {
         _classes[18]._values["couponRate"].uintValue = 11250;  
         _classes[18]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[18]._values["fixed-rate"].boolValue = true;  
-        _classes[18]._values["APY"].uintValue = 135000;  
+        _classes[18]._values["APR"].uintValue = 135000;  
         _classes[18]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=CDa4HeY2GPJiSexhJbs1NENFBXrq5fXhcFjnURGxQmRH";
         emit classCreated(address(this), 18);
 
@@ -1236,7 +1236,7 @@ contract Token is ERC3475 {
         _classes[19]._values["couponRate"].uintValue = 9166;  
         _classes[19]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[19]._values["fixed-rate"].boolValue = true;  
-        _classes[19]._values["APY"].uintValue = 110000;  
+        _classes[19]._values["APR"].uintValue = 110000;  
         _classes[19]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=BJSVoJa8oroKmay8iZAREktBjhBekEcqs7L6y6Xa7eeo";
         emit classCreated(address(this), 19);
 
@@ -1265,7 +1265,7 @@ contract Token is ERC3475 {
         _classes[20]._values["couponRate"].uintValue = 12083;  
         _classes[20]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[20]._values["fixed-rate"].boolValue = true;  
-        _classes[20]._values["APY"].uintValue = 145000;  
+        _classes[20]._values["APR"].uintValue = 145000;  
         _classes[20]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=BJSVoJa8oroKmay8iZAREktBjhBekEcqs7L6y6Xa7eeo";
         emit classCreated(address(this), 20);
 
@@ -1294,7 +1294,7 @@ contract Token is ERC3475 {
         _classes[21]._values["couponRate"].uintValue = 10500;  
         _classes[21]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[21]._values["fixed-rate"].boolValue = true;  
-        _classes[21]._values["APY"].uintValue = 126000;  
+        _classes[21]._values["APR"].uintValue = 126000;  
         _classes[21]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=dv95jonwMSgRA5hWvzr5vNH1AGHL2d8UC5mMPb5sfcg";
         emit classCreated(address(this), 21);
 
@@ -1323,7 +1323,7 @@ contract Token is ERC3475 {
         _classes[22]._values["couponRate"].uintValue = 10500;  
         _classes[22]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[22]._values["fixed-rate"].boolValue = true;  
-        _classes[22]._values["APY"].uintValue = 126000;  
+        _classes[22]._values["APR"].uintValue = 126000;  
         _classes[22]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=3jhQLsqq8eY8r1yQPDVnonUBh598LN1AZcxAJYChxNhJ";
         emit classCreated(address(this), 22);
 
@@ -1352,7 +1352,7 @@ contract Token is ERC3475 {
         _classes[23]._values["couponRate"].uintValue = 10500;  
         _classes[23]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[23]._values["fixed-rate"].boolValue = true;  
-        _classes[23]._values["APY"].uintValue = 126000;  
+        _classes[23]._values["APR"].uintValue = 126000;  
         _classes[23]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=3FMwb7SbSnm3X7aSePyV9gpEYqDSwE7smNMNZoxSM4up";
         emit classCreated(address(this), 23);
 
@@ -1381,7 +1381,7 @@ contract Token is ERC3475 {
         _classes[24]._values["couponRate"].uintValue = 10500;  
         _classes[24]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[24]._values["fixed-rate"].boolValue = true;  
-        _classes[24]._values["APY"].uintValue = 126000;  
+        _classes[24]._values["APR"].uintValue = 126000;  
         _classes[24]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=EnMa4fdxLkHdTRdaqLbjVPSxLWvq9n68YzK8RYZWFuoP";
         emit classCreated(address(this), 24);
 
@@ -1410,7 +1410,7 @@ contract Token is ERC3475 {
         _classes[25]._values["couponRate"].uintValue = 10500;  
         _classes[25]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[25]._values["fixed-rate"].boolValue = true;  
-        _classes[25]._values["APY"].uintValue = 126000;  
+        _classes[25]._values["APR"].uintValue = 126000;  
         _classes[25]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=GAZv6Nivo8AcAc5bBYsdC8yvgwoJzUtMKNPr8RkgZtVX";
         emit classCreated(address(this), 25);
 
@@ -1439,7 +1439,7 @@ contract Token is ERC3475 {
         _classes[26]._values["couponRate"].uintValue = 8750;  
         _classes[26]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[26]._values["fixed-rate"].boolValue = true;  
-        _classes[26]._values["APY"].uintValue = 105000;  
+        _classes[26]._values["APR"].uintValue = 105000;  
         _classes[26]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=89xZFZ4LGo7obbTcSc4prY8sDPG5j9aBbkztZHrfYVJS";
         emit classCreated(address(this), 26);
 
@@ -1468,7 +1468,7 @@ contract Token is ERC3475 {
         _classes[27]._values["couponRate"].uintValue = 8750;  
         _classes[27]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[27]._values["fixed-rate"].boolValue = true;  
-        _classes[27]._values["APY"].uintValue = 105000;  
+        _classes[27]._values["APR"].uintValue = 105000;  
         _classes[27]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=89xZFZ4LGo7obbTcSc4prY8sDPG5j9aBbkztZHrfYVJS";
         emit classCreated(address(this), 27);
 
@@ -1497,7 +1497,7 @@ contract Token is ERC3475 {
         _classes[28]._values["couponRate"].uintValue = 13750;  
         _classes[28]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[28]._values["fixed-rate"].boolValue = true;  
-        _classes[28]._values["APY"].uintValue = 165000;  
+        _classes[28]._values["APR"].uintValue = 165000;  
         _classes[28]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=89xZFZ4LGo7obbTcSc4prY8sDPG5j9aBbkztZHrfYVJS";
         emit classCreated(address(this), 28);
 
@@ -1526,7 +1526,7 @@ contract Token is ERC3475 {
         _classes[29]._values["couponRate"].uintValue = 11250;  
         _classes[29]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[29]._values["fixed-rate"].boolValue = true;  
-        _classes[29]._values["APY"].uintValue = 135000;  
+        _classes[29]._values["APR"].uintValue = 135000;  
         _classes[29]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=6p6Hmbja9gy6h1EUvjYcWYCZsTjRGkdmVvJgGwVTWqZY";
         emit classCreated(address(this), 29);
 
@@ -1555,7 +1555,7 @@ contract Token is ERC3475 {
         _classes[30]._values["couponRate"].uintValue = 11250;  
         _classes[30]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[30]._values["fixed-rate"].boolValue = true;  
-        _classes[30]._values["APY"].uintValue = 135000;  
+        _classes[30]._values["APR"].uintValue = 135000;  
         _classes[30]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=3mVaW3tQV7NSYipz4qMyHva2DFG5Y1Wgd72mkRR9ZYmD";
         emit classCreated(address(this), 30);
 
@@ -1584,7 +1584,7 @@ contract Token is ERC3475 {
         _classes[31]._values["couponRate"].uintValue = 11250;  
         _classes[31]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[31]._values["fixed-rate"].boolValue = true;  
-        _classes[31]._values["APY"].uintValue = 135000;  
+        _classes[31]._values["APR"].uintValue = 135000;  
         _classes[31]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=7wTEo6A78a3izB4rUMxjQYrh3Rub6QPkRYqQ9aKfxZ1M";
         emit classCreated(address(this), 31);
     }
