@@ -696,6 +696,8 @@ contract Token is ERC3475 {
         _classes[0]._values["custodianJurisdiction"].stringValue = "BE";
         _classes[0]._values["custodianURL"].stringValue = "https://credix.finance/";
         _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/credix.jpeg";
+        _classes[0]._values["fixedMaturity"].boolValue = true;  
+
         
         _classes[1]._values["symbol"].stringValue = "Atria deal 2 -Super Senior Loan";
         _classes[1]._values["category"].stringValue = "loan";
