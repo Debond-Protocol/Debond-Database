@@ -721,10 +721,7 @@ contract Token is ERC3475 {
 
         _classes[1]._values["maxiumSupply"].uintValue = 1200000;  
         _classes[1]._values["callable"].boolValue = true;  
-        _classes[1]._values["maturityPeriod"].uintValue = 322*60*60*24;  
-        _classes[1]._values["coupon"].boolValue = true;  
-        _classes[1]._values["couponRate"].uintValue = 3333;  
-        _classes[1]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[1]._values["coupon"].boolValue = false;   
         _classes[1]._values["fixed-rate"].boolValue = true;  
         _classes[1]._values["APY"].uintValue = 40000;  
         _classes[1]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x55d86d51Ac3bcAB7ab7d2124931FbA106c8b60c7";
@@ -751,13 +748,9 @@ contract Token is ERC3475 {
         _classes[2]._values["currency"].stringValue = "DAI";  
 
         _classes[2]._values["maxiumSupply"].uintValue = 69700000;  
-        _classes[2]._values["callable"].boolValue = true;  
-        _classes[2]._values["maturityPeriod"].uintValue = 322*60*60*24;  
-        _classes[2]._values["coupon"].boolValue = true;  
-        _classes[2]._values["couponRate"].uintValue = 11250;  
-        _classes[2]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[2]._values["callable"].boolValue = true;    
+        _classes[2]._values["coupon"].boolValue = false;  
         _classes[2]._values["fixed-rate"].boolValue = false;  
-        _classes[2]._values["APY"].uintValue = ;  
         _classes[2]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x55d86d51Ac3bcAB7ab7d2124931FbA106c8b60c7";
         emit classCreated(address(this), 2);
 
@@ -783,10 +776,7 @@ contract Token is ERC3475 {
 
         _classes[3]._values["maxiumSupply"].uintValue = 11200000;  
         _classes[3]._values["callable"].boolValue = true;  
-        _classes[3]._values["maturityPeriod"].uintValue = 322*60*60*24;  
-        _classes[3]._values["coupon"].boolValue = true;  
-        _classes[3]._values["couponRate"].uintValue = 3333;  
-        _classes[3]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[3]._values["coupon"].boolValue = false;  
         _classes[3]._values["fixed-rate"].boolValue = ture;  
         _classes[3]._values["APY"].uintValue = 40000;  
         _classes[3]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x90040F96aB8f291b6d43A8972806e977631aFFdE";
@@ -813,13 +803,9 @@ contract Token is ERC3475 {
         _classes[4]._values["currency"].stringValue = "DAI";  
 
         _classes[4]._values["maxiumSupply"].uintValue = 19000000;  
-        _classes[4]._values["callable"].boolValue = true;  
-        _classes[4]._values["maturityPeriod"].uintValue = 322*60*60*24;  
-        _classes[4]._values["coupon"].boolValue = true;  
-        _classes[4]._values["couponRate"].uintValue = 11250;  
-        _classes[4]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[4]._values["callable"].boolValue = true;   
+        _classes[4]._values["coupon"].boolValue = false;   
         _classes[4]._values["fixed-rate"].boolValue = false;  
-        _classes[4]._values["APY"].uintValue = 135000;  
         _classes[4]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x90040F96aB8f291b6d43A8972806e977631aFFdE";
         emit classCreated(address(this), 4);
 
