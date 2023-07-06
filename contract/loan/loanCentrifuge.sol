@@ -712,7 +712,7 @@ contract Token is ERC3475 {
         _classes[1]._values["issuerJurisdiction"].stringValue = "US";
         _classes[1]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
         _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
-        _classes[1]._values["issuerDocURL"].stringValue = [
+        _classes[1]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/BT4.pdf"
         ];
         _classes[1]._values["fundType"].stringValue = "corporate";  
@@ -723,7 +723,7 @@ contract Token is ERC3475 {
         _classes[1]._values["callable"].boolValue = true;  
         _classes[1]._values["coupon"].boolValue = false;   
         _classes[1]._values["fixed-rate"].boolValue = true;  
-        _classes[1]._values["APY"].uintValue = 40000;  
+        _classes[1]._values["APR"].uintValue = 40000;  
         _classes[1]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x55d86d51Ac3bcAB7ab7d2124931FbA106c8b60c7";
         emit classCreated(address(this), 1);
 
@@ -740,7 +740,7 @@ contract Token is ERC3475 {
         _classes[2]._values["issuerJurisdiction"].stringValue = "US";
         _classes[2]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
         _classes[2]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
-        _classes[2]._values["issuerDocURL"].stringValue = [
+        _classes[2]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/BT4.pdf"
         ];
         _classes[2]._values["fundType"].stringValue = "corporate";  
@@ -751,6 +751,7 @@ contract Token is ERC3475 {
         _classes[2]._values["callable"].boolValue = true;    
         _classes[2]._values["coupon"].boolValue = false;  
         _classes[2]._values["fixed-rate"].boolValue = false;  
+        _classes[2]._values["APR"].uintValue = 40000;  
         _classes[2]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x55d86d51Ac3bcAB7ab7d2124931FbA106c8b60c7";
         emit classCreated(address(this), 2);
 
@@ -767,7 +768,7 @@ contract Token is ERC3475 {
         _classes[3]._values["issuerJurisdiction"].stringValue = "US";
         _classes[3]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
         _classes[3]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
-        _classes[3]._values["issuerDocURL"].stringValue = [
+        _classes[3]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/BT3.pdf"
         ];
         _classes[3]._values["fundType"].stringValue = "corporate";  
@@ -777,8 +778,8 @@ contract Token is ERC3475 {
         _classes[3]._values["maxiumSupply"].uintValue = 11200000;  
         _classes[3]._values["callable"].boolValue = true;  
         _classes[3]._values["coupon"].boolValue = false;  
-        _classes[3]._values["fixed-rate"].boolValue = ture;  
-        _classes[3]._values["APY"].uintValue = 40000;  
+        _classes[3]._values["fixed-rate"].boolValue = true;  
+        _classes[3]._values["APR"].uintValue = 40000;  
         _classes[3]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x90040F96aB8f291b6d43A8972806e977631aFFdE";
         emit classCreated(address(this), 3);
 
@@ -795,7 +796,7 @@ contract Token is ERC3475 {
         _classes[4]._values["issuerJurisdiction"].stringValue = "US";
         _classes[4]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
         _classes[4]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
-        _classes[4]._values["issuerDocURL"].stringValue = [
+        _classes[4]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/BT3.pdf"
         ];
         _classes[4]._values["fundType"].stringValue = "corporate";  
@@ -806,6 +807,7 @@ contract Token is ERC3475 {
         _classes[4]._values["callable"].boolValue = true;   
         _classes[4]._values["coupon"].boolValue = false;   
         _classes[4]._values["fixed-rate"].boolValue = false;  
+        _classes[4]._values["APR"].uintValue = 40000;  
         _classes[4]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x90040F96aB8f291b6d43A8972806e977631aFFdE";
         emit classCreated(address(this), 4);
 
@@ -822,7 +824,7 @@ contract Token is ERC3475 {
         _classes[5]._values["issuerJurisdiction"].stringValue = "US";
         _classes[5]._values["issuerURL"].stringValue = "https://www.1754.finance/";
         _classes[5]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Branch.png";
-        _classes[5]._values["issuerDocURL"].stringValue = [
+        _classes[5]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/BR3.pdf"
         ];
         _classes[5]._values["fundType"].stringValue = "corporate";  
@@ -835,8 +837,8 @@ contract Token is ERC3475 {
         _classes[5]._values["coupon"].boolValue = true;  
         _classes[5]._values["couponRate"].uintValue = 11250;  
         _classes[5]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[5]._values["fixed-rate"].boolValue = ture;  
-        _classes[5]._values["APY"].uintValue = 135000;  
+        _classes[5]._values["fixed-rate"].boolValue = true;  
+        _classes[5]._values["APR"].uintValue = 135000;  
         _classes[5]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x560Ac248ce28972083B718778EEb0dbC2DE55740";
         emit classCreated(address(this), 5);
 
@@ -853,7 +855,7 @@ contract Token is ERC3475 {
         _classes[6]._values["issuerJurisdiction"].stringValue = "US";
         _classes[6]._values["issuerURL"].stringValue = "https://www.1754.finance/";
         _classes[6]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Branch.png";
-        _classes[6]._values["issuerDocURL"].stringValue = [
+        _classes[6]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/BR3.pdf"
         ];
         _classes[6]._values["fundType"].stringValue = "corporate";  
@@ -867,38 +869,7 @@ contract Token is ERC3475 {
         _classes[6]._values["couponRate"].uintValue = 11250;  
         _classes[6]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[6]._values["fixed-rate"].boolValue = false;  
-        _classes[6]._values["APY"].uintValue = 100000;  
-        _classes[6]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x560Ac248ce28972083B718778EEb0dbC2DE55740";
-        emit classCreated(address(this), 6);
-
-////////////////////////////////////////////////////////
-
-        _classes[6]._values["symbol"].stringValue = "Branch-Series 3 (1754 Factory) -Junior Loan";
-        _classes[6]._values["category"].stringValue = "loan";
-        _classes[6]._values["subcategory"].stringValue = "asset-backed loan";
-        _classes[6]._values["childCategory"].stringValue = "emerging market consumer loan";
-        
-        _classes[6]._values["description"].stringValue = unicode"Branch is a financial technology company that lends money to consumers using machine learning algorithms to determine credit worthiness via customers' smartphones. Branch was founded in 2015 and has operations in Kenya, Nigeria, Tanzania, Mexico and India, and has since originated over $500M in loans to over 4 millions borrowers. This Tinlake pool will consist of tranches of a secured non convertible debenture with a maturity of 3 years backed by a portfolio of loans made to customers.The current weighted average loan balance is $49 (ranging from $6 to $2,500) with average maturity of 70 days.";
-        _classes[6]._values["issuerName"].stringValue = "Branch (1754 Factory)";
-        _classes[6]._values["issuerType"].stringValue = "LTD";
-        _classes[6]._values["issuerJurisdiction"].stringValue = "US";
-        _classes[6]._values["issuerURL"].stringValue = "https://www.1754.finance/";
-        _classes[6]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Branch.png";
-        _classes[6]._values["issuerDocURL"].stringValue = [
-            "https://storage.googleapis.com/tinlake/docs/summaries/BR3.pdf"
-        ];
-        _classes[6]._values["fundType"].stringValue = "corporate";  
-        _classes[6]._values["shareValue"].uintValue = 1;  
-        _classes[6]._values["currency"].stringValue = "DAI";  
-
-        _classes[6]._values["maxiumSupply"].uintValue = 4000000;  
-        _classes[6]._values["callable"].boolValue = true;  
-        _classes[6]._values["maturityPeriod"].uintValue = 322*60*60*24;  
-        _classes[6]._values["coupon"].boolValue = true;  
-        _classes[6]._values["couponRate"].uintValue = 11250;  
-        _classes[6]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[6]._values["fixed-rate"].boolValue = false;  
-        _classes[6]._values["APY"].uintValue = ;  
+        _classes[6]._values["APR"].uintValue = 100000;  
         _classes[6]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x560Ac248ce28972083B718778EEb0dbC2DE55740";
         emit classCreated(address(this), 6);
 
@@ -915,7 +886,7 @@ contract Token is ERC3475 {
         _classes[7]._values["issuerJurisdiction"].stringValue = "US";
         _classes[7]._values["issuerURL"].stringValue = "https://www.1754.finance/";
         _classes[7]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/REIF.png";
-        _classes[7]._values["issuerDocURL"].stringValue = [
+        _classes[7]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/REIF1.pdf"
         ];
         _classes[7]._values["fundType"].stringValue = "corporate";  
@@ -928,8 +899,8 @@ contract Token is ERC3475 {
         _classes[7]._values["coupon"].boolValue = true;  
         _classes[7]._values["couponRate"].uintValue = 4166;  
         _classes[7]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[7]._values["fixed-rate"].boolValue = ture;  
-        _classes[7]._values["APY"].uintValue = 50000;  
+        _classes[7]._values["fixed-rate"].boolValue = true;  
+        _classes[7]._values["APR"].uintValue = 50000;  
         _classes[7]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x09e43329552c9D81cF205Fd5f44796fBC40c822e";
         emit classCreated(address(this), 7);
 
@@ -946,7 +917,7 @@ contract Token is ERC3475 {
         _classes[8]._values["issuerJurisdiction"].stringValue = "US";
         _classes[8]._values["issuerURL"].stringValue = "https://www.1754.finance/";
         _classes[8]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/REIF.png";
-        _classes[8]._values["issuerDocURL"].stringValue = [
+        _classes[8]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/REIF1.pdf"
         ];
         _classes[8]._values["fundType"].stringValue = "corporate";  
@@ -960,7 +931,7 @@ contract Token is ERC3475 {
         _classes[8]._values["couponRate"].uintValue = 4166;  
         _classes[8]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[8]._values["fixed-rate"].boolValue = false;  
-        _classes[8]._values["APY"].uintValue = 50000;  
+        _classes[8]._values["APR"].uintValue = 50000;  
         _classes[8]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x09e43329552c9D81cF205Fd5f44796fBC40c822e";
         emit classCreated(address(this), 8);
 
@@ -977,7 +948,7 @@ contract Token is ERC3475 {
         _classes[9]._values["issuerJurisdiction"].stringValue = "US";
         _classes[9]._values["issuerURL"].stringValue = "https://www.fortunafi.com/";
         _classes[9]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Fortunafi.png";
-        _classes[9]._values["issuerDocURL"].stringValue = [
+        _classes[9]._values["issuerDocURL"].stringArrayValue = [
             "https://docsend.com/view/s/gressukfmvcp6uip"
         ];
         _classes[9]._values["fundType"].stringValue = "corporate";  
@@ -990,8 +961,8 @@ contract Token is ERC3475 {
         _classes[9]._values["coupon"].boolValue = true;  
         _classes[9]._values["couponRate"].uintValue = 4166;  
         _classes[9]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[9]._values["fixed-rate"].boolValue = ture;  
-        _classes[9]._values["APY"].uintValue = 50000;  
+        _classes[9]._values["fixed-rate"].boolValue = true;  
+        _classes[9]._values["APR"].uintValue = 50000;  
         _classes[9]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x4B6CA198d257D755A5275648D471FE09931b764A";
         emit classCreated(address(this), 9);
 
@@ -1008,7 +979,7 @@ contract Token is ERC3475 {
         _classes[10]._values["issuerJurisdiction"].stringValue = "US";
         _classes[10]._values["issuerURL"].stringValue = "https://www.fortunafi.com/";
         _classes[10]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Fortunafi.png";
-        _classes[10]._values["issuerDocURL"].stringValue = [
+        _classes[10]._values["issuerDocURL"].stringArrayValue = [
             "https://docsend.com/view/s/gressukfmvcp6uip"
         ];
         _classes[10]._values["fundType"].stringValue = "corporate";  
@@ -1022,7 +993,7 @@ contract Token is ERC3475 {
         _classes[10]._values["couponRate"].uintValue = 4166;  
         _classes[10]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[10]._values["fixed-rate"].boolValue = false;  
-        _classes[10]._values["APY"].uintValue = 50000;  
+        _classes[10]._values["APR"].uintValue = 50000;  
         _classes[10]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x4B6CA198d257D755A5275648D471FE09931b764A";
         emit classCreated(address(this), 10);
 
@@ -1039,7 +1010,7 @@ contract Token is ERC3475 {
         _classes[11]._values["issuerJurisdiction"].stringValue = "US";
         _classes[11]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
         _classes[11]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
-        _classes[11]._values["issuerDocURL"].stringValue = [
+        _classes[11]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/BT1.pdf"
         ];
         _classes[11]._values["fundType"].stringValue = "corporate";  
@@ -1053,7 +1024,7 @@ contract Token is ERC3475 {
         _classes[11]._values["couponRate"].uintValue = 3333;  
         _classes[11]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[11]._values["fixed-rate"].boolValue = true;  
-        _classes[11]._values["APY"].uintValue = 40000;  
+        _classes[11]._values["APR"].uintValue = 50000;  
         _classes[11]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x4597f91cC06687Bdb74147C80C097A79358Ed29b";
         emit classCreated(address(this), 11);
 
@@ -1070,7 +1041,7 @@ contract Token is ERC3475 {
         _classes[12]._values["issuerJurisdiction"].stringValue = "US";
         _classes[12]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
         _classes[12]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
-        _classes[12]._values["issuerDocURL"].stringValue = [
+        _classes[12]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/BT1.pdf"
         ];
         _classes[12]._values["fundType"].stringValue = "corporate";  
@@ -1083,8 +1054,8 @@ contract Token is ERC3475 {
         _classes[12]._values["coupon"].boolValue = true;  
         _classes[12]._values["couponRate"].uintValue = 3333;  
         _classes[12]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[12]._values["fixed-rate"].boolValue = false;  
-        _classes[12]._values["APY"].uintValue = ;  
+        _classes[12]._values["fixed-rate"].boolValue = false; 
+        _classes[12]._values["APR"].uintValue = 40000;   
         _classes[12]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x4597f91cC06687Bdb74147C80C097A79358Ed29b";
         emit classCreated(address(this), 12);
 
@@ -1101,7 +1072,7 @@ contract Token is ERC3475 {
         _classes[13]._values["issuerJurisdiction"].stringValue = "US";
         _classes[13]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
         _classes[13]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
-        _classes[13]._values["issuerDocURL"].stringValue = [
+        _classes[13]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/BT2.pdf"
         ];
         _classes[13]._values["fundType"].stringValue = "corporate";  
@@ -1114,8 +1085,8 @@ contract Token is ERC3475 {
         _classes[13]._values["coupon"].boolValue = true;  
         _classes[13]._values["couponRate"].uintValue = 3333;  
         _classes[13]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[13]._values["fixed-rate"].boolValue = ture;  
-        _classes[13]._values["APY"].uintValue = 40000;  
+        _classes[13]._values["fixed-rate"].boolValue = true;  
+        _classes[13]._values["APR"].uintValue = 40000;  
         _classes[13]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xB5c08534d1E73582FBd79e7C45694CAD6A5C5aB2";
         emit classCreated(address(this), 13);
 
@@ -1132,7 +1103,7 @@ contract Token is ERC3475 {
         _classes[14]._values["issuerJurisdiction"].stringValue = "US";
         _classes[14]._values["issuerURL"].stringValue = "https://www.blocktower.com/";
         _classes[14]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Blocktower.png";
-        _classes[14]._values["issuerDocURL"].stringValue = [
+        _classes[14]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/BT2.pdf"
         ];
         _classes[14]._values["fundType"].stringValue = "corporate";  
@@ -1143,10 +1114,9 @@ contract Token is ERC3475 {
         _classes[14]._values["callable"].boolValue = true;  
         _classes[14]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[14]._values["coupon"].boolValue = true;  
-        _classes[14]._values["couponRate"].uintValue = ;  
         _classes[14]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[14]._values["fixed-rate"].boolValue = false;  
-        _classes[14]._values["APY"].uintValue = ;  
+        _classes[14]._values["APR"].uintValue = 40000;  
         _classes[14]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xB5c08534d1E73582FBd79e7C45694CAD6A5C5aB2";
         emit classCreated(address(this), 14);
 
@@ -1163,7 +1133,7 @@ contract Token is ERC3475 {
         _classes[15]._values["issuerJurisdiction"].stringValue = "US";
         _classes[15]._values["issuerURL"].stringValue = "https://newsilver.com/";
         _classes[15]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/New%20Silver.png";
-        _classes[15]._values["issuerDocURL"].stringValue = [
+        _classes[15]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/NS2.pdf"
         ];
         _classes[15]._values["fundType"].stringValue = "corporate";  
@@ -1176,8 +1146,8 @@ contract Token is ERC3475 {
         _classes[15]._values["coupon"].boolValue = true;  
         _classes[15]._values["couponRate"].uintValue = 3333;  
         _classes[15]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[15]._values["fixed-rate"].boolValue = ture;  
-        _classes[15]._values["APY"].uintValue = 40000;  
+        _classes[15]._values["fixed-rate"].boolValue = true;  
+        _classes[15]._values["APR"].uintValue = 40000;  
         _classes[15]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x53b2d22d07E069a3b132BfeaaD275b10273d381E";
         emit classCreated(address(this), 15);
 
@@ -1194,7 +1164,7 @@ contract Token is ERC3475 {
         _classes[16]._values["issuerJurisdiction"].stringValue = "US";
         _classes[16]._values["issuerURL"].stringValue = "https://newsilver.com/";
         _classes[16]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/New%20Silver.png";
-        _classes[16]._values["issuerDocURL"].stringValue = [
+        _classes[16]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/NS2.pdf"
         ];
         _classes[16]._values["fundType"].stringValue = "corporate";  
@@ -1205,10 +1175,9 @@ contract Token is ERC3475 {
         _classes[16]._values["callable"].boolValue = true;  
         _classes[16]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[16]._values["coupon"].boolValue = true;  
-        _classes[16]._values["couponRate"].uintValue = ;  
         _classes[16]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[16]._values["fixed-rate"].boolValue = false;  
-        _classes[16]._values["APY"].uintValue = ;  
+        _classes[16]._values["APR"].uintValue = 40000;  
         _classes[16]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x53b2d22d07E069a3b132BfeaaD275b10273d381E";
         emit classCreated(address(this), 16);
 
@@ -1225,7 +1194,7 @@ contract Token is ERC3475 {
         _classes[17]._values["issuerJurisdiction"].stringValue = "US";
         _classes[17]._values["issuerURL"].stringValue = "https://caurisfinance.com/";
         _classes[17]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Cauris.png";
-        _classes[17]._values["issuerDocURL"].stringValue = [
+        _classes[17]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/CGFF1.pdf"
         ];
         _classes[17]._values["fundType"].stringValue = "corporate";  
@@ -1238,8 +1207,8 @@ contract Token is ERC3475 {
         _classes[17]._values["coupon"].boolValue = true;  
         _classes[17]._values["couponRate"].uintValue = 7083;  
         _classes[17]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[17]._values["fixed-rate"].boolValue = ture;  
-        _classes[17]._values["APY"].uintValue = 85000;  
+        _classes[17]._values["fixed-rate"].boolValue = true;  
+        _classes[17]._values["APR"].uintValue = 85000;  
         _classes[17]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x53b2d22d07E069a3b132BfeaaD275b10273d381E";
         emit classCreated(address(this), 17);
 
@@ -1256,7 +1225,7 @@ contract Token is ERC3475 {
         _classes[18]._values["issuerJurisdiction"].stringValue = "US";
         _classes[18]._values["issuerURL"].stringValue = "https://caurisfinance.com/";
         _classes[18]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Cauris.png";
-        _classes[18]._values["issuerDocURL"].stringValue = [
+        _classes[18]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/CGFF1.pdf"
         ];
         _classes[18]._values["fundType"].stringValue = "corporate";  
@@ -1267,10 +1236,9 @@ contract Token is ERC3475 {
         _classes[18]._values["callable"].boolValue = true;  
         _classes[18]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[18]._values["coupon"].boolValue = true;  
-        _classes[18]._values["couponRate"].uintValue = ;  
         _classes[18]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[18]._values["fixed-rate"].boolValue = false;  
-        _classes[18]._values["APY"].uintValue = ;  
+        _classes[18]._values["APR"].uintValue = 85000; 
         _classes[18]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x53b2d22d07E069a3b132BfeaaD275b10273d381E";
         emit classCreated(address(this), 18);
 
@@ -1287,7 +1255,7 @@ contract Token is ERC3475 {
         _classes[19]._values["issuerJurisdiction"].stringValue = "US";
         _classes[19]._values["issuerURL"].stringValue = "https://www.alternativepayments.io/";
         _classes[19]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Alternative%20Payments.png";
-        _classes[19]._values["issuerDocURL"].stringValue = [
+        _classes[19]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/ALT1.pdf"
         ];
         _classes[19]._values["fundType"].stringValue = "corporate";  
@@ -1300,8 +1268,8 @@ contract Token is ERC3475 {
         _classes[19]._values["coupon"].boolValue = true;  
         _classes[19]._values["couponRate"].uintValue = 6416;  
         _classes[19]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[19]._values["fixed-rate"].boolValue = ture;  
-        _classes[19]._values["APY"].uintValue = 77000;  
+        _classes[19]._values["fixed-rate"].boolValue = true;  
+        _classes[19]._values["APR"].uintValue = 77000;  
         _classes[19]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xF96F18F2c70b57Ec864cC0C8b828450b82Ff63e3";
         emit classCreated(address(this), 19);
 
@@ -1318,7 +1286,7 @@ contract Token is ERC3475 {
         _classes[20]._values["issuerJurisdiction"].stringValue = "US";
         _classes[20]._values["issuerURL"].stringValue = "https://www.alternativepayments.io/";
         _classes[20]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Alternative%20Payments.png";
-        _classes[20]._values["issuerDocURL"].stringValue = [
+        _classes[20]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/ALT1.pdf"
         ];
         _classes[20]._values["fundType"].stringValue = "corporate";  
@@ -1328,11 +1296,10 @@ contract Token is ERC3475 {
         _classes[20]._values["maxiumSupply"].uintValue = 6200000;  
         _classes[20]._values["callable"].boolValue = true;  
         _classes[20]._values["maturityPeriod"].uintValue = 322*60*60*24;  
-        _classes[20]._values["coupon"].boolValue = true;  
-        _classes[20]._values["couponRate"].uintValue = ;  
+        _classes[20]._values["coupon"].boolValue = true;     
         _classes[20]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[20]._values["fixed-rate"].boolValue = false;  
-        _classes[20]._values["APY"].uintValue = ;  
+        _classes[20]._values["APR"].uintValue = 77000;  
         _classes[20]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xF96F18F2c70b57Ec864cC0C8b828450b82Ff63e3";
         emit classCreated(address(this), 20);
 
@@ -1349,7 +1316,7 @@ contract Token is ERC3475 {
         _classes[21]._values["issuerJurisdiction"].stringValue = "US";
         _classes[21]._values["issuerURL"].stringValue = "https://www.1754.finance/";
         _classes[21]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/1754%20Factory.png";
-        _classes[21]._values["issuerDocURL"].stringValue = [
+        _classes[21]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/BL1.pdf"
         ];
         _classes[21]._values["fundType"].stringValue = "corporate";  
@@ -1362,8 +1329,8 @@ contract Token is ERC3475 {
         _classes[21]._values["coupon"].boolValue = true;  
         _classes[21]._values["couponRate"].uintValue = 6250;  
         _classes[21]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[21]._values["fixed-rate"].boolValue = ture;  
-        _classes[21]._values["APY"].uintValue = 75000;  
+        _classes[21]._values["fixed-rate"].boolValue = true;  
+        _classes[21]._values["APR"].uintValue = 75000;  
         _classes[21]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x0CED6166873038Ac0cc688e7E6d19E2cBE251Bf0";
         emit classCreated(address(this), 21);
 
@@ -1380,7 +1347,7 @@ contract Token is ERC3475 {
         _classes[22]._values["issuerJurisdiction"].stringValue = "US";
         _classes[22]._values["issuerURL"].stringValue = "https://www.1754.finance/";
         _classes[22]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/1754%20Factory.png";
-        _classes[22]._values["issuerDocURL"].stringValue = [
+        _classes[22]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/BL1.pdf"
         ];
         _classes[22]._values["fundType"].stringValue = "corporate";  
@@ -1391,10 +1358,9 @@ contract Token is ERC3475 {
         _classes[22]._values["callable"].boolValue = true;  
         _classes[22]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[22]._values["coupon"].boolValue = true;  
-        _classes[22]._values["couponRate"].uintValue = ;  
         _classes[22]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[22]._values["fixed-rate"].boolValue = false;  
-        _classes[22]._values["APY"].uintValue = ;  
+        _classes[22]._values["APR"].uintValue = 75000;  
         _classes[22]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x0CED6166873038Ac0cc688e7E6d19E2cBE251Bf0";
         emit classCreated(address(this), 22);
 
@@ -1411,7 +1377,7 @@ contract Token is ERC3475 {
         _classes[23]._values["issuerJurisdiction"].stringValue = "US";
         _classes[23]._values["issuerURL"].stringValue = "https://www.consolfreight.io/";
         _classes[23]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/consolfreight.png";
-        _classes[23]._values["issuerDocURL"].stringValue = [
+        _classes[23]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/CF4.pdf"
         ];
         _classes[23]._values["fundType"].stringValue = "corporate";  
@@ -1424,8 +1390,8 @@ contract Token is ERC3475 {
         _classes[23]._values["coupon"].boolValue = true;  
         _classes[23]._values["couponRate"].uintValue = 5000;  
         _classes[23]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[23]._values["fixed-rate"].boolValue = ture;  
-        _classes[23]._values["APY"].uintValue = 60000;  
+        _classes[23]._values["fixed-rate"].boolValue = true;  
+        _classes[23]._values["APR"].uintValue = 60000;  
         _classes[23]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xdB3bC9fB1893222d266762e9fF857EB74D75c7D6";
         emit classCreated(address(this), 23);
 
@@ -1442,7 +1408,7 @@ contract Token is ERC3475 {
         _classes[24]._values["issuerJurisdiction"].stringValue = "US";
         _classes[24]._values["issuerURL"].stringValue = "https://www.consolfreight.io/";
         _classes[24]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/consolfreight.png";
-        _classes[24]._values["issuerDocURL"].stringValue = [
+        _classes[24]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/CF4.pdf"
         ];
         _classes[24]._values["fundType"].stringValue = "corporate";  
@@ -1453,10 +1419,9 @@ contract Token is ERC3475 {
         _classes[24]._values["callable"].boolValue = true;  
         _classes[24]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[24]._values["coupon"].boolValue = true;  
-        _classes[24]._values["couponRate"].uintValue = ;  
         _classes[24]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[24]._values["fixed-rate"].boolValue = false;  
-        _classes[24]._values["APY"].uintValue = ;  
+        _classes[24]._values["APR"].uintValue = 60000;  
         _classes[24]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x0CED6166873038Ac0cc688e7E6d19E2cBE251Bf0";
         emit classCreated(address(this), 24);
 
@@ -1473,7 +1438,7 @@ contract Token is ERC3475 {
         _classes[25]._values["issuerJurisdiction"].stringValue = "US";
         _classes[25]._values["issuerURL"].stringValue = "https://harbortrade.com/";
         _classes[25]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/harbortrade.png";
-        _classes[25]._values["issuerDocURL"].stringValue = [
+        _classes[25]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/HTC2.pdf"
         ];
         _classes[25]._values["fundType"].stringValue = "corporate";  
@@ -1486,8 +1451,8 @@ contract Token is ERC3475 {
         _classes[25]._values["coupon"].boolValue = true;  
         _classes[25]._values["couponRate"].uintValue = 5833;  
         _classes[25]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[25]._values["fixed-rate"].boolValue = ture;  
-        _classes[25]._values["APY"].uintValue = 70000;  
+        _classes[25]._values["fixed-rate"].boolValue = true;  
+        _classes[25]._values["APR"].uintValue = 70000;  
         _classes[25]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x4cA805cE8EcE2E63FfC1F9f8F2731D3F48DF89Df";
         emit classCreated(address(this), 25);
 
@@ -1504,7 +1469,7 @@ contract Token is ERC3475 {
         _classes[26]._values["issuerJurisdiction"].stringValue = "US";
         _classes[26]._values["issuerURL"].stringValue = "https://harbortrade.com/";
         _classes[26]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/harbortrade.png";
-        _classes[26]._values["issuerDocURL"].stringValue = [
+        _classes[26]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/HTC2.pdf"
         ];
         _classes[26]._values["fundType"].stringValue = "corporate";  
@@ -1515,10 +1480,9 @@ contract Token is ERC3475 {
         _classes[26]._values["callable"].boolValue = true;  
         _classes[26]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[26]._values["coupon"].boolValue = true;  
-        _classes[26]._values["couponRate"].uintValue = ;  
         _classes[26]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[26]._values["fixed-rate"].boolValue = false;  
-        _classes[26]._values["APY"].uintValue = ;  
+        _classes[26]._values["APR"].uintValue = 70000;  
         _classes[26]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x4cA805cE8EcE2E63FfC1F9f8F2731D3F48DF89Df";
         emit classCreated(address(this), 26);
 
@@ -1535,7 +1499,7 @@ contract Token is ERC3475 {
         _classes[27]._values["issuerJurisdiction"].stringValue = "US";
         _classes[27]._values["issuerURL"].stringValue = "https://www.flowcarbon.com/";
         _classes[27]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Flowcarbon.png";
-        _classes[27]._values["issuerDocURL"].stringValue = [
+        _classes[27]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/FNO1.pdf"
         ];
         _classes[27]._values["fundType"].stringValue = "corporate";  
@@ -1548,8 +1512,8 @@ contract Token is ERC3475 {
         _classes[27]._values["coupon"].boolValue = true;  
         _classes[27]._values["couponRate"].uintValue = 12500;  
         _classes[27]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[27]._values["fixed-rate"].boolValue = ture;  
-        _classes[27]._values["APY"].uintValue = 150000;  
+        _classes[27]._values["fixed-rate"].boolValue = true;  
+        _classes[27]._values["APR"].uintValue = 150000;  
         _classes[27]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xd8486C565098360A24f858088a6D29a380dDF7ec";
         emit classCreated(address(this), 27);
 
@@ -1566,7 +1530,7 @@ contract Token is ERC3475 {
         _classes[28]._values["issuerJurisdiction"].stringValue = "US";
         _classes[28]._values["issuerURL"].stringValue = "https://www.flowcarbon.com/";
         _classes[28]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Flowcarbon.png";
-        _classes[28]._values["issuerDocURL"].stringValue = [
+        _classes[28]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/FNO1.pdf"
         ];
         _classes[28]._values["fundType"].stringValue = "corporate";  
@@ -1577,10 +1541,9 @@ contract Token is ERC3475 {
         _classes[28]._values["callable"].boolValue = true;  
         _classes[28]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[28]._values["coupon"].boolValue = true;  
-        _classes[28]._values["couponRate"].uintValue = ;  
         _classes[28]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[28]._values["fixed-rate"].boolValue = false;  
-        _classes[28]._values["APY"].uintValue = ;  
+        _classes[28]._values["fixed-rate"].boolValue = false;
+        _classes[28]._values["APR"].uintValue = 150000;    
         _classes[28]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xd8486C565098360A24f858088a6D29a380dDF7ec";
         emit classCreated(address(this), 28);
 
@@ -1597,7 +1560,7 @@ contract Token is ERC3475 {
         _classes[29]._values["issuerJurisdiction"].stringValue = "HK";
         _classes[29]._values["issuerURL"].stringValue = "https://www.databased.finance/";
         _classes[29]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Databased%20Finance.png";
-        _classes[29]._values["issuerDocURL"].stringValue = [
+        _classes[29]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/DF1.pdf"
         ];
         _classes[29]._values["fundType"].stringValue = "corporate";  
@@ -1608,8 +1571,8 @@ contract Token is ERC3475 {
         _classes[29]._values["callable"].boolValue = true;  
         _classes[29]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[29]._values["coupon"].boolValue = false;  
-        _classes[29]._values["fixed-rate"].boolValue = ture;  
-        _classes[29]._values["APY"].uintValue = 8000;  
+        _classes[29]._values["fixed-rate"].boolValue = true;  
+        _classes[29]._values["APR"].uintValue = 8000;  
         _classes[29]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xfc2950dD337ca8496C18dfc0256Fb905A7E7E5c6";
         emit classCreated(address(this), 29);
 
@@ -1626,7 +1589,7 @@ contract Token is ERC3475 {
         _classes[30]._values["issuerJurisdiction"].stringValue = "HK";
         _classes[30]._values["issuerURL"].stringValue = "https://www.databased.finance/";
         _classes[30]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Databased%20Finance.png";
-        _classes[30]._values["issuerDocURL"].stringValue = [
+        _classes[30]._values["issuerDocURL"].stringArrayValue = [
             "https://storage.googleapis.com/tinlake/docs/summaries/DF1.pdf"
         ];
         _classes[30]._values["fundType"].stringValue = "corporate";  
@@ -1638,6 +1601,7 @@ contract Token is ERC3475 {
         _classes[30]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[30]._values["coupon"].boolValue = false;  
         _classes[30]._values["fixed-rate"].boolValue = false;  
+        _classes[30]._values["APR"].uintValue = 8000;  
         _classes[30]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xfc2950dD337ca8496C18dfc0256Fb905A7E7E5c6";
         emit classCreated(address(this), 30);
 
