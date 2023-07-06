@@ -700,10 +700,10 @@ contract Token is ERC3475 {
         _classes[0]._values["custodianURL"].stringValue = "https://ondo.finance/";
         _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/maple.png";
         
-        _classes[1]._values["symbol"].stringValue = "Atria deal 2 -Super Senior Loan";
-        _classes[1]._values["category"].stringValue = "loan";
-        _classes[1]._values["subcategory"].stringValue = "asset-backed loan";
-        _classes[1]._values["childCategory"].stringValue = "asset-backed car loan";
+        _classes[1]._values["symbol"].stringValue = "Ondo Short-Term US Government Bond Fund";
+        _classes[1]._values["category"].stringValue = "security";
+        _classes[1]._values["subcategory"].stringValue = "bond";
+        _classes[1]._values["childCategory"].stringValue = "government bond";
         
         _classes[1]._values["description"].stringValue = unicode"Atria is a fintech company established in 2022 that offers specialized services in used-car loan facilitation in Mexico. The firm is steered by a seasoned management team that was previously part of Credito Real’s auto financing division. It operates on a B2B framework, providing support to used-car dealerships. The company has recorded robust performance since October 2022 with its transactions, which are backed by a singular credit fund in the Credix network. Notably, defaults have remained exceptionally low at just 0.3%. The credit fund is currently considering the divestment of the senior tranche in order to focus on risk-adjusted high-yield returns. The yield for the senior tranche is negotiable.";
         _classes[1]._values["issuerName"].stringValue = "Atria";
