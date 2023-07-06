@@ -696,11 +696,11 @@ contract Token is ERC3475 {
     
         _classes[0]._values["custodianName"].stringValue = "Clearpool";
         _classes[0]._values["custodianType"].stringValue = "LTD";
-        _classes[0]._values["custodianJurisdiction"].stringValue = "AU";
+        _classes[0]._values["custodianJurisdiction"].stringValue = "SG";
         _classes[0]._values["custodianURL"].stringValue = "https://clearpool.finance/";
-        _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/maple.png";
+        _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Clearpool.png";
         
-        _classes[1]._values["symbol"].stringValue = "Atria deal 2 -Super Senior Loan";
+        _classes[1]._values["symbol"].stringValue = "Fasanara Investments Master Fund-Senior Loan";
         _classes[1]._values["category"].stringValue = "loan";
         _classes[1]._values["subcategory"].stringValue = "asset-backed loan";
         _classes[1]._values["childCategory"].stringValue = "asset-backed car loan";
@@ -729,6 +729,7 @@ contract Token is ERC3475 {
         _classes[1]._values["couponPeriod"].uintValue = 2592000;  
         _classes[1]._values["fixed-rate"].boolValue = true;  
         _classes[1]._values["APY"].uintValue = 100000;  
+        _classes[1]._values["APR"].uintValue = 100000;  
         _classes[1]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=7pTa26B4jHywCtb8kLwZvKEt9Lh1trsD1RWrGi3jMQ9k";
         emit classCreated(address(this), 1);
 
