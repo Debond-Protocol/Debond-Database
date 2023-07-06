@@ -715,7 +715,9 @@ contract Token is ERC3475 {
             "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png",
             "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png"
         ];
-
+        //rating
+        _classes[1]._values["riskLevel"].stringValue = "BBB";
+        _classes[1]._values["ISIN"].stringValue = "IE00BGSF1X88";
         _classes[1]._values["fundType"].stringValue = "corporate";  
         _classes[1]._values["shareValue"].uintValue = 1;  
         _classes[1]._values["currency"].stringValue = "USDC";  
