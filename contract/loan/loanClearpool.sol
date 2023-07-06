@@ -699,7 +699,9 @@ contract Token is ERC3475 {
         _classes[0]._values["custodianJurisdiction"].stringValue = "SG";
         _classes[0]._values["custodianURL"].stringValue = "https://clearpool.finance/";
         _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Clearpool.png";
-        
+        _classes[0]._values["fixedMaturity"].boolValue = true;  
+        _classes[0]._values["coupon"].boolValue = false;  
+
         _classes[1]._values["symbol"].stringValue = "Fasanara Investments Master Fund-USDC -Senior Loan";
         _classes[1]._values["category"].stringValue = "loan";
         _classes[1]._values["subcategory"].stringValue = "uncollateralized loan";
