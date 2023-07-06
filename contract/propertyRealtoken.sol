@@ -700,8 +700,8 @@ contract Token is ERC3475 {
         _classes[1]._values["issuerName"].stringValue = "RealToken International Villa Marina 514 S.A.";
         _classes[1]._values["issuerType"].stringValue = "LTD";
         _classes[1]._values["issuerJurisdiction"].stringValue = "UK";
-        _classes[1]._values["issuerURL"].stringValue = "https://aqru.io/";
-        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/AQRU.png";
+        _classes[1]._values["issuerURL"].stringValue = "https://realt.co/;
+        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Realtoken.png";
         _classes[1]._values["issuerDocURL"].stringArrayValue = [
             "https://downloads.eth.maple.finance/docs/aqru/2023-01-AQRU-Real-World-Receivables.pdf"
         ];
