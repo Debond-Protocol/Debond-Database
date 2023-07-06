@@ -715,6 +715,11 @@ contract Token is ERC3475 {
             "https://www.ishares.com/us/literature/fact-sheet/hyg-ishares-iboxx-high-yield-corporate-bond-etf-fund-fact-sheet-en-us.pdf"
         ];
         //rating
+        _classes[1]._values["auditorName"].stringValue = "Credora";
+        _classes[1]._values["auditorType"].stringValue = "LTD";
+        _classes[1]._values["auditorJurisdiction"].stringValue = "US";
+        _classes[1]._values["auditorURL"].stringValue = "https://credora.io/";
+        _classes[1]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credora.png";z
         _classes[1]._values["riskLevel"].stringValue = "BB-";
         _classes[1]._values["ISIN"].stringValue = "IE00BGSF1X88";
         _classes[1]._values["fundType"].stringValue = "corporate";  
