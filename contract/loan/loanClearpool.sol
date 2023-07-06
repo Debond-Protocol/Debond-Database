@@ -918,7 +918,7 @@ contract Token is ERC3475 {
         _classes[7]._values["issuerType"].stringValue = "LTD";
         _classes[7]._values["issuerJurisdiction"].stringValue = "SWISS";
         _classes[7]._values["issuerURL"].stringValue = "https://www.portofino.tech/";
-        _classes[7]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/alphanonce.png";
+        _classes[7]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Portofino%20Technologies.jpeg";
 
         //rating
         _classes[7]._values["auditorName"].stringValue = "Credora";
@@ -932,14 +932,117 @@ contract Token is ERC3475 {
         _classes[7]._values["shareValue"].uintValue = 1;  
         _classes[7]._values["currency"].stringValue = "USDC";  
 
-        _classes[7]._values["maxiumSupply"].uintValue = 436652;  
+        _classes[7]._values["maxiumSupply"].uintValue = 13891904;  
         _classes[7]._values["callable"].boolValue = true;  
         _classes[7]._values["coupon"].boolValue = false;  
-        _classes[7]._values["fixed-rate"].boolValue = true;  
-        _classes[7]._values["APR"].uintValue = 192200;  
-        _classes[7]._values["subscribeLink"].stringValue = "https://clearpool.finance/permissionless/pools/0x68f311351e7196d71f8e6372e4a1d2e725669bf2?market=ethereum";
+        _classes[7]._values["fixed-rate"].boolValue = true; 
+        _classes[7]._values["APY"].uintValue = 61800;  
+        _classes[7]._values["APR"].uintValue = 103700;  
+        _classes[7]._values["subscribeLink"].stringValue = "https://clearpool.finance/permissionless/pools/0x4a90c14335e81829d7cb0002605f555b8a784106?market=ethereum";
         emit classCreated(address(this), 7);
 
+///
+
+        _classes[8]._values["symbol"].stringValue = "Portofino Technologies-USDC -Junior Loan";
+        _classes[8]._values["category"].stringValue = "loan";
+        _classes[8]._values["subcategory"].stringValue = "uncollateralized loan";
+        _classes[8]._values["childCategory"].stringValue = "uncollateralized investment fund";
+        
+        _classes[8]._values["description"].stringValue = unicode"Portofino Technologies (Portofino Technologies AG) is a crypto-native technology start-up with 35+ employees across 5 global locations, with headquarters in Zug, Switzerland. Portofino deploys its proprietary market-making technology to trade on centralised, decentralised and OTC markets and provides token services & investments to Web3 projects.";
+        _classes[8]._values["issuerName"].stringValue = "Portofino Technologies";
+        _classes[8]._values["issuerType"].stringValue = "LTD";
+        _classes[8]._values["issuerJurisdiction"].stringValue = "SWISS";
+        _classes[8]._values["issuerURL"].stringValue = "https://www.portofino.tech/";
+        _classes[8]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Portofino%20Technologies.jpeg";
+
+        //rating
+        _classes[8]._values["auditorName"].stringValue = "Credora";
+        _classes[8]._values["auditorType"].stringValue = "LTD";
+        _classes[8]._values["auditorJurisdiction"].stringValue = "US";
+        _classes[8]._values["auditorURL"].stringValue = "https://credora.io/";
+        _classes[8]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credora.png";
+
+        _classes[8]._values["riskLevel"].stringValue = "B";  
+        _classes[8]._values["fundType"].stringValue = "corporate";  
+        _classes[8]._values["shareValue"].uintValue = 1;  
+        _classes[8]._values["currency"].stringValue = "USDC";  
+
+        _classes[8]._values["maxiumSupply"].uintValue = 13891904;  
+        _classes[8]._values["callable"].boolValue = true;  
+        _classes[8]._values["coupon"].boolValue = false;  
+        _classes[8]._values["fixed-rate"].boolValue = true; 
+        _classes[8]._values["APY"].uintValue = 165700;  
+        _classes[8]._values["APR"].uintValue = 103700;  
+        _classes[8]._values["subscribeLink"].stringValue = "https://clearpool.finance/permissionless/pools/0x4a90c14335e81829d7cb0002605f555b8a784106?market=ethereum";
+        emit classCreated(address(this), 8);
+
+///
+
+        _classes[9]._values["symbol"].stringValue = "Portofino Technologies-DAI -Senior Loan";
+        _classes[9]._values["category"].stringValue = "loan";
+        _classes[9]._values["subcategory"].stringValue = "uncollateralized loan";
+        _classes[9]._values["childCategory"].stringValue = "uncollateralized investment fund";
+        
+        _classes[9]._values["description"].stringValue = unicode"Portofino Technologies (Portofino Technologies AG) is a crypto-native technology start-up with 35+ employees across 5 global locations, with headquarters in Zug, Switzerland. Portofino deploys its proprietary market-making technology to trade on centralised, decentralised and OTC markets and provides token services & investments to Web3 projects.";
+        _classes[9]._values["issuerName"].stringValue = "Portofino Technologies";
+        _classes[9]._values["issuerType"].stringValue = "LTD";
+        _classes[9]._values["issuerJurisdiction"].stringValue = "SWISS";
+        _classes[9]._values["issuerURL"].stringValue = "https://www.portofino.tech/";
+        _classes[9]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Portofino%20Technologies.jpeg";
+
+        //rating
+        _classes[9]._values["auditorName"].stringValue = "Credora";
+        _classes[9]._values["auditorType"].stringValue = "LTD";
+        _classes[9]._values["auditorJurisdiction"].stringValue = "US";
+        _classes[9]._values["auditorURL"].stringValue = "https://credora.io/";
+        _classes[9]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credora.png";z
+        _classes[9]._values["riskLevel"].stringValue = "B";  
+        _classes[9]._values["fundType"].stringValue = "corporate";  
+        _classes[9]._values["shareValue"].uintValue = 1;  
+        _classes[9]._values["currency"].stringValue = "DAI";  
+
+        _classes[9]._values["maxiumSupply"].uintValue = 13891904;  
+        _classes[9]._values["callable"].boolValue = true;  
+        _classes[9]._values["coupon"].boolValue = false;  
+        _classes[9]._values["fixed-rate"].boolValue = true; 
+        _classes[9]._values["APY"].uintValue = 68000;  
+        _classes[9]._values["APR"].uintValue = 103700;  
+        _classes[9]._values["subscribeLink"].stringValue = "https://clearpool.finance/permissionless/pools/0x4a90c14335e81829d7cb0002605f555b8a784106?market=ethereum";
+        emit classCreated(address(this), 9);
+
+///
+
+        _classes[10]._values["symbol"].stringValue = "Portofino Technologies-DAI -Junior Loan";
+        _classes[10]._values["category"].stringValue = "loan";
+        _classes[10]._values["subcategory"].stringValue = "uncollateralized loan";
+        _classes[10]._values["childCategory"].stringValue = "uncollateralized investment fund";
+        
+        _classes[10]._values["description"].stringValue = unicode"Portofino Technologies (Portofino Technologies AG) is a crypto-native technology start-up with 35+ employees across 5 global locations, with headquarters in Zug, Switzerland. Portofino deploys its proprietary market-making technology to trade on centralised, decentralised and OTC markets and provides token services & investments to Web3 projects.";
+        _classes[10]._values["issuerName"].stringValue = "Portofino Technologies";
+        _classes[10]._values["issuerType"].stringValue = "LTD";
+        _classes[10]._values["issuerJurisdiction"].stringValue = "SWISS";
+        _classes[10]._values["issuerURL"].stringValue = "https://www.portofino.tech/";
+        _classes[10]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Portofino%20Technologies.jpeg";
+
+        //rating
+        _classes[10]._values["auditorName"].stringValue = "Credora";
+        _classes[10]._values["auditorType"].stringValue = "LTD";
+        _classes[10]._values["auditorJurisdiction"].stringValue = "US";
+        _classes[10]._values["auditorURL"].stringValue = "https://credora.io/";
+        _classes[10]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credora.png";z
+        _classes[10]._values["riskLevel"].stringValue = "B";  
+        _classes[10]._values["fundType"].stringValue = "corporate";  
+        _classes[10]._values["shareValue"].uintValue = 1;  
+        _classes[10]._values["currency"].stringValue = "DAI";  
+
+        _classes[10]._values["maxiumSupply"].uintValue = 13891904;  
+        _classes[10]._values["callable"].boolValue = true;  
+        _classes[10]._values["coupon"].boolValue = false;  
+        _classes[10]._values["fixed-rate"].boolValue = true; 
+        _classes[10]._values["APY"].uintValue = 171800;  
+        _classes[10]._values["APR"].uintValue = 103700;  
+        _classes[10]._values["subscribeLink"].stringValue = "https://clearpool.finance/permissionless/pools/0x4a90c14335e81829d7cb0002605f555b8a784106?market=ethereum";
+        emit classCreated(address(this), 10);
     }
    
 }
