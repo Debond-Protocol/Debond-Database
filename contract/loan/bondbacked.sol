@@ -696,27 +696,26 @@ contract Token is ERC3475 {
     
         _classes[0]._values["custodianName"].stringValue = "Ondo";
         _classes[0]._values["custodianType"].stringValue = "LTD";
-        _classes[0]._values["custodianJurisdiction"].stringValue = "AU";
+        _classes[0]._values["custodianJurisdiction"].stringValue = "US";
         _classes[0]._values["custodianURL"].stringValue = "https://ondo.finance/";
-        _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/maple.png";
+        _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Ondo.png";
         
-        _classes[1]._values["symbol"].stringValue = "Ondo Short-Term US Government Bond Fund";
+        _classes[1]._values["symbol"].stringValue = "iShares iBoxx $ High Yield Corporate Bond ETF";
         _classes[1]._values["category"].stringValue = "security";
         _classes[1]._values["subcategory"].stringValue = "bond";
-        _classes[1]._values["childCategory"].stringValue = "government bond";
+        _classes[1]._values["childCategory"].stringValue = "high yield corporate bond";
         
-        _classes[1]._values["description"].stringValue = unicode"Atria is a fintech company established in 2022 that offers specialized services in used-car loan facilitation in Mexico. The firm is steered by a seasoned management team that was previously part of Credito Real’s auto financing division. It operates on a B2B framework, providing support to used-car dealerships. The company has recorded robust performance since October 2022 with its transactions, which are backed by a singular credit fund in the Credix network. Notably, defaults have remained exceptionally low at just 0.3%. The credit fund is currently considering the divestment of the senior tranche in order to focus on risk-adjusted high-yield returns. The yield for the senior tranche is negotiable.";
-        _classes[1]._values["issuerName"].stringValue = "Atria";
+        _classes[1]._values["description"].stringValue = unicode"One of the most popular high yield bond ETFs, generating high income for investors through exposure to a broad range of US high yield corporate bonds. The significant majority of this portfolio will be in the iBoxx $ High Yield Corporate Bond ETF (NYSE: HYG). There is also a small portion of USDC and USD for liquidity purposes. Distributions are automatically reinvested in the underlying fund assets to compound your investments";
+        _classes[1]._values["issuerName"].stringValue = "iShares";
         _classes[1]._values["issuerType"].stringValue = "LTD";
-        _classes[1]._values["issuerJurisdiction"].stringValue = "MX";
-        _classes[1]._values["issuerURL"].stringValue = "https://atria.la/";
-        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png";
+        _classes[1]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[1]._values["issuerURL"].stringValue = "https://www.ishares.com/us/";
+        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/iShares.png";
         _classes[1]._values["issuerDocURL"].stringValue = [
-            "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png",
-            "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png"
+            "https://www.ishares.com/us/literature/fact-sheet/hyg-ishares-iboxx-high-yield-corporate-bond-etf-fund-fact-sheet-en-us.pdf"
         ];
         //rating
-        _classes[1]._values["riskLevel"].stringValue = "BBB";
+        _classes[1]._values["riskLevel"].stringValue = "BB-";
         _classes[1]._values["ISIN"].stringValue = "IE00BGSF1X88";
         _classes[1]._values["fundType"].stringValue = "corporate";  
         _classes[1]._values["shareValue"].uintValue = 1;  
