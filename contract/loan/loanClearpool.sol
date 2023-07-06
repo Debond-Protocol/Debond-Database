@@ -700,49 +700,177 @@ contract Token is ERC3475 {
         _classes[0]._values["custodianURL"].stringValue = "https://clearpool.finance/";
         _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Clearpool.png";
         
-        _classes[1]._values["symbol"].stringValue = "Fasanara Investments Master Fund-Senior Loan";
+        _classes[1]._values["symbol"].stringValue = "Fasanara Investments Master Fund-USDC -Senior Loan";
         _classes[1]._values["category"].stringValue = "loan";
-        _classes[1]._values["subcategory"].stringValue = "asset-backed loan";
-        _classes[1]._values["childCategory"].stringValue = "asset-backed car loan";
+        _classes[1]._values["subcategory"].stringValue = "uncollateralized loan";
+        _classes[1]._values["childCategory"].stringValue = "uncollateralized investment fund";
         
-        _classes[1]._values["description"].stringValue = unicode"Atria is a fintech company established in 2022 that offers specialized services in used-car loan facilitation in Mexico. The firm is steered by a seasoned management team that was previously part of Credito Real’s auto financing division. It operates on a B2B framework, providing support to used-car dealerships. The company has recorded robust performance since October 2022 with its transactions, which are backed by a singular credit fund in the Credix network. Notably, defaults have remained exceptionally low at just 0.3%. The credit fund is currently considering the divestment of the senior tranche in order to focus on risk-adjusted high-yield returns. The yield for the senior tranche is negotiable.";
-        _classes[1]._values["issuerName"].stringValue = "Atria";
+        _classes[1]._values["description"].stringValue = unicode"Fasanara Digital was founded in 2019 and it is part of Fasanara Capital, a 200 people London-based Hedge Fund founded in 2011 and specialised in alternative credit and fintech strategies. Fasanara Capital across its different funds manages over 4bn USD. Fasanara Digital, with a team of 15 people fully dedicated to investments and development in crypto, manages a delta neutral high turnover fund specialised in market-making and arbitrage strategies. The fund trades approximately 10bn USD per month on both spot and derivatives on all major trading venues.";
+        _classes[1]._values["issuerName"].stringValue = "Fasanara Digital";
         _classes[1]._values["issuerType"].stringValue = "LTD";
-        _classes[1]._values["issuerJurisdiction"].stringValue = "MX";
-        _classes[1]._values["issuerURL"].stringValue = "https://atria.la/";
-        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png";
-        _classes[1]._values["issuerDocURL"].stringValue = [
-            "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png",
-            "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png"
-        ];
-        //rating
-        _classes[1]._values["auditorName"].stringValue = "Atria";
-        _classes[1]._values["auditorType"].stringValue = "LTD";
-        _classes[1]._values["auditorJurisdiction"].stringValue = "MX";
-        _classes[1]._values["auditorURL"].stringValue = "https://atria.la/";
-        _classes[1]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png";
-        _classes[1]._values["auditorDocURL"].stringValue = [
-            "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png",
-            "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png"
-        ];
+        _classes[1]._values["issuerJurisdiction"].stringValue = "UK";
+        _classes[1]._values["issuerURL"].stringValue = "https://www.fasanara.com/digital/";
+        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Fasanara%20.jpg";
 
-        _classes[1]._values["riskLevel"].stringValue = "BB";  
+        //rating
+        _classes[1]._values["auditorName"].stringValue = "Credora";
+        _classes[1]._values["auditorType"].stringValue = "LTD";
+        _classes[1]._values["auditorJurisdiction"].stringValue = "US";
+        _classes[1]._values["auditorURL"].stringValue = "https://credora.io/";
+        _classes[1]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credora.png";
+
+        _classes[1]._values["riskLevel"].stringValue = "AA";  
         _classes[1]._values["fundType"].stringValue = "corporate";  
         _classes[1]._values["shareValue"].uintValue = 1;  
         _classes[1]._values["currency"].stringValue = "USDC";  
 
-        _classes[1]._values["maxiumSupply"].uintValue = 1524693;  
-        _classes[1]._values["callable"].boolValue = true;  
-        _classes[1]._values["maturityPeriod"].uintValue = 103680000;  
-        _classes[1]._values["coupon"].boolValue = true;  
-        _classes[1]._values["couponRate"].uintValue = 8333;  
-        _classes[1]._values["couponPeriod"].uintValue = 2592000;  
+        _classes[1]._values["maxiumSupply"].uintValue = 5239489;  
+        _classes[1]._values["callable"].boolValue = true; 
+        _classes[1]._values["coupon"].boolValue = false;  
         _classes[1]._values["fixed-rate"].boolValue = true;  
-        _classes[1]._values["APY"].uintValue = 100000;  
-        _classes[1]._values["APR"].uintValue = 100000;  
-        _classes[1]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=7pTa26B4jHywCtb8kLwZvKEt9Lh1trsD1RWrGi3jMQ9k";
+        _classes[1]._values["APY"].uintValue = 59600;  
+        _classes[1]._values["APR"].uintValue = 94700;  
+        _classes[1]._values["subscribeLink"].stringValue = "https://clearpool.finance/permissionless/pools/0xa75dd592826fa9c679ec03beefb1777ba1a373a0?market=ethereum";
         emit classCreated(address(this), 1);
 
+///
+
+        _classes[2]._values["symbol"].stringValue = "Fasanara Investments Master Fund-USDC -Junior Loan";
+        _classes[2]._values["category"].stringValue = "loan";
+        _classes[2]._values["subcategory"].stringValue = "uncollateralized loan";
+        _classes[2]._values["childCategory"].stringValue = "uncollateralized investment fund";
+        
+        _classes[2]._values["description"].stringValue = unicode"Fasanara Digital was founded in 2019 and it is part of Fasanara Capital, a 200 people London-based Hedge Fund founded in 2011 and specialised in alternative credit and fintech strategies. Fasanara Capital across its different funds manages over 4bn USD. Fasanara Digital, with a team of 15 people fully dedicated to investments and development in crypto, manages a delta neutral high turnover fund specialised in market-making and arbitrage strategies. The fund trades approximately 10bn USD per month on both spot and derivatives on all major trading venues.";
+        _classes[2]._values["issuerName"].stringValue = "Fasanara Digital";
+        _classes[2]._values["issuerType"].stringValue = "LTD";
+        _classes[2]._values["issuerJurisdiction"].stringValue = "UK";
+        _classes[2]._values["issuerURL"].stringValue = "https://www.fasanara.com/digital/";
+        _classes[2]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Fasanara%20.jpg";
+
+        //rating
+        _classes[2]._values["auditorName"].stringValue = "Credora";
+        _classes[2]._values["auditorType"].stringValue = "LTD";
+        _classes[2]._values["auditorJurisdiction"].stringValue = "US";
+        _classes[2]._values["auditorURL"].stringValue = "https://credora.io/";
+        _classes[2]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credora.png";
+
+        _classes[2]._values["riskLevel"].stringValue = "AA";  
+        _classes[2]._values["fundType"].stringValue = "corporate";  
+        _classes[2]._values["shareValue"].uintValue = 1;  
+        _classes[2]._values["currency"].stringValue = "USDC";  
+
+        _classes[2]._values["maxiumSupply"].uintValue = 5239489;  
+        _classes[2]._values["callable"].boolValue = true;  
+        _classes[2]._values["coupon"].boolValue = false;  
+        _classes[2]._values["fixed-rate"].boolValue = true;  
+        _classes[2]._values["APY"].uintValue = 150000;  
+        _classes[2]._values["APR"].uintValue = 94700;  
+        _classes[2]._values["subscribeLink"].stringValue = "https://clearpool.finance/permissionless/pools/0xa75dd592826fa9c679ec03beefb1777ba1a373a0?market=ethereum";
+        emit classCreated(address(this), 2);
+
+///
+
+        _classes[3]._values["symbol"].stringValue = "Fasanara Investments Master Fund-USDT -Senior Loan";
+        _classes[3]._values["category"].stringValue = "loan";
+        _classes[3]._values["subcategory"].stringValue = "uncollateralized loan";
+        _classes[3]._values["childCategory"].stringValue = "uncollateralized investment fund";
+        
+        _classes[3]._values["description"].stringValue = unicode"Fasanara Digital was founded in 2019 and it is part of Fasanara Capital, a 200 people London-based Hedge Fund founded in 2011 and specialised in alternative credit and fintech strategies. Fasanara Capital across its different funds manages over 4bn USD. Fasanara Digital, with a team of 15 people fully dedicated to investments and development in crypto, manages a delta neutral high turnover fund specialised in market-making and arbitrage strategies. The fund trades approximately 10bn USD per month on both spot and derivatives on all major trading venues.";
+        _classes[3]._values["issuerName"].stringValue = "Fasanara Digital";
+        _classes[3]._values["issuerType"].stringValue = "LTD";
+        _classes[3]._values["issuerJurisdiction"].stringValue = "UK";
+        _classes[3]._values["issuerURL"].stringValue = "https://www.fasanara.com/digital/";
+        _classes[3]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Fasanara%20.jpg";
+
+        //rating
+        _classes[3]._values["auditorName"].stringValue = "Credora";
+        _classes[3]._values["auditorType"].stringValue = "LTD";
+        _classes[3]._values["auditorJurisdiction"].stringValue = "US";
+        _classes[3]._values["auditorURL"].stringValue = "https://credora.io/";
+        _classes[3]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credora.png";
+
+        _classes[3]._values["riskLevel"].stringValue = "AA";  
+        _classes[3]._values["fundType"].stringValue = "corporate";  
+        _classes[3]._values["shareValue"].uintValue = 1;  
+        _classes[3]._values["currency"].stringValue = "USDT";  
+
+        _classes[3]._values["maxiumSupply"].uintValue = 7477056;  
+        _classes[3]._values["callable"].boolValue = true;  
+        _classes[3]._values["coupon"].boolValue = false;  
+        _classes[3]._values["fixed-rate"].boolValue = true;  
+        _classes[3]._values["APY"].uintValue = 57800;  
+        _classes[3]._values["APR"].uintValue = 97600;  
+        _classes[3]._values["subscribeLink"].stringValue = "https://clearpool.finance/permissionless/pools/0x1a1d778776542c2efed161ba1fbcfe6e09ba99fb?market=ethereum";
+        emit classCreated(address(this), 3);
+
+///
+
+        _classes[4]._values["symbol"].stringValue = "Fasanara Investments Master Fund-USDT -Junior Loan";
+        _classes[4]._values["category"].stringValue = "loan";
+        _classes[4]._values["subcategory"].stringValue = "uncollateralized loan";
+        _classes[4]._values["childCategory"].stringValue = "uncollateralized investment fund";
+        
+        _classes[4]._values["description"].stringValue = unicode"Fasanara Digital was founded in 2019 and it is part of Fasanara Capital, a 200 people London-based Hedge Fund founded in 2011 and specialised in alternative credit and fintech strategies. Fasanara Capital across its different funds manages over 4bn USD. Fasanara Digital, with a team of 15 people fully dedicated to investments and development in crypto, manages a delta neutral high turnover fund specialised in market-making and arbitrage strategies. The fund trades approximately 10bn USD per month on both spot and derivatives on all major trading venues.";
+        _classes[4]._values["issuerName"].stringValue = "Fasanara Digital";
+        _classes[4]._values["issuerType"].stringValue = "LTD";
+        _classes[4]._values["issuerJurisdiction"].stringValue = "UK";
+        _classes[4]._values["issuerURL"].stringValue = "https://www.fasanara.com/digital/";
+        _classes[4]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Fasanara%20.jpg";
+
+        //rating
+        _classes[4]._values["auditorName"].stringValue = "Credora";
+        _classes[4]._values["auditorType"].stringValue = "LTD";
+        _classes[4]._values["auditorJurisdiction"].stringValue = "US";
+        _classes[4]._values["auditorURL"].stringValue = "https://credora.io/";
+        _classes[4]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credora.png";
+
+        _classes[4]._values["riskLevel"].stringValue = "AA";  
+        _classes[4]._values["fundType"].stringValue = "corporate";  
+        _classes[4]._values["shareValue"].uintValue = 1;  
+        _classes[4]._values["currency"].stringValue = "USDT";  
+
+        _classes[4]._values["maxiumSupply"].uintValue = 7477056;  
+        _classes[4]._values["callable"].boolValue = true;  
+        _classes[4]._values["coupon"].boolValue = false;  
+        _classes[4]._values["fixed-rate"].boolValue = true;  
+        _classes[4]._values["APY"].uintValue = 155500;  
+        _classes[4]._values["APR"].uintValue = 97600;  
+        _classes[4]._values["subscribeLink"].stringValue = "https://clearpool.finance/permissionless/pools/0x1a1d778776542c2efed161ba1fbcfe6e09ba99fb?market=ethereum";
+        emit classCreated(address(this), 4);
+
+///
+
+        _classes[5]._values["symbol"].stringValue = "Auros";
+        _classes[5]._values["category"].stringValue = "loan";
+        _classes[5]._values["subcategory"].stringValue = "uncollateralized loan";
+        _classes[5]._values["childCategory"].stringValue = "uncollateralized investment fund";
+        
+        _classes[5]._values["description"].stringValue = unicode"Auros (Auros Tech Limited) is a leading cryptocurrency market making and high frequency trading firm operating across all major venues and instruments. A 24/7/365 business, it possesses a world-class team of trading and engineering talent across 15 geographies globally, combining remote work and physical offices in Hong Kong and New York. Auros is one of the largest participants in cryptocurrency markets, generating daily notional turnover in the billions of dollars. Their long-standing technological heritage combines a systematic approach with sophisticated pricing models and state-of-the-art execution capabilities, regularly iterating to ensure robust, reliable trading performance. Their unique partnership approach to external liquidity provision has rapidly established them as a go-to market maker for token projects.";
+        _classes[5]._values["issuerName"].stringValue = "Auros";
+        _classes[5]._values["issuerType"].stringValue = "LTD";
+        _classes[5]._values["issuerJurisdiction"].stringValue = "VG";
+        _classes[5]._values["issuerURL"].stringValue = "https://www.auros.global/";
+        _classes[5]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Auros.png";
+
+        //rating
+        _classes[5]._values["auditorName"].stringValue = "Credora";
+        _classes[5]._values["auditorType"].stringValue = "LTD";
+        _classes[5]._values["auditorJurisdiction"].stringValue = "US";
+        _classes[5]._values["auditorURL"].stringValue = "https://credora.io/";
+        _classes[5]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credora.png";
+
+        _classes[5]._values["riskLevel"].stringValue = "B";  
+        _classes[5]._values["fundType"].stringValue = "corporate";  
+        _classes[5]._values["shareValue"].uintValue = 1;  
+        _classes[5]._values["currency"].stringValue = "USDC";  
+
+        _classes[5]._values["maxiumSupply"].uintValue = 2206871;  
+        _classes[5]._values["callable"].boolValue = true;  
+        _classes[5]._values["coupon"].boolValue = false;  
+        _classes[5]._values["fixed-rate"].boolValue = true;  
+        _classes[5]._values["APR"].uintValue = 102400;  
+        _classes[5]._values["subscribeLink"].stringValue = "https://clearpool.finance/permissionless/pools/0x3aeb3a8f0851249682a6a836525cdeee5aa2a153?market=ethereum";
+        emit classCreated(address(this), 5);
     }
    
 }
