@@ -694,10 +694,10 @@ contract Token is ERC3475 {
     constructor() {
          
     
-        _classes[0]._values["custodianName"].stringValue = "Maple";
+        _classes[0]._values["custodianName"].stringValue = "Onto";
         _classes[0]._values["custodianType"].stringValue = "LTD";
         _classes[0]._values["custodianJurisdiction"].stringValue = "AU";
-        _classes[0]._values["custodianURL"].stringValue = "https://www.maple.finance/";
+        _classes[0]._values["custodianURL"].stringValue = "https://onto.finance/";
         _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/maple.png";
         
         _classes[1]._values["symbol"].stringValue = "Atria deal 2 -Super Senior Loan";
