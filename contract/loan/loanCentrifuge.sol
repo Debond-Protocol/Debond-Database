@@ -1296,29 +1296,214 @@ contract Token is ERC3475 {
         _classes[19]._values["childCategory"].stringValue = "invoice financing and accounts receivable";
         
         _classes[19]._values["description"].stringValue = unicode"Alternative is reimagining financial services, beginning with lending, providing companies with simple, customizable financing solutions. We are fully tech-enabled and offer solutions directly to businesses as well as to businesses' end-customers. Our solutions are unique, simplistic and streamline the entire financing process so that companies may access funding on their terms.";
-        _classes[19]._values["issuerName"].stringValue = "Cauris Global Fintech";
+        _classes[19]._values["issuerName"].stringValue = "Alternative Payments";
         _classes[19]._values["issuerType"].stringValue = "LTD";
         _classes[19]._values["issuerJurisdiction"].stringValue = "US";
-        _classes[19]._values["issuerURL"].stringValue = "https://caurisfinance.com/";
-        _classes[19]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Cauris.png";
+        _classes[19]._values["issuerURL"].stringValue = "https://www.alternativepayments.io/";
+        _classes[19]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Alternative%20Payments.png";
         _classes[19]._values["issuerDocURL"].stringValue = [
-            "https://storage.googleapis.com/tinlake/docs/summaries/CGFF1.pdf"
+            "https://storage.googleapis.com/tinlake/docs/summaries/ALT1.pdf"
         ];
         _classes[19]._values["fundType"].stringValue = "corporate";  
         _classes[19]._values["shareValue"].uintValue = 1;  
         _classes[19]._values["currency"].stringValue = "DAI";  
 
-        _classes[19]._values["maxiumSupply"].uintValue = 9000000;  
+        _classes[19]._values["maxiumSupply"].uintValue = 263800;  
         _classes[19]._values["callable"].boolValue = true;  
         _classes[19]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[19]._values["coupon"].boolValue = true;  
-        _classes[19]._values["couponRate"].uintValue = ;  
+        _classes[19]._values["couponRate"].uintValue = 6416;  
         _classes[19]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[19]._values["fixed-rate"].boolValue = false;  
-        _classes[19]._values["APY"].uintValue = ;  
-        _classes[19]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x53b2d22d07E069a3b132BfeaaD275b10273d381E";
+        _classes[19]._values["fixed-rate"].boolValue = ture;  
+        _classes[19]._values["APY"].uintValue = 77000;  
+        _classes[19]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xF96F18F2c70b57Ec864cC0C8b828450b82Ff63e3";
         emit classCreated(address(this), 19);
 
+////////////////////////////////////////////////////////
+
+        _classes[20]._values["symbol"].stringValue = "ALT 1.0 SPV -Junior Loan";
+        _classes[20]._values["category"].stringValue = "loan";
+        _classes[20]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[20]._values["childCategory"].stringValue = "invoice financing and accounts receivable";
+        
+        _classes[20]._values["description"].stringValue = unicode"Alternative is reimagining financial services, beginning with lending, providing companies with simple, customizable financing solutions. We are fully tech-enabled and offer solutions directly to businesses as well as to businesses' end-customers. Our solutions are unique, simplistic and streamline the entire financing process so that companies may access funding on their terms.";
+        _classes[20]._values["issuerName"].stringValue = "Alternative Payments";
+        _classes[20]._values["issuerType"].stringValue = "LTD";
+        _classes[20]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[20]._values["issuerURL"].stringValue = "https://www.alternativepayments.io/";
+        _classes[20]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Alternative%20Payments.png";
+        _classes[20]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/ALT1.pdf"
+        ];
+        _classes[20]._values["fundType"].stringValue = "corporate";  
+        _classes[20]._values["shareValue"].uintValue = 1;  
+        _classes[20]._values["currency"].stringValue = "DAI";  
+
+        _classes[20]._values["maxiumSupply"].uintValue = 6200000;  
+        _classes[20]._values["callable"].boolValue = true;  
+        _classes[20]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[20]._values["coupon"].boolValue = true;  
+        _classes[20]._values["couponRate"].uintValue = ;  
+        _classes[20]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[20]._values["fixed-rate"].boolValue = false;  
+        _classes[20]._values["APY"].uintValue = ;  
+        _classes[20]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xF96F18F2c70b57Ec864cC0C8b828450b82Ff63e3";
+        emit classCreated(address(this), 20);
+
+////////////////////////////////////////////////////////
+
+        _classes[21]._values["symbol"].stringValue = "1754 Factory (Bling Series 1) -Senior Loan";
+        _classes[21]._values["category"].stringValue = "loan";
+        _classes[21]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[21]._values["childCategory"].stringValue = "payment advance";
+        
+        _classes[21]._values["description"].stringValue = unicode"1754 Factory LLC is a Delaware Series LLC created and managed by Davoa Capital to provide short term cash advances to Bling customers. Bling is a mobile app for french consumers that offers cash advances up to €200. 1754 Factory has entered into an institutional purchase agreement to buy Bling bonds. Bling bonds are sold at par at €10,000 and they include over 125 micro loans that average €80. This Tinlake pool launched with 17 longer term Bling bonds and intends to steadily grow the pool with a rolling maturity of ninety days to provide frequent liquidity.";
+        _classes[21]._values["issuerName"].stringValue = "1754 Factory";
+        _classes[21]._values["issuerType"].stringValue = "LTD";
+        _classes[21]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[21]._values["issuerURL"].stringValue = "https://www.1754.finance/";
+        _classes[21]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/1754%20Factory.png";
+        _classes[21]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/BL1.pdf"
+        ];
+        _classes[21]._values["fundType"].stringValue = "corporate";  
+        _classes[21]._values["shareValue"].uintValue = 1;  
+        _classes[21]._values["currency"].stringValue = "DAI";  
+
+        _classes[21]._values["maxiumSupply"].uintValue = 0;  
+        _classes[21]._values["callable"].boolValue = true;  
+        _classes[21]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[21]._values["coupon"].boolValue = true;  
+        _classes[21]._values["couponRate"].uintValue = 6250;  
+        _classes[21]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[21]._values["fixed-rate"].boolValue = ture;  
+        _classes[21]._values["APY"].uintValue = 75000;  
+        _classes[21]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x0CED6166873038Ac0cc688e7E6d19E2cBE251Bf0";
+        emit classCreated(address(this), 21);
+
+////////////////////////////////////////////////////////
+
+        _classes[22]._values["symbol"].stringValue = "1754 Factory (Bling Series 1) -Junior Loan";
+        _classes[22]._values["category"].stringValue = "loan";
+        _classes[22]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[22]._values["childCategory"].stringValue = "payment advance";
+        
+        _classes[22]._values["description"].stringValue = unicode"1754 Factory LLC is a Delaware Series LLC created and managed by Davoa Capital to provide short term cash advances to Bling customers. Bling is a mobile app for french consumers that offers cash advances up to €200. 1754 Factory has entered into an institutional purchase agreement to buy Bling bonds. Bling bonds are sold at par at €10,000 and they include over 125 micro loans that average €80. This Tinlake pool launched with 17 longer term Bling bonds and intends to steadily grow the pool with a rolling maturity of ninety days to provide frequent liquidity.";
+        _classes[22]._values["issuerName"].stringValue = "1754 Factory";
+        _classes[22]._values["issuerType"].stringValue = "LTD";
+        _classes[22]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[22]._values["issuerURL"].stringValue = "https://www.1754.finance/";
+        _classes[22]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/1754%20Factory.png";
+        _classes[22]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/BL1.pdf"
+        ];
+        _classes[22]._values["fundType"].stringValue = "corporate";  
+        _classes[22]._values["shareValue"].uintValue = 1;  
+        _classes[22]._values["currency"].stringValue = "DAI";  
+
+        _classes[22]._values["maxiumSupply"].uintValue = 0;  
+        _classes[22]._values["callable"].boolValue = true;  
+        _classes[22]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[22]._values["coupon"].boolValue = true;  
+        _classes[22]._values["couponRate"].uintValue = ;  
+        _classes[22]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[22]._values["fixed-rate"].boolValue = false;  
+        _classes[22]._values["APY"].uintValue = ;  
+        _classes[22]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x0CED6166873038Ac0cc688e7E6d19E2cBE251Bf0";
+        emit classCreated(address(this), 22);
+
+////////////////////////////////////////////////////////
+
+        _classes[23]._values["symbol"].stringValue = "ConsolFreight-Series 4 -Senior Loan";
+        _classes[23]._values["category"].stringValue = "loan";
+        _classes[23]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[23]._values["childCategory"].stringValue = "cargo & freight forwarding invoice";
+        
+        _classes[23]._values["description"].stringValue = unicode"ConsolFreight is a trade finance and factoring provider focused on helping SMEs and developing countries. CFs advances working capital finance to stakeholders involved in international trading of goods and services. ConsolFreight is active in both trade finance and freight forwarding transactions. Trade finance transactions involve advancing capital to shippers and collecting from the buyers, while financing freight forwarding invoices involves advancing funds to freight forwarders and collecting from shippers. This Tinlake pool is financing a combined portfolio of trade finance transactions and freight forwarding invoices with a 30 to 90 day maturity.";
+        _classes[23]._values["issuerName"].stringValue = "ConsolFreight";
+        _classes[23]._values["issuerType"].stringValue = "LTD";
+        _classes[23]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[23]._values["issuerURL"].stringValue = "https://www.consolfreight.io/";
+        _classes[23]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/consolfreight.png";
+        _classes[23]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/CF4.pdf"
+        ];
+        _classes[23]._values["fundType"].stringValue = "corporate";  
+        _classes[23]._values["shareValue"].uintValue = 1;  
+        _classes[23]._values["currency"].stringValue = "DAI";  
+
+        _classes[23]._values["maxiumSupply"].uintValue = 3800000;  
+        _classes[23]._values["callable"].boolValue = true;  
+        _classes[23]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[23]._values["coupon"].boolValue = true;  
+        _classes[23]._values["couponRate"].uintValue = 5000;  
+        _classes[23]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[23]._values["fixed-rate"].boolValue = ture;  
+        _classes[23]._values["APY"].uintValue = 60000;  
+        _classes[23]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xdB3bC9fB1893222d266762e9fF857EB74D75c7D6";
+        emit classCreated(address(this), 23);
+
+////////////////////////////////////////////////////////
+
+        _classes[24]._values["symbol"].stringValue = "ConsolFreight-Series 4 -Junior Loan";
+        _classes[24]._values["category"].stringValue = "loan";
+        _classes[24]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[24]._values["childCategory"].stringValue = "cargo & freight forwarding invoice";
+        
+        _classes[24]._values["description"].stringValue = unicode"ConsolFreight is a trade finance and factoring provider focused on helping SMEs and developing countries. CFs advances working capital finance to stakeholders involved in international trading of goods and services. ConsolFreight is active in both trade finance and freight forwarding transactions. Trade finance transactions involve advancing capital to shippers and collecting from the buyers, while financing freight forwarding invoices involves advancing funds to freight forwarders and collecting from shippers. This Tinlake pool is financing a combined portfolio of trade finance transactions and freight forwarding invoices with a 30 to 90 day maturity.";
+        _classes[24]._values["issuerName"].stringValue = "ConsolFreight";
+        _classes[24]._values["issuerType"].stringValue = "LTD";
+        _classes[24]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[24]._values["issuerURL"].stringValue = "https://www.consolfreight.io/";
+        _classes[24]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/consolfreight.png";
+        _classes[24]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/CF4.pdf"
+        ];
+        _classes[24]._values["fundType"].stringValue = "corporate";  
+        _classes[24]._values["shareValue"].uintValue = 1;  
+        _classes[24]._values["currency"].stringValue = "DAI";  
+
+        _classes[24]._values["maxiumSupply"].uintValue = 9300000;  
+        _classes[24]._values["callable"].boolValue = true;  
+        _classes[24]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[24]._values["coupon"].boolValue = true;  
+        _classes[24]._values["couponRate"].uintValue = ;  
+        _classes[24]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[24]._values["fixed-rate"].boolValue = false;  
+        _classes[24]._values["APY"].uintValue = ;  
+        _classes[24]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x0CED6166873038Ac0cc688e7E6d19E2cBE251Bf0";
+        emit classCreated(address(this), 24);
+
+////////////////////////////////////////////////////////
+
+        _classes[25]._values["symbol"].stringValue = "Harbor Trade Credit-Series 2 -Senior Loan";
+        _classes[25]._values["category"].stringValue = "loan";
+        _classes[25]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[25]._values["childCategory"].stringValue = "trade receivable";
+        
+        _classes[25]._values["description"].stringValue = unicode"ConsolFreight is a trade finance and factoring provider focused on helping SMEs and developing countries. CFs advances working capital finance to stakeholders involved in international trading of goods and services. ConsolFreight is active in both trade finance and freight forwarding transactions. Trade finance transactions involve advancing capital to shippers and collecting from the buyers, while financing freight forwarding invoices involves advancing funds to freight forwarders and collecting from shippers. This Tinlake pool is financing a combined portfolio of trade finance transactions and freight forwarding invoices with a 30 to 90 day maturity.";
+        _classes[25]._values["issuerName"].stringValue = "ConsolFreight";
+        _classes[25]._values["issuerType"].stringValue = "LTD";
+        _classes[25]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[25]._values["issuerURL"].stringValue = "https://www.consolfreight.io/";
+        _classes[25]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/consolfreight.png";
+        _classes[25]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/CF4.pdf"
+        ];
+        _classes[25]._values["fundType"].stringValue = "corporate";  
+        _classes[25]._values["shareValue"].uintValue = 1;  
+        _classes[25]._values["currency"].stringValue = "DAI";  
+
+        _classes[25]._values["maxiumSupply"].uintValue = 9300000;  
+        _classes[25]._values["callable"].boolValue = true;  
+        _classes[25]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[25]._values["coupon"].boolValue = true;  
+        _classes[25]._values["couponRate"].uintValue = ;  
+        _classes[25]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[25]._values["fixed-rate"].boolValue = false;  
+        _classes[25]._values["APY"].uintValue = ;  
+        _classes[25]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x0CED6166873038Ac0cc688e7E6d19E2cBE251Bf0";
+        emit classCreated(address(this), 25);
 
 
 
