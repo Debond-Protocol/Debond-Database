@@ -1481,29 +1481,154 @@ contract Token is ERC3475 {
         _classes[25]._values["subcategory"].stringValue = "asset-backed loan";
         _classes[25]._values["childCategory"].stringValue = "trade receivable";
         
-        _classes[25]._values["description"].stringValue = unicode"ConsolFreight is a trade finance and factoring provider focused on helping SMEs and developing countries. CFs advances working capital finance to stakeholders involved in international trading of goods and services. ConsolFreight is active in both trade finance and freight forwarding transactions. Trade finance transactions involve advancing capital to shippers and collecting from the buyers, while financing freight forwarding invoices involves advancing funds to freight forwarders and collecting from shippers. This Tinlake pool is financing a combined portfolio of trade finance transactions and freight forwarding invoices with a 30 to 90 day maturity.";
-        _classes[25]._values["issuerName"].stringValue = "ConsolFreight";
+        _classes[25]._values["description"].stringValue = unicode"Harbor is a fintech company focused on Supply Chain Finance (SCF) and working capital solutions to improve the cash conversion cycle. Harbor's trade finance programs accelerate supplier payments to achieve buyer and supplier's liquidity needs. This Tinlake pool is financing a portfolio of SCF invoices with a typical maturity of sixty to one hundred twenty days.";
+        _classes[25]._values["issuerName"].stringValue = "Harbor";
         _classes[25]._values["issuerType"].stringValue = "LTD";
         _classes[25]._values["issuerJurisdiction"].stringValue = "US";
-        _classes[25]._values["issuerURL"].stringValue = "https://www.consolfreight.io/";
-        _classes[25]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/consolfreight.png";
+        _classes[25]._values["issuerURL"].stringValue = "https://harbortrade.com/";
+        _classes[25]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/harbortrade.png";
         _classes[25]._values["issuerDocURL"].stringValue = [
-            "https://storage.googleapis.com/tinlake/docs/summaries/CF4.pdf"
+            "https://storage.googleapis.com/tinlake/docs/summaries/HTC2.pdf"
         ];
         _classes[25]._values["fundType"].stringValue = "corporate";  
         _classes[25]._values["shareValue"].uintValue = 1;  
         _classes[25]._values["currency"].stringValue = "DAI";  
 
-        _classes[25]._values["maxiumSupply"].uintValue = 9300000;  
+        _classes[25]._values["maxiumSupply"].uintValue = 29200;  
         _classes[25]._values["callable"].boolValue = true;  
         _classes[25]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[25]._values["coupon"].boolValue = true;  
-        _classes[25]._values["couponRate"].uintValue = ;  
+        _classes[25]._values["couponRate"].uintValue = 5833;  
         _classes[25]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[25]._values["fixed-rate"].boolValue = false;  
-        _classes[25]._values["APY"].uintValue = ;  
-        _classes[25]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x0CED6166873038Ac0cc688e7E6d19E2cBE251Bf0";
+        _classes[25]._values["fixed-rate"].boolValue = ture;  
+        _classes[25]._values["APY"].uintValue = 70000;  
+        _classes[25]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x4cA805cE8EcE2E63FfC1F9f8F2731D3F48DF89Df";
         emit classCreated(address(this), 25);
+
+////////////////////////////////////////////////////////
+
+        _classes[26]._values["symbol"].stringValue = "Harbor Trade Credit-Series 2 -Junior Loan";
+        _classes[26]._values["category"].stringValue = "loan";
+        _classes[26]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[26]._values["childCategory"].stringValue = "trade receivable";
+        
+        _classes[26]._values["description"].stringValue = unicode"Harbor is a fintech company focused on Supply Chain Finance (SCF) and working capital solutions to improve the cash conversion cycle. Harbor's trade finance programs accelerate supplier payments to achieve buyer and supplier's liquidity needs. This Tinlake pool is financing a portfolio of SCF invoices with a typical maturity of sixty to one hundred twenty days.";
+        _classes[26]._values["issuerName"].stringValue = "Harbor";
+        _classes[26]._values["issuerType"].stringValue = "LTD";
+        _classes[26]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[26]._values["issuerURL"].stringValue = "https://harbortrade.com/";
+        _classes[26]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/harbortrade.png";
+        _classes[26]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/HTC2.pdf"
+        ];
+        _classes[26]._values["fundType"].stringValue = "corporate";  
+        _classes[26]._values["shareValue"].uintValue = 1;  
+        _classes[26]._values["currency"].stringValue = "DAI";  
+
+        _classes[26]._values["maxiumSupply"].uintValue = 29200;  
+        _classes[26]._values["callable"].boolValue = true;  
+        _classes[26]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[26]._values["coupon"].boolValue = true;  
+        _classes[26]._values["couponRate"].uintValue = ;  
+        _classes[26]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[26]._values["fixed-rate"].boolValue = false;  
+        _classes[26]._values["APY"].uintValue = ;  
+        _classes[26]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0x4cA805cE8EcE2E63FfC1F9f8F2731D3F48DF89Df";
+        emit classCreated(address(this), 26);
+
+////////////////////////////////////////////////////////
+
+        _classes[27]._values["symbol"].stringValue = "Flowcarbon Nature Offsets-Series 1 -Senior Loan";
+        _classes[27]._values["category"].stringValue = "loan";
+        _classes[27]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[27]._values["childCategory"].stringValue = "voluntary carbon offset";
+        
+        _classes[27]._values["description"].stringValue = unicode"Flowcarbon is a pioneering climate tech company bringing carbon offsets onto the blockchain. Its mission is to make carbon markets accessible and transparent, enabling billions of dollars to be invested directly into projects that combat climate change. This first pool was created to finance important conservation work and carbon avoidance in the Corazón Verde Del Chaco Project (VCS 2611), located in Paraguay within the Gran Chaco Forest. The Gran Chaco is the second-largest forest in South America, behind only the Amazon rainforest and it has one of the highest deforestation rates on the planet due to conversion to cropland and pasture for cattle.";
+        _classes[27]._values["issuerName"].stringValue = "Flowcarbon";
+        _classes[27]._values["issuerType"].stringValue = "LTD";
+        _classes[27]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[27]._values["issuerURL"].stringValue = "https://www.flowcarbon.com/";
+        _classes[27]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Flowcarbon.png";
+        _classes[27]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/FNO1.pdf"
+        ];
+        _classes[27]._values["fundType"].stringValue = "corporate";  
+        _classes[27]._values["shareValue"].uintValue = 1;  
+        _classes[27]._values["currency"].stringValue = "DAI";  
+
+        _classes[27]._values["maxiumSupply"].uintValue = 0;  
+        _classes[27]._values["callable"].boolValue = true;  
+        _classes[27]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[27]._values["coupon"].boolValue = true;  
+        _classes[27]._values["couponRate"].uintValue = 12500;  
+        _classes[27]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[27]._values["fixed-rate"].boolValue = ture;  
+        _classes[27]._values["APY"].uintValue = 150000;  
+        _classes[27]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xd8486C565098360A24f858088a6D29a380dDF7ec";
+        emit classCreated(address(this), 27);
+
+////////////////////////////////////////////////////////
+
+        _classes[28]._values["symbol"].stringValue = "Flowcarbon Nature Offsets-Series 1 -Junior Loan";
+        _classes[28]._values["category"].stringValue = "loan";
+        _classes[28]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[28]._values["childCategory"].stringValue = "voluntary carbon offset";
+        
+        _classes[28]._values["description"].stringValue = unicode"Flowcarbon is a pioneering climate tech company bringing carbon offsets onto the blockchain. Its mission is to make carbon markets accessible and transparent, enabling billions of dollars to be invested directly into projects that combat climate change. This first pool was created to finance important conservation work and carbon avoidance in the Corazón Verde Del Chaco Project (VCS 2611), located in Paraguay within the Gran Chaco Forest. The Gran Chaco is the second-largest forest in South America, behind only the Amazon rainforest and it has one of the highest deforestation rates on the planet due to conversion to cropland and pasture for cattle.";
+        _classes[28]._values["issuerName"].stringValue = "Flowcarbon";
+        _classes[28]._values["issuerType"].stringValue = "LTD";
+        _classes[28]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[28]._values["issuerURL"].stringValue = "https://www.flowcarbon.com/";
+        _classes[28]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Flowcarbon.png";
+        _classes[28]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/FNO1.pdf"
+        ];
+        _classes[28]._values["fundType"].stringValue = "corporate";  
+        _classes[28]._values["shareValue"].uintValue = 1;  
+        _classes[28]._values["currency"].stringValue = "DAI";  
+
+        _classes[28]._values["maxiumSupply"].uintValue = 0;  
+        _classes[28]._values["callable"].boolValue = true;  
+        _classes[28]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[28]._values["coupon"].boolValue = true;  
+        _classes[28]._values["couponRate"].uintValue = ;  
+        _classes[28]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[28]._values["fixed-rate"].boolValue = false;  
+        _classes[28]._values["APY"].uintValue = ;  
+        _classes[28]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xd8486C565098360A24f858088a6D29a380dDF7ec";
+        emit classCreated(address(this), 28);
+
+////////////////////////////////////////////////////////
+
+        _classes[29]._values["symbol"].stringValue = "databased.FINANCE 1-Senior Loan";
+        _classes[29]._values["category"].stringValue = "loan";
+        _classes[29]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[29]._values["childCategory"].stringValue = "branded inventory financing";
+        
+        _classes[29]._values["description"].stringValue = unicode"databased.FINANCE is launching its first Tinlake pool to purchase verified inventory from Amazon Sellers. We are an inventory technology provider that buys from Amazon Sellers who have a Sales History with Amazon and use Fulfilled By Amazon for managing their prepositioned inventory. We purchase their prepositioned inventory and charge a Limited Exclusive Rights Sales fee in 30 day cycles so they can sell it on our behalf. We use a third party Oracle service, Track.one Limited to access the account of the Amazon Seller and verify both historic price, sales volumes, and the current inventory holdings of the brand. This allows us to mark-to-market the value of the inventory. We call this type of finance databased.FINANCE.";
+        _classes[29]._values["issuerName"].stringValue = "databased.FINANCE";
+        _classes[29]._values["issuerType"].stringValue = "LTD";
+        _classes[29]._values["issuerJurisdiction"].stringValue = "HK";
+        _classes[29]._values["issuerURL"].stringValue = "https://www.databased.finance/";
+        _classes[29]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Databased%20Finance.png";
+        _classes[29]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/DF1.pdf"
+        ];
+        _classes[29]._values["fundType"].stringValue = "corporate";  
+        _classes[29]._values["shareValue"].uintValue = 1;  
+        _classes[29]._values["currency"].stringValue = "DAI";  
+
+        _classes[29]._values["maxiumSupply"].uintValue = 0;  
+        _classes[29]._values["callable"].boolValue = true;  
+        _classes[29]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[29]._values["coupon"].boolValue = true;  
+        _classes[29]._values["couponRate"].uintValue = ;  
+        _classes[29]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[29]._values["fixed-rate"].boolValue = false;  
+        _classes[29]._values["APY"].uintValue = ;  
+        _classes[29]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xd8486C565098360A24f858088a6D29a380dDF7ec";
+        emit classCreated(address(this), 29);
+
 
 
 
