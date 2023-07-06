@@ -719,14 +719,17 @@ contract Token is ERC3475 {
         _classes[1]._values["shareValue"].uintValue = 1;  
         _classes[1]._values["currency"].stringValue = "USDC";  
 
-        _classes[1]._values["maxiumSupply"].uintValue = 33803719;  
+        _classes[1]._values["maxiumSupply"].uintValue = 1500000;  
         _classes[1]._values["callable"].boolValue = true;  
-        _classes[1]._values["maturityPeriod"].uintValue = 45*24*3600;  
+        _classes[1]._values["maturityPeriod"].uintValue = 257*60*60*24;  
+        _classes[1]._values["coupon"].boolValue = true;  
+        _classes[1]._values["couponRate"].uintValue = 8750;  
+        _classes[1]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[1]._values["fixed-rate"].boolValue = true;  
-        _classes[1]._values["APY"].uintValue = 100000;  
-        _classes[1]._values["ManagementFee"].uintValue = 16800;  
-        _classes[1]._values["subscribeLink"].stringValue = "https://app.maple.finance/#/v2/lend/pool/0xe9d33286f0e37f517b1204aa6da085564414996d";
+        _classes[1]._values["APR"].uintValue = 105000;  
+        _classes[1]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=89xZFZ4LGo7obbTcSc4prY8sDPG5j9aBbkztZHrfYVJS";
         emit classCreated(address(this), 1);
+
 
     }
    
