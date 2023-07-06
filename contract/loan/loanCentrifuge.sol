@@ -1604,16 +1604,42 @@ contract Token is ERC3475 {
         _classes[29]._values["shareValue"].uintValue = 1;  
         _classes[29]._values["currency"].stringValue = "DAI";  
 
-        _classes[29]._values["maxiumSupply"].uintValue = 0;  
+        _classes[29]._values["maxiumSupply"].uintValue = 600000;  
         _classes[29]._values["callable"].boolValue = true;  
         _classes[29]._values["maturityPeriod"].uintValue = 322*60*60*24;  
-        _classes[29]._values["coupon"].boolValue = true;  
-        _classes[29]._values["couponRate"].uintValue = ;  
-        _classes[29]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[29]._values["fixed-rate"].boolValue = false;  
-        _classes[29]._values["APY"].uintValue = ;  
-        _classes[29]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xd8486C565098360A24f858088a6D29a380dDF7ec";
+        _classes[29]._values["coupon"].boolValue = false;  
+        _classes[29]._values["fixed-rate"].boolValue = ture;  
+        _classes[29]._values["APY"].uintValue = 8000;  
+        _classes[29]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xfc2950dD337ca8496C18dfc0256Fb905A7E7E5c6";
         emit classCreated(address(this), 29);
+
+////////////////////////////////////////////////////////
+
+        _classes[30]._values["symbol"].stringValue = "databased.FINANCE 1-Junior Loan";
+        _classes[30]._values["category"].stringValue = "loan";
+        _classes[30]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[30]._values["childCategory"].stringValue = "branded inventory financing";
+        
+        _classes[30]._values["description"].stringValue = unicode"databased.FINANCE is launching its first Tinlake pool to purchase verified inventory from Amazon Sellers. We are an inventory technology provider that buys from Amazon Sellers who have a Sales History with Amazon and use Fulfilled By Amazon for managing their prepositioned inventory. We purchase their prepositioned inventory and charge a Limited Exclusive Rights Sales fee in 30 day cycles so they can sell it on our behalf. We use a third party Oracle service, Track.one Limited to access the account of the Amazon Seller and verify both historic price, sales volumes, and the current inventory holdings of the brand. This allows us to mark-to-market the value of the inventory. We call this type of finance databased.FINANCE.";
+        _classes[30]._values["issuerName"].stringValue = "databased.FINANCE";
+        _classes[30]._values["issuerType"].stringValue = "LTD";
+        _classes[30]._values["issuerJurisdiction"].stringValue = "HK";
+        _classes[30]._values["issuerURL"].stringValue = "https://www.databased.finance/";
+        _classes[30]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Databased%20Finance.png";
+        _classes[30]._values["issuerDocURL"].stringValue = [
+            "https://storage.googleapis.com/tinlake/docs/summaries/DF1.pdf"
+        ];
+        _classes[30]._values["fundType"].stringValue = "corporate";  
+        _classes[30]._values["shareValue"].uintValue = 1;  
+        _classes[30]._values["currency"].stringValue = "DAI";  
+
+        _classes[30]._values["maxiumSupply"].uintValue = 600000;  
+        _classes[30]._values["callable"].boolValue = true;  
+        _classes[30]._values["maturityPeriod"].uintValue = 322*60*60*24;  
+        _classes[30]._values["coupon"].boolValue = false;  
+        _classes[30]._values["fixed-rate"].boolValue = false;  
+        _classes[30]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xfc2950dD337ca8496C18dfc0256Fb905A7E7E5c6";
+        emit classCreated(address(this), 30);
 
 
 
