@@ -699,6 +699,7 @@ contract Token is ERC3475 {
         _classes[0]._values["custodianJurisdiction"].stringValue = "US";
         _classes[0]._values["custodianURL"].stringValue = "https://ondo.finance/";
         _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Ondo.png";
+        _classes[1]._values["fixedMaturity"].boolValue = true;  
         
         _classes[1]._values["symbol"].stringValue = "iShares iBoxx $ High Yield Corporate Bond ETF";
         _classes[1]._values["category"].stringValue = "security";
@@ -719,7 +720,7 @@ contract Token is ERC3475 {
         _classes[1]._values["auditorType"].stringValue = "LTD";
         _classes[1]._values["auditorJurisdiction"].stringValue = "US";
         _classes[1]._values["auditorURL"].stringValue = "https://credora.io/";
-        _classes[1]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credora.png";z
+        _classes[1]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credora.png";
         _classes[1]._values["riskLevel"].stringValue = "BB-";
         _classes[1]._values["ISIN"].stringValue = "IE00BGSF1X88";
         _classes[1]._values["fundType"].stringValue = "corporate";  
