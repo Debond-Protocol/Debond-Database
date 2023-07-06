@@ -871,6 +871,75 @@ contract Token is ERC3475 {
         _classes[5]._values["APR"].uintValue = 102400;  
         _classes[5]._values["subscribeLink"].stringValue = "https://clearpool.finance/permissionless/pools/0x3aeb3a8f0851249682a6a836525cdeee5aa2a153?market=ethereum";
         emit classCreated(address(this), 5);
+
+///
+
+        _classes[6]._values["symbol"].stringValue = "Alphanonce -Junior Loan";
+        _classes[6]._values["category"].stringValue = "loan";
+        _classes[6]._values["subcategory"].stringValue = "uncollateralized loan";
+        _classes[6]._values["childCategory"].stringValue = "uncollateralized investment fund";
+        
+        _classes[6]._values["description"].stringValue = unicode"Alphanonce (Alphanonce Master Fund SPC) is a crypto native firm founded in 2018. For the past 5 years, we demonstrated a long-standing track record of generating stable and consistent returns, achieved through our market-neutral, quantitative trading. With a team of 30 employees, with 50% comprising engineers, we implement exclusive quant-driven trading algorithms developed in-house to effectively recognize and leverage opportunities in the crypto market.";
+        _classes[6]._values["issuerName"].stringValue = "Alphanonce";
+        _classes[6]._values["issuerType"].stringValue = "LTD";
+        _classes[6]._values["issuerJurisdiction"].stringValue = "KY";
+        _classes[6]._values["issuerURL"].stringValue = "https://www.alphanonce.com/";
+        _classes[6]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/alphanonce.png";
+
+        //rating
+        _classes[6]._values["auditorName"].stringValue = "Credora";
+        _classes[6]._values["auditorType"].stringValue = "LTD";
+        _classes[6]._values["auditorJurisdiction"].stringValue = "US";
+        _classes[6]._values["auditorURL"].stringValue = "https://credora.io/";
+        _classes[6]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credora.png";
+
+        _classes[6]._values["riskLevel"].stringValue = "B";  
+        _classes[6]._values["fundType"].stringValue = "corporate";  
+        _classes[6]._values["shareValue"].uintValue = 1;  
+        _classes[6]._values["currency"].stringValue = "USDC";  
+
+        _classes[6]._values["maxiumSupply"].uintValue = 436652;  
+        _classes[6]._values["callable"].boolValue = true;  
+        _classes[6]._values["coupon"].boolValue = false;  
+        _classes[6]._values["fixed-rate"].boolValue = true;  
+        _classes[6]._values["APR"].uintValue = 192200;  
+        _classes[6]._values["subscribeLink"].stringValue = "https://clearpool.finance/permissionless/pools/0x68f311351e7196d71f8e6372e4a1d2e725669bf2?market=ethereum";
+        emit classCreated(address(this), 6);
+
+///
+
+        _classes[7]._values["symbol"].stringValue = "Portofino Technologies-USDC -Senior Loan";
+        _classes[7]._values["category"].stringValue = "loan";
+        _classes[7]._values["subcategory"].stringValue = "uncollateralized loan";
+        _classes[7]._values["childCategory"].stringValue = "uncollateralized investment fund";
+        
+        _classes[7]._values["description"].stringValue = unicode"Portofino Technologies (Portofino Technologies AG) is a crypto-native technology start-up with 35+ employees across 5 global locations, with headquarters in Zug, Switzerland. Portofino deploys its proprietary market-making technology to trade on centralised, decentralised and OTC markets and provides token services & investments to Web3 projects.";
+        _classes[7]._values["issuerName"].stringValue = "Portofino Technologies";
+        _classes[7]._values["issuerType"].stringValue = "LTD";
+        _classes[7]._values["issuerJurisdiction"].stringValue = "SWISS";
+        _classes[7]._values["issuerURL"].stringValue = "https://www.portofino.tech/";
+        _classes[7]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/alphanonce.png";
+
+        //rating
+        _classes[7]._values["auditorName"].stringValue = "Credora";
+        _classes[7]._values["auditorType"].stringValue = "LTD";
+        _classes[7]._values["auditorJurisdiction"].stringValue = "US";
+        _classes[7]._values["auditorURL"].stringValue = "https://credora.io/";
+        _classes[7]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credora.png";
+
+        _classes[7]._values["riskLevel"].stringValue = "B";  
+        _classes[7]._values["fundType"].stringValue = "corporate";  
+        _classes[7]._values["shareValue"].uintValue = 1;  
+        _classes[7]._values["currency"].stringValue = "USDC";  
+
+        _classes[7]._values["maxiumSupply"].uintValue = 436652;  
+        _classes[7]._values["callable"].boolValue = true;  
+        _classes[7]._values["coupon"].boolValue = false;  
+        _classes[7]._values["fixed-rate"].boolValue = true;  
+        _classes[7]._values["APR"].uintValue = 192200;  
+        _classes[7]._values["subscribeLink"].stringValue = "https://clearpool.finance/permissionless/pools/0x68f311351e7196d71f8e6372e4a1d2e725669bf2?market=ethereum";
+        emit classCreated(address(this), 7);
+
     }
    
 }
