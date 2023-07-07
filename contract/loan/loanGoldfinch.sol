@@ -698,7 +698,7 @@ contract Token is ERC3475 {
         _classes[0]._values["custodianType"].stringValue = "LTD";
         _classes[0]._values["custodianJurisdiction"].stringValue = "AU";
         _classes[0]._values["custodianURL"].stringValue = "https://www.maple.finance/";
-        _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/maple.png";
+        _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Goldfinch.png";
         _classes[0]._values["fixedMaturity"].boolValue = true;  
         
         _classes[1]._values["symbol"].stringValue = "AQRU Receivables - USDC";
