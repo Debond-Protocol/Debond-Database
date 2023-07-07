@@ -738,6 +738,46 @@ contract Token is ERC3475 {
         _classes[1]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=7pTa26B4jHywCtb8kLwZvKEt9Lh1trsD1RWrGi3jMQ9k";
         emit classCreated(address(this), 1);
 
+////
+
+        _classes[2]._values["symbol"].stringValue = "PIMCO Enhanced Short Maturity Active Exchange-Traded Fund";
+        _classes[2]._values["category"].stringValue = "security";
+        _classes[2]._values["subcategory"].stringValue = "bond";
+        _classes[2]._values["childCategory"].stringValue = "high yield corporate bond";
+        
+        _classes[2]._values["description"].stringValue = unicode"One of the most popular high yield bond ETFs, generating high income for investors through exposure to a broad range of US high yield corporate bonds. The significant majority of this portfolio will be in the iBoxx $ High Yield Corporate Bond ETF (NYSE: HYG). There is also a small portion of USDC and USD for liquidity purposes. Distributions are automatically reinvested in the underlying fund assets to compound your investments";
+        _classes[2]._values["issuerName"].stringValue = "iShares";
+        _classes[2]._values["issuerType"].stringValue = "LTD";
+        _classes[2]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[2]._values["issuerURL"].stringValue = "https://www.ishares.com/us/";
+        _classes[2]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/iShares.png";
+        _classes[2]._values["issuerDocURL"].stringValue = [
+            "https://www.ishares.com/us/literature/fact-sheet/hyg-ishares-iboxx-high-yield-corporate-bond-etf-fund-fact-sheet-en-us.pdf"
+        ];
+        //rating
+        _classes[2]._values["auditorName"].stringValue = "Credora";
+        _classes[2]._values["auditorType"].stringValue = "LTD";
+        _classes[2]._values["auditorJurisdiction"].stringValue = "US";
+        _classes[2]._values["auditorURL"].stringValue = "https://credora.io/";
+        _classes[2]._values["auditorLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Credora.png";
+        _classes[2]._values["riskLevel"].stringValue = "BB-";
+        _classes[2]._values["ISIN"].stringValue = "IE00BGSF1X88";
+        _classes[2]._values["fundType"].stringValue = "corporate";  
+        _classes[2]._values["shareValue"].uintValue = 1;  
+        _classes[2]._values["currency"].stringValue = "USDC";  
+
+        _classes[2]._values["maxiumSupply"].uintValue = 1524693;  
+        _classes[2]._values["callable"].boolValue = true;  
+        _classes[2]._values["maturityPeriod"].uintValue = 103680000;  
+        _classes[2]._values["coupon"].boolValue = true;  
+        _classes[2]._values["couponRate"].uintValue = 8333;  
+        _classes[2]._values["couponPeriod"].uintValue = 2592000;  
+        _classes[2]._values["fixed-rate"].boolValue = true;  
+        _classes[2]._values["APY"].uintValue = 100000;  
+        _classes[2]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=7pTa26B4jHywCtb8kLwZvKEt9Lh1trsD1RWrGi3jMQ9k";
+        emit classCreated(address(this), 2);
+
+
     }
    
 }
