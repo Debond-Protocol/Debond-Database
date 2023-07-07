@@ -896,6 +896,34 @@ contract Token is ERC3475 {
         _classes[7]._values["subscribeLink"].stringValue = "https://app.goldfinch.finance/pools/0xe6c30756136e07eb5268c3232efbfbe645c1ba5a";
         emit classCreated(address(this), 7);
 
+///
+        _classes[8]._values["symbol"].stringValue = "Almavest Basket #3";
+        _classes[8]._values["category"].stringValue = "loan";
+        _classes[8]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[8]._values["childCategory"].stringValue = "fintech debt financing";
+        
+        _classes[8]._values["description"].stringValue = unicode"Proceeds will be used to expand ALMA's pan-regional debt platform across our three investment areas of focus: inclusive lenders, carbon reduction project developers, and diverse social impact businesses. This includes active pipeline deals in India, Egypt, Indonesia, Colombia, Spain, Philippines, and other markets. The security we take on our loans to borrowers includes overcollateralized loan portfolios, carbon credit purchase agreements, corporate, personal, and/or sovereign guarantees, cash collateral, and pledges of company shares.";
+        _classes[8]._values["issuerName"].stringValue = "Almavest";
+        _classes[8]._values["issuerType"].stringValue = "LTD";
+        _classes[8]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[8]._values["issuerURL"].stringValue = "https://almavest.com/";
+        _classes[8]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/almavest.jpeg";
+
+        _classes[8]._values["fundType"].stringValue = "corporate";  
+        _classes[8]._values["shareValue"].uintValue = 1;  
+        _classes[8]._values["currency"].stringValue = "USDC";  
+
+        _classes[8]._values["maxiumSupply"].uintValue = 9999988;  
+        _classes[8]._values["callable"].boolValue = true;  
+        _classes[8]._values["maturityPeriod"].uintValue = 30*30*24*3600;  
+        _classes[8]._values["coupon"].boolValue = true;  
+        _classes[8]._values["couponRate"].uintValue = 15625;  
+        _classes[8]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[8]._values["fixed-rate"].boolValue = true;  
+        _classes[8]._values["APY"].uintValue = 187500;  
+        _classes[8]._values["subscribeLink"].stringValue = "https://app.goldfinch.finance/pools/0xefeb69edf6b6999b0e3f2fa856a2acf3bdea4ab5";
+        emit classCreated(address(this), 8);
+
 
 
 
