@@ -785,32 +785,117 @@ contract Token is ERC3475 {
         emit classCreated(address(this), 3);
 
 ///
-        _classes[3]._values["symbol"].stringValue = "Cauris Fund #4: Africa Innovation Pool";
-        _classes[3]._values["category"].stringValue = "loan";
-        _classes[3]._values["subcategory"].stringValue = "asset-backed loan";
-        _classes[3]._values["childCategory"].stringValue = "fintech debt financing";
+        _classes[4]._values["symbol"].stringValue = "Almavest Basket #7: Fintech and Carbon Reduction Basket";
+        _classes[4]._values["category"].stringValue = "loan";
+        _classes[4]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[4]._values["childCategory"].stringValue = "fintech debt financing";
         
-        _classes[3]._values["description"].stringValue = unicode"Proceeds will be used to provide additional backing to African Fintechs in their quest to provide access to financial services to millions of traditionally underbanked small businesses and consumers. Our investments will include senior secured loans with covenants for additional downside protection. All loans will be secured by all-asset debentures, including our borrowers' lending receivables.";
-        _classes[3]._values["issuerName"].stringValue = "Cauris";
-        _classes[3]._values["issuerType"].stringValue = "LTD";
-        _classes[3]._values["issuerJurisdiction"].stringValue = "US";
-        _classes[3]._values["issuerURL"].stringValue = "https://caurisfinance.com/";
-        _classes[3]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Cauris.png";
+        _classes[4]._values["description"].stringValue = unicode"Proceeds will be used to provide additional backing to African Fintechs in their quest to provide access to financial services to millions of traditionally underbanked small businesses and consumers. Our investments will include senior secured loans with covenants for additional downside protection. All loans will be secured by all-asset debentures, including our borrowers' lending receivables.";
+        _classes[4]._values["issuerName"].stringValue = "Almavest";
+        _classes[4]._values["issuerType"].stringValue = "LTD";
+        _classes[4]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[4]._values["issuerURL"].stringValue = "https://almavest.com/";
+        _classes[4]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/almavest.jpeg";
 
-        _classes[3]._values["fundType"].stringValue = "corporate";  
-        _classes[3]._values["shareValue"].uintValue = 1;  
-        _classes[3]._values["currency"].stringValue = "USDC";  
+        _classes[4]._values["fundType"].stringValue = "corporate";  
+        _classes[4]._values["shareValue"].uintValue = 1;  
+        _classes[4]._values["currency"].stringValue = "USDC";  
 
-        _classes[3]._values["maxiumSupply"].uintValue = 2126664;  
-        _classes[3]._values["callable"].boolValue = true;  
-        _classes[3]._values["maturityPeriod"].uintValue = 24*30*24*3600;  
-        _classes[3]._values["coupon"].boolValue = true;  
-        _classes[3]._values["couponRate"].uintValue = 10125;  
-        _classes[3]._values["couponPeriod"].uintValue = 30*60*60*24;  
-        _classes[3]._values["fixed-rate"].boolValue = true;  
-        _classes[3]._values["APY"].uintValue = 121500;  
-        _classes[3]._values["subscribeLink"].stringValue = "https://app.goldfinch.finance/pools/0xd09a57127bc40d680be7cb061c2a6629fe71abef";
-        emit classCreated(address(this), 3);
+        _classes[4]._values["maxiumSupply"].uintValue = 10000000;  
+        _classes[4]._values["callable"].boolValue = true;  
+        _classes[4]._values["maturityPeriod"].uintValue = 37*30*24*3600;  
+        _classes[4]._values["coupon"].boolValue = true;  
+        _classes[4]._values["couponRate"].uintValue = 14166;  
+        _classes[4]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[4]._values["fixed-rate"].boolValue = true;  
+        _classes[4]._values["APY"].uintValue = 170000;  
+        _classes[4]._values["subscribeLink"].stringValue = "https://app.goldfinch.finance/pools/0x759f097f3153f5d62ff1c2d82ba78b6350f223e3";
+        emit classCreated(address(this), 4);
+
+///
+        _classes[5]._values["symbol"].stringValue = "Almavest Basket #6";
+        _classes[5]._values["category"].stringValue = "loan";
+        _classes[5]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[5]._values["childCategory"].stringValue = "fintech debt financing";
+        
+        _classes[5]._values["description"].stringValue = unicode"Proceeds will be used to expand ALMA's pan-regional debt platform across our three investment areas of focus: inclusive lenders, carbon reduction project developers, and diverse social impact businesses. This includes active pipeline deals in India, Egypt, Indonesia, Colombia, Spain, Philippines, and other markets. The security we take on our loans to borrowers includes overcollateralized loan portfolios, carbon credit purchase agreements, corporate, personal, and/or sovereign guarantees, cash collateral, and pledges of company shares.";
+        _classes[5]._values["issuerName"].stringValue = "Almavest";
+        _classes[5]._values["issuerType"].stringValue = "LTD";
+        _classes[5]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[5]._values["issuerURL"].stringValue = "https://almavest.com/";
+        _classes[5]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/almavest.jpeg";
+
+        _classes[5]._values["fundType"].stringValue = "corporate";  
+        _classes[5]._values["shareValue"].uintValue = 1;  
+        _classes[5]._values["currency"].stringValue = "USDC";  
+
+        _classes[5]._values["maxiumSupply"].uintValue = 11812267;  
+        _classes[5]._values["callable"].boolValue = true;  
+        _classes[5]._values["maturityPeriod"].uintValue = 37*30*24*3600;  
+        _classes[5]._values["coupon"].boolValue = true;  
+        _classes[5]._values["couponRate"].uintValue = 14166;  
+        _classes[5]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[5]._values["fixed-rate"].boolValue = true;  
+        _classes[5]._values["APY"].uintValue = 170000;  
+        _classes[5]._values["subscribeLink"].stringValue = "https://app.goldfinch.finance/pools/0x418749e294cabce5a714efccc22a8aade6f9db57";
+        emit classCreated(address(this), 5);
+
+///
+        _classes[6]._values["symbol"].stringValue = "Almavest Basket #5";
+        _classes[6]._values["category"].stringValue = "loan";
+        _classes[6]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[6]._values["childCategory"].stringValue = "fintech debt financing";
+        
+        _classes[6]._values["description"].stringValue = unicode"Proceeds will be used to expand ALMA's pan-regional debt platform across our three investment areas of focus: inclusive lenders, carbon reduction project developers, and diverse social impact businesses. This includes active pipeline deals in India, Egypt, Indonesia, Colombia, Spain, Philippines, and other markets. The security we take on our loans to borrowers includes overcollateralized loan portfolios, carbon credit purchase agreements, corporate, personal, and/or sovereign guarantees, cash collateral, and pledges of company shares.";
+        _classes[6]._values["issuerName"].stringValue = "Almavest";
+        _classes[6]._values["issuerType"].stringValue = "LTD";
+        _classes[6]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[6]._values["issuerURL"].stringValue = "https://almavest.com/";
+        _classes[6]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/almavest.jpeg";
+
+        _classes[6]._values["fundType"].stringValue = "corporate";  
+        _classes[6]._values["shareValue"].uintValue = 1;  
+        _classes[6]._values["currency"].stringValue = "USDC";  
+
+        _classes[6]._values["maxiumSupply"].uintValue = 5000000;  
+        _classes[6]._values["callable"].boolValue = true;  
+        _classes[6]._values["maturityPeriod"].uintValue = 37*30*24*3600;  
+        _classes[6]._values["coupon"].boolValue = true;  
+        _classes[6]._values["couponRate"].uintValue = 15625;  
+        _classes[6]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[6]._values["fixed-rate"].boolValue = true;  
+        _classes[6]._values["APY"].uintValue = 187500;  
+        _classes[6]._values["subscribeLink"].stringValue = "https://app.goldfinch.finance/pools/0x1d596d28a7923a22aa013b0e7082bba23daa656b";
+        emit classCreated(address(this), 6);
+
+///
+        _classes[7]._values["symbol"].stringValue = "Almavest Basket #4";
+        _classes[7]._values["category"].stringValue = "loan";
+        _classes[7]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[7]._values["childCategory"].stringValue = "fintech debt financing";
+        
+        _classes[7]._values["description"].stringValue = unicode"Proceeds will be used to expand ALMA's pan-regional debt platform across our three investment areas of focus: inclusive lenders, carbon reduction project developers, and diverse social impact businesses. This includes active pipeline deals in India, Egypt, Indonesia, Colombia, Spain, Philippines, and other markets. The security we take on our loans to borrowers includes overcollateralized loan portfolios, carbon credit purchase agreements, corporate, personal, and/or sovereign guarantees, cash collateral, and pledges of company shares.";
+        _classes[7]._values["issuerName"].stringValue = "Almavest";
+        _classes[7]._values["issuerType"].stringValue = "LTD";
+        _classes[7]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[7]._values["issuerURL"].stringValue = "https://almavest.com/";
+        _classes[7]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/almavest.jpeg";
+
+        _classes[7]._values["fundType"].stringValue = "corporate";  
+        _classes[7]._values["shareValue"].uintValue = 1;  
+        _classes[7]._values["currency"].stringValue = "USDC";  
+
+        _classes[7]._values["maxiumSupply"].uintValue = 9999988;  
+        _classes[7]._values["callable"].boolValue = true;  
+        _classes[7]._values["maturityPeriod"].uintValue = 37*30*24*3600;  
+        _classes[7]._values["coupon"].boolValue = true;  
+        _classes[7]._values["couponRate"].uintValue = 15625;  
+        _classes[7]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[7]._values["fixed-rate"].boolValue = true;  
+        _classes[7]._values["APY"].uintValue = 187500;  
+        _classes[7]._values["subscribeLink"].stringValue = "https://app.goldfinch.finance/pools/0xe6c30756136e07eb5268c3232efbfbe645c1ba5a";
+        emit classCreated(address(this), 7);
+
 
 
 
