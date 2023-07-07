@@ -696,40 +696,124 @@ contract Token is ERC3475 {
     
         _classes[0]._values["custodianName"].stringValue = "Goldfinch";
         _classes[0]._values["custodianType"].stringValue = "LTD";
-        _classes[0]._values["custodianJurisdiction"].stringValue = "AU";
-        _classes[0]._values["custodianURL"].stringValue = "https://www.maple.finance/";
+        _classes[0]._values["custodianJurisdiction"].stringValue = "US";
+        _classes[0]._values["custodianURL"].stringValue = "https://goldfinch.finance/";
         _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Goldfinch.png";
         _classes[0]._values["fixedMaturity"].boolValue = true;  
+        _classes[0]._values["coupon"].boolValue = true;  
         
-        _classes[1]._values["symbol"].stringValue = "AQRU Receivables - USDC";
+        _classes[1]._values["symbol"].stringValue = "Cauris";
         _classes[1]._values["category"].stringValue = "loan";
         _classes[1]._values["subcategory"].stringValue = "asset-backed loan";
-        _classes[1]._values["childCategory"].stringValue = "real-world receivable";
+        _classes[1]._values["childCategory"].stringValue = "fintech debt financing";
         
-        _classes[1]._values["description"].stringValue = unicode"AQRU is a digital asset investment platform that sources and integrates investment and yield opportunities from across the crypto and DeFi ecosystems. The strategy of the AQRU Real-World Receivables pool is to provide liquidity to US businesses by purchasing their receivables. The program focuses on tax credits provided by the US IRS, which are designed to encourage growth in targeted sectors of the economy. The pool accepts deposits above $250,000 USDC from accredited investors after completion of KYC.";
-        _classes[1]._values["issuerName"].stringValue = "AQRU";
+        _classes[1]._values["description"].stringValue = unicode"Cauris is a credit fund created to bring decentralized financing to fintechs in emerging markets. This facility will be used by Cauris to provide debt capital to vetted consumer and SMB lenders in the Global South and Europe, who pledge well-performing loan portfolios as collateral.";
+        _classes[1]._values["issuerName"].stringValue = "Cauris";
         _classes[1]._values["issuerType"].stringValue = "LTD";
-        _classes[1]._values["issuerJurisdiction"].stringValue = "UK";
-        _classes[1]._values["issuerURL"].stringValue = "https://aqru.io/";
-        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/AQRU.png";
-        _classes[1]._values["issuerDocURL"].stringArrayValue = [
-            "https://downloads.eth.maple.finance/docs/aqru/2023-01-AQRU-Real-World-Receivables.pdf"
-        ];
+        _classes[1]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[1]._values["issuerURL"].stringValue = "https://caurisfinance.com/";
+        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Cauris.png";
 
         _classes[1]._values["fundType"].stringValue = "corporate";  
         _classes[1]._values["shareValue"].uintValue = 1;  
         _classes[1]._values["currency"].stringValue = "USDC";  
 
-        _classes[1]._values["maxiumSupply"].uintValue = 1500000;  
+        _classes[1]._values["maxiumSupply"].uintValue = 5142674;  
         _classes[1]._values["callable"].boolValue = true;  
-        _classes[1]._values["maturityPeriod"].uintValue = 257*60*60*24;  
+        _classes[1]._values["maturityPeriod"].uintValue = 37*30*24*3600;  
         _classes[1]._values["coupon"].boolValue = true;  
-        _classes[1]._values["couponRate"].uintValue = 8750;  
+        _classes[1]._values["couponRate"].uintValue = 15625;  
         _classes[1]._values["couponPeriod"].uintValue = 30*60*60*24;  
         _classes[1]._values["fixed-rate"].boolValue = true;  
-        _classes[1]._values["APR"].uintValue = 105000;  
-        _classes[1]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=89xZFZ4LGo7obbTcSc4prY8sDPG5j9aBbkztZHrfYVJS";
+        _classes[1]._values["APY"].uintValue = 187500;  
+        _classes[1]._values["subscribeLink"].stringValue = "https://app.goldfinch.finance/pools/0xc9bdd0d3b80cc6efe79a82d850f44ec9b55387ae#highlights";
         emit classCreated(address(this), 1);
+///
+        _classes[2]._values["symbol"].stringValue = "Cauris Fund #2: Africa Innovation Pool";
+        _classes[2]._values["category"].stringValue = "loan";
+        _classes[2]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[2]._values["childCategory"].stringValue = "fintech debt financing";
+        
+        _classes[2]._values["description"].stringValue = unicode"Cauris is a mission driven company that applies advanced technology to solve financial inclusion issues while providing high risk adjusted returns to its investors. We aim to give 100 million more people access to capital. We believe that access to credit is key to empowering individuals and enabling economic growth. We use a combination of strong underwriting, legal protections and advanced analytics to secure our debt investments in our fintechs clients. This pool will be dedicated to backing African fintechs in their quest to provide access to financial services to millions of customers. We will be investing in companies providing consumer lending products, SME, Trade and equipment financings. Our investments will include senior secured loans to companies such as: • Ramani (https://www.ramani.io/), a supply chain financing company operating in Tanzanian • Jetstream (https://jetstreamafrica.com/), a trade finance company operating in Ghana and Nigeria • Asaak (https://www.asaak.com/), an equipment financing company providing motorcycle financing to boda bodas (motorcycle taxis) in Uganda • Gozem (https://gozem.co/en/), on-demand transportation, delivery and cashless payment solutions provider operating in Francophone West and Central Africa.";
+        _classes[2]._values["issuerName"].stringValue = "Cauris";
+        _classes[2]._values["issuerType"].stringValue = "LTD";
+        _classes[2]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[2]._values["issuerURL"].stringValue = "https://caurisfinance.com/";
+        _classes[2]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Cauris.png";
+
+        _classes[2]._values["fundType"].stringValue = "corporate";  
+        _classes[2]._values["shareValue"].uintValue = 1;  
+        _classes[2]._values["currency"].stringValue = "USDC";  
+
+        _classes[2]._values["maxiumSupply"].uintValue = 10000000;  
+        _classes[2]._values["callable"].boolValue = true;  
+        _classes[2]._values["maturityPeriod"].uintValue = 37*30*24*3600;  
+        _classes[2]._values["coupon"].boolValue = true;  
+        _classes[2]._values["couponRate"].uintValue = 14166;  
+        _classes[2]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[2]._values["fixed-rate"].boolValue = true;  
+        _classes[2]._values["APY"].uintValue = 170000;  
+        _classes[2]._values["subscribeLink"].stringValue = "https://app.goldfinch.finance/pools/0xd09a57127bc40d680be7cb061c2a6629fe71abef";
+        emit classCreated(address(this), 2);
+
+///
+        _classes[3]._values["symbol"].stringValue = "Cauris Fund #4: Africa Innovation Pool";
+        _classes[3]._values["category"].stringValue = "loan";
+        _classes[3]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[3]._values["childCategory"].stringValue = "fintech debt financing";
+        
+        _classes[3]._values["description"].stringValue = unicode"Proceeds will be used to provide additional backing to African Fintechs in their quest to provide access to financial services to millions of traditionally underbanked small businesses and consumers. Our investments will include senior secured loans with covenants for additional downside protection. All loans will be secured by all-asset debentures, including our borrowers' lending receivables.";
+        _classes[3]._values["issuerName"].stringValue = "Cauris";
+        _classes[3]._values["issuerType"].stringValue = "LTD";
+        _classes[3]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[3]._values["issuerURL"].stringValue = "https://caurisfinance.com/";
+        _classes[3]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Cauris.png";
+
+        _classes[3]._values["fundType"].stringValue = "corporate";  
+        _classes[3]._values["shareValue"].uintValue = 1;  
+        _classes[3]._values["currency"].stringValue = "USDC";  
+
+        _classes[3]._values["maxiumSupply"].uintValue = 2126664;  
+        _classes[3]._values["callable"].boolValue = true;  
+        _classes[3]._values["maturityPeriod"].uintValue = 24*30*24*3600;  
+        _classes[3]._values["coupon"].boolValue = true;  
+        _classes[3]._values["couponRate"].uintValue = 10125;  
+        _classes[3]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[3]._values["fixed-rate"].boolValue = true;  
+        _classes[3]._values["APY"].uintValue = 121500;  
+        _classes[3]._values["subscribeLink"].stringValue = "https://app.goldfinch.finance/pools/0xd09a57127bc40d680be7cb061c2a6629fe71abef";
+        emit classCreated(address(this), 3);
+
+///
+        _classes[3]._values["symbol"].stringValue = "Cauris Fund #4: Africa Innovation Pool";
+        _classes[3]._values["category"].stringValue = "loan";
+        _classes[3]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[3]._values["childCategory"].stringValue = "fintech debt financing";
+        
+        _classes[3]._values["description"].stringValue = unicode"Proceeds will be used to provide additional backing to African Fintechs in their quest to provide access to financial services to millions of traditionally underbanked small businesses and consumers. Our investments will include senior secured loans with covenants for additional downside protection. All loans will be secured by all-asset debentures, including our borrowers' lending receivables.";
+        _classes[3]._values["issuerName"].stringValue = "Cauris";
+        _classes[3]._values["issuerType"].stringValue = "LTD";
+        _classes[3]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[3]._values["issuerURL"].stringValue = "https://caurisfinance.com/";
+        _classes[3]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Cauris.png";
+
+        _classes[3]._values["fundType"].stringValue = "corporate";  
+        _classes[3]._values["shareValue"].uintValue = 1;  
+        _classes[3]._values["currency"].stringValue = "USDC";  
+
+        _classes[3]._values["maxiumSupply"].uintValue = 2126664;  
+        _classes[3]._values["callable"].boolValue = true;  
+        _classes[3]._values["maturityPeriod"].uintValue = 24*30*24*3600;  
+        _classes[3]._values["coupon"].boolValue = true;  
+        _classes[3]._values["couponRate"].uintValue = 10125;  
+        _classes[3]._values["couponPeriod"].uintValue = 30*60*60*24;  
+        _classes[3]._values["fixed-rate"].boolValue = true;  
+        _classes[3]._values["APY"].uintValue = 121500;  
+        _classes[3]._values["subscribeLink"].stringValue = "https://app.goldfinch.finance/pools/0xd09a57127bc40d680be7cb061c2a6629fe71abef";
+        emit classCreated(address(this), 3);
+
+
+
 
 
     }
