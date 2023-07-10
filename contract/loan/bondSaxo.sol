@@ -724,7 +724,9 @@ contract Token is ERC3475 {
         _classes[1]._values["issuerDocURL"].stringValue = [
             "https://www.goldmansachs.com/investor-relations/financials/10q/2023/first-quarter-2023-10-q.pdf"
         ];
-        //rating
+
+        _classes[1]._values["valueAPI"].stringValue = "https://gateway.saxobank.com/sim/openapi/trade/v1/infoprices/list?AccountKey={AIPKey}==&Uics={brokerId}&AssetType=bond&Amount=100000&FieldGroups=DisplayAndFormat,Quote";
+           //rating
         _classes[1]._values["riskLevel"].stringValue = "A+";
         _classes[1]._values["brokerId"].stringValue = "31676788";
         _classes[1]._values["ISIN"].stringValue = "US037833AS94";
