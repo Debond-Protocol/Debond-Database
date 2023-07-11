@@ -715,7 +715,7 @@ contract Token is ERC3475 {
         _classes[1]._values["shareValue"].uintValue = 1;  
         _classes[1]._values["currency"].stringValue = "USDC";  
 
-        _classes[1]._values["maxiumSupply"].uintValue = 1524693;  
+        _classes[1]._values["maximumSupply"].uintValue = 1524693;  
         _classes[1]._values["callable"].boolValue = true;  
         _classes[1]._values["maturityPeriod"].uintValue = 103680000;  
         _classes[1]._values["coupon"].boolValue = true;  
@@ -742,7 +742,7 @@ contract Token is ERC3475 {
         _classes[2]._values["shareValue"].uintValue = 1;  
         _classes[2]._values["currency"].stringValue = "USDC";  
 
-        _classes[2]._values["maxiumSupply"].uintValue = 381173;  
+        _classes[2]._values["maximumSupply"].uintValue = 381173;  
         _classes[2]._values["callable"].boolValue = true;  
         _classes[2]._values["maturityPeriod"].uintValue = 103680000;  
         _classes[2]._values["coupon"].boolValue = true;  
@@ -769,7 +769,7 @@ contract Token is ERC3475 {
         _classes[3]._values["shareValue"].uintValue = 1;  
         _classes[3]._values["currency"].stringValue = "USDC";  
 
-        _classes[3]._values["maxiumSupply"].uintValue = 340000;  
+        _classes[3]._values["maximumSupply"].uintValue = 340000;  
 
         _classes[3]._values["callable"].boolValue = true;  
         _classes[3]._values["maturityPeriod"].uintValue = 1350*60*60*24;  
@@ -797,7 +797,7 @@ contract Token is ERC3475 {
         _classes[4]._values["shareValue"].uintValue = 1;  
         _classes[4]._values["currency"].stringValue = "USDC";  
 
-        _classes[4]._values["maxiumSupply"].uintValue = 211969;  
+        _classes[4]._values["maximumSupply"].uintValue = 211969;  
         _classes[4]._values["callable"].boolValue = true;  
         _classes[4]._values["maturityPeriod"].uintValue = 1350*60*60*24;  
         _classes[4]._values["coupon"].boolValue = true;  
@@ -825,7 +825,7 @@ contract Token is ERC3475 {
         _classes[5]._values["shareValue"].uintValue = 1;  
         _classes[5]._values["currency"].stringValue = "USDC";  
 
-        _classes[5]._values["maxiumSupply"].uintValue = 131200;  
+        _classes[5]._values["maximumSupply"].uintValue = 131200;  
         _classes[5]._values["callable"].boolValue = true;  
         _classes[5]._values["maturityPeriod"].uintValue = 657*60*60*24;  
         _classes[5]._values["coupon"].boolValue = true;  
@@ -854,7 +854,7 @@ contract Token is ERC3475 {
         _classes[6]._values["shareValue"].uintValue = 1;  
         _classes[6]._values["currency"].stringValue = "USDC";  
 
-        _classes[6]._values["maxiumSupply"].uintValue = 524800;  
+        _classes[6]._values["maximumSupply"].uintValue = 524800;  
         _classes[6]._values["callable"].boolValue = true;  
         _classes[6]._values["maturityPeriod"].uintValue = 657*60*60*24;  
         _classes[6]._values["coupon"].boolValue = true;  
@@ -883,7 +883,7 @@ contract Token is ERC3475 {
         _classes[7]._values["shareValue"].uintValue = 1;  
         _classes[7]._values["currency"].stringValue = "USDC";  
 
-        _classes[7]._values["maxiumSupply"].uintValue = 335724;  
+        _classes[7]._values["maximumSupply"].uintValue = 335724;  
         _classes[7]._values["callable"].boolValue = true;  
         _classes[7]._values["maturityPeriod"].uintValue = 840*60*60*24;  
         _classes[7]._values["coupon"].boolValue = true;  
@@ -912,7 +912,7 @@ contract Token is ERC3475 {
         _classes[8]._values["shareValue"].uintValue = 1;  
         _classes[8]._values["currency"].stringValue = "USDC";  
 
-        _classes[8]._values["maxiumSupply"].uintValue = 1034750;  
+        _classes[8]._values["maximumSupply"].uintValue = 1034750;  
         _classes[8]._values["callable"].boolValue = true;  
         _classes[8]._values["maturityPeriod"].uintValue = 840*60*60*24;  
         _classes[8]._values["coupon"].boolValue = true;  
@@ -941,7 +941,7 @@ contract Token is ERC3475 {
         _classes[9]._values["shareValue"].uintValue = 1;  
         _classes[9]._values["currency"].stringValue = "USDC";  
 
-        _classes[9]._values["maxiumSupply"].uintValue = 750000;  
+        _classes[9]._values["maximumSupply"].uintValue = 750000;  
         _classes[9]._values["callable"].boolValue = true;  
         _classes[9]._values["maturityPeriod"].uintValue = 221*60*60*24;  
         _classes[9]._values["coupon"].boolValue = true;  
@@ -970,7 +970,7 @@ contract Token is ERC3475 {
         _classes[10]._values["shareValue"].uintValue = 1;  
         _classes[10]._values["currency"].stringValue = "USDC";  
 
-        _classes[10]._values["maxiumSupply"].uintValue = 501652;  
+        _classes[10]._values["maximumSupply"].uintValue = 501652;  
         _classes[10]._values["callable"].boolValue = true;  
         _classes[10]._values["maturityPeriod"].uintValue = 221*60*60*24;  
         _classes[10]._values["coupon"].boolValue = true;  
@@ -999,7 +999,7 @@ contract Token is ERC3475 {
         _classes[11]._values["shareValue"].uintValue = 1;  
         _classes[11]._values["currency"].stringValue = "USDC";  
 
-        _classes[11]._values["maxiumSupply"].uintValue = 749716;  
+        _classes[11]._values["maximumSupply"].uintValue = 749716;  
         _classes[11]._values["callable"].boolValue = true;  
         _classes[11]._values["maturityPeriod"].uintValue = 188*60*60*24;  
         _classes[11]._values["coupon"].boolValue = true;  
@@ -1028,7 +1028,7 @@ contract Token is ERC3475 {
         _classes[12]._values["shareValue"].uintValue = 1;  
         _classes[12]._values["currency"].stringValue = "USDC";  
 
-        _classes[12]._values["maxiumSupply"].uintValue = 1000000;  
+        _classes[12]._values["maximumSupply"].uintValue = 1000000;  
         _classes[12]._values["callable"].boolValue = true;  
         _classes[12]._values["maturityPeriod"].uintValue = 833*60*60*24;  
         _classes[12]._values["coupon"].boolValue = true;  
@@ -1057,7 +1057,7 @@ contract Token is ERC3475 {
         _classes[13]._values["shareValue"].uintValue = 1;  
         _classes[13]._values["currency"].stringValue = "USDC";  
 
-        _classes[13]._values["maxiumSupply"].uintValue = 792405;  
+        _classes[13]._values["maximumSupply"].uintValue = 792405;  
         _classes[13]._values["callable"].boolValue = true;  
         _classes[13]._values["maturityPeriod"].uintValue = 833*60*60*24;  
         _classes[13]._values["coupon"].boolValue = true;  
@@ -1086,7 +1086,7 @@ contract Token is ERC3475 {
         _classes[14]._values["shareValue"].uintValue = 1;  
         _classes[14]._values["currency"].stringValue = "USDC";  
 
-        _classes[14]._values["maxiumSupply"].uintValue = 1000000;  
+        _classes[14]._values["maximumSupply"].uintValue = 1000000;  
         _classes[14]._values["callable"].boolValue = true;  
         _classes[14]._values["maturityPeriod"].uintValue = 585*60*60*24;  
         _classes[14]._values["coupon"].boolValue = true;  
@@ -1115,7 +1115,7 @@ contract Token is ERC3475 {
         _classes[15]._values["shareValue"].uintValue = 1;  
         _classes[15]._values["currency"].stringValue = "USDC";  
 
-        _classes[15]._values["maxiumSupply"].uintValue = 500000;  
+        _classes[15]._values["maximumSupply"].uintValue = 500000;  
         _classes[15]._values["callable"].boolValue = true;  
         _classes[15]._values["maturityPeriod"].uintValue = 585*60*60*24;  
         _classes[15]._values["coupon"].boolValue = true;  
@@ -1144,7 +1144,7 @@ contract Token is ERC3475 {
         _classes[16]._values["shareValue"].uintValue = 1;  
         _classes[16]._values["currency"].stringValue = "USDC";  
 
-        _classes[16]._values["maxiumSupply"].uintValue = 487500;  
+        _classes[16]._values["maximumSupply"].uintValue = 487500;  
         _classes[16]._values["callable"].boolValue = true;  
         _classes[16]._values["maturityPeriod"].uintValue = 465*60*60*24;  
         _classes[16]._values["coupon"].boolValue = true;  
@@ -1173,7 +1173,7 @@ contract Token is ERC3475 {
         _classes[17]._values["shareValue"].uintValue = 1;  
         _classes[17]._values["currency"].stringValue = "USDC";  
 
-        _classes[17]._values["maxiumSupply"].uintValue = 271994;  
+        _classes[17]._values["maximumSupply"].uintValue = 271994;  
         _classes[17]._values["callable"].boolValue = true;  
         _classes[17]._values["maturityPeriod"].uintValue = 465*60*60*24;  
         _classes[17]._values["coupon"].boolValue = true;  
@@ -1202,7 +1202,7 @@ contract Token is ERC3475 {
         _classes[18]._values["shareValue"].uintValue = 1;  
         _classes[18]._values["currency"].stringValue = "USDC";  
 
-        _classes[18]._values["maxiumSupply"].uintValue = 1000000;  
+        _classes[18]._values["maximumSupply"].uintValue = 1000000;  
         _classes[18]._values["callable"].boolValue = true;  
         _classes[18]._values["maturityPeriod"].uintValue = 512*60*60*24;  
         _classes[18]._values["coupon"].boolValue = true;  
@@ -1231,7 +1231,7 @@ contract Token is ERC3475 {
         _classes[19]._values["shareValue"].uintValue = 1;  
         _classes[19]._values["currency"].stringValue = "USDC";  
 
-        _classes[19]._values["maxiumSupply"].uintValue = 2400000;  
+        _classes[19]._values["maximumSupply"].uintValue = 2400000;  
         _classes[19]._values["callable"].boolValue = true;  
         _classes[19]._values["maturityPeriod"].uintValue = 834*60*60*24;  
         _classes[19]._values["coupon"].boolValue = true;  
@@ -1260,7 +1260,7 @@ contract Token is ERC3475 {
         _classes[20]._values["shareValue"].uintValue = 1;  
         _classes[20]._values["currency"].stringValue = "USDC";  
 
-        _classes[20]._values["maxiumSupply"].uintValue = 600000;  
+        _classes[20]._values["maximumSupply"].uintValue = 600000;  
         _classes[20]._values["callable"].boolValue = true;  
         _classes[20]._values["maturityPeriod"].uintValue = 834*60*60*24;  
         _classes[20]._values["coupon"].boolValue = true;  
@@ -1289,7 +1289,7 @@ contract Token is ERC3475 {
         _classes[21]._values["shareValue"].uintValue = 1;  
         _classes[21]._values["currency"].stringValue = "USDC";  
 
-        _classes[21]._values["maxiumSupply"].uintValue = 895000;  
+        _classes[21]._values["maximumSupply"].uintValue = 895000;  
         _classes[21]._values["callable"].boolValue = true;  
         _classes[21]._values["maturityPeriod"].uintValue = 731*60*60*24;  
         _classes[21]._values["coupon"].boolValue = true;  
@@ -1318,7 +1318,7 @@ contract Token is ERC3475 {
         _classes[22]._values["shareValue"].uintValue = 1;  
         _classes[22]._values["currency"].stringValue = "USDC";  
 
-        _classes[22]._values["maxiumSupply"].uintValue = 1000000;  
+        _classes[22]._values["maximumSupply"].uintValue = 1000000;  
         _classes[22]._values["callable"].boolValue = true;  
         _classes[22]._values["maturityPeriod"].uintValue = 719*60*60*24;  
         _classes[22]._values["coupon"].boolValue = true;  
@@ -1347,7 +1347,7 @@ contract Token is ERC3475 {
         _classes[23]._values["shareValue"].uintValue = 1;  
         _classes[23]._values["currency"].stringValue = "USDC";  
 
-        _classes[23]._values["maxiumSupply"].uintValue = 105000;  
+        _classes[23]._values["maximumSupply"].uintValue = 105000;  
         _classes[23]._values["callable"].boolValue = true;  
         _classes[23]._values["maturityPeriod"].uintValue = 717*60*60*24;  
         _classes[23]._values["coupon"].boolValue = true;  
@@ -1376,7 +1376,7 @@ contract Token is ERC3475 {
         _classes[24]._values["shareValue"].uintValue = 1;  
         _classes[24]._values["currency"].stringValue = "USDC";  
 
-        _classes[24]._values["maxiumSupply"].uintValue = 750000;  
+        _classes[24]._values["maximumSupply"].uintValue = 750000;  
         _classes[24]._values["callable"].boolValue = true;  
         _classes[24]._values["maturityPeriod"].uintValue = 667*60*60*24;  
         _classes[24]._values["coupon"].boolValue = true;  
@@ -1405,7 +1405,7 @@ contract Token is ERC3475 {
         _classes[25]._values["shareValue"].uintValue = 1;  
         _classes[25]._values["currency"].stringValue = "USDC";  
 
-        _classes[25]._values["maxiumSupply"].uintValue = 750000;  
+        _classes[25]._values["maximumSupply"].uintValue = 750000;  
         _classes[25]._values["callable"].boolValue = true;  
         _classes[25]._values["maturityPeriod"].uintValue = 626*60*60*24;  
         _classes[25]._values["coupon"].boolValue = true;  
@@ -1434,7 +1434,7 @@ contract Token is ERC3475 {
         _classes[26]._values["shareValue"].uintValue = 1;  
         _classes[26]._values["currency"].stringValue = "USDC";  
 
-        _classes[26]._values["maxiumSupply"].uintValue = 1500000;  
+        _classes[26]._values["maximumSupply"].uintValue = 1500000;  
         _classes[26]._values["callable"].boolValue = true;  
         _classes[26]._values["maturityPeriod"].uintValue = 257*60*60*24;  
         _classes[26]._values["coupon"].boolValue = true;  
@@ -1463,7 +1463,7 @@ contract Token is ERC3475 {
         _classes[27]._values["shareValue"].uintValue = 1;  
         _classes[27]._values["currency"].stringValue = "USDC";  
 
-        _classes[27]._values["maxiumSupply"].uintValue = 1000000;  
+        _classes[27]._values["maximumSupply"].uintValue = 1000000;  
         _classes[27]._values["callable"].boolValue = true;  
         _classes[27]._values["maturityPeriod"].uintValue = 257*60*60*24;  
         _classes[27]._values["coupon"].boolValue = true;  
@@ -1492,7 +1492,7 @@ contract Token is ERC3475 {
         _classes[28]._values["shareValue"].uintValue = 1;  
         _classes[28]._values["currency"].stringValue = "USDC";  
 
-        _classes[28]._values["maxiumSupply"].uintValue = 3000000;  
+        _classes[28]._values["maximumSupply"].uintValue = 3000000;  
         _classes[28]._values["callable"].boolValue = true;  
         _classes[28]._values["maturityPeriod"].uintValue = 257*60*60*24;  
         _classes[28]._values["coupon"].boolValue = true;  
@@ -1521,7 +1521,7 @@ contract Token is ERC3475 {
         _classes[29]._values["shareValue"].uintValue = 1;  
         _classes[29]._values["currency"].stringValue = "USDC";  
 
-        _classes[29]._values["maxiumSupply"].uintValue = 5000000;  
+        _classes[29]._values["maximumSupply"].uintValue = 5000000;  
         _classes[29]._values["callable"].boolValue = true;  
         _classes[29]._values["maturityPeriod"].uintValue = 693*60*60*24;  
         _classes[29]._values["coupon"].boolValue = true;  
@@ -1550,7 +1550,7 @@ contract Token is ERC3475 {
         _classes[30]._values["shareValue"].uintValue = 1;  
         _classes[30]._values["currency"].stringValue = "USDC";  
 
-        _classes[30]._values["maxiumSupply"].uintValue = 3000000;  
+        _classes[30]._values["maximumSupply"].uintValue = 3000000;  
         _classes[30]._values["callable"].boolValue = true;  
         _classes[30]._values["maturityPeriod"].uintValue = 628*60*60*24;  
         _classes[30]._values["coupon"].boolValue = true;  
@@ -1579,7 +1579,7 @@ contract Token is ERC3475 {
         _classes[31]._values["shareValue"].uintValue = 1;  
         _classes[31]._values["currency"].stringValue = "USDC";  
 
-        _classes[31]._values["maxiumSupply"].uintValue = 3000000;  
+        _classes[31]._values["maximumSupply"].uintValue = 3000000;  
         _classes[31]._values["callable"].boolValue = true;  
         _classes[31]._values["maturityPeriod"].uintValue = 322*60*60*24;  
         _classes[31]._values["coupon"].boolValue = true;  
