@@ -722,7 +722,7 @@ contract Token is ERC3475 {
         _classes[1]._values["shareValue"].uintValue = 1;  
         _classes[1]._values["currency"].stringValue = "USDC";  
 
-        _classes[1]._values["maxiumSupply"].uintValue = 1524693;  
+        _classes[1]._values["maximumSupply"].uintValue = 1524693;  
         _classes[1]._values["callable"].boolValue = true;  
         _classes[1]._values["maturityPeriod"].uintValue = 103680000;  
         _classes[1]._values["coupon"].boolValue = true;  
