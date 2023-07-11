@@ -727,7 +727,7 @@ This apartment is a perfect place to recharge with the power of nature in the mo
         _classes[1]._values["propertyProjectedIRR"].uintValue = 22%;
         _classes[1]._values["propertyAPR"].uintValue = 12%;   
         _classes[1]._values["propertyRentStartDate"].dateTimeValue = 2023-08-01;     
-        _classes[1]._values["maxiumSupply"].uintValue = 3500;  
+        _classes[1]._values["maximumSupply"].uintValue = 3500;  
         _classes[1]._values["maturityPeriod"].uintValue = 365*24*3600;  
         _classes[1]._values["fixed-rate"].boolValue = true;   
         _classes[1]._values["rewardsFromRentPerToken"].uintValue = 6;   
