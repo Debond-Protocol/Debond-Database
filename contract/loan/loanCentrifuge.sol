@@ -721,7 +721,7 @@ contract Token is ERC3475 {
         _classes[1]._values["shareValue"].uintValue = 1;  
         _classes[1]._values["currency"].stringValue = "DAI";  
 
-        _classes[1]._values["maxiumSupply"].uintValue = 1200000;  
+        _classes[1]._values["maximumSupply"].uintValue = 1200000;  
         _classes[1]._values["callable"].boolValue = true;  
         _classes[1]._values["coupon"].boolValue = false;   
         _classes[1]._values["fixed-rate"].boolValue = true;  
@@ -749,7 +749,7 @@ contract Token is ERC3475 {
         _classes[2]._values["shareValue"].uintValue = 1;  
         _classes[2]._values["currency"].stringValue = "DAI";  
 
-        _classes[2]._values["maxiumSupply"].uintValue = 69700000;  
+        _classes[2]._values["maximumSupply"].uintValue = 69700000;  
         _classes[2]._values["callable"].boolValue = true;    
         _classes[2]._values["coupon"].boolValue = false;  
         _classes[2]._values["fixed-rate"].boolValue = false;  
@@ -777,7 +777,7 @@ contract Token is ERC3475 {
         _classes[3]._values["shareValue"].uintValue = 1;  
         _classes[3]._values["currency"].stringValue = "DAI";  
 
-        _classes[3]._values["maxiumSupply"].uintValue = 11200000;  
+        _classes[3]._values["maximumSupply"].uintValue = 11200000;  
         _classes[3]._values["callable"].boolValue = true;  
         _classes[3]._values["fixed-rate"].boolValue = true;  
         _classes[3]._values["APR"].uintValue = 40000;  
@@ -804,7 +804,7 @@ contract Token is ERC3475 {
         _classes[4]._values["shareValue"].uintValue = 1;  
         _classes[4]._values["currency"].stringValue = "DAI";  
 
-        _classes[4]._values["maxiumSupply"].uintValue = 19000000;  
+        _classes[4]._values["maximumSupply"].uintValue = 19000000;  
         _classes[4]._values["callable"].boolValue = true;   
    
         _classes[4]._values["fixed-rate"].boolValue = false;  
@@ -832,7 +832,7 @@ contract Token is ERC3475 {
         _classes[5]._values["shareValue"].uintValue = 1;  
         _classes[5]._values["currency"].stringValue = "DAI";  
 
-        _classes[5]._values["maxiumSupply"].uintValue = 4000000;  
+        _classes[5]._values["maximumSupply"].uintValue = 4000000;  
         _classes[5]._values["callable"].boolValue = true;  
    
         _classes[5]._values["fixed-rate"].boolValue = true;  
@@ -860,7 +860,7 @@ contract Token is ERC3475 {
         _classes[6]._values["shareValue"].uintValue = 1;  
         _classes[6]._values["currency"].stringValue = "DAI";  
 
-        _classes[6]._values["maxiumSupply"].uintValue = 4000000;  
+        _classes[6]._values["maximumSupply"].uintValue = 4000000;  
         _classes[6]._values["callable"].boolValue = true;  
 
         _classes[6]._values["fixed-rate"].boolValue = false;  
@@ -888,7 +888,7 @@ contract Token is ERC3475 {
         _classes[7]._values["shareValue"].uintValue = 1;  
         _classes[7]._values["currency"].stringValue = "DAI";  
 
-        _classes[7]._values["maxiumSupply"].uintValue = 3000000;  
+        _classes[7]._values["maximumSupply"].uintValue = 3000000;  
         _classes[7]._values["callable"].boolValue = true;  
      
         _classes[7]._values["fixed-rate"].boolValue = true;  
@@ -916,7 +916,7 @@ contract Token is ERC3475 {
         _classes[8]._values["shareValue"].uintValue = 1;  
         _classes[8]._values["currency"].stringValue = "DAI";  
 
-        _classes[8]._values["maxiumSupply"].uintValue = 3000000;  
+        _classes[8]._values["maximumSupply"].uintValue = 3000000;  
         _classes[8]._values["callable"].boolValue = true;  
      
         _classes[8]._values["fixed-rate"].boolValue = false;  
@@ -944,7 +944,7 @@ contract Token is ERC3475 {
         _classes[9]._values["shareValue"].uintValue = 1;  
         _classes[9]._values["currency"].stringValue = "DAI";  
 
-        _classes[9]._values["maxiumSupply"].uintValue = 0;  
+        _classes[9]._values["maximumSupply"].uintValue = 0;  
         _classes[9]._values["callable"].boolValue = true;  
      
         _classes[9]._values["fixed-rate"].boolValue = true;  
@@ -972,7 +972,7 @@ contract Token is ERC3475 {
         _classes[10]._values["shareValue"].uintValue = 1;  
         _classes[10]._values["currency"].stringValue = "DAI";  
 
-        _classes[10]._values["maxiumSupply"].uintValue = 3100000;  
+        _classes[10]._values["maximumSupply"].uintValue = 3100000;  
         _classes[10]._values["callable"].boolValue = true;  
       
         _classes[10]._values["fixed-rate"].boolValue = false;  
@@ -1000,7 +1000,7 @@ contract Token is ERC3475 {
         _classes[11]._values["shareValue"].uintValue = 1;  
         _classes[11]._values["currency"].stringValue = "DAI";  
 
-        _classes[11]._values["maxiumSupply"].uintValue = 0;  
+        _classes[11]._values["maximumSupply"].uintValue = 0;  
         _classes[11]._values["callable"].boolValue = true;  
      
         _classes[11]._values["fixed-rate"].boolValue = true;  
@@ -1028,7 +1028,7 @@ contract Token is ERC3475 {
         _classes[12]._values["shareValue"].uintValue = 1;  
         _classes[12]._values["currency"].stringValue = "DAI";  
 
-        _classes[12]._values["maxiumSupply"].uintValue = 20000000;  
+        _classes[12]._values["maximumSupply"].uintValue = 20000000;  
         _classes[12]._values["callable"].boolValue = true;  
 
         _classes[12]._values["fixed-rate"].boolValue = false; 
@@ -1056,7 +1056,7 @@ contract Token is ERC3475 {
         _classes[13]._values["shareValue"].uintValue = 1;  
         _classes[13]._values["currency"].stringValue = "DAI";  
 
-        _classes[13]._values["maxiumSupply"].uintValue = 0;  
+        _classes[13]._values["maximumSupply"].uintValue = 0;  
         _classes[13]._values["callable"].boolValue = true;  
 
         _classes[13]._values["fixed-rate"].boolValue = true;  
@@ -1084,7 +1084,7 @@ contract Token is ERC3475 {
         _classes[14]._values["shareValue"].uintValue = 1;  
         _classes[14]._values["currency"].stringValue = "DAI";  
 
-        _classes[14]._values["maxiumSupply"].uintValue = 30000000;  
+        _classes[14]._values["maximumSupply"].uintValue = 30000000;  
         _classes[14]._values["callable"].boolValue = true;  
   
         _classes[14]._values["fixed-rate"].boolValue = false;  
@@ -1112,7 +1112,7 @@ contract Token is ERC3475 {
         _classes[15]._values["shareValue"].uintValue = 1;  
         _classes[15]._values["currency"].stringValue = "DAI";  
 
-        _classes[15]._values["maxiumSupply"].uintValue = 7000000;  
+        _classes[15]._values["maximumSupply"].uintValue = 7000000;  
         _classes[15]._values["callable"].boolValue = true;  
     
         _classes[15]._values["fixed-rate"].boolValue = true;  
@@ -1140,7 +1140,7 @@ contract Token is ERC3475 {
         _classes[16]._values["shareValue"].uintValue = 1;  
         _classes[16]._values["currency"].stringValue = "DAI";  
 
-        _classes[16]._values["maxiumSupply"].uintValue = 7000000;  
+        _classes[16]._values["maximumSupply"].uintValue = 7000000;  
         _classes[16]._values["callable"].boolValue = true;  
      
         _classes[16]._values["fixed-rate"].boolValue = false;  
@@ -1168,7 +1168,7 @@ contract Token is ERC3475 {
         _classes[17]._values["shareValue"].uintValue = 1;  
         _classes[17]._values["currency"].stringValue = "DAI";  
 
-        _classes[17]._values["maxiumSupply"].uintValue = 4500000;  
+        _classes[17]._values["maximumSupply"].uintValue = 4500000;  
         _classes[17]._values["callable"].boolValue = true;  
     
         _classes[17]._values["fixed-rate"].boolValue = true;  
@@ -1196,7 +1196,7 @@ contract Token is ERC3475 {
         _classes[18]._values["shareValue"].uintValue = 1;  
         _classes[18]._values["currency"].stringValue = "DAI";  
 
-        _classes[18]._values["maxiumSupply"].uintValue = 9000000;  
+        _classes[18]._values["maximumSupply"].uintValue = 9000000;  
         _classes[18]._values["callable"].boolValue = true;  
     
         _classes[18]._values["fixed-rate"].boolValue = false;  
@@ -1224,7 +1224,7 @@ contract Token is ERC3475 {
         _classes[19]._values["shareValue"].uintValue = 1;  
         _classes[19]._values["currency"].stringValue = "DAI";  
 
-        _classes[19]._values["maxiumSupply"].uintValue = 263800;  
+        _classes[19]._values["maximumSupply"].uintValue = 263800;  
         _classes[19]._values["callable"].boolValue = true;  
 
         _classes[19]._values["fixed-rate"].boolValue = true;  
@@ -1252,7 +1252,7 @@ contract Token is ERC3475 {
         _classes[20]._values["shareValue"].uintValue = 1;  
         _classes[20]._values["currency"].stringValue = "DAI";  
 
-        _classes[20]._values["maxiumSupply"].uintValue = 6200000;  
+        _classes[20]._values["maximumSupply"].uintValue = 6200000;  
         _classes[20]._values["callable"].boolValue = true;  
 
         _classes[20]._values["fixed-rate"].boolValue = false;  
@@ -1280,7 +1280,7 @@ contract Token is ERC3475 {
         _classes[21]._values["shareValue"].uintValue = 1;  
         _classes[21]._values["currency"].stringValue = "DAI";  
 
-        _classes[21]._values["maxiumSupply"].uintValue = 0;  
+        _classes[21]._values["maximumSupply"].uintValue = 0;  
         _classes[21]._values["callable"].boolValue = true;  
         _classes[21]._values["fixed-rate"].boolValue = true;  
         _classes[21]._values["APR"].uintValue = 75000;  
@@ -1307,7 +1307,7 @@ contract Token is ERC3475 {
         _classes[22]._values["shareValue"].uintValue = 1;  
         _classes[22]._values["currency"].stringValue = "DAI";  
 
-        _classes[22]._values["maxiumSupply"].uintValue = 0;  
+        _classes[22]._values["maximumSupply"].uintValue = 0;  
         _classes[22]._values["callable"].boolValue = true;  
         _classes[22]._values["fixed-rate"].boolValue = false;  
         _classes[22]._values["APR"].uintValue = 75000;  
@@ -1334,7 +1334,7 @@ contract Token is ERC3475 {
         _classes[23]._values["shareValue"].uintValue = 1;  
         _classes[23]._values["currency"].stringValue = "DAI";  
 
-        _classes[23]._values["maxiumSupply"].uintValue = 3800000;  
+        _classes[23]._values["maximumSupply"].uintValue = 3800000;  
         _classes[23]._values["callable"].boolValue = true;  
         _classes[23]._values["fixed-rate"].boolValue = true;  
         _classes[23]._values["APR"].uintValue = 60000;  
@@ -1361,7 +1361,7 @@ contract Token is ERC3475 {
         _classes[24]._values["shareValue"].uintValue = 1;  
         _classes[24]._values["currency"].stringValue = "DAI";  
 
-        _classes[24]._values["maxiumSupply"].uintValue = 9300000;  
+        _classes[24]._values["maximumSupply"].uintValue = 9300000;  
         _classes[24]._values["callable"].boolValue = true;  
 
         _classes[24]._values["fixed-rate"].boolValue = false;  
@@ -1389,7 +1389,7 @@ contract Token is ERC3475 {
         _classes[25]._values["shareValue"].uintValue = 1;  
         _classes[25]._values["currency"].stringValue = "DAI";  
 
-        _classes[25]._values["maxiumSupply"].uintValue = 29200;  
+        _classes[25]._values["maximumSupply"].uintValue = 29200;  
         _classes[25]._values["callable"].boolValue = true;  
         _classes[25]._values["maturityPeriod"].uintValue = 322*60*60*24;  
 
@@ -1418,7 +1418,7 @@ contract Token is ERC3475 {
         _classes[26]._values["shareValue"].uintValue = 1;  
         _classes[26]._values["currency"].stringValue = "DAI";  
 
-        _classes[26]._values["maxiumSupply"].uintValue = 29200;  
+        _classes[26]._values["maximumSupply"].uintValue = 29200;  
         _classes[26]._values["callable"].boolValue = true;  
  
         _classes[26]._values["APR"].uintValue = 70000;  
@@ -1445,7 +1445,7 @@ contract Token is ERC3475 {
         _classes[27]._values["shareValue"].uintValue = 1;  
         _classes[27]._values["currency"].stringValue = "DAI";  
 
-        _classes[27]._values["maxiumSupply"].uintValue = 0;  
+        _classes[27]._values["maximumSupply"].uintValue = 0;  
         _classes[27]._values["callable"].boolValue = true;  
         _classes[27]._values["fixed-rate"].boolValue = true;  
         _classes[27]._values["APR"].uintValue = 150000;  
@@ -1472,7 +1472,7 @@ contract Token is ERC3475 {
         _classes[28]._values["shareValue"].uintValue = 1;  
         _classes[28]._values["currency"].stringValue = "DAI";  
 
-        _classes[28]._values["maxiumSupply"].uintValue = 0;  
+        _classes[28]._values["maximumSupply"].uintValue = 0;  
         _classes[28]._values["callable"].boolValue = true;  
 
         _classes[28]._values["subscribeLink"].stringValue = "https://app.centrifuge.io/pools/0xd8486C565098360A24f858088a6D29a380dDF7ec";
@@ -1498,7 +1498,7 @@ contract Token is ERC3475 {
         _classes[29]._values["shareValue"].uintValue = 1;  
         _classes[29]._values["currency"].stringValue = "DAI";  
 
-        _classes[29]._values["maxiumSupply"].uintValue = 600000;  
+        _classes[29]._values["maximumSupply"].uintValue = 600000;  
         _classes[29]._values["callable"].boolValue = true;  
         _classes[29]._values["maturityPeriod"].uintValue = 6*60*60*24;  
         _classes[29]._values["coupon"].boolValue = false;  
@@ -1527,7 +1527,7 @@ contract Token is ERC3475 {
         _classes[30]._values["shareValue"].uintValue = 1;  
         _classes[30]._values["currency"].stringValue = "DAI";  
 
-        _classes[30]._values["maxiumSupply"].uintValue = 600000;  
+        _classes[30]._values["maximumSupply"].uintValue = 600000;  
         _classes[30]._values["callable"].boolValue = true;  
         _classes[30]._values["maturityPeriod"].uintValue = 6*60*60*24;  
         _classes[30]._values["coupon"].boolValue = false;  
