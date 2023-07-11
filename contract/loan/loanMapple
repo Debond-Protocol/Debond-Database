@@ -721,7 +721,7 @@ contract Token is ERC3475 {
         _classes[1]._values["shareValue"].uintValue = 1;  
         _classes[1]._values["currency"].stringValue = "USDC";  
 
-        _classes[1]._values["maxiumSupply"].uintValue = 33803719;  
+        _classes[1]._values["maximumSupply"].uintValue = 33803719;  
         _classes[1]._values["callable"].boolValue = true;  
         _classes[1]._values["maturityPeriod"].uintValue = 45*24*3600;  
         _classes[1]._values["fixed-rate"].boolValue = true;  
@@ -750,7 +750,7 @@ contract Token is ERC3475 {
         _classes[2]._values["shareValue"].uintValue = 1;  
         _classes[2]._values["currency"].stringValue = "wETH";  
 
-        _classes[2]._values["maxiumSupply"].uintValue = 75020;  
+        _classes[2]._values["maximumSupply"].uintValue = 75020;  
         _classes[2]._values["callable"].boolValue = true;  
         _classes[2]._values["maturityPeriod"].uintValue = 10*24*3600;  
         _classes[2]._values["fixed-rate"].boolValue = true;  
@@ -779,7 +779,7 @@ contract Token is ERC3475 {
         _classes[3]._values["shareValue"].uintValue = 1;  
         _classes[3]._values["currency"].stringValue = "USDC";  
 
-        _classes[3]._values["maxiumSupply"].uintValue = 612250000;  
+        _classes[3]._values["maximumSupply"].uintValue = 612250000;  
         _classes[3]._values["callable"].boolValue = true;  
         _classes[3]._values["maturityPeriod"].uintValue = 10*24*3600;  
         _classes[3]._values["fixed-rate"].boolValue = true;  
@@ -807,7 +807,7 @@ contract Token is ERC3475 {
         _classes[4]._values["shareValue"].uintValue = 1;  
         _classes[4]._values["currency"].stringValue = "USDC";  
 
-        _classes[4]._values["maxiumSupply"].uintValue = 3500000;  
+        _classes[4]._values["maximumSupply"].uintValue = 3500000;  
         _classes[4]._values["callable"].boolValue = true;  
         _classes[4]._values["maturityPeriod"].uintValue = 10*24*3600;  
         _classes[4]._values["fixed-rate"].boolValue = false;  
@@ -833,7 +833,7 @@ contract Token is ERC3475 {
         _classes[5]._values["shareValue"].uintValue = 1;  
         _classes[5]._values["currency"].stringValue = "USDC";  
 
-        _classes[5]._values["maxiumSupply"].uintValue = 63914954;  
+        _classes[5]._values["maximumSupply"].uintValue = 63914954;  
         _classes[5]._values["callable"].boolValue = true;  
         _classes[5]._values["maturityPeriod"].uintValue = 2*24*3600;  
         _classes[5]._values["fixed-rate"].boolValue = true;  
