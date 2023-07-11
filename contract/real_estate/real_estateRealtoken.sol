@@ -734,7 +734,7 @@ contract Token is ERC3475 {
         _classes[1]._values["shareValue"].uintValue = 51;  
         _classes[1]._values["currency"].stringValue = "USD";  
 
-        _classes[1]._values["maxiumSupply"].uintValue = 11500;  
+        _classes[1]._values["maximumSupply"].uintValue = 11500;  
         _classes[1]._values["maturityPeriod"].uintValue = 365*24*3600;  
         _classes[1]._values["fixed-rate"].boolValue = true;  
         _classes[1]._values["APR"].uintValue = 77572;  
