@@ -1,6 +1,83 @@
+
+
 // SPDX-License-Identifier: CC0-1.0
 
 pragma solidity ^0.8.0;
+
+/**
+ * @dev Interface of the ERC20 standard as defined in the EIP.
+ */
+interface IERC20 {
+    /**
+     * @dev Emitted when `value` tokens are moved from one account (`from`) to
+     * another (`to`).
+     *
+     * Note that `value` may be zero.
+     */
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    /**
+     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
+     * a call to {approve}. `value` is the new allowance.
+     */
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+
+    /**
+     * @dev Returns the value of tokens in existence.
+     */
+    function totalSupply() external view returns (uint256);
+
+    /**
+     * @dev Returns the value of tokens owned by `account`.
+     */
+    function balanceOf(address account) external view returns (uint256);
+
+    /**
+     * @dev Moves a `value` amount of tokens from the caller's account to `to`.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transfer(address to, uint256 value) external returns (bool);
+
+    /**
+     * @dev Returns the remaining number of tokens that `spender` will be
+     * allowed to spend on behalf of `owner` through {transferFrom}. This is
+     * zero by default.
+     *
+     * This value changes when {approve} or {transferFrom} are called.
+     */
+    function allowance(address owner, address spender) external view returns (uint256);
+
+    /**
+     * @dev Sets a `value` amount of tokens as the allowance of `spender` over the
+     * caller's tokens.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * IMPORTANT: Beware that changing an allowance with this method brings the risk
+     * that someone may use both the old and the new allowance by unfortunate
+     * transaction ordering. One possible solution to mitigate this race
+     * condition is to first reduce the spender's allowance to 0 and set the
+     * desired value afterwards:
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     *
+     * Emits an {Approval} event.
+     */
+    function approve(address spender, uint256 value) external returns (bool);
+
+    /**
+     * @dev Moves a `value` amount of tokens from `from` to `to` using the
+     * allowance mechanism. `value` is then deducted from the caller's
+     * allowance.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transferFrom(address from, address to, uint256 value) external returns (bool);
+}
 
 
 interface IERC3475 {
@@ -255,6 +332,14 @@ interface IERC3475EXTENSION {
 }
 
 contract ERC3475 is IERC3475, IERC3475EXTENSION {
+    address public publisher;
+    uint256 public lastClasseCreated;
+    address public auctionContract;
+
+    modifier onlyPublisher{
+        _;
+        require ( msg.sender == publisher);
+    }
 
     /**
      * @notice this Struct is representing the Nonce properties as an object
@@ -307,7 +392,7 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
         address _from,
         address _to,
         Transaction[] memory _transactions
-    ) public virtual override onlyInternal{
+    ) public virtual override{
         require(
             _from != address(0),
             "ERC3475: can't transfer from the zero address"
@@ -317,7 +402,7 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
             "ERC3475:use burn() instead"
         );
         require(
-            msg.sender == _from ||
+            msg.sender == auctionContract ||
             isApprovedFor(_from, msg.sender),
             "ERC3475:caller-not-owner-or-approved"
         );
@@ -353,11 +438,11 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
     }
 
     function issue(address _to, Transaction[] memory _transactions)
-    external
+    public
     virtual
     override
-    onlyInternal
     {
+        require(msg.sender == address(this) || msg.sender == publisher,"ERC3475: authorization required");
         uint256 len = _transactions.length;
         for (uint256 i = 0; i < len; i++) {
             require(
@@ -370,7 +455,7 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
     }
 
     function redeem(address _from, Transaction[] memory _transactions)
-    external
+    public
     virtual
     override
     onlyInternal
@@ -395,7 +480,7 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
     }
 
     function burn(address _from, Transaction[] memory _transactions)
-    external
+    public
     virtual
     override
     onlyInternal
@@ -417,7 +502,7 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
     }
 
     function approve(address _spender, Transaction[] memory _transactions)
-    external
+    public
     virtual
     override onlyInternal
     {
@@ -675,79 +760,199 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
 
 contract Token is ERC3475 {
 
-    address public publisher;
+ 
+    struct issuer{
+        string issuerName; 
+        string issuerIndustry;
+        string issuerJurisdiction; 
+        string issuerURL; 
+        string issuerLogo; 
+        string[] issuerDocURL;
+    }
 
-    address public auctionContract;
+    struct instrument{
+        string brokerId;
+        string valueAPI;
+        string riskLevel;
+        string ISIN;
+        string fundType;  
+
+        string currency;  
+        uint256 issuePrice;  
+        uint256 issueDate;  
+        uint256 maximumSupply;  
+        bool callable;
+        uint256 maturityPeriod;  
+        bool coupon;
+        uint256 couponRate;  
+        uint256 couponPeriod;  
+        bool fixedRate;  
+        uint256 APY;  
+        string subscribeLink;
+        uint256 lotSize;
+        uint256 minimumLotSize;
+    }
+
 
     struct Data {
         uint256 onChainDate;
-        string warrantNumber;
-        uint256 shareValue;
-        uint256 claimAmount;
-        address claimerChainAddress;
-        string[] warrantorDocURL;
+        string symbol;
+        string category;
+        string subCategory;
+        string childCategory;
+        string description;
+        
+        issuer issuerData;
+        instrument instrumentData;
+        
+       
+
+
     }
 
 
-    constructor() {      
-        
-        _classes[1]._values["symbol"].stringValue = "Propy dream property";
+    constructor() {
+        publisher = msg.sender;
+
+        _classes[0]._values["issuerName"].stringValue = "RealToken International Villa Marina 514 S.A.";
+        _classes[0]._values["issuerType"].stringValue = "LTD";
+        _classes[0]._values["issuerJurisdiction"].stringValue = "UK";
+        _classes[0]._values["issuerURL"].stringValue = "https://realt.co/";
+        _classes[0]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Realtoken.png";
+        //_classes[0]._values["issueDocURL"].stringArrayValue = [];
+        _classes[0]._values["collateralAllowed"].addressArrayValue = [0x3DF2038Ac2C84fa742151Ed319bbe8aDa92980A6,0x3DF2038Ac2C84fa742151Ed319bbe8aDa92980A6];
+
+
+        _classes[1]._values["symbol"].stringValue = "REALTOKEN-PA-SE-VILLA-MARINA-514-PLAYA-VENAO-LS";
         _classes[1]._values["category"].stringValue = "property";
-        _classes[1]._values["subcategory"].stringValue = "real estate";
+        _classes[1]._values["subcategory"].stringValue = "real property";
         _classes[1]._values["childCategory"].stringValue = "condominium";
         
-        _classes[1]._values["description"].stringValue = unicode"This beautiful apartment is located in Parq Ubud, a creative town for entrepreneurs, artists, and investors at the very heart of Bali.
-Parq Ubud, dubbed The City of the Future, has everything you need for a comfortable life within walking distance — restaurants, coworking and wellness zones. However, it’s much more than just a place for living. In Parq Ubud, the architects realized their “dream of a society where everyone can find themselves”.
-The complex is home to like-minded creators and visionaries from all over the world. Here, expats host conferences, concerts, and festivals, find social connections and opportunities for growth. Inspired by the ethnic art of the Balinese civilization, Parq Ubud is a place where tech and comfort meet ancient wisdom and beauty.
-This apartment is a perfect place to recharge with the power of nature in the morning and have rest after a busy day. The king-size bed is located right next to the window, so you can enjoy the whisper of the palm trees while falling asleep or waking up. Wood trim and designer furniture emphasize the mysterious spirit of the island.";
-        _classes[1]._values["issuerName"].stringValue = "RealToken International Villa Marina 514 S.A.";
-        _classes[1]._values["issuerType"].stringValue = "LTD";
-        _classes[1]._values["issuerJurisdiction"].stringValue = "ID";
-        _classes[1]._values["issuerURL"].stringValue = "https://realt.co/;
-        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Realtoken.png";
-        _classes[1]._values["issuerDocURL"].stringArrayValue = [
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/98230f92-3263-4a2a-9b79-0b73782550a2-0x228ce2B019B5a54C545E61490E5ba66E40915868-ArticlesOfOrganization.pdf",
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/3de656b0-0512-4ea9-bb66-11189a43ced2-0x228ce2B019B5a54C545E61490E5ba66E40915868-Legal%20entity%20registration%20certificate%20Parq.pdf",
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/1b658940-c91e-4c17-859d-ccb68b163a0e-0x228ce2B019B5a54C545E61490E5ba66E40915868-Legal%20Review%20-%20PARQ%20penthouse%203.pdf",
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/d224e21f-342e-4ddb-b661-14ea12c0388a-0x228ce2B019B5a54C545E61490E5ba66E40915868-OPERATING%20AGREEMENT%20for%20DAO%20Binaryx%20Bali%20Asset%202.pdf"
-            
-
-        _classes[1]._values["managerName"].stringValue = "PARQ Ubud";
+        _classes[1]._values["description"].stringValue = unicode"Welcome to Panama’s Tuna Coast, where dreams of beachfront paradise come true! RealT proudly presents Villa Marina Lodge & Condos, an exquisite jewel nestled in the captivating Playa Venao of Pedasí, a town in Los Santos province. Prepare to be enchanted by the fusion of sun-kissed beaches and vibrant culture.  Playa Venao attracts a diverse mix of local and foreign investors, drawn by its potential for property development, thriving agriculture, and booming tourism. As RealT ventures into Panama’s coastal haven for the first time, this is your exclusive chance to own a slice of this tropical paradise. Pedasí, with its picturesque colonial-style galleries and vibrant hues, makes for a captivating investment opportunity. This 1,435-square-foot condominium boasts two bedrooms and two bathrooms.  Built in 2017, it is designed to blend modern comfort with timeless elegance. With an enticing expected rental income of 7.76%, your investment here promises both serenity and substantial returns";
+        
+  
+        
+        _classes[1]._values["managerName"].stringValue = "Villa Marina Lodge & Condos";
         _classes[1]._values["managerType"].stringValue = "LTD";
-        _classes[1]._values["managerJurisdiction"].stringValue = "ID";
-        _classes[1]._values["managerURL"].stringValue = "https://parqubud.com/";
-        _classes[1]._values["managerLogo"].stringValue = "https://parqubud.com/wp-content/uploads/2021/08/logo.svg";
-        _classes[1]._values["managerDocURL"].stringArrayValue = [
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/fc641508-b1c1-440c-9438-b8ae2d911d28-0x228ce2B019B5a54C545E61490E5ba66E40915868-RIVER%20PENTHOUSE%203.pdf"
-        ];
+        _classes[1]._values["managerJurisdiction"].stringValue = "UK";
+        _classes[1]._values["managerURL"].stringValue = "https://aqru.io/";
+        _classes[1]._values["managerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/AQRU.png";
+        //_classes[1]._values["managerDocURL"].stringArrayValue = [ ];
 
         //pics of the property
-        _classes[1]._values["propertyAddress"].stringValue = "https://polygonscan.com/address/0x228ce2B019B5a54C545E61490E5ba66E40915868";
-        _classes[1]._values["propertyPrice"].uintValue = 175000;
-        _classes[1]._values["propertyProjectedIRR"].uintValue = 22%;
-        _classes[1]._values["propertyAPR"].uintValue = 12%;   
-        _classes[1]._values["propertyRentStartDate"].dateTimeValue = 2023-08-01;     
-        _classes[1]._values["maximumSupply"].uintValue = 3500;  
-        _classes[1]._values["maturityPeriod"].uintValue = 365*24*3600;  
-        _classes[1]._values["fixed-rate"].boolValue = true;   
-        _classes[1]._values["rewardsFromRentPerToken"].uintValue = 6;   
-        _classes[1]._values["ManagementFee"].uintValue = 16800;  
+        _classes[1]._values["cover"].stringArrayValue =[
+            "https://realt.co/wp-content/uploads/2023/06/villa_marina_Vista_de_atras_05-hero-800x600.jpg",
+            "https://realt.co/wp-content/uploads/2023/06/Villa_Marina_piscina_frente_al_restaurante_05-scaled.jpg",
+            "https://realt.co/wp-content/uploads/2023/06/villamarina_Recamar_Principal_03.jpg",
+            "https://realt.co/wp-content/uploads/2023/06/VIlla_Marina_Rancho_Carey_02-scaled.jpg"
+        ];
 
-        _classes[1]._values["propertyLocation"].stringArrayValue = ["Florida","Colorado","Arizona","Non-US"];
-        _classes[1]._values["propertyLocationCoordinate"].stringValue = "-8.483364813870839, 115.26729652883517";
-        _classes[1]._values["propertySurface"].uintValue = 66;
-        _classes[1]._values["propertyBedroom"].uintValue = 1;
-        _classes[1]._values["propertyBathroom"].uintValue = 1;        
-        _classes[1]._values["propertyRooms"].uintValue = 2;
+        _classes[1]._values["propertyLocation"].stringValue = "Villa Marina 514, Playa Venao, Los Santos, Panama";
+        _classes[1]._values["propertyLocationCoordinate"].stringValue = "7.425963,-80.185448";
+        _classes[1]._values["propertySurface"].uintValue = 133000000;
+        _classes[1]._values["propertyBedroom"].uintValue = 2;
+        _classes[1]._values["propertyBathroom"].uintValue = 2;        
+        _classes[1]._values["propertyRooms"].uintValue = 6;
 
         _classes[1]._values["fundType"].stringValue = "corporate";  
-        _classes[1]._values["tokenPrice"].uintValue = 50;  
+        _classes[1]._values["shareValue"].uintValue = 51000000;  
         _classes[1]._values["currency"].stringValue = "USD";  
 
-      
-        _classes[1]._values["subscribeLink"].stringValue = "https://docs.binaryx.com/binaryx-platform-overview/binaryx-platform";
+        _classes[1]._values["maximumSupply"].uintValue = 11500;  
+        _classes[1]._values["maturityPeriod"].uintValue = 365*24*3600;  
+        _classes[1]._values["fixed-rate"].boolValue = true;  
+        _classes[1]._values["APR"].uintValue = 77572;  
+        _classes[1]._values["ManagementFee"].uintValue = 16800;  
+        _classes[1]._values["subscribeLink"].stringValue = "https://realt.co/product/villa-marina-514-playa-venao-los-santos-panama#tab-title-property_highlights";
         emit classCreated(address(this), 1);
    
+
     }
 
+
+
+    function checkAllowedToken(address token) public view returns(bool){
+        address[] memory allowed = _classes[0]._values["collateralAllowed"].addressArrayValue;
+        for (uint256 i = 0; i < allowed.length ; i++) {
+            if (token == allowed[i]){
+                return(true);
+            }
+        
+        }
+
+        return(false);
+    }
+     function subscribe(
+        address _to,
+        address token,
+        uint256 amount,
+        uint256 class
+    ) public  {
+        require (checkAllowedToken(token) == true, "Token not allowed");
+        IERC3475.Transaction memory _transaction;
+        IERC20(token).transferFrom(_to, publisher, amount);
+        _transaction.classId = class;
+        _transaction.nonceId = 0;
+        _transaction._amount = amount;
+
+        Transaction[] memory _transactions = new Transaction[](1);
+        _transactions[0] = _transaction;
+        issue(_to,_transactions);
+    }
+
+       function createClasse(
+        Data[] memory inputData
+    ) public onlyPublisher {
+        //Checker
+        uint256 classeID = lastClasseCreated;
+       //Write metadata
+       for (uint256 i = 0; i < inputData.length ; i++) {
+            _classes[classeID]._values["symbol"].stringValue = inputData[i].symbol;
+            _classes[classeID]._values["category"].stringValue = inputData[i].category;
+            _classes[classeID]._values["subCategory"].stringValue = inputData[i].subCategory;
+            _classes[classeID]._values["childCategory"].stringValue = inputData[i].childCategory;
+            _classes[classeID]._values["description"].stringValue = inputData[i].description;
+
+            _classes[classeID]._values["issuerName"].stringValue = inputData[i].issuerData.issuerName;
+            _classes[classeID]._values["issuerIndustry"].stringValue = inputData[i].issuerData.issuerIndustry;
+            _classes[classeID]._values["issuerJurisdiction"].stringValue = inputData[i].issuerData.issuerJurisdiction;
+            _classes[classeID]._values["issuerURL"].stringValue = inputData[i].issuerData.issuerURL;
+            _classes[classeID]._values["issuerLogo"].stringValue = inputData[i].issuerData.issuerLogo;
+            _classes[classeID]._values["issuerDocURL"].stringArrayValue = inputData[i].issuerData.issuerDocURL;
+
+            _classes[classeID]._values["valueAPI"].stringValue = inputData[i].instrumentData.valueAPI;
+            _classes[classeID]._values["riskLevel"].stringValue = inputData[i].instrumentData.riskLevel;
+            _classes[classeID]._values["brokerId"].stringValue = inputData[i].instrumentData.brokerId;
+            _classes[classeID]._values["ISIN"].stringValue = inputData[i].instrumentData.ISIN;
+            _classes[classeID]._values["fundType"].stringValue = inputData[i].instrumentData.fundType;
+
+            _classes[classeID]._values["currency"].stringValue = inputData[i].instrumentData.currency;
+            _classes[classeID]._values["issuePrice"].uintValue = inputData[i].instrumentData.issuePrice;
+            _classes[classeID]._values["issuePrice"].uintValue = inputData[i].instrumentData.issueDate;
+
+            _classes[classeID]._values["maximumSupply"].uintValue = inputData[i].instrumentData.maximumSupply;
+            _classes[classeID]._values["callable"].boolValue = inputData[i].instrumentData.callable;
+            _classes[classeID]._values["maturityPeriod"].uintValue = inputData[i].instrumentData.maturityPeriod;
+            _classes[classeID]._values["coupon"].boolValue = inputData[i].instrumentData.coupon;
+            _classes[classeID]._values["couponRate"].uintValue = inputData[i].instrumentData.couponRate;
+            _classes[classeID]._values["couponPeriod"].uintValue = inputData[i].instrumentData.couponPeriod;
+            _classes[classeID]._values["fixedRate"].boolValue = inputData[i].instrumentData.fixedRate;
+
+
+            _classes[classeID]._values["APY"].uintValue = inputData[i].instrumentData.APY;
+            _classes[classeID]._values["subscribeLink"].stringValue = inputData[i].instrumentData.subscribeLink;
+            _classes[classeID]._values["lotSize"].uintValue = inputData[i].instrumentData.lotSize;
+            _classes[classeID]._values["minimumLotSize"].uintValue = inputData[i].instrumentData.minimumLotSize;
+            _classes[classeID]._values["lotSize"].uintValue = inputData[i].instrumentData.lotSize;
+
+
+            lastClasseCreated += 1;
+
+            emit classCreated(msg.sender, classeID);        
+       }
+
+    }
+     
 }
+
+
