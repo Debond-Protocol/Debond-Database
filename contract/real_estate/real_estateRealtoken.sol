@@ -703,7 +703,10 @@ contract Token is ERC3475 {
         _classes[1]._values["issuerURL"].stringValue = "https://realt.co/;
         _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Realtoken.png";
         _classes[1]._values["issuerDocURL"].stringArrayValue = [
-            "https://downloads.eth.maple.finance/docs/aqru/2023-01-AQRU-Real-World-Receivables.pdf"
+            "https://realt.co/wp-content/uploads/2023/06/villa_marina_Vista_de_atras_05-hero-800x600.jpg",
+            "https://realt.co/wp-content/uploads/2023/06/Villa_Marina_piscina_frente_al_restaurante_05-scaled.jpg",
+            "https://realt.co/wp-content/uploads/2023/06/villamarina_Recamar_Principal_03.jpg",
+            "https://realt.co/wp-content/uploads/2023/06/VIlla_Marina_Rancho_Carey_02-scaled.jpg"
         ];
 
         _classes[1]._values["managerName"].stringValue = "Villa Marina Lodge & Condos";
@@ -725,13 +728,13 @@ contract Token is ERC3475 {
 
         _classes[1]._values["propertyLocation"].stringValue = "Villa Marina 514, Playa Venao, Los Santos, Panama";
         _classes[1]._values["propertyLocationCoordinate"].stringValue = "7.425963,-80.185448";
-        _classes[1]._values["propertySurface"].uintValue = 133;
+        _classes[1]._values["propertySurface"].uintValue = 133000000;
         _classes[1]._values["propertyBedroom"].uintValue = 2;
         _classes[1]._values["propertyBathroom"].uintValue = 2;        
         _classes[1]._values["propertyRooms"].uintValue = 6;
 
         _classes[1]._values["fundType"].stringValue = "corporate";  
-        _classes[1]._values["shareValue"].uintValue = 51;  
+        _classes[1]._values["shareValue"].uintValue = 51000000;  
         _classes[1]._values["currency"].stringValue = "USD";  
 
         _classes[1]._values["maximumSupply"].uintValue = 11500;  
