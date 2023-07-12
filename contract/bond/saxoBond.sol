@@ -4,6 +4,81 @@
 
 pragma solidity ^0.8.0;
 
+/**
+ * @dev Interface of the ERC20 standard as defined in the EIP.
+ */
+interface IERC20 {
+    /**
+     * @dev Emitted when `value` tokens are moved from one account (`from`) to
+     * another (`to`).
+     *
+     * Note that `value` may be zero.
+     */
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    /**
+     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
+     * a call to {approve}. `value` is the new allowance.
+     */
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+
+    /**
+     * @dev Returns the value of tokens in existence.
+     */
+    function totalSupply() external view returns (uint256);
+
+    /**
+     * @dev Returns the value of tokens owned by `account`.
+     */
+    function balanceOf(address account) external view returns (uint256);
+
+    /**
+     * @dev Moves a `value` amount of tokens from the caller's account to `to`.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transfer(address to, uint256 value) external returns (bool);
+
+    /**
+     * @dev Returns the remaining number of tokens that `spender` will be
+     * allowed to spend on behalf of `owner` through {transferFrom}. This is
+     * zero by default.
+     *
+     * This value changes when {approve} or {transferFrom} are called.
+     */
+    function allowance(address owner, address spender) external view returns (uint256);
+
+    /**
+     * @dev Sets a `value` amount of tokens as the allowance of `spender` over the
+     * caller's tokens.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * IMPORTANT: Beware that changing an allowance with this method brings the risk
+     * that someone may use both the old and the new allowance by unfortunate
+     * transaction ordering. One possible solution to mitigate this race
+     * condition is to first reduce the spender's allowance to 0 and set the
+     * desired value afterwards:
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     *
+     * Emits an {Approval} event.
+     */
+    function approve(address spender, uint256 value) external returns (bool);
+
+    /**
+     * @dev Moves a `value` amount of tokens from `from` to `to` using the
+     * allowance mechanism. `value` is then deducted from the caller's
+     * allowance.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transferFrom(address from, address to, uint256 value) external returns (bool);
+}
+
 
 interface IERC3475 {
     // STRUCTURE 
@@ -257,6 +332,14 @@ interface IERC3475EXTENSION {
 }
 
 contract ERC3475 is IERC3475, IERC3475EXTENSION {
+    address public publisher;
+    uint256 public lastClasseCreated;
+    address public auctionContract;
+
+    modifier onlyPublisher{
+        _;
+        require ( msg.sender == publisher);
+    }
 
     /**
      * @notice this Struct is representing the Nonce properties as an object
@@ -309,7 +392,7 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
         address _from,
         address _to,
         Transaction[] memory _transactions
-    ) public virtual override onlyInternal{
+    ) public virtual override{
         require(
             _from != address(0),
             "ERC3475: can't transfer from the zero address"
@@ -319,7 +402,7 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
             "ERC3475:use burn() instead"
         );
         require(
-            msg.sender == _from ||
+            msg.sender == auctionContract ||
             isApprovedFor(_from, msg.sender),
             "ERC3475:caller-not-owner-or-approved"
         );
@@ -355,11 +438,11 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
     }
 
     function issue(address _to, Transaction[] memory _transactions)
-    external
+    public
     virtual
     override
-    onlyInternal
     {
+        require(msg.sender == address(this) || msg.sender == publisher,"ERC3475: authorization required");
         uint256 len = _transactions.length;
         for (uint256 i = 0; i < len; i++) {
             require(
@@ -372,7 +455,7 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
     }
 
     function redeem(address _from, Transaction[] memory _transactions)
-    external
+    public
     virtual
     override
     onlyInternal
@@ -397,7 +480,7 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
     }
 
     function burn(address _from, Transaction[] memory _transactions)
-    external
+    public
     virtual
     override
     onlyInternal
@@ -419,7 +502,7 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
     }
 
     function approve(address _spender, Transaction[] memory _transactions)
-    external
+    public
     virtual
     override onlyInternal
     {
@@ -677,15 +760,7 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
 
 contract Token is ERC3475 {
 
-    address public publisher;
-    uint256 public lastClasseCreated;
-    address public auctionContract;
-
-    modifier onlyPublisher{
-        _;
-        require ( msg.sender == publisher);
-    }
-
+ 
     struct issuer{
         string issuerName; 
         string issuerIndustry;
@@ -722,83 +797,156 @@ contract Token is ERC3475 {
     struct Data {
         uint256 onChainDate;
         string symbol;
+        string category;
+        string subCategory;
         string childCategory;
         string description;
         
         issuer issuerData;
         instrument instrumentData;
+        
+       
+
+
     }
 
 
     constructor() {
         publisher = msg.sender;
-        _classes[0]._values["custodianName"].stringValue = "Saxo Bank";
-        _classes[0]._values["custodianType"].stringValue = "A/S";
-        _classes[0]._values["custodianJurisdiction"].stringValue = "DK";
-        _classes[0]._values["custodianURL"].stringValue = "https://www.home.saxo/";
-        _classes[0]._values["custodianLogo"].stringValue = "https://www.home.saxo/favicon.ico";
+        _classes[0]._values["custodianName"].stringValue = "Credix";
+        _classes[0]._values["custodianType"].stringValue = "LTD";
+        _classes[0]._values["custodianJurisdiction"].stringValue = "BE";
+        _classes[0]._values["custodianURL"].stringValue = "https://credix.finance/";
+        _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/credix.jpeg";
 
-        _classes[0]._values["brokerName"].stringValue = "Saxo Bank";
-        _classes[0]._values["brokerType"].stringValue = "A/S";
-        _classes[0]._values["brokerJurisdiction"].stringValue = "DK";
-        _classes[0]._values["brokerURL"].stringValue = "https://www.home.saxo/";
-        _classes[0]._values["brokerLogo"].stringValue = "https://www.home.saxo/favicon.ico";
+        _classes[0]._values["brokerName"].stringValue = "Credix";
+        _classes[0]._values["brokerType"].stringValue = "LTD";
+        _classes[0]._values["brokerJurisdiction"].stringValue = "BE";
+        _classes[0]._values["brokerURL"].stringValue = "https://credix.finance/";
+        _classes[0]._values["brokerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/credix.jpeg";
 
-        _classes[0]._values["managmentFee"].uintValue = 7500;  
-        _classes[0]._values["fixedFee"].uintValue = 30000000;  
+        _classes[0]._values["fixedMaturity"].boolValue = true;  
 
-        _classes[0]._values["category"].stringValue = "security";
-        _classes[0]._values["subcategory"].stringValue = "bond";
-    
+        Transaction[] memory _transactions = new Transaction[](1);
+        Transaction memory _transaction;
+
+
+
+        _classes[1]._values["symbol"].stringValue = "Atria deal 2 -Super Senior Loan";
+        _classes[1]._values["category"].stringValue = "loan";
+        _classes[1]._values["subcategory"].stringValue = "asset-backed loan";
+        _classes[1]._values["childCategory"].stringValue = "asset-backed car loan";
+        
+        _classes[1]._values["description"].stringValue = unicode"Atria is a fintech company established in 2022 that offers specialized services in used-car loan facilitation in Mexico. The firm is steered by a seasoned management team that was previously part of Credito Real’s auto financing division. It operates on a B2B framework, providing support to used-car dealerships. The company has recorded robust performance since October 2022 with its transactions, which are backed by a singular credit fund in the Credix network. Notably, defaults have remained exceptionally low at just 0.3%. The credit fund is currently considering the divestment of the senior tranche in order to focus on risk-adjusted high-yield returns. The yield for the senior tranche is negotiable.";
+        _classes[1]._values["issuerName"].stringValue = "Atria";
+        _classes[1]._values["issuerType"].stringValue = "LTD";
+        _classes[1]._values["issuerJurisdiction"].stringValue = "MX";
+        _classes[1]._values["issuerURL"].stringValue = "https://atria.la/";
+        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png";
+
+        _classes[1]._values["fundType"].stringValue = "corporate";  
+        _classes[1]._values["shareValue"].uintValue = 1000000;  
+        _classes[1]._values["currency"].stringValue = "USDC";  
+
+        _classes[1]._values["maximumSupply"].uintValue = 1524693;  
+        _classes[1]._values["callable"].boolValue = true;  
+        _classes[1]._values["maturityPeriod"].uintValue = 103680000;  
+        _classes[1]._values["coupon"].boolValue = true;  
+        _classes[1]._values["couponRate"].uintValue = 8333;  
+        _classes[1]._values["couponPeriod"].uintValue = 2592000;  
+        _classes[1]._values["fixed-rate"].boolValue = true;  
+        _classes[1]._values["APR"].uintValue = 100000;  
+        _classes[1]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=7pTa26B4jHywCtb8kLwZvKEt9Lh1trsD1RWrGi3jMQ9k";
+        emit classCreated(address(this), 1);
+        _transaction.classId = 1;
+        _transaction.nonceId = 1;
+        _transaction._amount = 0;
+        _transactions[0] = _transaction;
+        emit Issue (address(this), address(this), _transactions);
+
 
     }
-       function updateClasse(
+
+
+
+    function checkAllowedToken(address token) public view returns(bool){
+        address[] memory allowed = _classes[0]._values["collateralAllowed"].addressArrayValue;
+        for (uint256 i = 0; i < allowed.length ; i++) {
+            if (token == allowed[i]){
+                return(true);
+            }
+        
+        }
+
+        return(false);
+    }
+     function subscribe(
+        address _to,
+        address token,
+        uint256 amount,
+        uint256 class
+    ) public  {
+        require (checkAllowedToken(token) == true, "Token not allowed");
+        IERC3475.Transaction memory _transaction;
+        IERC20(token).transferFrom(_to, publisher, amount);
+        _transaction.classId = class;
+        _transaction.nonceId = 0;
+        _transaction._amount = amount;
+
+        Transaction[] memory _transactions = new Transaction[](1);
+        _transactions[0] = _transaction;
+        issue(_to,_transactions);
+    }
+
+       function createClasse(
         Data[] memory inputData
     ) public onlyPublisher {
         //Checker
-        uint256 classeID = lastClasseCreated;
+        uint256 classId = lastClasseCreated;
        //Write metadata
        for (uint256 i = 0; i < inputData.length ; i++) {
-        _classes[classeID]._values["symbol"].stringValue = inputData[i].symbol;
-        _classes[classeID]._values["childCategory"].stringValue = inputData[i].childCategory;
-        _classes[classeID]._values["description"].stringValue = inputData[i].description;
-        
-        _classes[classeID]._values["issuerName"].stringValue = inputData[i].issuerData.issuerName;
-        _classes[classeID]._values["issuerIndustry"].stringValue = inputData[i].issuerData.issuerIndustry;
-        _classes[classeID]._values["issuerJurisdiction"].stringValue = inputData[i].issuerData.issuerJurisdiction;
-        _classes[classeID]._values["issuerURL"].stringValue = inputData[i].issuerData.issuerURL;
-        _classes[classeID]._values["issuerLogo"].stringValue = inputData[i].issuerData.issuerLogo;
-        _classes[classeID]._values["issuerDocURL"].stringArrayValue = inputData[i].issuerData.issuerDocURL;
+            _classes[classId]._values["symbol"].stringValue = inputData[i].symbol;
+            _classes[classId]._values["category"].stringValue = inputData[i].category;
+            _classes[classId]._values["subCategory"].stringValue = inputData[i].subCategory;
+            _classes[classId]._values["childCategory"].stringValue = inputData[i].childCategory;
+            _classes[classId]._values["description"].stringValue = inputData[i].description;
 
-        _classes[classeID]._values["valueAPI"].stringValue = inputData[i].instrumentData.valueAPI;
-        _classes[classeID]._values["riskLevel"].stringValue = inputData[i].instrumentData.riskLevel;
-        _classes[classeID]._values["brokerId"].stringValue = inputData[i].instrumentData.brokerId;
-        _classes[classeID]._values["ISIN"].stringValue = inputData[i].instrumentData.ISIN;
-        _classes[classeID]._values["fundType"].stringValue = inputData[i].instrumentData.fundType;
+            _classes[classId]._values["issuerName"].stringValue = inputData[i].issuerData.issuerName;
+            _classes[classId]._values["issuerIndustry"].stringValue = inputData[i].issuerData.issuerIndustry;
+            _classes[classId]._values["issuerJurisdiction"].stringValue = inputData[i].issuerData.issuerJurisdiction;
+            _classes[classId]._values["issuerURL"].stringValue = inputData[i].issuerData.issuerURL;
+            _classes[classId]._values["issuerLogo"].stringValue = inputData[i].issuerData.issuerLogo;
+            _classes[classId]._values["issuerDocURL"].stringArrayValue = inputData[i].issuerData.issuerDocURL;
 
-        _classes[classeID]._values["currency"].stringValue = inputData[i].instrumentData.currency;
-        _classes[classeID]._values["issuePrice"].uintValue = inputData[i].instrumentData.issuePrice;
-        _classes[classeID]._values["issuePrice"].uintValue = inputData[i].instrumentData.issueDate;
+            _classes[classId]._values["valueAPI"].stringValue = inputData[i].instrumentData.valueAPI;
+            _classes[classId]._values["riskLevel"].stringValue = inputData[i].instrumentData.riskLevel;
+            _classes[classId]._values["brokerId"].stringValue = inputData[i].instrumentData.brokerId;
+            _classes[classId]._values["ISIN"].stringValue = inputData[i].instrumentData.ISIN;
+            _classes[classId]._values["fundType"].stringValue = inputData[i].instrumentData.fundType;
 
-        _classes[classeID]._values["maximumSupply"].uintValue = inputData[i].instrumentData.maximumSupply;
-        _classes[classeID]._values["callable"].boolValue = inputData[i].instrumentData.callable;
-        _classes[classeID]._values["maturityPeriod"].uintValue = inputData[i].instrumentData.maturityPeriod;
-        _classes[classeID]._values["coupon"].boolValue = inputData[i].instrumentData.coupon;
-        _classes[classeID]._values["couponRate"].uintValue = inputData[i].instrumentData.couponRate;
-        _classes[classeID]._values["couponPeriod"].uintValue = inputData[i].instrumentData.couponPeriod;
-        _classes[classeID]._values["fixedRate"].boolValue = inputData[i].instrumentData.fixedRate;
+            _classes[classId]._values["currency"].stringValue = inputData[i].instrumentData.currency;
+            _classes[classId]._values["issuePrice"].uintValue = inputData[i].instrumentData.issuePrice;
+            _classes[classId]._values["issuePrice"].uintValue = inputData[i].instrumentData.issueDate;
 
-        
-        _classes[classeID]._values["APY"].uintValue = inputData[i].instrumentData.APY;
-        _classes[classeID]._values["subscribeLink"].stringValue = inputData[i].instrumentData.subscribeLink;
-        _classes[classeID]._values["lotSize"].uintValue = inputData[i].instrumentData.lotSize;
-        _classes[classeID]._values["minimumLotSize"].uintValue = inputData[i].instrumentData.minimumLotSize;
-        _classes[classeID]._values["lotSize"].uintValue = inputData[i].instrumentData.lotSize;
+            _classes[classId]._values["maximumSupply"].uintValue = inputData[i].instrumentData.maximumSupply;
+            _classes[classId]._values["callable"].boolValue = inputData[i].instrumentData.callable;
+            _classes[classId]._values["maturityPeriod"].uintValue = inputData[i].instrumentData.maturityPeriod;
+            _classes[classId]._values["coupon"].boolValue = inputData[i].instrumentData.coupon;
+            _classes[classId]._values["couponRate"].uintValue = inputData[i].instrumentData.couponRate;
+            _classes[classId]._values["couponPeriod"].uintValue = inputData[i].instrumentData.couponPeriod;
+            _classes[classId]._values["fixedRate"].boolValue = inputData[i].instrumentData.fixedRate;
 
 
-        lastClasseCreated += 1;
+            _classes[classId]._values["APY"].uintValue = inputData[i].instrumentData.APY;
+            _classes[classId]._values["subscribeLink"].stringValue = inputData[i].instrumentData.subscribeLink;
+            _classes[classId]._values["lotSize"].uintValue = inputData[i].instrumentData.lotSize;
+            _classes[classId]._values["minimumLotSize"].uintValue = inputData[i].instrumentData.minimumLotSize;
+            _classes[classId]._values["lotSize"].uintValue = inputData[i].instrumentData.lotSize;
 
-        emit classCreated(msg.sender, classeID);        
+
+            lastClasseCreated += 1;
+
+            emit classCreated(msg.sender, classId);        
        }
 
     }
