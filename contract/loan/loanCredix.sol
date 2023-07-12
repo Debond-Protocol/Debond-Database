@@ -696,6 +696,13 @@ contract Token is ERC3475 {
         _classes[0]._values["custodianJurisdiction"].stringValue = "BE";
         _classes[0]._values["custodianURL"].stringValue = "https://credix.finance/";
         _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/credix.jpeg";
+
+        _classes[0]._values["brokerName"].stringValue = "Credix";
+        _classes[0]._values["brokerType"].stringValue = "LTD";
+        _classes[0]._values["brokerJurisdiction"].stringValue = "BE";
+        _classes[0]._values["brokerURL"].stringValue = "https://credix.finance/";
+        _classes[0]._values["brokerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/credix.jpeg";
+
         _classes[0]._values["fixedMaturity"].boolValue = true;  
 
         
