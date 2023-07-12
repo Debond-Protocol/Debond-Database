@@ -813,61 +813,28 @@ contract Token is ERC3475 {
 
     constructor() {
         publisher = msg.sender;
-        _classes[0]._values["custodianName"].stringValue = "Credix";
-        _classes[0]._values["custodianType"].stringValue = "LTD";
-        _classes[0]._values["custodianJurisdiction"].stringValue = "BE";
-        _classes[0]._values["custodianURL"].stringValue = "https://credix.finance/";
-        _classes[0]._values["custodianLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/credix.jpeg";
+        _classes[0]._values["custodianName"].stringValue = "Saxo Bank";
+        _classes[0]._values["custodianType"].stringValue = "A/S";
+        _classes[0]._values["custodianJurisdiction"].stringValue = "DK";
+        _classes[0]._values["custodianURL"].stringValue = "https://www.home.saxo/";
+        _classes[0]._values["custodianLogo"].stringValue = "https://www.home.saxo/favicon.ico";
 
-        _classes[0]._values["brokerName"].stringValue = "Credix";
-        _classes[0]._values["brokerType"].stringValue = "LTD";
-        _classes[0]._values["brokerJurisdiction"].stringValue = "BE";
-        _classes[0]._values["brokerURL"].stringValue = "https://credix.finance/";
-        _classes[0]._values["brokerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/credix.jpeg";
+        _classes[0]._values["brokerName"].stringValue = "Saxo Bank";
+        _classes[0]._values["brokerType"].stringValue = "A/S";
+        _classes[0]._values["brokerJurisdiction"].stringValue = "DK";
+        _classes[0]._values["brokerURL"].stringValue = "https://www.home.saxo/";
+        _classes[0]._values["brokerLogo"].stringValue = "https://www.home.saxo/favicon.ico";
 
-        _classes[0]._values["fixedMaturity"].boolValue = true;  
-
-        Transaction[] memory _transactions = new Transaction[](1);
-        Transaction memory _transaction;
+        _classes[0]._values["managmentFee"].uintValue = 7500;  
+        _classes[0]._values["fixedFee"].uintValue = 30000000;  
 
 
-
-        _classes[1]._values["symbol"].stringValue = "Atria deal 2 -Super Senior Loan";
-        _classes[1]._values["category"].stringValue = "loan";
-        _classes[1]._values["subcategory"].stringValue = "asset-backed loan";
-        _classes[1]._values["childCategory"].stringValue = "asset-backed car loan";
+        _classes[0]._values["collateralAllowed"].addressArrayValue = [0x3DF2038Ac2C84fa742151Ed319bbe8aDa92980A6,0x3DF2038Ac2C84fa742151Ed319bbe8aDa92980A6];
         
-        _classes[1]._values["description"].stringValue = unicode"Atria is a fintech company established in 2022 that offers specialized services in used-car loan facilitation in Mexico. The firm is steered by a seasoned management team that was previously part of Credito Real’s auto financing division. It operates on a B2B framework, providing support to used-car dealerships. The company has recorded robust performance since October 2022 with its transactions, which are backed by a singular credit fund in the Credix network. Notably, defaults have remained exceptionally low at just 0.3%. The credit fund is currently considering the divestment of the senior tranche in order to focus on risk-adjusted high-yield returns. The yield for the senior tranche is negotiable.";
-        _classes[1]._values["issuerName"].stringValue = "Atria";
-        _classes[1]._values["issuerType"].stringValue = "LTD";
-        _classes[1]._values["issuerJurisdiction"].stringValue = "MX";
-        _classes[1]._values["issuerURL"].stringValue = "https://atria.la/";
-        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/atria.la.png";
-
-        _classes[1]._values["fundType"].stringValue = "corporate";  
-        _classes[1]._values["shareValue"].uintValue = 1000000;  
-        _classes[1]._values["currency"].stringValue = "USDC";  
-
-        _classes[1]._values["maximumSupply"].uintValue = 1524693;  
-        _classes[1]._values["callable"].boolValue = true;  
-        _classes[1]._values["maturityPeriod"].uintValue = 103680000;  
-        _classes[1]._values["coupon"].boolValue = true;  
-        _classes[1]._values["couponRate"].uintValue = 8333;  
-        _classes[1]._values["couponPeriod"].uintValue = 2592000;  
-        _classes[1]._values["fixed-rate"].boolValue = true;  
-        _classes[1]._values["APR"].uintValue = 100000;  
-        _classes[1]._values["subscribeLink"].stringValue = "https://app.credix.finance/credix-marketplace/show/?dealId=7pTa26B4jHywCtb8kLwZvKEt9Lh1trsD1RWrGi3jMQ9k";
-        emit classCreated(address(this), 1);
-        _transaction.classId = 1;
-        _transaction.nonceId = 1;
-        _transaction._amount = 0;
-        _transactions[0] = _transaction;
-        emit Issue (address(this), address(this), _transactions);
-
+        
+    
 
     }
-
-
 
     function checkAllowedToken(address token) public view returns(bool){
         address[] memory allowed = _classes[0]._values["collateralAllowed"].addressArrayValue;
@@ -902,51 +869,51 @@ contract Token is ERC3475 {
         Data[] memory inputData
     ) public onlyPublisher {
         //Checker
-        uint256 classId = lastClasseCreated;
+        uint256 classeID = lastClasseCreated;
        //Write metadata
        for (uint256 i = 0; i < inputData.length ; i++) {
-            _classes[classId]._values["symbol"].stringValue = inputData[i].symbol;
-            _classes[classId]._values["category"].stringValue = inputData[i].category;
-            _classes[classId]._values["subCategory"].stringValue = inputData[i].subCategory;
-            _classes[classId]._values["childCategory"].stringValue = inputData[i].childCategory;
-            _classes[classId]._values["description"].stringValue = inputData[i].description;
+            _classes[classeID]._values["symbol"].stringValue = inputData[i].symbol;
+            _classes[classeID]._values["category"].stringValue = inputData[i].category;
+            _classes[classeID]._values["subCategory"].stringValue = inputData[i].subCategory;
+            _classes[classeID]._values["childCategory"].stringValue = inputData[i].childCategory;
+            _classes[classeID]._values["description"].stringValue = inputData[i].description;
 
-            _classes[classId]._values["issuerName"].stringValue = inputData[i].issuerData.issuerName;
-            _classes[classId]._values["issuerIndustry"].stringValue = inputData[i].issuerData.issuerIndustry;
-            _classes[classId]._values["issuerJurisdiction"].stringValue = inputData[i].issuerData.issuerJurisdiction;
-            _classes[classId]._values["issuerURL"].stringValue = inputData[i].issuerData.issuerURL;
-            _classes[classId]._values["issuerLogo"].stringValue = inputData[i].issuerData.issuerLogo;
-            _classes[classId]._values["issuerDocURL"].stringArrayValue = inputData[i].issuerData.issuerDocURL;
+            _classes[classeID]._values["issuerName"].stringValue = inputData[i].issuerData.issuerName;
+            _classes[classeID]._values["issuerIndustry"].stringValue = inputData[i].issuerData.issuerIndustry;
+            _classes[classeID]._values["issuerJurisdiction"].stringValue = inputData[i].issuerData.issuerJurisdiction;
+            _classes[classeID]._values["issuerURL"].stringValue = inputData[i].issuerData.issuerURL;
+            _classes[classeID]._values["issuerLogo"].stringValue = inputData[i].issuerData.issuerLogo;
+            _classes[classeID]._values["issuerDocURL"].stringArrayValue = inputData[i].issuerData.issuerDocURL;
 
-            _classes[classId]._values["valueAPI"].stringValue = inputData[i].instrumentData.valueAPI;
-            _classes[classId]._values["riskLevel"].stringValue = inputData[i].instrumentData.riskLevel;
-            _classes[classId]._values["brokerId"].stringValue = inputData[i].instrumentData.brokerId;
-            _classes[classId]._values["ISIN"].stringValue = inputData[i].instrumentData.ISIN;
-            _classes[classId]._values["fundType"].stringValue = inputData[i].instrumentData.fundType;
+            _classes[classeID]._values["valueAPI"].stringValue = inputData[i].instrumentData.valueAPI;
+            _classes[classeID]._values["riskLevel"].stringValue = inputData[i].instrumentData.riskLevel;
+            _classes[classeID]._values["brokerId"].stringValue = inputData[i].instrumentData.brokerId;
+            _classes[classeID]._values["ISIN"].stringValue = inputData[i].instrumentData.ISIN;
+            _classes[classeID]._values["fundType"].stringValue = inputData[i].instrumentData.fundType;
 
-            _classes[classId]._values["currency"].stringValue = inputData[i].instrumentData.currency;
-            _classes[classId]._values["issuePrice"].uintValue = inputData[i].instrumentData.issuePrice;
-            _classes[classId]._values["issuePrice"].uintValue = inputData[i].instrumentData.issueDate;
+            _classes[classeID]._values["currency"].stringValue = inputData[i].instrumentData.currency;
+            _classes[classeID]._values["issuePrice"].uintValue = inputData[i].instrumentData.issuePrice;
+            _classes[classeID]._values["issuePrice"].uintValue = inputData[i].instrumentData.issueDate;
 
-            _classes[classId]._values["maximumSupply"].uintValue = inputData[i].instrumentData.maximumSupply;
-            _classes[classId]._values["callable"].boolValue = inputData[i].instrumentData.callable;
-            _classes[classId]._values["maturityPeriod"].uintValue = inputData[i].instrumentData.maturityPeriod;
-            _classes[classId]._values["coupon"].boolValue = inputData[i].instrumentData.coupon;
-            _classes[classId]._values["couponRate"].uintValue = inputData[i].instrumentData.couponRate;
-            _classes[classId]._values["couponPeriod"].uintValue = inputData[i].instrumentData.couponPeriod;
-            _classes[classId]._values["fixedRate"].boolValue = inputData[i].instrumentData.fixedRate;
+            _classes[classeID]._values["maximumSupply"].uintValue = inputData[i].instrumentData.maximumSupply;
+            _classes[classeID]._values["callable"].boolValue = inputData[i].instrumentData.callable;
+            _classes[classeID]._values["maturityPeriod"].uintValue = inputData[i].instrumentData.maturityPeriod;
+            _classes[classeID]._values["coupon"].boolValue = inputData[i].instrumentData.coupon;
+            _classes[classeID]._values["couponRate"].uintValue = inputData[i].instrumentData.couponRate;
+            _classes[classeID]._values["couponPeriod"].uintValue = inputData[i].instrumentData.couponPeriod;
+            _classes[classeID]._values["fixedRate"].boolValue = inputData[i].instrumentData.fixedRate;
 
 
-            _classes[classId]._values["APY"].uintValue = inputData[i].instrumentData.APY;
-            _classes[classId]._values["subscribeLink"].stringValue = inputData[i].instrumentData.subscribeLink;
-            _classes[classId]._values["lotSize"].uintValue = inputData[i].instrumentData.lotSize;
-            _classes[classId]._values["minimumLotSize"].uintValue = inputData[i].instrumentData.minimumLotSize;
-            _classes[classId]._values["lotSize"].uintValue = inputData[i].instrumentData.lotSize;
+            _classes[classeID]._values["APY"].uintValue = inputData[i].instrumentData.APY;
+            _classes[classeID]._values["subscribeLink"].stringValue = inputData[i].instrumentData.subscribeLink;
+            _classes[classeID]._values["lotSize"].uintValue = inputData[i].instrumentData.lotSize;
+            _classes[classeID]._values["minimumLotSize"].uintValue = inputData[i].instrumentData.minimumLotSize;
+            _classes[classeID]._values["lotSize"].uintValue = inputData[i].instrumentData.lotSize;
 
 
             lastClasseCreated += 1;
 
-            emit classCreated(msg.sender, classId);        
+            emit classCreated(msg.sender, classeID);        
        }
 
     }
