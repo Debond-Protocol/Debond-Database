@@ -655,6 +655,25 @@
 	{
 		"inputs": [
 			{
+				"internalType": "address",
+				"name": "token",
+				"type": "address"
+			}
+		],
+		"name": "checkAllowedToken",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
 				"internalType": "uint256",
 				"name": "metadataId",
 				"type": "uint256"
@@ -798,6 +817,190 @@
 			}
 		],
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "onChainDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "symbol",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "category",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "subCategory",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "childCategory",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "issuerName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "issuerIndustry",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "issuerJurisdiction",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "issuerURL",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "issuerLogo",
+								"type": "string"
+							},
+							{
+								"internalType": "string[]",
+								"name": "issuerDocURL",
+								"type": "string[]"
+							}
+						],
+						"internalType": "struct Token.issuer",
+						"name": "issuerData",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "brokerId",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "valueAPI",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "riskLevel",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "ISIN",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "fundType",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "currency",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "issuePrice",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "issueDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "maximumSupply",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "callable",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "maturityPeriod",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "coupon",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "couponRate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "couponPeriod",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "fixedRate",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "APY",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "subscribeLink",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "lotSize",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "minimumLotSize",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Token.instrument",
+						"name": "instrumentData",
+						"type": "tuple"
+					}
+				],
+				"internalType": "struct Token.Data[]",
+				"name": "inputData",
+				"type": "tuple[]"
+			}
+		],
+		"name": "createClasse",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -1150,6 +1353,34 @@
 			}
 		],
 		"name": "setApprovalFor",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_to",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "token",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "class",
+				"type": "uint256"
+			}
+		],
+		"name": "subscribe",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
