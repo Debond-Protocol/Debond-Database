@@ -690,54 +690,59 @@ contract Token is ERC3475 {
 
 
     constructor() {      
-        TOKEN-P
-        _classes[1]._values["symbol"].stringValue = "Home onChain";
+        
+        _classes[1]._values["symbol"].stringValue = "3 Waterside Lofts, Burnley";
         _classes[1]._values["category"].stringValue = "property";
         _classes[1]._values["subcategory"].stringValue = "real property";
         _classes[1]._values["childCategory"].stringValue = "condominium";
         
-        _classes[1]._values["description"].stringValue = unicode"Newly renovated three-bedroom home in a great central location. The main level features all updated flooring, a combination of wood laminate and tile, so you can easily keep a clean and beautiful living environment. The living room/dining room space is great for entertaining and relaxing with loved ones. Cook up your favorite meals in the galley-style kitchen, offering updated appliances and sliding glass door access to the walkout patio. The cozy family room is perfect for kicking back and watching your favorite shows and movies. The sprawling master suite comes equipped with a double vanity, soaking tub, and huge walk-in closet. Less than a 5 minute drive to restaurants, groceries, Walmart, Lowes, and more.";
+        _classes[1]._values["description"].stringValue = unicode"Welcome to Panama’s Tuna Coast, where dreams of beachfront paradise come true! RealT proudly presents Villa Marina Lodge & Condos, an exquisite jewel nestled in the captivating Playa Venao of Pedasí, a town in Los Santos province. Prepare to be enchanted by the fusion of sun-kissed beaches and vibrant culture.  Playa Venao attracts a diverse mix of local and foreign investors, drawn by its potential for property development, thriving agriculture, and booming tourism. As RealT ventures into Panama’s coastal haven for the first time, this is your exclusive chance to own a slice of this tropical paradise. Pedasí, with its picturesque colonial-style galleries and vibrant hues, makes for a captivating investment opportunity. This 1,435-square-foot condominium boasts two bedrooms and two bathrooms.  Built in 2017, it is designed to blend modern comfort with timeless elegance. With an enticing expected rental income of 7.76%, your investment here promises both serenity and substantial returns";
         _classes[1]._values["issuerName"].stringValue = "RealToken International Villa Marina 514 S.A.";
         _classes[1]._values["issuerType"].stringValue = "LTD";
-        _classes[1]._values["issuerJurisdiction"].stringValue = "US";
-        _classes[1]._values["issuerURL"].stringValue = "https://onchain.roofstock.com/";
-        _classes[1]._values["issuerLogo"].stringValue = "https://d12b90t6rq6rcc.cloudfront.net/79ba7823e4df/assets/orig/mask-group.fd9c4a62.png";
+        _classes[1]._values["issuerJurisdiction"].stringValue = "UK";
+        _classes[1]._values["issuerURL"].stringValue = "https://www.tangible.store/";
+        _classes[1]._values["issuerLogo"].stringValue = "https://www.tangible.store/tangible-logo.svg";
         _classes[1]._values["issuerDocURL"].stringArrayValue = [
-            "https://downloads.eth.maple.finance/docs/aqru/2023-01-AQRU-Real-World-Receivables.pdf"
+            "https://www.dropbox.com/sh/rgtu68pb37ggkps/AABT5P65HyOv7JpFzVz1TrTka?dl=0"
         ];
 
-        _classes[1]._values["managerName"].stringValue = "149 Cottage Lake Way, Columbia, SC 29209";
+        _classes[1]._values["managerName"].stringValue = "USDR Treasury";
         _classes[1]._values["managerType"].stringValue = "LTD";
-        _classes[1]._values["managerJurisdiction"].stringValue = "US";
-        _classes[1]._values["managerURL"].stringValue = "https://onchain.roofstock.com/";
-        _classes[1]._values["managerLogo"].stringValue = "https://onchain.roofstock.com/images/roofstock-onchain-logo.svg";
+        _classes[1]._values["managerJurisdiction"].stringValue = "UK";
+        _classes[1]._values["managerURL"].stringValue = "https://www.tangible.store/";
+        _classes[1]._values["managerLogo"].stringValue = "https://www.tangible.store/tangible-logo.svg";
         _classes[1]._values["managerDocURL"].stringArrayValue = [
-           ""
+            "https://www.dropbox.com/sh/rgtu68pb37ggkps/AABT5P65HyOv7JpFzVz1TrTka?dl=0&preview=SPV+Incorporation+Docs.pdf",
+            "https://www.dropbox.com/sh/rgtu68pb37ggkps/AABT5P65HyOv7JpFzVz1TrTka?dl=0&preview=Completion+Statement+.pdf",
+            "https://www.dropbox.com/sh/rgtu68pb37ggkps/AABT5P65HyOv7JpFzVz1TrTka?dl=0&preview=Sales+Agreement.pdf",
+            "https://www.dropbox.com/sh/rgtu68pb37ggkps/AABT5P65HyOv7JpFzVz1TrTka?dl=0&preview=EIC.pdf",
+            "https://www.dropbox.com/sh/rgtu68pb37ggkps/AABT5P65HyOv7JpFzVz1TrTka?dl=0&preview=EPC.pdf"
 
         ];
 
         //pics of the property
         _classes[1]._values["cover"].stringArrayValue = [
-          ""
+            "https://www.dropbox.com/sh/rgtu68pb37ggkps/AABT5P65HyOv7JpFzVz1TrTka?dl=0&preview=Waterside+.pdf",
+            "https://www.dropbox.com/sh/rgtu68pb37ggkps/AABT5P65HyOv7JpFzVz1TrTka?dl=0&preview=TR1+Transfer.pdf"
         ];
 
-        _classes[1]._values["propertyLocation"].stringValue = "149 Cottage Lake Way, Columbia, SC 29209";
-        _classes[1]._values["propertyLocationCoordinate"].stringValue = "33.959859446045165, -80.94534270096976";
-        _classes[1]._values["propertySurface"].uintValue = 138;
-        _classes[1]._values["propertyBedroom"].uintValue = 3;
-        _classes[1]._values["propertyBathroom"].uintValue = 5;        
+        _classes[1]._values["propertyLocation"].stringValue = "3 Waterside Lofts, Burnley, Lancashire BB11 2HJ, UK";
+        _classes[1]._values["propertyLocationCoordinate"].stringValue = "53.78597530816069, -2.245985650120818";
+        _classes[1]._values["propertySurface"].uintValue = 133;
+        _classes[1]._values["propertyBedroom"].uintValue = 2;
+        _classes[1]._values["propertyBathroom"].uintValue = 2;        
         _classes[1]._values["propertyRooms"].uintValue = 6;
 
         _classes[1]._values["fundType"].stringValue = "corporate";  
         _classes[1]._values["shareValue"].uintValue = 51;  
         _classes[1]._values["currency"].stringValue = "USD";  
 
-        _classes[1]._values["maxiumSupply"].uintValue = 11500;  
+        _classes[1]._values["maxiumSupply"].uintValue = 160303;  
         _classes[1]._values["maturityPeriod"].uintValue = 365*24*3600;  
         _classes[1]._values["fixed-rate"].boolValue = true;  
-        _classes[1]._values["APR"].uintValue = ;  
-        _classes[1]._values["ManagementFee"].uintValue = ;  
-        _classes[1]._values["subscribeLink"].stringValue = "https://marketplace.roofstockonchain.com/roofstock/0";
+        _classes[1]._values["APR"].uintValue = 129900;  
+        _classes[1]._values["ManagementFee"].uintValue = 16800;  
+        _classes[1]._values["subscribeLink"].stringValue = "https://www.tangible.store/product/0x29613FbD3e695a669C647597CEFd60bA255cc1F8?tokenId=0x010000000000000000000000000000000a";
         emit classCreated(address(this), 1);
    
     }

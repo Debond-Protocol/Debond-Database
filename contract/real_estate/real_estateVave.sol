@@ -690,56 +690,52 @@ contract Token is ERC3475 {
 
 
     constructor() {      
-        TOKEN-P
-        _classes[1]._values["symbol"].stringValue = "Home onChain";
+        
+        _classes[1]._values["symbol"].stringValue = "Luxury Building Golden Triangle Paris";
         _classes[1]._values["category"].stringValue = "property";
-        _classes[1]._values["subcategory"].stringValue = "real property";
+        _classes[1]._values["subcategory"].stringValue = "rental real estate";
         _classes[1]._values["childCategory"].stringValue = "condominium";
         
-        _classes[1]._values["description"].stringValue = unicode"Newly renovated three-bedroom home in a great central location. The main level features all updated flooring, a combination of wood laminate and tile, so you can easily keep a clean and beautiful living environment. The living room/dining room space is great for entertaining and relaxing with loved ones. Cook up your favorite meals in the galley-style kitchen, offering updated appliances and sliding glass door access to the walkout patio. The cozy family room is perfect for kicking back and watching your favorite shows and movies. The sprawling master suite comes equipped with a double vanity, soaking tub, and huge walk-in closet. Less than a 5 minute drive to restaurants, groceries, Walmart, Lowes, and more.";
+        _classes[1]._values["description"].stringValue = unicode"Office building, homes and shops at the corner of avenue Matignon and the Faubourg St Honoré between the Hotel Bristol and the Elysée palace.";
         _classes[1]._values["issuerName"].stringValue = "RealToken International Villa Marina 514 S.A.";
         _classes[1]._values["issuerType"].stringValue = "LTD";
-        _classes[1]._values["issuerJurisdiction"].stringValue = "US";
-        _classes[1]._values["issuerURL"].stringValue = "https://onchain.roofstock.com/";
-        _classes[1]._values["issuerLogo"].stringValue = "https://d12b90t6rq6rcc.cloudfront.net/79ba7823e4df/assets/orig/mask-group.fd9c4a62.png";
+        _classes[1]._values["issuerJurisdiction"].stringValue = "FR";
+        _classes[1]._values["issuerURL"].stringValue = "https://vave.io/";
+        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Realtoken.png";
         _classes[1]._values["issuerDocURL"].stringArrayValue = [
-            "https://downloads.eth.maple.finance/docs/aqru/2023-01-AQRU-Real-World-Receivables.pdf"
+            ""
         ];
 
-        _classes[1]._values["managerName"].stringValue = "149 Cottage Lake Way, Columbia, SC 29209";
-        _classes[1]._values["managerType"].stringValue = "LTD";
-        _classes[1]._values["managerJurisdiction"].stringValue = "US";
-        _classes[1]._values["managerURL"].stringValue = "https://onchain.roofstock.com/";
-        _classes[1]._values["managerLogo"].stringValue = "https://onchain.roofstock.com/images/roofstock-onchain-logo.svg";
-        _classes[1]._values["managerDocURL"].stringArrayValue = [
-           ""
-
-        ];
+        _classes[1]._values["managerName"].stringValue = "christophe kourdouly";
+        _classes[1]._values["managerType"].stringValue = "person";
+        _classes[1]._values["managerJurisdiction"].stringValue = "FR";
+        _classes[1]._values["managerURL"].stringValue = "https://vave.io/";
+        _classes[1]._values["managerLogo"].stringValue = "https://fra1.digitaloceanspaces.com/vave-io/uploads/N4PYraXIpzW5sJaiT22PMsb58pc6xglAFBfhSRVD.jpeg";
+        _classes[1]._values["managerDocURL"].stringArrayValue = [""];
 
         //pics of the property
         _classes[1]._values["cover"].stringArrayValue = [
-          ""
+            ""
         ];
 
-        _classes[1]._values["propertyLocation"].stringValue = "149 Cottage Lake Way, Columbia, SC 29209";
-        _classes[1]._values["propertyLocationCoordinate"].stringValue = "33.959859446045165, -80.94534270096976";
-        _classes[1]._values["propertySurface"].uintValue = 138;
-        _classes[1]._values["propertyBedroom"].uintValue = 3;
-        _classes[1]._values["propertyBathroom"].uintValue = 5;        
-        _classes[1]._values["propertyRooms"].uintValue = 6;
+        _classes[1]._values["propertyLocation"].stringValue = "118 Rue du Faubourg Saint-Honore, Paris, France";
+        _classes[1]._values["propertyLocationCoordinate"].stringValue = "48.872130234890186, 2.313901524746913";
+        _classes[1]._values["propertySurface"].uintValue = 1200;
+        _classes[1]._values["propertyBedroom"].uintValue = 20;
+        _classes[1]._values["propertyBathroom"].uintValue = 20;        
+        _classes[1]._values["propertyRooms"].uintValue = 20;
 
         _classes[1]._values["fundType"].stringValue = "corporate";  
-        _classes[1]._values["shareValue"].uintValue = 51;  
+        _classes[1]._values["shareValue"].uintValue = 111.31;  
         _classes[1]._values["currency"].stringValue = "USD";  
 
-        _classes[1]._values["maxiumSupply"].uintValue = 11500;  
+        _classes[1]._values["maxiumSupply"].uintValue = 31834797;  
         _classes[1]._values["maturityPeriod"].uintValue = 365*24*3600;  
         _classes[1]._values["fixed-rate"].boolValue = true;  
-        _classes[1]._values["APR"].uintValue = ;  
-        _classes[1]._values["ManagementFee"].uintValue = ;  
-        _classes[1]._values["subscribeLink"].stringValue = "https://marketplace.roofstockonchain.com/roofstock/0";
+        _classes[1]._values["APR"].uintValue = 7.1;  
+        _classes[1]._values["ManagementFee"].uintValue =  2894072.494;  
+        _classes[1]._values["subscribeLink"].stringValue = "https://vave.io/realestate/luxury-building-golden-triangle-paris/89728?frc_prop=1";
         emit classCreated(address(this), 1);
    
     }
-
 }

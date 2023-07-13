@@ -691,61 +691,52 @@ contract Token is ERC3475 {
 
     constructor() {      
         
-        _classes[1]._values["symbol"].stringValue = "Propy dream property";
+        _classes[1]._values["symbol"].stringValue = "3647 Brice Rd. Lot# 268, Zephyrhills, FL 33541, US - Lot #268";
         _classes[1]._values["category"].stringValue = "property";
-        _classes[1]._values["subcategory"].stringValue = "real estate";
+        _classes[1]._values["subcategory"].stringValue = "Mobile home";
         _classes[1]._values["childCategory"].stringValue = "condominium";
         
-        _classes[1]._values["description"].stringValue = unicode"This beautiful apartment is located in Parq Ubud, a creative town for entrepreneurs, artists, and investors at the very heart of Bali.
-Parq Ubud, dubbed The City of the Future, has everything you need for a comfortable life within walking distance — restaurants, coworking and wellness zones. However, it’s much more than just a place for living. In Parq Ubud, the architects realized their “dream of a society where everyone can find themselves”.
-The complex is home to like-minded creators and visionaries from all over the world. Here, expats host conferences, concerts, and festivals, find social connections and opportunities for growth. Inspired by the ethnic art of the Balinese civilization, Parq Ubud is a place where tech and comfort meet ancient wisdom and beauty.
-This apartment is a perfect place to recharge with the power of nature in the morning and have rest after a busy day. The king-size bed is located right next to the window, so you can enjoy the whisper of the palm trees while falling asleep or waking up. Wood trim and designer furniture emphasize the mysterious spirit of the island.";
-        _classes[1]._values["issuerName"].stringValue = "RealToken International Villa Marina 514 S.A.";
+        _classes[1]._values["description"].stringValue = unicode"55+/1985/2BD/1BA/700SQ FT/PARK FEES ONLY $560.00 INCLUDES WATER-SEWER-GARBAGE-LAWNCARE/FURNISHED/NEW FLORIDA ROOM-SECOND BEDROOM ADDITION/NEW RUBBER ROOF/NEW EXTRA LONG DRIVEWAY/NEW 8X10 STORAGE SHED/GAS RANGE-REFRIGERATOR-MICROWAFE ONLY 1-1/2 YEARS OLD/Whether you're looking for a snowbird "nest", full-time living, or just a great vacation property, this bungalow home is completely move-in ready and has lots of updates including addition of a Florida room/second bedroom. It's a roomy bonus space and opens to the main living area through a large doorway, giving a nice open feel to both areas. The kitchen has beautifully painted cabinetry, a great stamped metal backsplash, as well as sleek new door handles and drawer pulls for a really clean, modern feel. The appliances are just 1-1/2 years old and there is a four burner gas stove with heavy duty grates, rarely found in manufactured homes. The island bar offers an extra countertop area as well as room for seating on one side. The hallway leading to the main bedroom has an elevated double built-in closet with mirrored sliding doors and drawer storage below. The bath has larger single sink vanity with double door storage below and tub/shower combo. The main bedroom has a full-wall elevated closet with double mirrored sliding doors and large drawers below. There is a built-in chest of drawers as well as an over the bed built-in unit. The outdoor space boasts a stone front patio, large 8 x 10 storage shed, nice back yard, and extra long driveway. There is a lot packed into this well cared for home and it is all located in the charming pet friendly and people friendly 55+ community of Sweetwater in the heart of Zephyrhills and just 20 miles from Tampa. It offers a small town feel with all the advantages of the city. There are local restaurants, medical facilities, plenty of shopping, parks, golf courses, and fishing and with easy access to I-4 or I-75 you can reach the beach areas as well as the destination theme parks and all that the Orlando area has to offer in no time at all. Amenities include heated pool, billiards, library, shuffleboard, bingo, crafts, planned activities, and community events, all with a year round vacation vibe. If it's time for you to start a new chapter or adventure, you need to check this one out. It's move-in ready, priced to sell, and it will not last long, so call today to make an appointment for your showing!";
+        _classes[1]._values["issuerName"].stringValue = "Propy";
         _classes[1]._values["issuerType"].stringValue = "LTD";
-        _classes[1]._values["issuerJurisdiction"].stringValue = "ID";
-        _classes[1]._values["issuerURL"].stringValue = "https://realt.co/;
-        _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Realtoken.png";
+        _classes[1]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[1]._values["issuerURL"].stringValue = "https://propy.com/home/";
+        _classes[1]._values["issuerLogo"].stringValue = "https://propy.com/home/static/media/propy-light-mode.c87a4988ad568844475e67e182195a07.svg";
         _classes[1]._values["issuerDocURL"].stringArrayValue = [
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/98230f92-3263-4a2a-9b79-0b73782550a2-0x228ce2B019B5a54C545E61490E5ba66E40915868-ArticlesOfOrganization.pdf",
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/3de656b0-0512-4ea9-bb66-11189a43ced2-0x228ce2B019B5a54C545E61490E5ba66E40915868-Legal%20entity%20registration%20certificate%20Parq.pdf",
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/1b658940-c91e-4c17-859d-ccb68b163a0e-0x228ce2B019B5a54C545E61490E5ba66E40915868-Legal%20Review%20-%20PARQ%20penthouse%203.pdf",
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/d224e21f-342e-4ddb-b661-14ea12c0388a-0x228ce2B019B5a54C545E61490E5ba66E40915868-OPERATING%20AGREEMENT%20for%20DAO%20Binaryx%20Bali%20Asset%202.pdf"
-            
+           ""
+        ];
 
-        _classes[1]._values["managerName"].stringValue = "PARQ Ubud";
-        _classes[1]._values["managerType"].stringValue = "LTD";
-        _classes[1]._values["managerJurisdiction"].stringValue = "ID";
-        _classes[1]._values["managerURL"].stringValue = "https://parqubud.com/";
-        _classes[1]._values["managerLogo"].stringValue = "https://parqubud.com/wp-content/uploads/2021/08/logo.svg";
+        _classes[1]._values["managerName"].stringValue = "Lori Manns";
+        _classes[1]._values["managerType"].stringValue = "Person";
+        _classes[1]._values["managerJurisdiction"].stringValue = "US";
+        _classes[1]._values["managerURL"].stringValue = "https://propy.com/agent/649b81e0a82c2e9d18c924d3";
+        _classes[1]._values["managerLogo"].stringValue = "";
         _classes[1]._values["managerDocURL"].stringArrayValue = [
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/fc641508-b1c1-440c-9438-b8ae2d911d28-0x228ce2B019B5a54C545E61490E5ba66E40915868-RIVER%20PENTHOUSE%203.pdf"
+            ""
         ];
 
         //pics of the property
-        _classes[1]._values["propertyAddress"].stringValue = "https://polygonscan.com/address/0x228ce2B019B5a54C545E61490E5ba66E40915868";
-        _classes[1]._values["propertyPrice"].uintValue = 175000;
-        _classes[1]._values["propertyProjectedIRR"].uintValue = 22%;
-        _classes[1]._values["propertyAPR"].uintValue = 12%;   
-        _classes[1]._values["propertyRentStartDate"].dateTimeValue = 2023-08-01;     
-        _classes[1]._values["maximumSupply"].uintValue = 3500;  
-        _classes[1]._values["maturityPeriod"].uintValue = 365*24*3600;  
-        _classes[1]._values["fixed-rate"].boolValue = true;   
-        _classes[1]._values["rewardsFromRentPerToken"].uintValue = 6;   
-        _classes[1]._values["ManagementFee"].uintValue = 16800;  
+        _classes[1]._values["cover"].stringArrayValue = [
+            ""
+        ];
 
-        _classes[1]._values["propertyLocation"].stringArrayValue = ["Florida","Colorado","Arizona","Non-US"];
-        _classes[1]._values["propertyLocationCoordinate"].stringValue = "-8.483364813870839, 115.26729652883517";
-        _classes[1]._values["propertySurface"].uintValue = 66;
-        _classes[1]._values["propertyBedroom"].uintValue = 1;
+        _classes[1]._values["propertyLocation"].stringValue = "Villa Marina 514, Playa Venao, Los Santos, Panama";
+        _classes[1]._values["propertyLocationCoordinate"].stringValue = "7.425963,-80.185448";
+        _classes[1]._values["propertySurface"].uintValue = 65;
+        _classes[1]._values["propertyBedroom"].uintValue = 2;
         _classes[1]._values["propertyBathroom"].uintValue = 1;        
-        _classes[1]._values["propertyRooms"].uintValue = 2;
+        _classes[1]._values["propertyRooms"].uintValue = 6;
 
         _classes[1]._values["fundType"].stringValue = "corporate";  
-        _classes[1]._values["tokenPrice"].uintValue = 50;  
+        _classes[1]._values["shareValue"].uintValue = 51;  
         _classes[1]._values["currency"].stringValue = "USD";  
 
-      
-        _classes[1]._values["subscribeLink"].stringValue = "https://docs.binaryx.com/binaryx-platform-overview/binaryx-platform";
+        _classes[1]._values["maxiumSupply"].uintValue = 39500;  
+        _classes[1]._values["maturityPeriod"].uintValue = 365*24*3600;  
+        _classes[1]._values["fixed-rate"].boolValue = true;  
+        _classes[1]._values["APR"].uintValue = 77572;  
+        _classes[1]._values["ManagementFee"].uintValue = 16800;  
+        _classes[1]._values["subscribeLink"].stringValue = "https://propy.com/property/64a76218bb65af435c1d4fb0";
         emit classCreated(address(this), 1);
    
     }

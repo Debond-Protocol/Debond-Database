@@ -691,61 +691,58 @@ contract Token is ERC3475 {
 
     constructor() {      
         
-        _classes[1]._values["symbol"].stringValue = "Propy dream property";
+        _classes[1]._values["symbol"].stringValue = "The Ranches";
         _classes[1]._values["category"].stringValue = "property";
-        _classes[1]._values["subcategory"].stringValue = "real estate";
+        _classes[1]._values["subcategory"].stringValue = "real property";
         _classes[1]._values["childCategory"].stringValue = "condominium";
         
-        _classes[1]._values["description"].stringValue = unicode"This beautiful apartment is located in Parq Ubud, a creative town for entrepreneurs, artists, and investors at the very heart of Bali.
-Parq Ubud, dubbed The City of the Future, has everything you need for a comfortable life within walking distance — restaurants, coworking and wellness zones. However, it’s much more than just a place for living. In Parq Ubud, the architects realized their “dream of a society where everyone can find themselves”.
-The complex is home to like-minded creators and visionaries from all over the world. Here, expats host conferences, concerts, and festivals, find social connections and opportunities for growth. Inspired by the ethnic art of the Balinese civilization, Parq Ubud is a place where tech and comfort meet ancient wisdom and beauty.
-This apartment is a perfect place to recharge with the power of nature in the morning and have rest after a busy day. The king-size bed is located right next to the window, so you can enjoy the whisper of the palm trees while falling asleep or waking up. Wood trim and designer furniture emphasize the mysterious spirit of the island.";
-        _classes[1]._values["issuerName"].stringValue = "RealToken International Villa Marina 514 S.A.";
+        _classes[1]._values["description"].stringValue = unicode"The Ranches is a 79-home, townhome community, built in 2018 and located in Ogden, a dynamic suburb 40 minutes north of Salt Lake City.The investment was completed by Orion Real Estate Partners in August 2022 for $31.9m, with $500k of the equity being made available on the HoneyBricks platform. Since acquisition, the investment has performed strongly and met all distribution forecasts.Salt Lake City has been among the top growing metro areas in the US since the early 2000’s, and Ogden offers residents a beautiful setting with close proximity to world class outdoor recreations as well as a growing job market and retail amenities. The area attracts many families and young professionals and has benefitted from the increased value placed on lifestyle and the shift towards work-from-anywhere culture.";
+        _classes[1]._values["issuerName"].stringValue = "HoneyBricks";
         _classes[1]._values["issuerType"].stringValue = "LTD";
-        _classes[1]._values["issuerJurisdiction"].stringValue = "ID";
-        _classes[1]._values["issuerURL"].stringValue = "https://realt.co/;
+        _classes[1]._values["issuerJurisdiction"].stringValue = "US";
+        _classes[1]._values["issuerURL"].stringValue = "https://realt.co/";
         _classes[1]._values["issuerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/Realtoken.png";
         _classes[1]._values["issuerDocURL"].stringArrayValue = [
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/98230f92-3263-4a2a-9b79-0b73782550a2-0x228ce2B019B5a54C545E61490E5ba66E40915868-ArticlesOfOrganization.pdf",
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/3de656b0-0512-4ea9-bb66-11189a43ced2-0x228ce2B019B5a54C545E61490E5ba66E40915868-Legal%20entity%20registration%20certificate%20Parq.pdf",
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/1b658940-c91e-4c17-859d-ccb68b163a0e-0x228ce2B019B5a54C545E61490E5ba66E40915868-Legal%20Review%20-%20PARQ%20penthouse%203.pdf",
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/d224e21f-342e-4ddb-b661-14ea12c0388a-0x228ce2B019B5a54C545E61490E5ba66E40915868-OPERATING%20AGREEMENT%20for%20DAO%20Binaryx%20Bali%20Asset%202.pdf"
-            
+            "https://downloads.eth.maple.finance/docs/aqru/2023-01-AQRU-Real-World-Receivables.pdf"
+        ];
 
-        _classes[1]._values["managerName"].stringValue = "PARQ Ubud";
+        _classes[1]._values["managerName"].stringValue = "Villa Marina Lodge & Condos";
         _classes[1]._values["managerType"].stringValue = "LTD";
-        _classes[1]._values["managerJurisdiction"].stringValue = "ID";
-        _classes[1]._values["managerURL"].stringValue = "https://parqubud.com/";
-        _classes[1]._values["managerLogo"].stringValue = "https://parqubud.com/wp-content/uploads/2021/08/logo.svg";
+        _classes[1]._values["managerJurisdiction"].stringValue = "UK";
+        _classes[1]._values["managerURL"].stringValue = "https://aqru.io/";
+        _classes[1]._values["managerLogo"].stringValue = "https://raw.githubusercontent.com/Debond-Protocol/Debond-Database/main/logo/AQRU.png";
         _classes[1]._values["managerDocURL"].stringArrayValue = [
-            "https://s3.eu-west-1.amazonaws.com/media.binaryx.com/fc641508-b1c1-440c-9438-b8ae2d911d28-0x228ce2B019B5a54C545E61490E5ba66E40915868-RIVER%20PENTHOUSE%203.pdf"
+            "https://hb-prod-data-public.s3.us-west-2.amazonaws.com/asset/c586f745-09ef-40c1-b4a2-245d75183aaf/Updates/The-Ranches---Q1-2023.pdf",
+            "https://hb-prod-data-public.s3.us-west-2.amazonaws.com/asset/c586f745-09ef-40c1-b4a2-245d75183aaf/Updates/The-Ranches---Q3-2022.pdf",
+            "https://hb-prod-data-public.s3.us-west-2.amazonaws.com/asset/c586f745-09ef-40c1-b4a2-245d75183aaf/Updates/The-Ranches---Q4-2022.pdf"
+
         ];
 
         //pics of the property
-        _classes[1]._values["propertyAddress"].stringValue = "https://polygonscan.com/address/0x228ce2B019B5a54C545E61490E5ba66E40915868";
-        _classes[1]._values["propertyPrice"].uintValue = 175000;
-        _classes[1]._values["propertyProjectedIRR"].uintValue = 22%;
-        _classes[1]._values["propertyAPR"].uintValue = 12%;   
-        _classes[1]._values["propertyRentStartDate"].dateTimeValue = 2023-08-01;     
-        _classes[1]._values["maximumSupply"].uintValue = 3500;  
-        _classes[1]._values["maturityPeriod"].uintValue = 365*24*3600;  
-        _classes[1]._values["fixed-rate"].boolValue = true;   
-        _classes[1]._values["rewardsFromRentPerToken"].uintValue = 6;   
-        _classes[1]._values["ManagementFee"].uintValue = 16800;  
+        _classes[1]._values["cover"].stringArrayValue = [
+            "https://hb-prod-data-public.s3.us-west-2.amazonaws.com/asset/c586f745-09ef-40c1-b4a2-245d75183aaf/Disclosures/Offering-Summary.pdf",
+            "https://hb-prod-data-public.s3.us-west-2.amazonaws.com/asset/c586f745-09ef-40c1-b4a2-245d75183aaf/Disclosures/Ranches-UW-Summary.pdf",
+            "https://hb-prod-data-public.s3.us-west-2.amazonaws.com/asset/c586f745-09ef-40c1-b4a2-245d75183aaf/Disclosures/Manager-Agreement.pdf",
+            "https://hb-prod-data-public.s3.us-west-2.amazonaws.com/asset/c586f745-09ef-40c1-b4a2-245d75183aaf/Disclosures/Risk-Factors.pdf"
+        ];
 
-        _classes[1]._values["propertyLocation"].stringArrayValue = ["Florida","Colorado","Arizona","Non-US"];
-        _classes[1]._values["propertyLocationCoordinate"].stringValue = "-8.483364813870839, 115.26729652883517";
-        _classes[1]._values["propertySurface"].uintValue = 66;
-        _classes[1]._values["propertyBedroom"].uintValue = 1;
-        _classes[1]._values["propertyBathroom"].uintValue = 1;        
-        _classes[1]._values["propertyRooms"].uintValue = 2;
+        _classes[1]._values["propertyLocation"].stringValue = "Villa Marina 514, Playa Venao, Los Santos, Panama";
+        _classes[1]._values["propertyLocationCoordinate"].stringValue = "7.425963,-80.185448";
+        _classes[1]._values["propertySurface"].uintValue = 133;
+        _classes[1]._values["propertyBedroom"].uintValue = 2;
+        _classes[1]._values["propertyBathroom"].uintValue = 2;        
+        _classes[1]._values["propertyRooms"].uintValue = 6;
 
         _classes[1]._values["fundType"].stringValue = "corporate";  
-        _classes[1]._values["tokenPrice"].uintValue = 50;  
+        _classes[1]._values["shareValue"].uintValue = 51;  
         _classes[1]._values["currency"].stringValue = "USD";  
 
-      
-        _classes[1]._values["subscribeLink"].stringValue = "https://docs.binaryx.com/binaryx-platform-overview/binaryx-platform";
+        _classes[1]._values["maxiumSupply"].uintValue = 11500;  
+        _classes[1]._values["maturityPeriod"].uintValue = 365*24*3600;  
+        _classes[1]._values["fixed-rate"].boolValue = true;  
+        _classes[1]._values["APR"].uintValue = 77572;  
+        _classes[1]._values["ManagementFee"].uintValue = 16800;  
+        _classes[1]._values["subscribeLink"].stringValue = "https://invest.honeybricks.com/app/mkt/marketplace/c586f745-09ef-40c1-b4a2-245d75183aaf";
         emit classCreated(address(this), 1);
    
     }
