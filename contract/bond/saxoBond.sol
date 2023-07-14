@@ -872,6 +872,7 @@ contract Token is ERC3475 {
         uint256 classeID = lastClasseCreated;
        //Write metadata
        for (uint256 i = 0; i < inputData.length ; i++) {
+               lastClasseCreated += 1;
             _classes[classeID]._values["symbol"].stringValue = inputData[i].symbol;
             _classes[classeID]._values["category"].stringValue = inputData[i].category;
             _classes[classeID]._values["subCategory"].stringValue = inputData[i].subCategory;
@@ -911,7 +912,7 @@ contract Token is ERC3475 {
             _classes[classeID]._values["lotSize"].uintValue = inputData[i].instrumentData.lotSize;
 
 
-            lastClasseCreated += 1;
+        
 
             emit classCreated(msg.sender, classeID);        
        }
@@ -919,5 +920,3 @@ contract Token is ERC3475 {
     }
      
 }
-
-
