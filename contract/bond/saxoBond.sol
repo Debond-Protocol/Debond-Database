@@ -81,18 +81,18 @@ interface IERC20 {
 
 
 interface IERC3475 {
-    // STRUCTURE 
+    // STRUCTURE
     /**
      * @dev Values structure of the Metadata
      */
-    struct Values { 
+    struct Values {
         string stringValue;
         uint uintValue;
         address addressValue;
         bool boolValue;
     }
     /**
-     * @dev structure allows to define particular bond metadata (ie the values in the class as well as nonce inputs). 
+     * @dev structure allows to define particular bond metadata (ie the values in the class as well as nonce inputs).
      * @notice 'title' defining the title information,
      * @notice '_type' explaining the data type of the title information added (eg int, bool, address),
      * @notice 'description' explains little description about the information stored in the bond",
@@ -144,7 +144,7 @@ interface IERC3475 {
      * @param _transactions is the object defining {class,nonce and amount of the bonds to be redeemed for given whitelisted bond}.
      */
     function redeem(address _from, Transaction[] calldata _transactions) external;
-    
+
     /**
      * @dev allows the transfer of any number of bond types from an address to another.
      * The calling of this function needs to be restricted to bond issuer contract.
@@ -152,7 +152,7 @@ interface IERC3475 {
      * @param _transactions is the object defining {class,nonce and amount of the bonds to be redeemed for given whitelisted bond}.
      */
     function burn(address _from, Transaction[] calldata _transactions) external;
-    
+
     /**
      * @dev Allows _spender to withdraw from your account multiple times, up to the amount.
      * @notice If this function is called again, it overwrites the current allowance with amount.
@@ -160,7 +160,7 @@ interface IERC3475 {
      * @param _transactions is the object defining {class,nonce and amount of the bonds to be approved for given whitelisted bond}.
      */
     function approve(address _spender, Transaction[] calldata _transactions) external;
-    
+
     /**
      * @notice Enable or disable approval for a third party ("operator") to manage all of the caller's tokens.
      * @dev MUST emit the ApprovalForAll event on success.
@@ -168,41 +168,41 @@ interface IERC3475 {
      * @param _approved "True" if the operator is approved, "False" to revoke approval.
      */
     function setApprovalFor(address _operator, bool _approved) external;
-    
-    // READABLES 
-    
+
+    // READABLES
+
     /**
      * @dev Returns the total supply of the bond in question.
      */
     function totalSupply(uint256 classId, uint256 nonceId) external view returns (uint256);
-    
+
     /**
      * @dev Returns the redeemed supply of the bond in question.
      */
     function redeemedSupply(uint256 classId, uint256 nonceId) external view returns (uint256);
-    
+
     /**
      * @dev Returns the active supply of the bond in question.
      */
     function activeSupply(uint256 classId, uint256 nonceId) external view returns (uint256);
-    
+
     /**
      * @dev Returns the burned supply of the bond in question.
      */
     function burnedSupply(uint256 classId, uint256 nonceId) external view returns (uint256);
-    
+
     /**
      * @dev Returns the balance of the giving bond classId and bond nonce.
      */
     function balanceOf(address _account, uint256 classId, uint256 nonceId) external view returns (uint256);
-    
+
     /**
      * @dev Returns the JSON metadata of the classes.
      * The metadata SHOULD follow a set of structure explained later in eip-3475.md
      * @param metadataId is the index corresponding to the class parameter that you want to return from mapping.
      */
     function classMetadata(uint256 metadataId) external view returns ( Metadata memory);
-    
+
     /**
      * @dev Returns the JSON metadata of the Values of the nonces in the corresponding class.
      * @param classId is the specific classId of which you want to find the metadata of the corresponding nonce.
@@ -210,7 +210,7 @@ interface IERC3475 {
      * @notice The metadata SHOULD follow a set of structure explained later in metadata section.
      */
     function nonceMetadata(uint256 classId, uint256 metadataId) external view returns ( Metadata memory);
-    
+
     /**
      * @dev Returns the values of the given classId.
      * @param classId is the specific classId of which we want to return the parameter.
@@ -218,7 +218,7 @@ interface IERC3475 {
      * the metadata SHOULD follow a set of structures explained in eip-3475.md
      */
     function classValues(uint256 classId, uint256 metadataId) external view returns ( Values memory);
-   
+
     /**
      * @dev Returns the values of given nonceId.
      * @param metadataId index number of structure as explained in the metadata section in EIP-3475.
@@ -227,7 +227,7 @@ interface IERC3475 {
      * Returns the values object corresponding to the given value.
      */
     function nonceValues(uint256 classId, uint256 nonceId, uint256 metadataId) external view returns ( Values memory);
-    
+
     /**
      * @dev Returns the information about the progress needed to redeem the bond identified by classId and nonceId.
      * @notice Every bond contract can have its own logic concerning the progress definition.
@@ -237,7 +237,7 @@ interface IERC3475 {
      * Returns progressRemaining is the remaining progress.
      */
     function getProgress(uint256 classId, uint256 nonceId) external view returns (uint256 progressAchieved, uint256 progressRemaining);
-   
+
     /**
      * @notice Returns the amount that spender is still allowed to withdraw from _owner (for given classId and nonceId issuance)
      * @param _owner is the address whose owner allocates some amount to the _spender address.
@@ -248,7 +248,7 @@ interface IERC3475 {
     /**
      * @notice Queries the approval status of an operator for bonds (for all classes and nonce issuances of owner).
      * @param _owner is the current holder of the bonds for all classes/nonces.
-     * @param _operator is the address with access to the bonds of _owner for transferring. 
+     * @param _operator is the address with access to the bonds of _owner for transferring.
      * Returns "true" if the operator is approved, "false" if not.
      */
     function isApprovedFor(address _owner, address _operator) external view returns (bool);
@@ -256,7 +256,7 @@ interface IERC3475 {
     // EVENTS
     /**
      * @notice MUST trigger when tokens are transferred, including zero value transfers.
-     * e.g: 
+     * e.g:
      emit Transfer(0x2d03B6C79B75eE7aB35298878D05fe36DC1fE8Ef, 0x492Af743654549b12b1B807a9E0e8F397E44236E,0x3d03B6C79B75eE7aB35298878D05fe36DC1fEf, [IERC3475.Transaction(1,14,500)])
     means that operator 0x2d03B6C79B75eE7aB35298878D05fe36DC1fE8Ef wants to transfer 500 bonds of class 1 , Nonce 14 of owner 0x492Af743654549b12b1B807a9E0e8F397E44236E to address  0x3d03B6C79B75eE7aB35298878D05fe36DC1fEf.
      */
@@ -266,7 +266,7 @@ interface IERC3475 {
      * @notice Issue MUST trigger when Bonds are issued. This SHOULD not include zero value Issuing.
     * @dev This SHOULD not include zero value issuing.
     * @dev Issue MUST be triggered when the operator (i.e Bank address) contract issues bonds to the given entity.
-    eg: emit Issue(_operator, 0x2d03B6C79B75eE7aB35298878D05fe36DC1fE8Ef,[IERC3475.Transaction(1,14,500)]); 
+    eg: emit Issue(_operator, 0x2d03B6C79B75eE7aB35298878D05fe36DC1fE8Ef,[IERC3475.Transaction(1,14,500)]);
     issue by address(operator) 500 Bonds(nonce14,class 0) to address 0x2d03B6C79B75eE7aB35298878D05fe36DC1fE8Ef.
      */
     event Issue(address indexed _operator, address indexed _to, Transaction[] _transactions);
@@ -288,7 +288,7 @@ interface IERC3475 {
     /**
      * @dev MUST emit when approval for a second party/operator address to manage all bonds from a classId given for an owner address is enabled or disabled (absence of an event assumes disabled).
      * @dev its emitted when address(_owner) approves the address(_operator) to transfer his bonds.
-     * @notice Approval MUST trigger when bond holders are approving an _operator. This SHOULD not include zero value approval. 
+     * @notice Approval MUST trigger when bond holders are approving an _operator. This SHOULD not include zero value approval.
      */
     event ApprovalFor(address indexed _owner, address indexed _operator, bool _approved);
 }
@@ -308,7 +308,7 @@ interface IERC3475EXTENSION {
         address[] addressArrayValue;
         bool[] boolAraryValue;
     }
-    
+
        /**
      * @dev Returns the values of the given _metadataTitle.
      * the metadata SHOULD follow a set of structures explained in eip-3475.md
@@ -320,25 +320,25 @@ interface IERC3475EXTENSION {
      * @param _classId is the class of bonds for which you determine the nonce .
      * @param _nonceId is the nonce for which you return the value struct info
      */
-    function nonceValuesFromTitle(uint256 _classId, uint256 _nonceId, string memory _metadataTitle) external view returns (ValuesExtension memory);    
-    
+    function nonceValuesFromTitle(uint256 _classId, uint256 _nonceId, string memory _metadataTitle) external view returns (ValuesExtension memory);
+
       /**
      * @notice MUST trigger when token class is created
-     */     
-    event classCreated(address indexed _operator, uint256 _classId);  
-    event updateClassMetadata(address indexed _operator, uint256 _classId, ValuesExtension[] oldMetedata, ValuesExtension[] newMetedata);  
-    event updateNonceMetadata(address indexed _operator, uint256 _classId, uint256 _nonceId, ValuesExtension[] oldMetedata, ValuesExtension[] newMetedata);  
-  
+     */
+    event classCreated(address indexed _operator, uint256 _classId);
+    event updateClassMetadata(address indexed _operator, uint256 _classId, ValuesExtension[] oldMetedata, ValuesExtension[] newMetedata);
+    event updateNonceMetadata(address indexed _operator, uint256 _classId, uint256 _nonceId, ValuesExtension[] oldMetedata, ValuesExtension[] newMetedata);
+
 }
 
 contract ERC3475 is IERC3475, IERC3475EXTENSION {
-    address public publisher;
-    uint256 public lastClasseCreated;
+    address public manager;
+    uint256 public lastClassCreated = 1;
     address public auctionContract;
 
-    modifier onlyPublisher{
+    modifier onlymanager{
         _;
-        require ( msg.sender == publisher);
+        require ( msg.sender == manager);
     }
 
     /**
@@ -384,9 +384,9 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
         _;
         require ( msg.sender == address(this));
     }
-    constructor() { 
+    constructor() {
         }
-        
+
     // WRITABLES
     function transferFrom(
         address _from,
@@ -402,7 +402,7 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
             "ERC3475:use burn() instead"
         );
         require(
-            msg.sender == auctionContract ||
+            msg.sender == auctionContract &&
             isApprovedFor(_from, msg.sender),
             "ERC3475:caller-not-owner-or-approved"
         );
@@ -426,6 +426,11 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
             _to != address(0),
             "ERC3475: use burn() instead"
         );
+        require(
+            msg.sender == auctionContract &&
+            isApprovedFor(_from, msg.sender),
+            "ERC3475:caller-not-owner-or-approved"
+        );
         uint256 len = _transactions.length;
         for (uint256 i = 0; i < len; i++) {
             require(
@@ -442,7 +447,7 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
     virtual
     override
     {
-        require(msg.sender == address(this) || msg.sender == publisher,"ERC3475: authorization required");
+        require(msg.sender == address(this) || msg.sender == manager,"ERC3475: authorization required");
         uint256 len = _transactions.length;
         for (uint256 i = 0; i < len; i++) {
             require(
@@ -602,7 +607,7 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
         result.stringValue = _classes[classId]._values[title].stringValue;
         return (result);
     }
-     
+
     function nonceValues(uint256 classId, uint256 nonceId, uint256 metadataId)
     external
     view
@@ -616,20 +621,20 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
         result.stringValue = _classes[classId]._nonces[nonceId]._values[title].stringValue;
         return (result);
     }
-    
+
     function nonceValuesFromTitle(uint256 classId, uint256 nonceId, string memory metadataTitle)
     external
     view
     returns (ValuesExtension memory) {
         return (_classes[classId]._nonces[nonceId]._values[metadataTitle]);
-    }  
+    }
 
     function classValuesFromTitle(uint256 classId, string memory metadataTitle)
     external
     view
     returns (ValuesExtension memory) {
         return (_classes[classId]._values[metadataTitle]);
-    }  
+    }
 
     /** determines the progress till the  redemption of the bonds is valid  (based on the type of bonds class).
      * @notice ProgressAchieved and `progressRemaining` is abstract.
@@ -640,11 +645,11 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
     view
     override
     returns (uint256 progressAchieved, uint256 progressRemaining){
-        uint256 issuanceDate = _classes[classId]._nonces[nonceId]._values["issuranceTime"].uintValue;
+        uint256 issuanceDate = _classes[classId]._values["issueDate"].uintValue + _classes[classId]._nonces[nonceId]._values["period"].uintValue;
         uint256 maturityPeriod = _classes[classId]._values["maturityPeriod"].uintValue;
 
         // check whether the bond is being already initialized:
-        progressAchieved = block.timestamp > issuanceDate?        
+        progressAchieved = block.timestamp > issuanceDate?
         block.timestamp - issuanceDate : 0;
         progressRemaining = progressAchieved < maturityPeriod
         ? maturityPeriod - progressAchieved
@@ -760,34 +765,39 @@ contract ERC3475 is IERC3475, IERC3475EXTENSION {
 
 contract Token is ERC3475 {
 
- 
-    struct issuer{
-        string issuerName; 
+
+    struct Issuer{
+        string issuerName;
         string issuerIndustry;
-        string issuerJurisdiction; 
-        string issuerURL; 
-        string issuerLogo; 
+        string issuerJurisdiction;
+        string issuerURL;
+        string issuerLogo;
         string[] issuerDocURL;
     }
 
-    struct instrument{
+    struct Instrument{
         string brokerId;
         string valueAPI;
         string riskLevel;
         string ISIN;
-        string fundType;  
+        string fundType;
 
-        string currency;  
-        uint256 issuePrice;  
-        uint256 issueDate;  
-        uint256 maximumSupply;  
+        string currency;
+        uint256 shareValue;
+        uint256 issuePrice;
+        uint256 issueDate;
+        uint256 maximumSupply;
         bool callable;
-        uint256 maturityPeriod;  
+        uint256 maturityPeriod;
+
         bool coupon;
-        uint256 couponRate;  
-        uint256 couponPeriod;  
-        bool fixedRate;  
-        uint256 APY;  
+        uint256 couponRate;
+        uint256 couponPeriod;
+        bool fixedRate;
+        bool fixedMaturity;
+
+        uint256 APY;
+        uint256 APR;
         string subscribeLink;
         uint256 lotSize;
         uint256 minimumLotSize;
@@ -801,18 +811,17 @@ contract Token is ERC3475 {
         string subCategory;
         string childCategory;
         string description;
-        
-        issuer issuerData;
-        instrument instrumentData;
-        
-       
+        address[] collateralAllowed;
 
+        Issuer issuerData;
+        Instrument instrumentData;
 
     }
 
 
-    constructor() {
-        publisher = msg.sender;
+    constructor(address _exchangeAddress ) {
+        auctionContract = _exchangeAddress;
+        manager = msg.sender;
         _classes[0]._values["custodianName"].stringValue = "Saxo Bank";
         _classes[0]._values["custodianType"].stringValue = "A/S";
         _classes[0]._values["custodianJurisdiction"].stringValue = "DK";
@@ -825,98 +834,74 @@ contract Token is ERC3475 {
         _classes[0]._values["brokerURL"].stringValue = "https://www.home.saxo/";
         _classes[0]._values["brokerLogo"].stringValue = "https://www.home.saxo/favicon.ico";
 
-        _classes[0]._values["managmentFee"].uintValue = 7500;  
-        _classes[0]._values["fixedFee"].uintValue = 30000000;  
-
-
+        _classes[0]._values["managmentFee"].uintValue = 7500;
+        _classes[0]._values["fixedFee"].uintValue = 30000000;
         _classes[0]._values["collateralAllowed"].addressArrayValue = [0x3DF2038Ac2C84fa742151Ed319bbe8aDa92980A6,0x3DF2038Ac2C84fa742151Ed319bbe8aDa92980A6];
-        
-        
-    
 
-    }
+        }
+        function getLastClassSymbol() public view returns(string memory lastSymbol){
 
-    function checkAllowedToken(address token) public view returns(bool){
-        address[] memory allowed = _classes[0]._values["collateralAllowed"].addressArrayValue;
-        for (uint256 i = 0; i < allowed.length ; i++) {
-            if (token == allowed[i]){
-                return(true);
-            }
+            lastSymbol = _classes[ lastClassCreated]._values["symbol"].stringValue;
         
+
         }
 
-        return(false);
-    }
-     function subscribe(
-        address _to,
-        address token,
-        uint256 amount,
-        uint256 class
-    ) public  {
-        require (checkAllowedToken(token) == true, "Token not allowed");
-        IERC3475.Transaction memory _transaction;
-        IERC20(token).transferFrom(_to, publisher, amount);
-        _transaction.classId = class;
-        _transaction.nonceId = 0;
-        _transaction._amount = amount;
 
-        Transaction[] memory _transactions = new Transaction[](1);
-        _transactions[0] = _transaction;
-        issue(_to,_transactions);
-    }
-
-       function createClasse(
+       function createClass(
         Data[] memory inputData
-    ) public onlyPublisher {
+    ) public onlymanager {
         //Checker
-        uint256 classeID = lastClasseCreated;
+        lastClassCreated += 1;
+        uint256  classId = lastClassCreated;
        //Write metadata
        for (uint256 i = 0; i < inputData.length ; i++) {
-               lastClasseCreated += 1;
-            _classes[classeID]._values["symbol"].stringValue = inputData[i].symbol;
-            _classes[classeID]._values["category"].stringValue = inputData[i].category;
-            _classes[classeID]._values["subCategory"].stringValue = inputData[i].subCategory;
-            _classes[classeID]._values["childCategory"].stringValue = inputData[i].childCategory;
-            _classes[classeID]._values["description"].stringValue = inputData[i].description;
+    
+            _classes[ classId]._values["onChainDate"].uintValue = block.timestamp;
+            _classes[ classId]._values["symbol"].stringValue = inputData[i].symbol;
+            _classes[ classId]._values["category"].stringValue = inputData[i].category;
+            _classes[ classId]._values["subCategory"].stringValue = inputData[i].subCategory;
+            _classes[ classId]._values["childCategory"].stringValue = inputData[i].childCategory;
+            _classes[ classId]._values["description"].stringValue = inputData[i].description;
+            _classes[ classId]._values["collateralAllowed"].addressArrayValue = inputData[i].collateralAllowed;
 
-            _classes[classeID]._values["issuerName"].stringValue = inputData[i].issuerData.issuerName;
-            _classes[classeID]._values["issuerIndustry"].stringValue = inputData[i].issuerData.issuerIndustry;
-            _classes[classeID]._values["issuerJurisdiction"].stringValue = inputData[i].issuerData.issuerJurisdiction;
-            _classes[classeID]._values["issuerURL"].stringValue = inputData[i].issuerData.issuerURL;
-            _classes[classeID]._values["issuerLogo"].stringValue = inputData[i].issuerData.issuerLogo;
-            _classes[classeID]._values["issuerDocURL"].stringArrayValue = inputData[i].issuerData.issuerDocURL;
+            _classes[ classId]._values["issuerName"].stringValue = inputData[i].issuerData.issuerName;
+            _classes[ classId]._values["issuerIndustry"].stringValue = inputData[i].issuerData.issuerIndustry;
+            _classes[ classId]._values["issuerJurisdiction"].stringValue = inputData[i].issuerData.issuerJurisdiction;
+            _classes[ classId]._values["issuerURL"].stringValue = inputData[i].issuerData.issuerURL;
+            _classes[ classId]._values["issuerLogo"].stringValue = inputData[i].issuerData.issuerLogo;
+            _classes[ classId]._values["issuerDocURL"].stringArrayValue = inputData[i].issuerData.issuerDocURL;
+            
+            _classes[ classId]._values["brokerId"].stringValue = inputData[i].instrumentData.brokerId;
+            _classes[ classId]._values["valueAPI"].stringValue = inputData[i].instrumentData.valueAPI;
+            _classes[ classId]._values["riskLevel"].stringValue = inputData[i].instrumentData.riskLevel;
+            _classes[ classId]._values["ISIN"].stringValue = inputData[i].instrumentData.ISIN;
+            _classes[ classId]._values["fundType"].stringValue = inputData[i].instrumentData.fundType;
 
-            _classes[classeID]._values["valueAPI"].stringValue = inputData[i].instrumentData.valueAPI;
-            _classes[classeID]._values["riskLevel"].stringValue = inputData[i].instrumentData.riskLevel;
-            _classes[classeID]._values["brokerId"].stringValue = inputData[i].instrumentData.brokerId;
-            _classes[classeID]._values["ISIN"].stringValue = inputData[i].instrumentData.ISIN;
-            _classes[classeID]._values["fundType"].stringValue = inputData[i].instrumentData.fundType;
+            _classes[ classId]._values["currency"].stringValue = inputData[i].instrumentData.currency;
+            _classes[ classId]._values["shareValue"].uintValue = inputData[i].instrumentData.shareValue;
+            _classes[ classId]._values["issuePrice"].uintValue = inputData[i].instrumentData.issuePrice;
+            _classes[ classId]._values["issueDate"].uintValue = inputData[i].instrumentData.issueDate;
+            _classes[ classId]._values["maximumSupply"].uintValue = inputData[i].instrumentData.maximumSupply;
+            _classes[ classId]._values["callable"].boolValue = inputData[i].instrumentData.callable;
+            _classes[ classId]._values["maturityPeriod"].uintValue = inputData[i].instrumentData.maturityPeriod;
+            
+            _classes[ classId]._values["coupon"].boolValue = inputData[i].instrumentData.coupon;
+            _classes[ classId]._values["couponRate"].uintValue = inputData[i].instrumentData.couponRate;
+            _classes[ classId]._values["couponPeriod"].uintValue = inputData[i].instrumentData.couponPeriod;
+            _classes[ classId]._values["fixedRate"].boolValue = inputData[i].instrumentData.fixedRate;
+            _classes[ classId]._values["fixedMaturity"].boolValue = inputData[i].instrumentData.fixedMaturity;
 
-            _classes[classeID]._values["currency"].stringValue = inputData[i].instrumentData.currency;
-            _classes[classeID]._values["issuePrice"].uintValue = inputData[i].instrumentData.issuePrice;
-            _classes[classeID]._values["issuePrice"].uintValue = inputData[i].instrumentData.issueDate;
+            _classes[ classId]._values["APY"].uintValue = inputData[i].instrumentData.APY;
+            _classes[ classId]._values["APR"].uintValue = inputData[i].instrumentData.APR;
+            _classes[ classId]._values["subscribeLink"].stringValue = inputData[i].instrumentData.subscribeLink;
+            _classes[ classId]._values["lotSize"].uintValue = inputData[i].instrumentData.lotSize;
+            _classes[ classId]._values["minimumLotSize"].uintValue = inputData[i].instrumentData.minimumLotSize;
 
-            _classes[classeID]._values["maximumSupply"].uintValue = inputData[i].instrumentData.maximumSupply;
-            _classes[classeID]._values["callable"].boolValue = inputData[i].instrumentData.callable;
-            _classes[classeID]._values["maturityPeriod"].uintValue = inputData[i].instrumentData.maturityPeriod;
-            _classes[classeID]._values["coupon"].boolValue = inputData[i].instrumentData.coupon;
-            _classes[classeID]._values["couponRate"].uintValue = inputData[i].instrumentData.couponRate;
-            _classes[classeID]._values["couponPeriod"].uintValue = inputData[i].instrumentData.couponPeriod;
-            _classes[classeID]._values["fixedRate"].boolValue = inputData[i].instrumentData.fixedRate;
-
-
-            _classes[classeID]._values["APY"].uintValue = inputData[i].instrumentData.APY;
-            _classes[classeID]._values["subscribeLink"].stringValue = inputData[i].instrumentData.subscribeLink;
-            _classes[classeID]._values["lotSize"].uintValue = inputData[i].instrumentData.lotSize;
-            _classes[classeID]._values["minimumLotSize"].uintValue = inputData[i].instrumentData.minimumLotSize;
-            _classes[classeID]._values["lotSize"].uintValue = inputData[i].instrumentData.lotSize;
-
-
-        
-
-            emit classCreated(msg.sender, classeID);        
+            emit classCreated(msg.sender,  classId);
        }
 
     }
-     
+
 }
+
+
